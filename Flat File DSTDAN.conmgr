@@ -1,0 +1,47 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Flat File DSTDAN"
+  DTS:DTSID="{DC831A1F-0BDA-45E9-B024-0C8E51260B38}"
+  DTS:CreationName="FLATFILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="1053"
+      DTS:HeaderRowDelimiter="_x000D__x000A_"
+      DTS:ColumnNamesInFirstDataRow="True"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x0022_"
+      DTS:CodePage="1252"
+      DTS:ConnectionString="E:\source_files\TROY\2017\dstdan_2017.csv">
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="11"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DISTRIBUTIONKEY"
+          DTS:DTSID="{BD9A1391-A4D2-4300-8693-6DCC62027D64}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="11"
+          DTS:TextQualified="True"
+          DTS:ObjectName="SELECTIONKEY"
+          DTS:DTSID="{EC606423-E933-4685-82DF-CA0325E5AD7D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000D__x000A_"
+          DTS:DataType="131"
+          DTS:DataPrecision="11"
+          DTS:TextQualified="True"
+          DTS:ObjectName="SELECTEDPROCESSKEY"
+          DTS:DTSID="{9E7CAB66-614D-4655-A84C-8FE98A1FA707}"
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Flat File DSTRPW"
+  DTS:DTSID="{75E00360-0E06-46E8-85A8-7598D86924C4}"
+  DTS:CreationName="FLATFILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="1033"
+      DTS:HeaderRowDelimiter="_x000D__x000A_"
+      DTS:ColumnNamesInFirstDataRow="True"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x0022_"
+      DTS:CodePage="1252"
+      DTS:ConnectionString="E:\source_files\TROY\2017\dstrpw_2017.csv">
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="11"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DISTRIBUTIONKEY"
+          DTS:DTSID="{91B4012F-40CE-45B9-AB6C-96BC76F7E743}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="11"
+          DTS:TextQualified="True"
+          DTS:ObjectName="PROCESSKEY"
+          DTS:DTSID="{1097CF48-79E5-4FE0-9822-64EACCF152D5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="11"
+          DTS:TextQualified="True"
+          DTS:ObjectName="REPORTKEY"
+          DTS:DTSID="{9345A9B7-077B-4C75-8195-04227DCA03E8}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="11"
+          DTS:TextQualified="True"
+          DTS:ObjectName="REPORTROWKEY"
+          DTS:DTSID="{6E0E2AE6-91AD-4F0F-9E9A-0789148634CE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="11"
+          DTS:TextQualified="True"
+          DTS:ObjectName="LOCALPRODKEY"
+          DTS:DTSID="{0DAB798C-EFFB-4CF4-ADF4-85C680222885}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:MaximumWidth="3"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="PRODUCTIONTYPE"
+          DTS:DTSID="{CE056F90-4720-43EA-9685-17F60D6C8A92}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:MaximumWidth="60"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="PRODUCTIONNAME"
+          DTS:DTSID="{7623E608-1C88-4350-8D5A-ACF1F95C7C49}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000D__x000A_"
+          DTS:DataType="131"
+          DTS:DataPrecision="11"
+          DTS:TextQualified="True"
+          DTS:ObjectName="TOTALMUSICDURATION"
+          DTS:DTSID="{113D920E-E923-4F3A-BA1E-E5A8F691A20C}"
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

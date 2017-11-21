@@ -1,0 +1,91 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Flat File DSTIPB"
+  DTS:DTSID="{2015E4B2-4599-4686-A82F-808123A0A2B8}"
+  DTS:CreationName="FLATFILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="1053"
+      DTS:HeaderRowDelimiter="_x000D__x000A_"
+      DTS:ColumnNamesInFirstDataRow="True"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x0022_"
+      DTS:CodePage="1252"
+      DTS:ConnectionString="C:\source_files\TROY\2017\dstipb_2017.csv">
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="11"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DISTRIBUTIONKEY"
+          DTS:DTSID="{732FB0A8-B7CA-45F6-8944-66E650EBC231}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="11"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ICEIPBASEKEY"
+          DTS:DTSID="{ACB6E43D-CE6C-4F3E-A208-AE97EB76F08F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="LOCALSOCIETYAFFNBR"
+          DTS:DTSID="{696A7146-48DE-48C4-8F52-6235CC976B9E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="7"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DATEOFDEATH"
+          DTS:DTSID="{B803A866-C489-4120-AC45-69A085447491}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:MaximumWidth="3"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="CURRENTSTATUS"
+          DTS:DTSID="{3AAE550E-D40E-483B-B7DD-11F9C9470BC9}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:MaximumWidth="90"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="IPBNAME"
+          DTS:DTSID="{7E6028F8-C279-4EC5-ACD8-FA7B9700020F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:MaximumWidth="45"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="IPBFIRSTNAME"
+          DTS:DTSID="{1693BE30-4F94-43B2-9ECD-5F5DAF610BEE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000D__x000A_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="LOVALMEMBERRESERVE"
+          DTS:DTSID="{F9596E10-AE9D-491E-A240-28B7D057913C}"
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Flat File DSTMDA 1"
+  DTS:DTSID="{CC1CCE24-4E69-4B43-B615-FBABA3BBAF53}"
+  DTS:CreationName="FLATFILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="1033"
+      DTS:HeaderRowDelimiter="_x000D__x000A_"
+      DTS:ColumnNamesInFirstDataRow="True"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x0022_"
+      DTS:CodePage="1252"
+      DTS:ConnectionString="E:\source_files\TROY\2017\dstmda_2017.csv">
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="11"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DISTRIBUTIONKEY"
+          DTS:DTSID="{851271F7-C85F-4891-A5D5-74B7CEE6A613}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="14"
+          DTS:DataScale="3"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DISTRIBUTIONAMOUNT"
+          DTS:DTSID="{E3A0303C-8349-4F2B-AFED-106640AEFE42}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="14"
+          DTS:DataScale="3"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DEDUCTIONAMOUNT"
+          DTS:DTSID="{5973B413-80E7-4BE0-B26A-C877ADC7B4BF}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="7"
+          DTS:DataScale="4"
+          DTS:TextQualified="True"
+          DTS:ObjectName="PERCENT"
+          DTS:DTSID="{3850DFDC-3AEB-44FB-A50D-110B7AF98352}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="3"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DEDUCTIONTYPE"
+          DTS:DTSID="{51D2FDDD-92A6-4D2E-9EE0-95B5788D3292}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000D__x000A_"
+          DTS:DataType="131"
+          DTS:DataPrecision="14"
+          DTS:DataScale="3"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DEDUCTIONAMOUNTMAN"
+          DTS:DTSID="{ACD224C9-AB06-49C8-9953-410BE2E9CFF5}"
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

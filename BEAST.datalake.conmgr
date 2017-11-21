@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="BEAST.datalake"
+  DTS:DTSID="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=BEAST;User ID=sa;Initial Catalog=datalake;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbmQ/igqukk+e5g6890CEpwAAAAACAAAAAAAQZgAAAAEAACAAAACZ7u7wNQcd40uioqukMGBQg7fwY1fhBODwWABouzqeywAAAAAOgAAAAAIAACAAAADtNN7RQPgKSFTD0OCBUpLlyxyJ5LClmO6gf4tvXF8XDIAAAABqhaWykDBLCTqG++mReTUUk4/QMqv2xOqFRcjhUN1xYenhdyPeTkxzpNLPs0jyDhiOkQobD/U8oO/Rl9LDV6KvqZRPFupsW/wuyol1HWwbcp/NCTD/Xsk2sjhEfPwq+/QlIqRZPnfEN7TX59vaz5ccOnvtVV2eBpUc0hzbPnKOT0AAAACT+XwC4n4Wv4xfUIIv6iSk3jJs8U3omYQlOFMyTU61z6zj8m6TmFHECWSaiAZf+nYfBGEu4Nc+AKhHWVY6RonN</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

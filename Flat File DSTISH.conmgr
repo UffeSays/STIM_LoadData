@@ -1,0 +1,222 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Flat File DSTISH"
+  DTS:DTSID="{9ED93A49-2132-438C-A69D-D9E8FA1C6BEC}"
+  DTS:CreationName="FLATFILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="1033"
+      DTS:HeaderRowDelimiter="_x000D__x000A_"
+      DTS:ColumnNamesInFirstDataRow="True"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x0022_"
+      DTS:CodePage="1252"
+      DTS:ConnectionString="E:\source_files\TROY\2017\dstish_2017.csv">
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="11"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DISTRIBUTIONKEY"
+          DTS:DTSID="{794A790A-7188-4584-B756-256095035DF6}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="11"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ICEWORKKEY"
+          DTS:DTSID="{D1BDE1F3-69DD-432D-9A7C-4F590F2A1851}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="5"
+          DTS:TextQualified="True"
+          DTS:ObjectName="USAGEKEY"
+          DTS:DTSID="{FCF7CC0C-8EE7-4F35-A11A-30CF4C2E00B5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="11"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ICEIPNAMEKEY"
+          DTS:DTSID="{6EA0B9AA-F00D-4EE9-AE04-E2C949D3AFD5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="CAECODE"
+          DTS:DTSID="{3961A710-170A-4ACE-AB3E-95C6FB284A39}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="11"
+          DTS:TextQualified="True"
+          DTS:ObjectName="CAR"
+          DTS:DTSID="{BC421605-4620-417A-AB23-2DDA9F701204}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="11"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ORIGINALAGREEMENTKEY"
+          DTS:DTSID="{7115F0C3-12D6-41B9-BA61-E5A449AA75B4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="11"
+          DTS:TextQualified="True"
+          DTS:ObjectName="PUBAGREEMENTKEY"
+          DTS:DTSID="{CE68A1D1-73C3-4715-9AE2-2930E51C9AA5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="5"
+          DTS:DataScale="2"
+          DTS:TextQualified="True"
+          DTS:ObjectName="MECHANICALSHARE"
+          DTS:DTSID="{E4FAAD6D-A7F4-4E50-82CB-5B8D90433BB8}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:MaximumWidth="3"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="MECHCODEUSAGEDATE"
+          DTS:DTSID="{AE0D1517-D859-47AD-9626-97125E24D798}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:MaximumWidth="3"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="MECHCODEDISTRDATE"
+          DTS:DTSID="{44931454-8E95-4FAD-88D8-A2F0CFA9640C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="5"
+          DTS:DataScale="2"
+          DTS:TextQualified="True"
+          DTS:ObjectName="PERFORMANCESHARE"
+          DTS:DTSID="{703244AE-5E65-42E4-9043-7F199848DAB5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:MaximumWidth="3"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="PERFCODEUSAGEDATE"
+          DTS:DTSID="{4DDFEBCC-B14E-4832-B6BC-60F8D6804396}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:MaximumWidth="3"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="PERFCODEDISTRDATE"
+          DTS:DTSID="{B8FE1467-5465-42DB-855F-69B84AE8A188}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="5"
+          DTS:DataScale="2"
+          DTS:TextQualified="True"
+          DTS:ObjectName="MECHANICALSHAREPAID"
+          DTS:DTSID="{2F834319-6211-42BF-934E-1DD845623D78}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="5"
+          DTS:DataScale="2"
+          DTS:TextQualified="True"
+          DTS:ObjectName="PERFORMANCESHAREPAID"
+          DTS:DTSID="{A6FCD3AE-F023-42A4-846D-88C26CFD3D82}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="2"
+          DTS:TextQualified="True"
+          DTS:ObjectName="CLAIMANTFLAG"
+          DTS:DTSID="{ED5C89DD-8D3D-4561-AFBF-CFEF40AAE939}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="COUNTERCLAIMSTATUS"
+          DTS:DTSID="{751F3807-A555-4BA6-977A-252A10426BC7}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:MaximumWidth="3"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DISPUTEFLAG"
+          DTS:DTSID="{100F2BA7-9A7F-4149-B1B9-EFBDEC911EEC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="131"
+          DTS:DataPrecision="5"
+          DTS:TextQualified="True"
+          DTS:ObjectName="MANDATEID"
+          DTS:DTSID="{E1A80718-D59C-4743-85D4-604223450577}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="RESERVEINDICATOR"
+          DTS:DTSID="{6377F4A5-5F12-4B37-B271-07CE360C1C6C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000D__x000A_"
+          DTS:DataType="131"
+          DTS:DataPrecision="5"
+          DTS:TextQualified="True"
+          DTS:ObjectName="SEQKEY"
+          DTS:DTSID="{FB84A64D-6C7A-493D-89AE-4CAC7F1A65D1}"
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
