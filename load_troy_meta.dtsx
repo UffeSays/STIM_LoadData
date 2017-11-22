@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="BI-TEST"
   DTS:CreatorName="BI-TEST\Administrator"
-  DTS:DTSID="{82456E01-8881-405F-9CD2-F9346AA7095E}"
+  DTS:DTSID="{46103347-6414-4634-8982-33B9AF1FAE89}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="14.0.0800.60"
   DTS:LocaleID="1033"
-  DTS:ObjectName="load_data"
+  DTS:ObjectName="load_troy_meta"
   DTS:PackageType="5"
-  DTS:VersionBuild="175"
-  DTS:VersionGUID="{CF8BA0B3-1072-4BD2-B8BF-6AFF195760E0}">
+  DTS:VersionBuild="176"
+  DTS:VersionGUID="{49C514B9-64A4-4A92-9281-B6097EAA9C66}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -9724,6 +9724,14 @@
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="177,42"
+          Id="Package\create table dinatnpf"
+          TopLeft="19,1037" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\create table dinminpf"
+          TopLeft="18,1121" />
+        <NodeLayout
           Size="183,42"
           Id="Package\create table dstasc"
           TopLeft="20,311" />
@@ -9764,6 +9772,18 @@
           Id="Package\create table dstwot"
           TopLeft="20,878.5" />
         <NodeLayout
+          Size="182,42"
+          Id="Package\create table mdlmdlpf"
+          TopLeft="18,963" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Load dinatnpf"
+          TopLeft="271,1038" />
+        <NodeLayout
+          Size="146,42"
+          Id="Package\Load dinminpf"
+          TopLeft="270,1122" />
+        <NodeLayout
           Size="183,42"
           Id="Package\Load dstasc"
           TopLeft="272,313" />
@@ -9803,6 +9823,10 @@
           Size="183,42"
           Id="Package\Load dstwot"
           TopLeft="272,879.5" />
+        <NodeLayout
+          Size="149,42"
+          Id="Package\Load mdlmdlpf"
+          TopLeft="270,964" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="363.5,167">
@@ -10072,6 +10096,174 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 13 1]"
+          TopLeft="200,984.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="70,0"
+              Start="0,0"
+              End="62.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="62.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 13 1 1]"
+          TopLeft="196,1058.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="75,0"
+              Start="0,0"
+              End="67.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="67.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 13 1 2]"
+          TopLeft="197,1142.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="73,0"
+              Start="0,0"
+              End="65.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="65.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 14]"
+          TopLeft="363.5,921.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-254.5,41.5"
+              Start="0,0"
+              End="-254.5,34">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.75"
+                    Point2="0,20.75"
+                    Point3="-4,20.75" />
+                  <mssgle:LineSegment
+                    End="-250.5,20.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-250.5,20.75"
+                    Point2="-254.5,20.75"
+                    Point3="-254.5,24.75" />
+                  <mssgle:LineSegment
+                    End="-254.5,34" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 15]"
+          TopLeft="344.5,1006">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-237,31"
+              Start="0,0"
+              End="-237,23.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.5"
+                    Point2="0,15.5"
+                    Point3="-4,15.5" />
+                  <mssgle:LineSegment
+                    End="-233,15.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-233,15.5"
+                    Point2="-237,15.5"
+                    Point3="-237,19.5" />
+                  <mssgle:LineSegment
+                    End="-237,23.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 16]"
+          TopLeft="343,1080">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-235.5,41"
+              Start="0,0"
+              End="-235.5,33.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.5"
+                    Point2="0,20.5"
+                    Point3="-4,20.5" />
+                  <mssgle:LineSegment
+                    End="-231.5,20.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-231.5,20.5"
+                    Point2="-235.5,20.5"
+                    Point3="-235.5,24.5" />
+                  <mssgle:LineSegment
+                    End="-235.5,33.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="189,234">
           <EdgeLayout.Curve>
@@ -10329,190 +10521,36 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Load dinatnpf">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="182,42"
-          Id="Package\create table mdlmdlpf"
-          TopLeft="18,963" />
+          Size="151,42"
+          Id="Package\Load dinatnpf\Flat File Source"
+          TopLeft="227,80" />
         <NodeLayout
-          Size="149,42"
-          Id="Package\Load mdlmdlpf"
-          TopLeft="270,964" />
+          Size="171,42"
+          Id="Package\Load dinatnpf\OLE DB Destination"
+          TopLeft="217,165" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 13 1]"
-          TopLeft="200,984.5">
+          Id="Package\Load dinatnpf.Paths[Flat File Source Output]"
+          TopLeft="302.5,122">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="70,0"
+              EndConnector="0,43"
               Start="0,0"
-              End="62.5,0">
+              End="0,35.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="62.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="177,42"
-          Id="Package\create table dinatnpf"
-          TopLeft="19,1037" />
-        <NodeLayout
-          Size="144,42"
-          Id="Package\Load dinatnpf"
-          TopLeft="271,1038" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 13 1 1]"
-          TopLeft="196,1058.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="75,0"
-              Start="0,0"
-              End="67.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="67.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="179,42"
-          Id="Package\create table dinminpf"
-          TopLeft="18,1121" />
-        <NodeLayout
-          Size="146,42"
-          Id="Package\Load dinminpf"
-          TopLeft="270,1122" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 13 1 2]"
-          TopLeft="197,1142.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="73,0"
-              Start="0,0"
-              End="65.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="65.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 14]"
-          TopLeft="363.5,921.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-254.5,41.5"
-              Start="0,0"
-              End="-254.5,34">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.75" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.75"
-                    Point2="0,20.75"
-                    Point3="-4,20.75" />
-                  <mssgle:LineSegment
-                    End="-250.5,20.75" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-250.5,20.75"
-                    Point2="-254.5,20.75"
-                    Point3="-254.5,24.75" />
-                  <mssgle:LineSegment
-                    End="-254.5,34" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 15]"
-          TopLeft="344.5,1006">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-237,31"
-              Start="0,0"
-              End="-237,23.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,11.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,11.5"
-                    Point2="0,15.5"
-                    Point3="-4,15.5" />
-                  <mssgle:LineSegment
-                    End="-233,15.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-233,15.5"
-                    Point2="-237,15.5"
-                    Point3="-237,19.5" />
-                  <mssgle:LineSegment
-                    End="-237,23.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 16]"
-          TopLeft="343,1080">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-235.5,41"
-              Start="0,0"
-              End="-235.5,33.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.5"
-                    Point2="0,20.5"
-                    Point3="-4,20.5" />
-                  <mssgle:LineSegment
-                    End="-231.5,20.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-231.5,20.5"
-                    Point2="-235.5,20.5"
-                    Point3="-235.5,24.5" />
-                  <mssgle:LineSegment
-                    End="-235.5,33.5" />
+                    End="0,35.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10523,7 +10561,71 @@
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
-  </Package>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load dinatnpf\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load dinminpf">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load dinminpf\Flat File Source"
+          TopLeft="227,80" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load dinminpf\OLE DB Destination"
+          TopLeft="218,176" />
+        <EdgeLayout
+          Id="Package\Load dinminpf.Paths[Flat File Source Output]"
+          TopLeft="303,122">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54"
+              Start="0,0"
+              End="0,46.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load dinminpf\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load dstasc">
     <LayoutInfo>
@@ -11072,108 +11174,6 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <TaskHost
-    design-time-name="Package\Load dinatnpf">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="151,42"
-          Id="Package\Load dinatnpf\Flat File Source"
-          TopLeft="227,80" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Load dinatnpf\OLE DB Destination"
-          TopLeft="217,165" />
-        <EdgeLayout
-          Id="Package\Load dinatnpf.Paths[Flat File Source Output]"
-          TopLeft="302.5,122">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,43"
-              Start="0,0"
-              End="0,35.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Load dinminpf">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="151,42"
-          Id="Package\Load dinminpf\Flat File Source"
-          TopLeft="227,80" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Load dinminpf\OLE DB Destination"
-          TopLeft="218,176" />
-        <EdgeLayout
-          Id="Package\Load dinminpf.Paths[Flat File Source Output]"
-          TopLeft="303,122">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,54"
-              Start="0,0"
-              End="0,46.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,46.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load dinatnpf\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load dinminpf\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Load mdlmdlpf\OLE DB Destination">
     <Properties>

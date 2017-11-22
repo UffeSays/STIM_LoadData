@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="BI-TEST"
   DTS:CreatorName="BI-TEST\Administrator"
-  DTS:DTSID="{EA7E2A87-A9C1-4D4C-B4EB-1AE57BFDC83D}"
+  DTS:DTSID="{353CFD43-E8D9-4DA0-BB47-51182E0BFAAF}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="14.0.0800.60"
   DTS:LocaleID="1053"
-  DTS:ObjectName="load_data"
+  DTS:ObjectName="load_troy_data"
   DTS:PackageType="5"
-  DTS:VersionBuild="152"
-  DTS:VersionGUID="{F73389EF-BDE0-43A4-A086-85F81A858125}">
+  DTS:VersionBuild="153"
+  DTS:VersionGUID="{3419DA3A-CC06-4140-932E-3EA23600BAA1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>

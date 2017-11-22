@@ -11,10 +11,545 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_norddis"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{7D276EDF-944B-43A7-B15F-B4D37C6914F8}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{A0615B00-FFE6-443C-870A-62C978049521}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File DINUHSPF]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{789AB92A-3730-4349-B8CF-48862CA203A5}"
+      DTS:ObjectName="Flat File DINUHSPF">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\NORDDIS\DINDTAS.DINUHSPF.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="9"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USHDNR"
+              DTS:DTSID="{EB7D9F2D-4ECE-4221-954C-B8A2FB41E2C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USATNR"
+              DTS:DTSID="{5A995AC0-22F6-488A-9EBF-8569C1873705}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="9"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USPLNR"
+              DTS:DTSID="{50A4A281-132D-4A3F-806E-000D5ADB3EBD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USDAHD"
+              DTS:DTSID="{160A6EC0-9D03-4437-A22B-0D064EC0411A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USTPAH"
+              DTS:DTSID="{1B5379FD-3040-49E5-95B5-719DC24FB635}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USHTYP"
+              DTS:DTSID="{5B20450D-9DBB-4691-837C-EE7C72B0099F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USMNRA"
+              DTS:DTSID="{A79F8689-A6AC-43B9-BFEF-2B2CA5FB8227}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USMNMA"
+              DTS:DTSID="{6F506C3D-554C-40CC-B222-E2ED3D033596}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USMNRE"
+              DTS:DTSID="{526D16A1-E619-4382-B8B5-3D8762C20982}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USMNME"
+              DTS:DTSID="{F9F7765E-CB1A-43FB-8916-C6CDC6EAAA7D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USMDTY"
+              DTS:DTSID="{5B9665B8-DF49-4849-95FB-2FD40A16890B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USMNRB"
+              DTS:DTSID="{7735106C-4BE8-48E2-B57D-41CB90517B00}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USMNMB"
+              DTS:DTSID="{A9EA10AB-163C-4B1B-B5D7-91B1E3790A3A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USSLSK"
+              DTS:DTSID="{984061D1-09E4-47B4-A3B5-D9F60D297BAB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USMGNM"
+              DTS:DTSID="{49D6955D-DC5A-410E-9FF3-324631090B74}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USUTLA"
+              DTS:DTSID="{C6A3E1F7-39B7-4936-9380-0696B6343544}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USLAND"
+              DTS:DTSID="{4A816070-BC38-4482-8688-CBA948B10FE6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USSAKR"
+              DTS:DTSID="{CE7CE945-C318-49B4-AF2B-F335BEF04BC2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USAOID"
+              DTS:DTSID="{F6E6BFC7-9497-4EBA-B8B6-C1183198942E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USKOID"
+              DTS:DTSID="{0E67765D-DEA5-4A4E-B8DD-0C90580C2375}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USSGID"
+              DTS:DTSID="{C1F31E55-E2FB-44C2-93C2-234F2643A441}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USFLNR"
+              DTS:DTSID="{9BDFABE3-DA19-4D5A-8098-05C383329AA8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USFTIT"
+              DTS:DTSID="{062FE99A-25B6-4177-B006-177C31F4642F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USFTIE"
+              DTS:DTSID="{0F1A01D5-1123-4F15-9FCF-A85EAD376952}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USFLND"
+              DTS:DTSID="{8355BCCD-F325-4204-A7A6-58F4D3FEDD78}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USFTID"
+              DTS:DTSID="{BEC8F649-3305-4305-A194-09816BB4E63E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USVANR"
+              DTS:DTSID="{103E33FE-037E-48E2-B8DF-35EFC9DF419C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USVANM"
+              DTS:DTSID="{9A106531-3055-4E63-8638-BB229D677BBC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USVATP"
+              DTS:DTSID="{664CE8F3-A913-42AE-A199-2AF762D79A6B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USVGNM"
+              DTS:DTSID="{1327A663-6B96-4229-BC2F-77BC2E477A9B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USVGNR"
+              DTS:DTSID="{835C57DA-B5FF-41DC-A57D-ED5C403FA539}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USVKNR"
+              DTS:DTSID="{1BD11239-FC70-4917-8407-88F45D6732F0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USVTIT"
+              DTS:DTSID="{EE0D268D-052C-490B-BBBE-E6E173239906}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USVTIO"
+              DTS:DTSID="{5E92B792-19F2-494B-8CCF-E2F72F69BC37}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USVGRD"
+              DTS:DTSID="{FDDA40F7-DC8D-42D5-859A-CC031BD75C25}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USVAND"
+              DTS:DTSID="{566A5464-FEDD-498C-A161-B5A8F0CA4250}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USVANV"
+              DTS:DTSID="{614E9C0A-54A8-4C58-B2A6-DC9235ACF923}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USWSTS"
+              DTS:DTSID="{D92A9D08-ADDD-4D2B-86B1-63CBF1DED878}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USEBEL"
+              DTS:DTSID="{444C48B9-4A40-4795-8FBF-E94C91297AEF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USRPNR"
+              DTS:DTSID="{46C962AA-F329-4940-8767-F44007FBAE10}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USUSLK"
+              DTS:DTSID="{D2FAC454-C205-4B59-8BA8-12A142966617}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USDETA"
+              DTS:DTSID="{D1AF937D-E22F-4A23-8F08-D734DF120C4D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USOTNR"
+              DTS:DTSID="{4B0A6BB2-BC72-4918-B35E-FDAB4ED33C8C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USHDST"
+              DTS:DTSID="{3B3AF667-565B-4787-A96B-F0468F2B7FAF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USLPNR"
+              DTS:DTSID="{531BBDED-F6DA-41F8-89E0-858367561C86}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USRAPO"
+              DTS:DTSID="{4D3E9DD4-EC82-47CC-9B20-0D5DB6BD8E92}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USE4DC"
+              DTS:DTSID="{FB203077-9F0B-415F-A39E-9A35DDF53C6A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USFDAT"
+              DTS:DTSID="{7DA775F2-DC46-4099-B422-922CFC3C8E45}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USTDAT"
+              DTS:DTSID="{71658783-7B42-4A92-AE53-A9ED39972914}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USCAEK"
+              DTS:DTSID="{802737E7-DB21-4990-924B-C87313AA132B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USIKEY"
+              DTS:DTSID="{9435000A-38D6-43DB-A440-2F0C69053998}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USNTYP"
+              DTS:DTSID="{AC1B4686-9B3D-4E4D-96C5-B61DA41A986E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USSPKD"
+              DTS:DTSID="{A6948963-4E98-42FF-8F40-BAB5E59AD0F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CRTDTE"
+              DTS:DTSID="{17199F95-0DD2-4A74-AD3D-A1FE0E80E0EB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CRTUSR"
+              DTS:DTSID="{7CBA1D98-2462-42B1-B961-68284BF8B7B7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CHGDTE"
+              DTS:DTSID="{BE4581CA-B40D-4FA4-A03D-3FF30081960B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CHGUSR"
+              DTS:DTSID="{3CDF6F20-1A96-4C37-A296-563DD0272D02}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -73,8 +608,8 @@
               <connections>
                 <connection
                   refId="Package\Load dinuhspf\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{AFD589FE-E0D1-46D0-A974-774BF25B776D}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File DSTPDT 1]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File DINUHSPF]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File DINUHSPF]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -83,13 +618,13 @@
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONTYPE]"
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USHDNR]"
                       dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEDUCTIONTYPE]"
-                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONTYPE]"
-                      name="DEDUCTIONTYPE"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USHDNR]"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USHDNR]"
+                      name="USHDNR"
                       precision="9"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -104,36 +639,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DESCRIPTION]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DESCRIPTION]"
-                      length="60"
-                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DESCRIPTION]"
-                      name="DESCRIPTION"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONRULE]"
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USATNR]"
                       dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEDUCTIONRULE]"
-                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONRULE]"
-                      name="DEDUCTIONRULE"
-                      precision="4"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USATNR]"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USATNR]"
+                      name="USATNR"
+                      precision="7"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -147,15 +660,36 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONTYPECODE]"
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USPLNR]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USPLNR]"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USPLNR]"
+                      name="USPLNR"
+                      precision="9"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USDAHD]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEDUCTIONTYPECODE]"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USDAHD]"
                       length="1"
-                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONTYPECODE]"
-                      name="DEDUCTIONTYPECODE"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USDAHD]"
+                      name="USDAHD"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -169,37 +703,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONPERCENTAGE]"
-                      dataType="numeric"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEDUCTIONPERCENTAGE]"
-                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONPERCENTAGE]"
-                      name="DEDUCTIONPERCENTAGE"
-                      precision="5"
-                      scale="2"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDBY]"
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USTPAH]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDBY]"
-                      length="10"
-                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDBY]"
-                      name="CREATEDBY"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USTPAH]"
+                      length="2"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USTPAH]"
+                      name="USTPAH"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -213,35 +725,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDDAT]"
-                      dataType="dbTime2"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDDAT]"
-                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDDAT]"
-                      name="CREATEDDAT"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[MODIFIEDBY]"
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USHTYP]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MODIFIEDBY]"
-                      length="10"
-                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[MODIFIEDBY]"
-                      name="MODIFIEDBY"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USHTYP]"
+                      length="2"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USHTYP]"
+                      name="USHTYP"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -255,13 +747,1115 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[MODIFIEDDT]"
-                      dataType="dbTime2"
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNRA]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MODIFIEDDT]"
-                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[MODIFIEDDT]"
-                      name="MODIFIEDDT"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMNRA]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNRA]"
+                      name="USMNRA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNMA]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMNMA]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNMA]"
+                      name="USMNMA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNRE]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMNRE]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNRE]"
+                      name="USMNRE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNME]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMNME]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNME]"
+                      name="USMNME"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMDTY]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMDTY]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMDTY]"
+                      name="USMDTY"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNRB]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMNRB]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNRB]"
+                      name="USMNRB"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNMB]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMNMB]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNMB]"
+                      name="USMNMB"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USSLSK]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USSLSK]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USSLSK]"
+                      name="USSLSK"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMGNM]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMGNM]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMGNM]"
+                      name="USMGNM"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USUTLA]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USUTLA]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USUTLA]"
+                      name="USUTLA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USLAND]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USLAND]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USLAND]"
+                      name="USLAND"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USSAKR]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USSAKR]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USSAKR]"
+                      name="USSAKR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USAOID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USAOID]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USAOID]"
+                      name="USAOID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USKOID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USKOID]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USKOID]"
+                      name="USKOID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USSGID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USSGID]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USSGID]"
+                      name="USSGID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFLNR]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USFLNR]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFLNR]"
+                      name="USFLNR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFTIT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USFTIT]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFTIT]"
+                      name="USFTIT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFTIE]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USFTIE]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFTIE]"
+                      name="USFTIE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFLND]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USFLND]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFLND]"
+                      name="USFLND"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFTID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USFTID]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFTID]"
+                      name="USFTID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVANR]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVANR]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVANR]"
+                      name="USVANR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVANM]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVANM]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVANM]"
+                      name="USVANM"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVATP]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVATP]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVATP]"
+                      name="USVATP"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVGNM]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVGNM]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVGNM]"
+                      name="USVGNM"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVGNR]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVGNR]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVGNR]"
+                      name="USVGNR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVKNR]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVKNR]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVKNR]"
+                      name="USVKNR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVTIT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVTIT]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVTIT]"
+                      name="USVTIT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVTIO]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVTIO]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVTIO]"
+                      name="USVTIO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVGRD]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVGRD]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVGRD]"
+                      name="USVGRD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVAND]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVAND]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVAND]"
+                      name="USVAND"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVANV]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVANV]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVANV]"
+                      name="USVANV"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USWSTS]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USWSTS]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USWSTS]"
+                      name="USWSTS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USEBEL]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USEBEL]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USEBEL]"
+                      name="USEBEL"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USRPNR]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USRPNR]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USRPNR]"
+                      name="USRPNR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USUSLK]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USUSLK]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USUSLK]"
+                      name="USUSLK"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USDETA]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USDETA]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USDETA]"
+                      name="USDETA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USOTNR]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USOTNR]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USOTNR]"
+                      name="USOTNR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USHDST]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USHDST]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USHDST]"
+                      name="USHDST"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USLPNR]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USLPNR]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USLPNR]"
+                      name="USLPNR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USRAPO]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USRAPO]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USRAPO]"
+                      name="USRAPO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USE4DC]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USE4DC]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USE4DC]"
+                      name="USE4DC"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFDAT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USFDAT]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFDAT]"
+                      name="USFDAT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USTDAT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USTDAT]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USTDAT]"
+                      name="USTDAT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USCAEK]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USCAEK]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USCAEK]"
+                      name="USCAEK"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USIKEY]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USIKEY]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USIKEY]"
+                      name="USIKEY"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USNTYP]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USNTYP]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USNTYP]"
+                      name="USNTYP"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USSPKD]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USSPKD]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USSPKD]"
+                      name="USSPKD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CRTDTE]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CRTDTE]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CRTDTE]"
+                      name="CRTDTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CRTUSR]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CRTUSR]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CRTUSR]"
+                      name="CRTUSR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CHGDTE]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHGDTE]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CHGDTE]"
+                      name="CHGDTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CHGUSR]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHGUSR]"
+                      length="50"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CHGUSR]"
+                      name="CHGUSR"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -278,53 +1872,344 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEDUCTIONTYPE]"
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USHDNR]"
                       dataType="numeric"
-                      name="DEDUCTIONTYPE"
+                      name="USHDNR"
                       precision="9" />
                     <externalMetadataColumn
-                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DESCRIPTION]"
-                      codePage="1252"
-                      dataType="str"
-                      length="60"
-                      name="DESCRIPTION" />
-                    <externalMetadataColumn
-                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEDUCTIONRULE]"
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USATNR]"
                       dataType="numeric"
-                      name="DEDUCTIONRULE"
-                      precision="4" />
+                      name="USATNR"
+                      precision="7" />
                     <externalMetadataColumn
-                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEDUCTIONTYPECODE]"
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USPLNR]"
+                      dataType="numeric"
+                      name="USPLNR"
+                      precision="9" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USDAHD]"
                       codePage="1252"
                       dataType="str"
                       length="1"
-                      name="DEDUCTIONTYPECODE" />
+                      name="USDAHD" />
                     <externalMetadataColumn
-                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEDUCTIONPERCENTAGE]"
-                      dataType="numeric"
-                      name="DEDUCTIONPERCENTAGE"
-                      precision="5"
-                      scale="2" />
-                    <externalMetadataColumn
-                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDBY]"
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USTPAH]"
                       codePage="1252"
                       dataType="str"
-                      length="10"
-                      name="CREATEDBY" />
+                      length="2"
+                      name="USTPAH" />
                     <externalMetadataColumn
-                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDDAT]"
-                      dataType="dbTime2"
-                      name="CREATEDDAT" />
-                    <externalMetadataColumn
-                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MODIFIEDBY]"
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USHTYP]"
                       codePage="1252"
                       dataType="str"
-                      length="10"
-                      name="MODIFIEDBY" />
+                      length="2"
+                      name="USHTYP" />
                     <externalMetadataColumn
-                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MODIFIEDDT]"
-                      dataType="dbTime2"
-                      name="MODIFIEDDT" />
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMNRA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USMNRA" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMNMA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USMNMA" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMNRE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USMNRE" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMNME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USMNME" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMDTY]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USMDTY" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMNRB]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USMNRB" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMNMB]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USMNMB" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USSLSK]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USSLSK" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMGNM]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USMGNM" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USUTLA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USUTLA" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USLAND]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USLAND" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USSAKR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USSAKR" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USAOID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USAOID" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USKOID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USKOID" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USSGID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USSGID" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USFLNR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USFLNR" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USFTIT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USFTIT" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USFTIE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USFTIE" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USFLND]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USFLND" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USFTID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USFTID" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVANR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USVANR" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVANM]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USVANM" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVATP]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USVATP" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVGNM]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USVGNM" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVGNR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USVGNR" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVKNR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USVKNR" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVTIT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USVTIT" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVTIO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USVTIO" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVGRD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USVGRD" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVAND]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USVAND" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVANV]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USVANV" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USWSTS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USWSTS" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USEBEL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USEBEL" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USRPNR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USRPNR" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USUSLK]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USUSLK" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USDETA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USDETA" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USOTNR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USOTNR" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USHDST]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USHDST" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USLPNR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USLPNR" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USRAPO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USRAPO" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USE4DC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USE4DC" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USFDAT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USFDAT" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USTDAT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USTDAT" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USCAEK]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USCAEK" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USIKEY]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USIKEY" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USNTYP]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USNTYP" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USSPKD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="USSPKD" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CRTDTE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CRTDTE" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CRTUSR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CRTUSR" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHGDTE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CHGDTE" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHGUSR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CHGUSR" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -356,231 +2241,7 @@
                 </output>
               </outputs>
             </component>
-            <component
-              refId="Package\Load dinuhspf\OLE DB Destination"
-              componentClassID="Microsoft.OLEDBDestination"
-              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-              description="OLE DB Destination"
-              name="OLE DB Destination"
-              usesDispositions="true"
-              version="4">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[tmp_dstpdt]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">3</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepIdentity">false</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                  name="FastLoadMaxInsertCommitSize">2147483647</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Load dinuhspf\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[BEAST.datalake]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input]"
-                  errorOrTruncationOperation="Insert"
-                  errorRowDisposition="FailComponent"
-                  hasSideEffects="true"
-                  name="OLE DB Destination Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEDUCTIONTYPE]"
-                      cachedDataType="numeric"
-                      cachedName="DEDUCTIONTYPE"
-                      cachedPrecision="9"
-                      externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEDUCTIONTYPE]"
-                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONTYPE]" />
-                    <inputColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DESCRIPTION]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="60"
-                      cachedName="DESCRIPTION"
-                      externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DESCRIPTION]"
-                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DESCRIPTION]" />
-                    <inputColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEDUCTIONRULE]"
-                      cachedDataType="numeric"
-                      cachedName="DEDUCTIONRULE"
-                      cachedPrecision="4"
-                      externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEDUCTIONRULE]"
-                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONRULE]" />
-                    <inputColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEDUCTIONTYPECODE]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="DEDUCTIONTYPECODE"
-                      externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEDUCTIONTYPECODE]"
-                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONTYPECODE]" />
-                    <inputColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEDUCTIONPERCENTAGE]"
-                      cachedDataType="numeric"
-                      cachedName="DEDUCTIONPERCENTAGE"
-                      cachedPrecision="5"
-                      cachedScale="2"
-                      externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEDUCTIONPERCENTAGE]"
-                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONPERCENTAGE]" />
-                    <inputColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CREATEDBY]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="CREATEDBY"
-                      externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDBY]"
-                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDBY]" />
-                    <inputColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CREATEDDAT]"
-                      cachedDataType="dbTime2"
-                      cachedName="CREATEDDAT"
-                      externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDDAT]"
-                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDDAT]" />
-                    <inputColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MODIFIEDBY]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="MODIFIEDBY"
-                      externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MODIFIEDBY]"
-                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[MODIFIEDBY]" />
-                    <inputColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MODIFIEDDT]"
-                      cachedDataType="dbTime2"
-                      cachedName="MODIFIEDDT"
-                      externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MODIFIEDDT]"
-                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[MODIFIEDDT]" />
-                  </inputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEDUCTIONTYPE]"
-                      dataType="numeric"
-                      name="DEDUCTIONTYPE"
-                      precision="9" />
-                    <externalMetadataColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DESCRIPTION]"
-                      codePage="1252"
-                      dataType="str"
-                      length="60"
-                      name="DESCRIPTION" />
-                    <externalMetadataColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEDUCTIONRULE]"
-                      dataType="numeric"
-                      name="DEDUCTIONRULE"
-                      precision="4" />
-                    <externalMetadataColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEDUCTIONTYPECODE]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      name="DEDUCTIONTYPECODE" />
-                    <externalMetadataColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEDUCTIONPERCENTAGE]"
-                      dataType="numeric"
-                      name="DEDUCTIONPERCENTAGE"
-                      precision="5"
-                      scale="2" />
-                    <externalMetadataColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDBY]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      name="CREATEDBY" />
-                    <externalMetadataColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDDAT]"
-                      dataType="dbTime2"
-                      name="CREATEDDAT" />
-                    <externalMetadataColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MODIFIEDBY]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      name="MODIFIEDBY" />
-                    <externalMetadataColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MODIFIEDDT]"
-                      dataType="dbTime2"
-                      name="MODIFIEDDT" />
-                  </externalMetadataColumns>
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Load dinuhspf\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Load dinuhspf\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Load dinuhspf\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Load dinuhspf\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
           </components>
-          <paths>
-            <path
-              refId="Package\Load dinuhspf.Paths[Flat File Source Output]"
-              endId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input]"
-              name="Flat File Source Output"
-              startId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output]" />
-          </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
@@ -644,39 +2305,11 @@
     design-time-name="Package\Load dinuhspf">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
           Size="151,42"
           Id="Package\Load dinuhspf\Flat File Source"
           TopLeft="192,68" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Load dinuhspf\OLE DB Destination"
-          TopLeft="181,145" />
-        <EdgeLayout
-          Id="Package\Load dinuhspf.Paths[Flat File Source Output]"
-          TopLeft="267,110">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,35"
-              Start="0,0"
-              End="0,27.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>

@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="BI-TEST"
   DTS:CreatorName="BI-TEST\Administrator"
-  DTS:DTSID="{30A6832D-9B4E-4ABF-AC51-0AF369AB2C39}"
+  DTS:DTSID="{425593DE-3EF4-4751-A572-1016771FC50D}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="14.0.0800.60"
   DTS:LocaleID="1053"
-  DTS:ObjectName="load_data"
+  DTS:ObjectName="load_gem"
   DTS:PackageType="5"
-  DTS:VersionBuild="100"
-  DTS:VersionGUID="{01817DF4-3123-4B66-B85D-9465762DDEAB}">
+  DTS:VersionBuild="101"
+  DTS:VersionGUID="{AC4413EE-86A6-49C5-8301-BE2A71245B4B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -130,8 +130,8 @@
               <connections>
                 <connection
                   refId="Package\Load gemado\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{EFD96C5C-6220-4661-AC04-EB75633D5AF3}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File GEMADO]"
+                  connectionManagerID="{EFD96C5C-6220-4661-AC04-EB75633D5AF3}:invalid"
+                  connectionManagerRefId="{EFD96C5C-6220-4661-AC04-EB75633D5AF3}:invalid"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
