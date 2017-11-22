@@ -1,0 +1,684 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="11/22/2017 2:43:20 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="BEAST"
+  DTS:CreatorName="BEAST\uffe"
+  DTS:DTSID="{306A6B49-53CB-4040-A726-435D7C4C1865}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.0800.60"
+  DTS:LocaleID="1053"
+  DTS:ObjectName="load_norddis"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{7D276EDF-944B-43A7-B15F-B4D37C6914F8}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\create table dinuhspf"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{e6a86539-5d3b-4db9-8913-fd33310c20b0}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="create table dinuhspf"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+          SQLTask:BypassPrepare="False"
+          SQLTask:SqlStatementSource="if OBJECT_ID('dbo.tmp_dstpdt','U') IS not NULL drop table tmp_dstpdt&#xA;CREATE TABLE [tmp_dstpdt] (&#xA;    [DEDUCTIONTYPE] numeric(9,0),&#xA;    [DESCRIPTION] varchar(60),&#xA;    [DEDUCTIONRULE] numeric(4,0),&#xA;    [DEDUCTIONTYPECODE] varchar(1),&#xA;    [DEDUCTIONPERCENTAGE] numeric(5,2),&#xA;    [CREATEDBY] varchar(10),&#xA;    [CREATEDDAT] time(0),&#xA;    [MODIFIEDBY] varchar(10),&#xA;    [MODIFIEDDT] time(0)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load dinuhspf"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{2f9df24d-db76-474b-856e-77e084097ef1}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load dinuhspf"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load dinuhspf\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load dinuhspf\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="{AFD589FE-E0D1-46D0-A974-774BF25B776D}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Flat File DSTPDT 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONTYPE]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEDUCTIONTYPE]"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONTYPE]"
+                      name="DEDUCTIONTYPE"
+                      precision="9"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DESCRIPTION]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DESCRIPTION]"
+                      length="60"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DESCRIPTION]"
+                      name="DESCRIPTION"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONRULE]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEDUCTIONRULE]"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONRULE]"
+                      name="DEDUCTIONRULE"
+                      precision="4"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONTYPECODE]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEDUCTIONTYPECODE]"
+                      length="1"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONTYPECODE]"
+                      name="DEDUCTIONTYPECODE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONPERCENTAGE]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEDUCTIONPERCENTAGE]"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONPERCENTAGE]"
+                      name="DEDUCTIONPERCENTAGE"
+                      precision="5"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDBY]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDBY]"
+                      length="10"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDBY]"
+                      name="CREATEDBY"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDDAT]"
+                      dataType="dbTime2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDDAT]"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDDAT]"
+                      name="CREATEDDAT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[MODIFIEDBY]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MODIFIEDBY]"
+                      length="10"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[MODIFIEDBY]"
+                      name="MODIFIEDBY"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[MODIFIEDDT]"
+                      dataType="dbTime2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MODIFIEDDT]"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[MODIFIEDDT]"
+                      name="MODIFIEDDT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEDUCTIONTYPE]"
+                      dataType="numeric"
+                      name="DEDUCTIONTYPE"
+                      precision="9" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DESCRIPTION]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      name="DESCRIPTION" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEDUCTIONRULE]"
+                      dataType="numeric"
+                      name="DEDUCTIONRULE"
+                      precision="4" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEDUCTIONTYPECODE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="DEDUCTIONTYPECODE" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEDUCTIONPERCENTAGE]"
+                      dataType="numeric"
+                      name="DEDUCTIONPERCENTAGE"
+                      precision="5"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDBY]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="CREATEDBY" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDDAT]"
+                      dataType="dbTime2"
+                      name="CREATEDDAT" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MODIFIEDBY]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="MODIFIEDBY" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MODIFIEDDT]"
+                      dataType="dbTime2"
+                      name="MODIFIEDDT" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load dinuhspf\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[tmp_dstpdt]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load dinuhspf\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[BEAST.datalake]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEDUCTIONTYPE]"
+                      cachedDataType="numeric"
+                      cachedName="DEDUCTIONTYPE"
+                      cachedPrecision="9"
+                      externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEDUCTIONTYPE]"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONTYPE]" />
+                    <inputColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DESCRIPTION]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="60"
+                      cachedName="DESCRIPTION"
+                      externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DESCRIPTION]"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DESCRIPTION]" />
+                    <inputColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEDUCTIONRULE]"
+                      cachedDataType="numeric"
+                      cachedName="DEDUCTIONRULE"
+                      cachedPrecision="4"
+                      externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEDUCTIONRULE]"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONRULE]" />
+                    <inputColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEDUCTIONTYPECODE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="DEDUCTIONTYPECODE"
+                      externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEDUCTIONTYPECODE]"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONTYPECODE]" />
+                    <inputColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEDUCTIONPERCENTAGE]"
+                      cachedDataType="numeric"
+                      cachedName="DEDUCTIONPERCENTAGE"
+                      cachedPrecision="5"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEDUCTIONPERCENTAGE]"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[DEDUCTIONPERCENTAGE]" />
+                    <inputColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CREATEDBY]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="CREATEDBY"
+                      externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDBY]"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDBY]" />
+                    <inputColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CREATEDDAT]"
+                      cachedDataType="dbTime2"
+                      cachedName="CREATEDDAT"
+                      externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDDAT]"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDDAT]" />
+                    <inputColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MODIFIEDBY]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="MODIFIEDBY"
+                      externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MODIFIEDBY]"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[MODIFIEDBY]" />
+                    <inputColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MODIFIEDDT]"
+                      cachedDataType="dbTime2"
+                      cachedName="MODIFIEDDT"
+                      externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MODIFIEDDT]"
+                      lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[MODIFIEDDT]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEDUCTIONTYPE]"
+                      dataType="numeric"
+                      name="DEDUCTIONTYPE"
+                      precision="9" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DESCRIPTION]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      name="DESCRIPTION" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEDUCTIONRULE]"
+                      dataType="numeric"
+                      name="DEDUCTIONRULE"
+                      precision="4" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEDUCTIONTYPECODE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="DEDUCTIONTYPECODE" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEDUCTIONPERCENTAGE]"
+                      dataType="numeric"
+                      name="DEDUCTIONPERCENTAGE"
+                      precision="5"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDBY]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="CREATEDBY" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDDAT]"
+                      dataType="dbTime2"
+                      name="CREATEDDAT" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MODIFIEDBY]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="MODIFIEDBY" />
+                    <externalMetadataColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MODIFIEDDT]"
+                      dataType="dbTime2"
+                      name="MODIFIEDDT" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load dinuhspf\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load dinuhspf\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load dinuhspf\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load dinuhspf\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load dinuhspf.Paths[Flat File Source Output]"
+              endId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 11 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{6c1f1150-056c-406c-833b-2ffaa231da57}"
+      DTS:From="Package\create table dinuhspf"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 11 1"
+      DTS:To="Package\Load dinuhspf" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="178,42"
+          Id="Package\create table dinuhspf"
+          TopLeft="60,60" />
+        <NodeLayout
+          Size="145,42"
+          Id="Package\Load dinuhspf"
+          TopLeft="312,62" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 11 1]"
+          TopLeft="238,82">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="74,0"
+              Start="0,0"
+              End="66.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="66.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Load dinuhspf">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load dinuhspf\Flat File Source"
+          TopLeft="192,68" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load dinuhspf\OLE DB Destination"
+          TopLeft="181,145" />
+        <EdgeLayout
+          Id="Package\Load dinuhspf.Paths[Flat File Source Output]"
+          TopLeft="267,110">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35"
+              Start="0,0"
+              End="0,27.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
