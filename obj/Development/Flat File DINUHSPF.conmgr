@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="Flat File DINUHSPF"
   DTS:DTSID="{789AB92A-3730-4349-B8CF-48862CA203A5}"

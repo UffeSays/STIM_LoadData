@@ -2,23 +2,33 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>load_data_2017</Name>
-    <LastWriteTime>2017-11-16T10:50:03.9643076Z</LastWriteTime>
+    <LastWriteTime>2017-11-30T14:48:33.0046194Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>load_data_main (1).dtsx</Name>
-      <LastWriteTime>2017-11-16T13:10:06.4390122Z</LastWriteTime>
+      <Name>load_norddis.dtsx</Name>
+      <LastWriteTime>2017-11-30T14:01:13.1428884Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>load_data_meta (1).dtsx</Name>
-      <LastWriteTime>2017-11-16T13:09:54.8790934Z</LastWriteTime>
+      <Name>load_gem.dtsx</Name>
+      <LastWriteTime>2017-11-22T14:07:11.5055741Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>load_data_gemxxx (1).dtsx</Name>
-      <LastWriteTime>2017-11-16T13:10:00.8065902Z</LastWriteTime>
+      <Name>load_troy_data.dtsx</Name>
+      <LastWriteTime>2017-11-22T14:07:11.7711523Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>load_troy_meta.dtsx</Name>
+      <LastWriteTime>2017-11-22T14:07:11.583687Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>load_matchbox.dtsx</Name>
+      <LastWriteTime>2017-11-30T14:48:32.8705818Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
