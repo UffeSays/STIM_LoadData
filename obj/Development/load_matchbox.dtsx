@@ -11,806 +11,49 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_matchbox"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{3454D938-484A-4569-AB8B-712E749E06AC}">
+  DTS:VersionBuild="39"
+  DTS:VersionGUID="{486B9E0B-53E4-4BCC-ACAD-24D2E194F74D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File MBART]"
+      DTS:refId="Package.ConnectionManagers[Flat File Error output MBART]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{4D2A5AA2-8B3C-41E5-8B47-7A71BCB67BC5}"
-      DTS:ObjectName="Flat File MBART">
+      DTS:DTSID="{799051FF-DEE3-4D2D-905E-21A4079C35C0}"
+      DTS:ObjectName="Flat File Error output MBART">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
           DTS:LocaleID="1053"
           DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\source_files\MATCHBOX\MBART.csv">
+          DTS:ConnectionString="E:\source_files\ERROR\error output mbart.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="11"
+              DTS:ColumnDelimiter="_x003A_"
+              DTS:DataType="302"
               DTS:TextQualified="True"
-              DTS:ObjectName="ARTISTID"
-              DTS:DTSID="{575ED7B8-1B76-45C8-88BA-65DC41BD0053}"
+              DTS:ObjectName="Flat File Source Error Output Column"
+              DTS:DTSID="{08631B2E-52E7-4463-AA71-75EE0E8FAD85}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="11"
+              DTS:ColumnDelimiter="_x003A_"
+              DTS:DataType="3"
               DTS:TextQualified="True"
-              DTS:ObjectName="WORKKEY"
-              DTS:DTSID="{629AD8AE-5B30-456F-9BA0-A0AB89724CC3}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="PUBAGRNBR"
-              DTS:DTSID="{9C803152-5EB0-48DF-B95A-5589B5EF4E4F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="NAME"
-              DTS:DTSID="{97498077-7B2F-4965-AF79-027B6CEE9E6C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="45"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="FIRSTNAME"
-              DTS:DTSID="{6875035C-3C3A-4E0C-8644-C100BFC5860F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="2"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="TYPOFPARTY"
-              DTS:DTSID="{A5D73622-D962-4922-8FD9-DCD7312C3D72}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="10"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="DATASOURCE"
-              DTS:DTSID="{4FEFAC96-EFAA-4677-A930-6C9F970761B8}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CREATEDUSR"
-              DTS:DTSID="{9E43B0A6-689D-4584-9DB9-ABC7EB813E3E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="304"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CREATEDTSP"
-              DTS:DTSID="{4DC192A0-CE88-48F8-AD0C-52E355C51392}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CHANGEDUSR"
-              DTS:DTSID="{D0B333B1-A418-49B5-9FF8-AEFFCD820131}"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{D18641ED-2C9E-4D5F-8BD5-49BAED419B05}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="304"
+              DTS:DataType="3"
               DTS:TextQualified="True"
-              DTS:ObjectName="CHANGEDTSP"
-              DTS:DTSID="{149F90E8-FAC8-43B7-8892-F7C4B7403F48}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File MBHDR]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{52CFFB7D-1E38-44BE-A92E-DB16679E9307}"
-      DTS:ObjectName="Flat File MBHDR">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1053"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="E:\source_files\MATCHBOX\MBHDR.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="WORKKEY"
-              DTS:DTSID="{23FBB270-5CBA-4090-B94D-E2095AB4BD0D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="90"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="WORKTITLE"
-              DTS:DTSID="{DFC374E6-29A3-4962-B932-B01AF2A35007}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="90"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="NATWRKTIT"
-              DTS:DTSID="{EE290CFA-15ED-41E8-9F8B-E9315C364F0F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="1"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="WORKSTATUS"
-              DTS:DTSID="{BE402260-5C3B-4E25-9B50-EAB0430F33FF}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="2"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="WRKLYRLANG"
-              DTS:DTSID="{D990C96C-0635-4F1A-9C68-10230B23E953}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="3"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="VERSTYPE"
-              DTS:DTSID="{6394CD3B-5515-4603-A291-2E0DA2736A56}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="3"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="DUPDSPFLG"
-              DTS:DTSID="{6072CD9F-B40B-4848-9D3E-B6A00D1FFEB7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="3"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="WRKCAT"
-              DTS:DTSID="{FBD6C600-00D1-4897-8CB1-F0A95D544E56}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="7"
-              DTS:TextQualified="True"
-              DTS:ObjectName="PDDATE"
-              DTS:DTSID="{38CBC2E3-23F1-4A3B-8340-3DB7EF11ECC1}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="7"
-              DTS:TextQualified="True"
-              DTS:ObjectName="PUBLDATE"
-              DTS:DTSID="{290DA0F6-AAB5-4BC1-A5BF-16F865C27314}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="1"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ACTIVE"
-              DTS:DTSID="{13C93077-60BD-4264-97E8-1C8E960F4074}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="3"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="PURPOSE"
-              DTS:DTSID="{A0B7D0E6-09A2-4900-BC56-CD83D6F35E34}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="3"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="GENRE"
-              DTS:DTSID="{71C667DE-EEB0-4902-A07A-F0989959FF22}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CREATEDUSR"
-              DTS:DTSID="{A8E76C02-357F-4A40-8267-321551E10EF0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="304"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CREATEDTSP"
-              DTS:DTSID="{FFFB6FE1-DF82-4417-B4D7-3C78679FAD2E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CHANGEDUSR"
-              DTS:DTSID="{82342B3E-6B47-4775-93C9-173B83979085}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="304"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CHANGEDTSP"
-              DTS:DTSID="{71D4E40A-5A3D-4550-A25E-800A660F3EE7}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File MBIPI]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{63558E7E-A4F3-4822-9021-C0AAC7FFE77F}"
-      DTS:ObjectName="Flat File MBIPI">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1053"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="E:\source_files\MATCHBOX\MBIPI.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="IPNAMEKEY"
-              DTS:DTSID="{8D66434B-CB0C-4722-9768-1DB81E3EE8A0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="IPBASEKEY"
-              DTS:DTSID="{E64D6F62-572E-4F28-872A-8B898ECA3F02}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="IPINAMENBR"
-              DTS:DTSID="{47150EC7-13F6-47D8-9324-AE746F98F6E5}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="13"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="IPIBASENBR"
-              DTS:DTSID="{866A44B1-FA1E-46E5-9EBE-D4E7461B05F6}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="LOCAFFNBR"
-              DTS:DTSID="{CB44263A-8C49-4C43-BEAF-07B98C934E6A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="3"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="SOCMEMPR"
-              DTS:DTSID="{7EC9FD13-FEA6-444F-A7BD-ADADE7D43AAD}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="3"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="SOCMEMMR"
-              DTS:DTSID="{8C88171E-0DBC-4EDD-A993-2974CAC2AADF}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="90"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="NAME"
-              DTS:DTSID="{9983AEE2-9027-4942-9BE1-37B19D1DA4D8}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="45"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="FIRSTNAME"
-              DTS:DTSID="{D97E6D3E-26F0-449B-AA4A-3D36BF1CC83B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="90"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="NATCHNAM"
-              DTS:DTSID="{ED75263D-A6B2-466C-BC46-C1ADE219CA01}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="45"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="NTCHFIRNAME"
-              DTS:DTSID="{DC485A77-CB24-4627-B1C2-FF95294B1778}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="2"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="TYPEOFNAME"
-              DTS:DTSID="{DFC033C7-FCA5-4814-8CE5-C822F1B5FAA7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CREATEDUSR"
-              DTS:DTSID="{E40163D5-0B55-455F-8E72-59F2562F6A6E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="304"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CREATEDTSP"
-              DTS:DTSID="{E166FD6D-F637-4B92-9BAB-DC3A185649E3}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CHANGEDUSR"
-              DTS:DTSID="{235BDD1A-86CE-4024-8674-6AABF551E272}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="304"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CHANGEDTSP"
-              DTS:DTSID="{9A03E7DA-0E59-446B-B28F-76802D89F904}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File MBIPW]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{B26D6F33-669D-40A9-9EB7-295766E8F536}"
-      DTS:ObjectName="Flat File MBIPW">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1053"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="E:\source_files\MATCHBOX\MBIPW.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="IPWID"
-              DTS:DTSID="{60750708-3EA4-4E58-83C0-92F584991091}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="IPNAMEKEY"
-              DTS:DTSID="{CF0B14DC-5960-4039-BFD9-9E2BE507E33F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="WORKKEY"
-              DTS:DTSID="{36EC56EA-4148-45FE-BDE5-1372135B49FE}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="WRKCRTRELN"
-              DTS:DTSID="{1E81A5A7-155D-4395-8E9C-1E4AAF9FD47B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ROLECODE"
-              DTS:DTSID="{EB307B9D-39F6-40FC-90DE-8D2D8746EA1E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CREATEDUSR"
-              DTS:DTSID="{BD3F841D-D8BA-4BAA-B4D0-6BC53E1E9A33}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CREATEDTSP"
-              DTS:DTSID="{2165F0C9-15A5-44AD-8785-86BF896D9EDA}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CHANGEDUSR"
-              DTS:DTSID="{96AAEAC7-5E81-43BC-A9E8-CAE5BB4A3F6D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CHANGEDTSP"
-              DTS:DTSID="{DAE7F4F3-B41D-413F-B5AF-2351678DBBBB}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File MBREF]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{AE25A91F-7492-4E9F-819E-220A1A628CBB}"
-      DTS:ObjectName="Flat File MBREF">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1053"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="E:\source_files\MATCHBOX\MBREF.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="REFID"
-              DTS:DTSID="{DEE7A3B9-6F1C-468F-B018-7C4DBC8D15C0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="WORKKEY"
-              DTS:DTSID="{0D820008-7BD8-4B2B-B923-8F8951CE9E16}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="7"
-              DTS:TextQualified="True"
-              DTS:ObjectName="REFSEQNBR"
-              DTS:DTSID="{F4E12180-2D15-46E1-8F29-1D81625C83CC}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="15"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="REFTYPE"
-              DTS:DTSID="{615294B8-E8C1-4BAB-9BD8-22B35200BE84}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="60"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="REFERENCE"
-              DTS:DTSID="{17CB2612-10B5-47D9-A5FF-B0D6D81A5E7A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="3"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="PUBCODE"
-              DTS:DTSID="{472308B8-BEB2-4AC0-9EF8-01671E41492A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="3"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="SOCCODE"
-              DTS:DTSID="{2DB701D9-FF90-4D77-9D6D-2073D87DA4F2}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="7"
-              DTS:TextQualified="True"
-              DTS:ObjectName="REFCRTICE"
-              DTS:DTSID="{6646F3EE-2EAD-4C4A-B67E-C0F01A8256D8}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="15"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="DATASOURCE"
-              DTS:DTSID="{D08CB037-DAFA-4A54-809F-BFE1CB029F67}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CREATEDUSR"
-              DTS:DTSID="{8D2BEB07-D4B8-4709-B86E-5DA98BB4EDE3}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="304"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CREATEDTSP"
-              DTS:DTSID="{907D5870-5D8F-4122-A5F4-B01A85590FF9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CHANGEDUSR"
-              DTS:DTSID="{4476D89B-9BE7-49B8-BCA2-626AAABFBC55}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="304"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CHANGEDTSP"
-              DTS:DTSID="{B53C3C79-B2FD-48D9-9A16-44D29E9DCE17}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File MBTIT]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{F618BC3B-AA89-45D0-AFDE-87941B7A43F5}"
-      DTS:ObjectName="Flat File MBTIT">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1053"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="E:\source_files\MATCHBOX\stubbar\MBTIT.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="TITLEID"
-              DTS:DTSID="{D78253C7-F20D-4F81-B001-3EEC5F8FFA1E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="WORKKEY"
-              DTS:DTSID="{53D27883-EFFD-4351-9E9C-F2C420BE3DE1}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="TITSEQNBR"
-              DTS:DTSID="{F1CED564-3B22-4924-B510-A2E7CA2296BB}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="2"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="TITLETYPE"
-              DTS:DTSID="{E4DD8237-4B44-4252-A759-808D89C70526}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="TITLE"
-              DTS:DTSID="{30E5F8B6-299A-4433-B92C-26D4B8F41577}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="90"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="NATWRKTIT"
-              DTS:DTSID="{F37D324D-5E3A-46A6-B00D-209B2E0847F6}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="10"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="DATASOURCE"
-              DTS:DTSID="{A236E1B6-F7D4-4A85-BB97-B6A1A6383033}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CREATEDUSR"
-              DTS:DTSID="{6BB51BB0-126C-4B49-ADD6-8A0126435EC3}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="304"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CREATEDTSP"
-              DTS:DTSID="{4423CD83-379B-498B-AF3A-7300786D8638}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CHANGEDUSR"
-              DTS:DTSID="{7F031285-449F-4F97-A7D1-C6DB5A155920}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="304"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CHANGEDTSP"
-              DTS:DTSID="{1453FE35-7868-4FC3-A8F1-E52FEFA95A42}"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{66C6D919-005B-4CEE-84AC-A95DD39D231E}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -829,31 +72,32 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table MBART"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_MBART','U') IS not NULL drop table  [tmp].[tmp_MBART]&#xA;CREATE TABLE [tmp].[tmp_MBART] (&#xA;    [ARTISTID] numeric(11,0),&#xA;    [WORKKEY] numeric(11,0),&#xA;    [PUBAGRNBR] numeric(11,0),&#xA;    [NAME] varchar(100),&#xA;    [FIRSTNAME] varchar(45),&#xA;    [TYPOFPARTY] varchar(2),&#xA;    [DATASOURCE] varchar(10),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] datetime2(0),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] datetime2(0)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_mbart','U') IS not NULL drop table  [tmp].[tmp_mbart]&#xA;CREATE TABLE [tmp].[tmp_mbart] (&#xA;    [ARTISTID] numeric(11,0),&#xA;    [WORKKEY] numeric(11,0),&#xA;    [PUBAGRNBR] numeric(11,0),&#xA;    [NAME] varchar(100),&#xA;    [FIRSTNAME] varchar(45),&#xA;    [TYPOFPARTY] varchar(2),&#xA;    [DATASOURCE] varchar(10),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] datetime2(0),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] datetime2(0)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\create table MBHDR"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{0bfaf8c8-e973-4638-88df-5044ec9217fb}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="create table MBHDR"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_mbhdr','U') IS not NULL drop table [tmp].[tmp_mbhdr]&#xA;CREATE TABLE [tmp].[tmp_mbhdr] (&#xA;    [ARTISTID] numeric(11,0),&#xA;    [WORKKEY] numeric(11,0),&#xA;    [PUBAGRNBR] numeric(11,0),&#xA;    [NAME] varchar(100),&#xA;    [FIRSTNAME] varchar(45),&#xA;    [TYPOFPARTY] varchar(2),&#xA;    [DATASOURCE] varchar(10),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] datetime2(0),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] datetime2(0)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_mbhdr','U') IS not NULL drop table [tmp].[tmp_mbhdr]&#xA;CREATE TABLE [tmp].[tmp_mbhdr] (&#xA;    [WORKKEY] numeric(11,0),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] datetime2(0),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] datetime2(0),&#xA;    [WORKTITLE] varchar(90),&#xA;    [NATWRKTIT] varchar(90),&#xA;    [WORKSTATUS] varchar(1),&#xA;    [WRKLYRLANG] varchar(2),&#xA;    [VERSTYPE] varchar(3),&#xA;    [DUPDSPFLG] varchar(3),&#xA;    [WRKCAT] varchar(3),&#xA;    [PDDATE] date,&#xA;    [PUBLDATE] date,&#xA;    [ACTIVE] varchar(1),&#xA;    [PURPOSE] varchar(3),&#xA;    [GENRE] varchar(3)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -865,25 +109,26 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table MBIPI"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_mbipi','U') IS not NULL drop table [tmp].[tmp_mbipi]&#xA;CREATE TABLE [tmp].[tmp_mbipi] (&#xA;    [NAME] varchar(100),&#xA;    [FIRSTNAME] varchar(45),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] datetime2(0),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] datetime2(0),&#xA;    [IPNAMEKEY] numeric(11,0),&#xA;    [IPBASEKEY] numeric(11,0),&#xA;    [IPINAMENBR] numeric(11,0),&#xA;    [IPIBASENBR] varchar(13),&#xA;    [LOCAFFNBR] numeric(11,0),&#xA;    [SOCMEMPR] varchar(3),&#xA;    [SOCMEMMR] varchar(3),&#xA;    [NATCHNAM] varchar(90),&#xA;    [NTCHFIRNAME] varchar(45),&#xA;    [TYPEOFNAME] varchar(2)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_mbipi','U') IS not NULL drop table [tmp].[tmp_mbipi]&#xA;CREATE TABLE [tmp].[tmp_mbipi] (&#xA;    [NAME] varchar(90),&#xA;    [FIRSTNAME] varchar(45),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] datetime,&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] datetime,&#xA;    [IPNAMEKEY] numeric(11,0),&#xA;    [IPBASEKEY] numeric(11,0),&#xA;    [IPINAMENBR] numeric(11,0),&#xA;    [IPIBASENBR] varchar(13),&#xA;    [LOCAFFNBR] numeric(11,0),&#xA;    [SOCMEMPR] varchar(3),&#xA;    [SOCMEMMR] varchar(3),&#xA;    [NATCHNAM] varchar(90),&#xA;    [NTCHFIRNAME] varchar(45),&#xA;    [TYPEOFNAME] varchar(2)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\create table MBIPW"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{2b41a173-b3a6-4c97-8b29-85dc39c3f5d2}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="create table MBIPW"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -896,12 +141,13 @@
       DTS:refId="Package\create table MBREF"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{e4df59d9-61c8-462f-b2d5-c37fac58058b}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="create table MBREF"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -914,12 +160,13 @@
       DTS:refId="Package\create table MBTIT"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{33731179-d198-43d5-9b9f-699ecee0bf8a}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="create table MBTIT"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -935,7 +182,7 @@
       DTS:Disabled="True"
       DTS:DTSID="{66437905-8abe-4dd8-b9fe-731e581c5074}"
       DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
+      DTS:LocaleID="1053"
       DTS:ObjectName="Load MBART"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
@@ -965,8 +212,8 @@
               <connections>
                 <connection
                   refId="Package\Load MBART\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File MBART]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File MBART]"
+                  connectionManagerID="{4D2A5AA2-8B3C-41E5-8B47-7A71BCB67BC5}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Flat File MBART]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -1039,10 +286,10 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[NAME]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NAME]"
                       length="100"
                       lineageId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[NAME]"
@@ -1061,7 +308,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[FIRSTNAME]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -1083,7 +330,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[TYPOFPARTY]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -1105,7 +352,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[DATASOURCE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -1127,7 +374,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -1169,7 +416,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -1229,31 +476,31 @@
                       precision="11" />
                     <externalMetadataColumn
                       refId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NAME]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="100"
                       name="NAME" />
                     <externalMetadataColumn
                       refId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FIRSTNAME]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="45"
                       name="FIRSTNAME" />
                     <externalMetadataColumn
                       refId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TYPOFPARTY]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="2"
                       name="TYPOFPARTY" />
                     <externalMetadataColumn
                       refId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DATASOURCE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="10"
                       name="DATASOURCE" />
                     <externalMetadataColumn
                       refId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CREATEDUSR" />
@@ -1263,7 +510,7 @@
                       name="CREATEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CHANGEDUSR" />
@@ -1318,7 +565,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp].[tmp_MBART]</property>
+                  name="OpenRowset">[tmp].[tmp_mbart]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -1331,11 +578,11 @@
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
+                  name="DefaultCodePage">65001</property>
                 <property
                   dataType="System.Boolean"
                   description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
+                  name="AlwaysUseDefaultCodePage">true</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
@@ -1397,7 +644,7 @@
                       lineageId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[PUBAGRNBR]" />
                     <inputColumn
                       refId="Package\Load MBART\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NAME]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="NAME"
@@ -1405,7 +652,7 @@
                       lineageId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[NAME]" />
                     <inputColumn
                       refId="Package\Load MBART\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FIRSTNAME]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="45"
                       cachedName="FIRSTNAME"
@@ -1413,7 +660,7 @@
                       lineageId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[FIRSTNAME]" />
                     <inputColumn
                       refId="Package\Load MBART\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TYPOFPARTY]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="2"
                       cachedName="TYPOFPARTY"
@@ -1421,7 +668,7 @@
                       lineageId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[TYPOFPARTY]" />
                     <inputColumn
                       refId="Package\Load MBART\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DATASOURCE]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="DATASOURCE"
@@ -1429,7 +676,7 @@
                       lineageId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[DATASOURCE]" />
                     <inputColumn
                       refId="Package\Load MBART\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CREATEDUSR]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CREATEDUSR"
@@ -1443,7 +690,7 @@
                       lineageId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]" />
                     <inputColumn
                       refId="Package\Load MBART\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDUSR]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CHANGEDUSR"
@@ -1475,31 +722,31 @@
                       precision="11" />
                     <externalMetadataColumn
                       refId="Package\Load MBART\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NAME]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="100"
                       name="NAME" />
                     <externalMetadataColumn
                       refId="Package\Load MBART\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FIRSTNAME]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="45"
                       name="FIRSTNAME" />
                     <externalMetadataColumn
                       refId="Package\Load MBART\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TYPOFPARTY]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="2"
                       name="TYPOFPARTY" />
                     <externalMetadataColumn
                       refId="Package\Load MBART\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DATASOURCE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="10"
                       name="DATASOURCE" />
                     <externalMetadataColumn
                       refId="Package\Load MBART\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CREATEDUSR" />
@@ -1509,7 +756,7 @@
                       name="CREATEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBART\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CHANGEDUSR" />
@@ -1593,8 +840,8 @@
               <connections>
                 <connection
                   refId="Package\Load MBHDR\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File MBART]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File MBART]"
+                  connectionManagerID="{52CFFB7D-1E38-44BE-A92E-DB16679E9307}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Flat File MBHDR]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -1602,27 +849,6 @@
                   refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[ARTISTID]"
-                      dataType="numeric"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ARTISTID]"
-                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[ARTISTID]"
-                      name="ARTISTID"
-                      precision="11"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
                     <outputColumn
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[WORKKEY]"
                       dataType="numeric"
@@ -1645,117 +871,8 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[PUBAGRNBR]"
-                      dataType="numeric"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PUBAGRNBR]"
-                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[PUBAGRNBR]"
-                      name="PUBAGRNBR"
-                      precision="11"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[NAME]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NAME]"
-                      length="100"
-                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[NAME]"
-                      name="NAME"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[FIRSTNAME]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FIRSTNAME]"
-                      length="45"
-                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[FIRSTNAME]"
-                      name="FIRSTNAME"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[TYPOFPARTY]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TYPOFPARTY]"
-                      length="2"
-                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[TYPOFPARTY]"
-                      name="TYPOFPARTY"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[DATASOURCE]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DATASOURCE]"
-                      length="10"
-                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[DATASOURCE]"
-                      name="DATASOURCE"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -1797,7 +914,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -1837,51 +954,277 @@
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[WORKTITLE]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WORKTITLE]"
+                      length="90"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[WORKTITLE]"
+                      name="WORKTITLE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[NATWRKTIT]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NATWRKTIT]"
+                      length="90"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[NATWRKTIT]"
+                      name="NATWRKTIT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[WORKSTATUS]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WORKSTATUS]"
+                      length="1"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[WORKSTATUS]"
+                      name="WORKSTATUS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[WRKLYRLANG]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WRKLYRLANG]"
+                      length="2"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[WRKLYRLANG]"
+                      name="WRKLYRLANG"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[VERSTYPE]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VERSTYPE]"
+                      length="3"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[VERSTYPE]"
+                      name="VERSTYPE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[DUPDSPFLG]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DUPDSPFLG]"
+                      length="3"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[DUPDSPFLG]"
+                      name="DUPDSPFLG"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[WRKCAT]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WRKCAT]"
+                      length="3"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[WRKCAT]"
+                      name="WRKCAT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[PDDATE]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PDDATE]"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[PDDATE]"
+                      name="PDDATE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[PUBLDATE]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PUBLDATE]"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[PUBLDATE]"
+                      name="PUBLDATE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[ACTIVE]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ACTIVE]"
+                      length="1"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[ACTIVE]"
+                      name="ACTIVE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[PURPOSE]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PURPOSE]"
+                      length="3"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[PURPOSE]"
+                      name="PURPOSE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[GENRE]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GENRE]"
+                      length="3"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[GENRE]"
+                      name="GENRE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ARTISTID]"
-                      dataType="numeric"
-                      name="ARTISTID"
-                      precision="11" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WORKKEY]"
                       dataType="numeric"
                       name="WORKKEY"
                       precision="11" />
                     <externalMetadataColumn
-                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PUBAGRNBR]"
-                      dataType="numeric"
-                      name="PUBAGRNBR"
-                      precision="11" />
-                    <externalMetadataColumn
-                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NAME]"
-                      codePage="1252"
-                      dataType="str"
-                      length="100"
-                      name="NAME" />
-                    <externalMetadataColumn
-                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FIRSTNAME]"
-                      codePage="1252"
-                      dataType="str"
-                      length="45"
-                      name="FIRSTNAME" />
-                    <externalMetadataColumn
-                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TYPOFPARTY]"
-                      codePage="1252"
-                      dataType="str"
-                      length="2"
-                      name="TYPOFPARTY" />
-                    <externalMetadataColumn
-                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DATASOURCE]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      name="DATASOURCE" />
-                    <externalMetadataColumn
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CREATEDUSR" />
@@ -1891,7 +1234,7 @@
                       name="CREATEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CHANGEDUSR" />
@@ -1899,6 +1242,74 @@
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDTSP]"
                       dataType="dbTimeStamp2"
                       name="CHANGEDTSP" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WORKTITLE]"
+                      codePage="65001"
+                      dataType="str"
+                      length="90"
+                      name="WORKTITLE" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NATWRKTIT]"
+                      codePage="65001"
+                      dataType="str"
+                      length="90"
+                      name="NATWRKTIT" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WORKSTATUS]"
+                      codePage="65001"
+                      dataType="str"
+                      length="1"
+                      name="WORKSTATUS" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WRKLYRLANG]"
+                      codePage="65001"
+                      dataType="str"
+                      length="2"
+                      name="WRKLYRLANG" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VERSTYPE]"
+                      codePage="65001"
+                      dataType="str"
+                      length="3"
+                      name="VERSTYPE" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DUPDSPFLG]"
+                      codePage="65001"
+                      dataType="str"
+                      length="3"
+                      name="DUPDSPFLG" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WRKCAT]"
+                      codePage="65001"
+                      dataType="str"
+                      length="3"
+                      name="WRKCAT" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PDDATE]"
+                      dataType="date"
+                      name="PDDATE" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PUBLDATE]"
+                      dataType="date"
+                      name="PUBLDATE" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ACTIVE]"
+                      codePage="65001"
+                      dataType="str"
+                      length="1"
+                      name="ACTIVE" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PURPOSE]"
+                      codePage="65001"
+                      dataType="str"
+                      length="3"
+                      name="PURPOSE" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GENRE]"
+                      codePage="65001"
+                      dataType="str"
+                      length="3"
+                      name="GENRE" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -1959,16 +1370,16 @@
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
+                  name="DefaultCodePage">65001</property>
                 <property
                   dataType="System.Boolean"
                   description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
+                  name="AlwaysUseDefaultCodePage">true</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">0</property>
+                  typeConverter="AccessMode">3</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
@@ -2003,13 +1414,6 @@
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ARTISTID]"
-                      cachedDataType="numeric"
-                      cachedName="ARTISTID"
-                      cachedPrecision="11"
-                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ARTISTID]"
-                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[ARTISTID]" />
-                    <inputColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WORKKEY]"
                       cachedDataType="numeric"
                       cachedName="WORKKEY"
@@ -2017,47 +1421,8 @@
                       externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WORKKEY]"
                       lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[WORKKEY]" />
                     <inputColumn
-                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PUBAGRNBR]"
-                      cachedDataType="numeric"
-                      cachedName="PUBAGRNBR"
-                      cachedPrecision="11"
-                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PUBAGRNBR]"
-                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[PUBAGRNBR]" />
-                    <inputColumn
-                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NAME]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="100"
-                      cachedName="NAME"
-                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NAME]"
-                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[NAME]" />
-                    <inputColumn
-                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FIRSTNAME]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="45"
-                      cachedName="FIRSTNAME"
-                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FIRSTNAME]"
-                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[FIRSTNAME]" />
-                    <inputColumn
-                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TYPOFPARTY]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="2"
-                      cachedName="TYPOFPARTY"
-                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TYPOFPARTY]"
-                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[TYPOFPARTY]" />
-                    <inputColumn
-                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DATASOURCE]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="DATASOURCE"
-                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DATASOURCE]"
-                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[DATASOURCE]" />
-                    <inputColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CREATEDUSR]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CREATEDUSR"
@@ -2071,7 +1436,7 @@
                       lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]" />
                     <inputColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDUSR]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CHANGEDUSR"
@@ -2083,51 +1448,109 @@
                       cachedName="CHANGEDTSP"
                       externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDTSP]"
                       lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]" />
+                    <inputColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WORKTITLE]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="90"
+                      cachedName="WORKTITLE"
+                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WORKTITLE]"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[WORKTITLE]" />
+                    <inputColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NATWRKTIT]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="90"
+                      cachedName="NATWRKTIT"
+                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NATWRKTIT]"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[NATWRKTIT]" />
+                    <inputColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WORKSTATUS]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="WORKSTATUS"
+                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WORKSTATUS]"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[WORKSTATUS]" />
+                    <inputColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WRKLYRLANG]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="WRKLYRLANG"
+                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WRKLYRLANG]"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[WRKLYRLANG]" />
+                    <inputColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VERSTYPE]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="VERSTYPE"
+                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VERSTYPE]"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[VERSTYPE]" />
+                    <inputColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DUPDSPFLG]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="DUPDSPFLG"
+                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DUPDSPFLG]"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[DUPDSPFLG]" />
+                    <inputColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WRKCAT]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="WRKCAT"
+                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WRKCAT]"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[WRKCAT]" />
+                    <inputColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PDDATE]"
+                      cachedDataType="date"
+                      cachedName="PDDATE"
+                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PDDATE]"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[PDDATE]" />
+                    <inputColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PUBLDATE]"
+                      cachedDataType="date"
+                      cachedName="PUBLDATE"
+                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PUBLDATE]"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[PUBLDATE]" />
+                    <inputColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ACTIVE]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="ACTIVE"
+                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ACTIVE]"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[ACTIVE]" />
+                    <inputColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PURPOSE]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="PURPOSE"
+                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PURPOSE]"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[PURPOSE]" />
+                    <inputColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[GENRE]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="GENRE"
+                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GENRE]"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[GENRE]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ARTISTID]"
-                      dataType="numeric"
-                      name="ARTISTID"
-                      precision="11" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WORKKEY]"
                       dataType="numeric"
                       name="WORKKEY"
                       precision="11" />
                     <externalMetadataColumn
-                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PUBAGRNBR]"
-                      dataType="numeric"
-                      name="PUBAGRNBR"
-                      precision="11" />
-                    <externalMetadataColumn
-                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NAME]"
-                      codePage="1252"
-                      dataType="str"
-                      length="100"
-                      name="NAME" />
-                    <externalMetadataColumn
-                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FIRSTNAME]"
-                      codePage="1252"
-                      dataType="str"
-                      length="45"
-                      name="FIRSTNAME" />
-                    <externalMetadataColumn
-                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TYPOFPARTY]"
-                      codePage="1252"
-                      dataType="str"
-                      length="2"
-                      name="TYPOFPARTY" />
-                    <externalMetadataColumn
-                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DATASOURCE]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      name="DATASOURCE" />
-                    <externalMetadataColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CREATEDUSR" />
@@ -2137,7 +1560,7 @@
                       name="CREATEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CHANGEDUSR" />
@@ -2145,6 +1568,74 @@
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDTSP]"
                       dataType="dbTimeStamp2"
                       name="CHANGEDTSP" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WORKTITLE]"
+                      codePage="65001"
+                      dataType="str"
+                      length="90"
+                      name="WORKTITLE" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NATWRKTIT]"
+                      codePage="65001"
+                      dataType="str"
+                      length="90"
+                      name="NATWRKTIT" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WORKSTATUS]"
+                      codePage="65001"
+                      dataType="str"
+                      length="1"
+                      name="WORKSTATUS" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WRKLYRLANG]"
+                      codePage="65001"
+                      dataType="str"
+                      length="2"
+                      name="WRKLYRLANG" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VERSTYPE]"
+                      codePage="65001"
+                      dataType="str"
+                      length="3"
+                      name="VERSTYPE" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DUPDSPFLG]"
+                      codePage="65001"
+                      dataType="str"
+                      length="3"
+                      name="DUPDSPFLG" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WRKCAT]"
+                      codePage="65001"
+                      dataType="str"
+                      length="3"
+                      name="WRKCAT" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PDDATE]"
+                      dataType="dbDate"
+                      name="PDDATE" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PUBLDATE]"
+                      dataType="dbDate"
+                      name="PUBLDATE" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ACTIVE]"
+                      codePage="65001"
+                      dataType="str"
+                      length="1"
+                      name="ACTIVE" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PURPOSE]"
+                      codePage="65001"
+                      dataType="str"
+                      length="3"
+                      name="PURPOSE" />
+                    <externalMetadataColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GENRE]"
+                      codePage="65001"
+                      dataType="str"
+                      length="3"
+                      name="GENRE" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -2188,7 +1679,6 @@
       DTS:refId="Package\Load MBIPI"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{099b1088-6012-42a4-ad1d-3b77586fa447}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -2221,8 +1711,8 @@
               <connections>
                 <connection
                   refId="Package\Load MBIPI\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File MBIPI]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File MBIPI]"
+                  connectionManagerID="{63558E7E-A4F3-4822-9021-C0AAC7FFE77F}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Flat File MBIPI]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -2232,12 +1722,12 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[NAME]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NAME]"
-                      length="100"
+                      length="90"
                       lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[NAME]"
                       name="NAME"
                       truncationRowDisposition="FailComponent">
@@ -2254,7 +1744,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[FIRSTNAME]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2276,7 +1766,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2298,7 +1788,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDTSP]"
@@ -2318,7 +1808,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2340,7 +1830,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDTSP]"
@@ -2423,7 +1913,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[IPIBASENBR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2466,7 +1956,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[SOCMEMPR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2488,7 +1978,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[SOCMEMMR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2510,7 +2000,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[NATCHNAM]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2532,7 +2022,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[NTCHFIRNAME]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2554,7 +2044,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[TYPEOFNAME]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2579,35 +2069,35 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NAME]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="90"
                       name="NAME" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FIRSTNAME]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="45"
                       name="FIRSTNAME" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CREATEDUSR" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDTSP]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbTimeStamp"
                       name="CREATEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CHANGEDUSR" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDTSP]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbTimeStamp"
                       name="CHANGEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IPNAMEKEY]"
@@ -2626,7 +2116,7 @@
                       precision="11" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IPIBASENBR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="13"
                       name="IPIBASENBR" />
@@ -2637,31 +2127,31 @@
                       precision="11" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SOCMEMPR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="3"
                       name="SOCMEMPR" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SOCMEMMR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="3"
                       name="SOCMEMMR" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NATCHNAM]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="90"
                       name="NATCHNAM" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NTCHFIRNAME]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="45"
                       name="NTCHFIRNAME" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TYPEOFNAME]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="2"
                       name="TYPEOFNAME" />
@@ -2725,11 +2215,11 @@
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
+                  name="DefaultCodePage">65001</property>
                 <property
                   dataType="System.Boolean"
                   description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
+                  name="AlwaysUseDefaultCodePage">true</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
@@ -2770,15 +2260,15 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NAME]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
-                      cachedLength="100"
+                      cachedLength="90"
                       cachedName="NAME"
                       externalMetadataColumnId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NAME]"
                       lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[NAME]" />
                     <inputColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FIRSTNAME]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="45"
                       cachedName="FIRSTNAME"
@@ -2786,7 +2276,7 @@
                       lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[FIRSTNAME]" />
                     <inputColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CREATEDUSR]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CREATEDUSR"
@@ -2794,13 +2284,13 @@
                       lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDUSR]" />
                     <inputColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CREATEDTSP]"
-                      cachedDataType="dbTimeStamp2"
+                      cachedDataType="dbTimeStamp"
                       cachedName="CREATEDTSP"
                       externalMetadataColumnId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDTSP]"
                       lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]" />
                     <inputColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDUSR]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CHANGEDUSR"
@@ -2808,7 +2298,7 @@
                       lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]" />
                     <inputColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDTSP]"
-                      cachedDataType="dbTimeStamp2"
+                      cachedDataType="dbTimeStamp"
                       cachedName="CHANGEDTSP"
                       externalMetadataColumnId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDTSP]"
                       lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]" />
@@ -2835,7 +2325,7 @@
                       lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[IPINAMENBR]" />
                     <inputColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IPIBASENBR]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="13"
                       cachedName="IPIBASENBR"
@@ -2850,7 +2340,7 @@
                       lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[LOCAFFNBR]" />
                     <inputColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SOCMEMPR]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="3"
                       cachedName="SOCMEMPR"
@@ -2858,7 +2348,7 @@
                       lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[SOCMEMPR]" />
                     <inputColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SOCMEMMR]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="3"
                       cachedName="SOCMEMMR"
@@ -2866,7 +2356,7 @@
                       lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[SOCMEMMR]" />
                     <inputColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NATCHNAM]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="90"
                       cachedName="NATCHNAM"
@@ -2874,7 +2364,7 @@
                       lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[NATCHNAM]" />
                     <inputColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NTCHFIRNAME]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="45"
                       cachedName="NTCHFIRNAME"
@@ -2882,7 +2372,7 @@
                       lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[NTCHFIRNAME]" />
                     <inputColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TYPEOFNAME]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="2"
                       cachedName="TYPEOFNAME"
@@ -2893,35 +2383,35 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NAME]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
-                      length="100"
+                      length="90"
                       name="NAME" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FIRSTNAME]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="45"
                       name="FIRSTNAME" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CREATEDUSR" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDTSP]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbTimeStamp"
                       name="CREATEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CHANGEDUSR" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDTSP]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbTimeStamp"
                       name="CHANGEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IPNAMEKEY]"
@@ -2940,7 +2430,7 @@
                       precision="11" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IPIBASENBR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="13"
                       name="IPIBASENBR" />
@@ -2951,31 +2441,31 @@
                       precision="11" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SOCMEMPR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="3"
                       name="SOCMEMPR" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SOCMEMMR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="3"
                       name="SOCMEMMR" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NATCHNAM]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="90"
                       name="NATCHNAM" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NTCHFIRNAME]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="45"
                       name="NTCHFIRNAME" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TYPEOFNAME]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="2"
                       name="TYPEOFNAME" />
@@ -3055,8 +2545,8 @@
               <connections>
                 <connection
                   refId="Package\Load MBIPW\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File MBIPW]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File MBIPW]"
+                  connectionManagerID="{B26D6F33-669D-40A9-9EB7-295766E8F536}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Flat File MBIPW]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -3066,7 +2556,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3108,7 +2598,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3171,7 +2661,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[IPWID]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3193,7 +2683,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[WORKKEY]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3215,7 +2705,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[WRKCRTRELN]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3237,7 +2727,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[ROLECODE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3262,55 +2752,55 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CREATEDUSR" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDTSP]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CREATEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CHANGEDUSR" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDTSP]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CHANGEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IPNAMEKEY]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="IPNAMEKEY" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IPWID]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="IPWID" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WORKKEY]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="WORKKEY" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WRKCRTRELN]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="WRKCRTRELN" />
                     <externalMetadataColumn
                       refId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ROLECODE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="ROLECODE" />
@@ -3374,7 +2864,7 @@
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
+                  name="DefaultCodePage">65001</property>
                 <property
                   dataType="System.Boolean"
                   description="Forces the use of the DefaultCodePage property value when describing character data."
@@ -3419,7 +2909,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Load MBIPW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CREATEDUSR]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CREATEDUSR"
@@ -3433,7 +2923,7 @@
                       lineageId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]" />
                     <inputColumn
                       refId="Package\Load MBIPW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDUSR]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CHANGEDUSR"
@@ -3454,7 +2944,7 @@
                       lineageId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[IPNAMEKEY]" />
                     <inputColumn
                       refId="Package\Load MBIPW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IPWID]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="IPWID"
@@ -3462,7 +2952,7 @@
                       lineageId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[IPWID]" />
                     <inputColumn
                       refId="Package\Load MBIPW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WORKKEY]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="WORKKEY"
@@ -3470,7 +2960,7 @@
                       lineageId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[WORKKEY]" />
                     <inputColumn
                       refId="Package\Load MBIPW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WRKCRTRELN]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="WRKCRTRELN"
@@ -3478,7 +2968,7 @@
                       lineageId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[WRKCRTRELN]" />
                     <inputColumn
                       refId="Package\Load MBIPW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ROLECODE]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ROLECODE"
@@ -3612,8 +3102,8 @@
               <connections>
                 <connection
                   refId="Package\Load MBREF\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File MBREF]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File MBREF]"
+                  connectionManagerID="{AE25A91F-7492-4E9F-819E-220A1A628CBB}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Flat File MBREF]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -3623,7 +3113,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3665,7 +3155,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3771,7 +3261,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[REFTYPE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3793,7 +3283,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[REFERENCE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3815,7 +3305,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[PUBCODE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3837,7 +3327,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[SOCCODE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3879,7 +3369,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[DATASOURCE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3904,7 +3394,7 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CREATEDUSR" />
@@ -3914,7 +3404,7 @@
                       name="CREATEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CHANGEDUSR" />
@@ -3939,25 +3429,25 @@
                       precision="7" />
                     <externalMetadataColumn
                       refId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[REFTYPE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="15"
                       name="REFTYPE" />
                     <externalMetadataColumn
                       refId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[REFERENCE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="60"
                       name="REFERENCE" />
                     <externalMetadataColumn
                       refId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PUBCODE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="3"
                       name="PUBCODE" />
                     <externalMetadataColumn
                       refId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SOCCODE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="3"
                       name="SOCCODE" />
@@ -3967,7 +3457,7 @@
                       name="REFCRTICE" />
                     <externalMetadataColumn
                       refId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DATASOURCE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="15"
                       name="DATASOURCE" />
@@ -4031,7 +3521,7 @@
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
+                  name="DefaultCodePage">65001</property>
                 <property
                   dataType="System.Boolean"
                   description="Forces the use of the DefaultCodePage property value when describing character data."
@@ -4076,7 +3566,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Load MBREF\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CREATEDUSR]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CREATEDUSR"
@@ -4090,7 +3580,7 @@
                       lineageId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]" />
                     <inputColumn
                       refId="Package\Load MBREF\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDUSR]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CHANGEDUSR"
@@ -4126,7 +3616,7 @@
                       lineageId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[REFSEQNBR]" />
                     <inputColumn
                       refId="Package\Load MBREF\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[REFTYPE]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="15"
                       cachedName="REFTYPE"
@@ -4134,7 +3624,7 @@
                       lineageId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[REFTYPE]" />
                     <inputColumn
                       refId="Package\Load MBREF\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[REFERENCE]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="60"
                       cachedName="REFERENCE"
@@ -4142,7 +3632,7 @@
                       lineageId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[REFERENCE]" />
                     <inputColumn
                       refId="Package\Load MBREF\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PUBCODE]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="3"
                       cachedName="PUBCODE"
@@ -4150,7 +3640,7 @@
                       lineageId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[PUBCODE]" />
                     <inputColumn
                       refId="Package\Load MBREF\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SOCCODE]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="3"
                       cachedName="SOCCODE"
@@ -4164,7 +3654,7 @@
                       lineageId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[REFCRTICE]" />
                     <inputColumn
                       refId="Package\Load MBREF\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DATASOURCE]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="15"
                       cachedName="DATASOURCE"
@@ -4319,8 +3809,8 @@
               <connections>
                 <connection
                   refId="Package\Load MBTIT\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File MBTIT]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File MBTIT]"
+                  connectionManagerID="{F618BC3B-AA89-45D0-AFDE-87941B7A43F5}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Flat File MBTIT]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -4330,7 +3820,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -4372,7 +3862,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -4436,12 +3926,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[DATASOURCE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DATASOURCE]"
-                      length="15"
+                      length="10"
                       lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[DATASOURCE]"
                       name="DATASOURCE"
                       truncationRowDisposition="FailComponent">
@@ -4500,7 +3990,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITLETYPE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -4522,7 +4012,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITLE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -4544,7 +4034,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[NATWRKTIT]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -4569,7 +4059,7 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CREATEDUSR" />
@@ -4579,7 +4069,7 @@
                       name="CREATEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDUSR]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CHANGEDUSR" />
@@ -4594,7 +4084,7 @@
                       precision="11" />
                     <externalMetadataColumn
                       refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DATASOURCE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="10"
                       name="DATASOURCE" />
@@ -4610,19 +4100,19 @@
                       precision="11" />
                     <externalMetadataColumn
                       refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TITLETYPE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="2"
                       name="TITLETYPE" />
                     <externalMetadataColumn
                       refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TITLE]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="100"
                       name="TITLE" />
                     <externalMetadataColumn
                       refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NATWRKTIT]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="str"
                       length="90"
                       name="NATWRKTIT" />
@@ -4731,7 +4221,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CREATEDUSR]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CREATEDUSR"
@@ -4745,7 +4235,7 @@
                       lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]" />
                     <inputColumn
                       refId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDUSR]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CHANGEDUSR"
@@ -4767,9 +4257,9 @@
                       lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[WORKKEY]" />
                     <inputColumn
                       refId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DATASOURCE]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
-                      cachedLength="15"
+                      cachedLength="10"
                       cachedName="DATASOURCE"
                       externalMetadataColumnId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DATASOURCE]"
                       lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[DATASOURCE]" />
@@ -4789,7 +4279,7 @@
                       lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITSEQNBR]" />
                     <inputColumn
                       refId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TITLETYPE]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="2"
                       cachedName="TITLETYPE"
@@ -4797,7 +4287,7 @@
                       lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITLETYPE]" />
                     <inputColumn
                       refId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TITLE]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="TITLE"
@@ -4805,7 +4295,7 @@
                       lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITLE]" />
                     <inputColumn
                       refId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NATWRKTIT]"
-                      cachedCodepage="1252"
+                      cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="90"
                       cachedName="NATWRKTIT"
@@ -5013,61 +4503,49 @@
           Id="Package\create table MBART"
           TopLeft="60,60" />
         <NodeLayout
-          Size="139,42"
-          Id="Package\Load MBART"
-          TopLeft="312,62" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 11 1]"
-          TopLeft="232,82">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="80,0"
-              Start="0,0"
-              End="72.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="72.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
           Size="174,42"
           Id="Package\create table MBHDR"
           TopLeft="60,164" />
         <NodeLayout
+          Size="166,42"
+          Id="Package\create table MBIPI"
+          TopLeft="60,268" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\create table MBIPW"
+          TopLeft="60,372" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\create table MBREF"
+          TopLeft="60,476" />
+        <NodeLayout
+          Size="169,42"
+          Id="Package\create table MBTIT"
+          TopLeft="57,573" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Load MBART"
+          TopLeft="312,62" />
+        <NodeLayout
           Size="140,42"
           Id="Package\Load MBHDR"
           TopLeft="312,166" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 11 1 1]"
-          TopLeft="234,186">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="78,0"
-              Start="0,0"
-              End="70.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="70.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Load MBIPI"
+          TopLeft="312,270" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Load MBIPW"
+          TopLeft="312,374" />
+        <NodeLayout
+          Size="138,42"
+          Id="Package\Load MBREF"
+          TopLeft="312,478" />
+        <NodeLayout
+          Size="136,42"
+          Id="Package\Load MBTIT"
+          TopLeft="309,575" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="381.5,104">
@@ -5094,36 +4572,6 @@
                     Point3="-234.5,34" />
                   <mssgle:LineSegment
                     End="-234.5,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="166,42"
-          Id="Package\create table MBIPI"
-          TopLeft="60,268" />
-        <NodeLayout
-          Size="133,42"
-          Id="Package\Load MBIPI"
-          TopLeft="312,270" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 11 1 1 1]"
-          TopLeft="226,290">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="86,0"
-              Start="0,0"
-              End="78.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="78.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5166,14 +4614,72 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="172,42"
-          Id="Package\create table MBIPW"
-          TopLeft="60,372" />
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Load MBIPW"
-          TopLeft="312,374" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 11 1]"
+          TopLeft="232,82">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="80,0"
+              Start="0,0"
+              End="72.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="72.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 11 1 1]"
+          TopLeft="234,186">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="78,0"
+              Start="0,0"
+              End="70.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="70.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 11 1 1 1]"
+          TopLeft="226,290">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="86,0"
+              Start="0,0"
+              End="78.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="78.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1 1 1 1]"
           TopLeft="232,394">
@@ -5188,6 +4694,50 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="72.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 11 1 1 1 1 1]"
+          TopLeft="231,498">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="81,0"
+              Start="0,0"
+              End="73.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="73.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 11 1 1 1 1 1 1]"
+          TopLeft="226,595">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="83,0"
+              Start="0,0"
+              End="75.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="75.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5230,36 +4780,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="171,42"
-          Id="Package\create table MBREF"
-          TopLeft="60,476" />
-        <NodeLayout
-          Size="138,42"
-          Id="Package\Load MBREF"
-          TopLeft="312,478" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 11 1 1 1 1 1]"
-          TopLeft="231,498">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="81,0"
-              Start="0,0"
-              End="73.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="73.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
           TopLeft="381.5,416">
@@ -5294,36 +4814,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="169,42"
-          Id="Package\create table MBTIT"
-          TopLeft="57,573" />
-        <NodeLayout
-          Size="136,42"
-          Id="Package\Load MBTIT"
-          TopLeft="309,575" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 11 1 1 1 1 1 1]"
-          TopLeft="226,595">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="83,0"
-              Start="0,0"
-              End="75.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="75.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -5333,13 +4823,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151,42"
-          Id="Package\Load MBART\Flat File Source"
-          TopLeft="192,68" />
-        <NodeLayout
           Size="171,42"
           Id="Package\Load MBART\OLE DB Destination"
           TopLeft="183,161" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load MBART\Flat File Source"
+          TopLeft="192,68" />
         <EdgeLayout
           Id="Package\Load MBART.Paths[Flat File Source Output]"
           TopLeft="268,110">
@@ -5365,57 +4855,6 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <TaskHost
-    design-time-name="Package\Load MBHDR">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="151,42"
-          Id="Package\Load MBHDR\Flat File Source"
-          TopLeft="192,68" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Load MBHDR\OLE DB Destination"
-          TopLeft="188,157" />
-        <EdgeLayout
-          Id="Package\Load MBHDR.Paths[Flat File Source Output]"
-          TopLeft="270.5,110">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,47"
-              Start="0,0"
-              End="0,39.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,39.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load MBHDR\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Load MBART\OLE DB Destination">
     <Properties>
@@ -5430,32 +4869,32 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Load MBIPI">
+    design-time-name="Package\Load MBHDR">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151,42"
-          Id="Package\Load MBIPI\Flat File Source"
+          Id="Package\Load MBHDR\Flat File Source"
           TopLeft="192,68" />
         <NodeLayout
           Size="171,42"
-          Id="Package\Load MBIPI\OLE DB Destination"
-          TopLeft="181,164" />
+          Id="Package\Load MBHDR\OLE DB Destination"
+          TopLeft="177,163" />
         <EdgeLayout
-          Id="Package\Load MBIPI.Paths[Flat File Source Output]"
-          TopLeft="267,110">
+          Id="Package\Load MBHDR.Paths[Flat File Source Output]"
+          TopLeft="265,110">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,54"
+              EndConnector="0,53"
               Start="0,0"
-              End="0,46.5">
+              End="0,45.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,46.5" />
+                    End="0,45.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5467,32 +4906,57 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load MBIPI\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load MBIPI">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load MBIPI\Flat File Source"
+          TopLeft="192,68" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load MBIPI\OLE DB Destination"
+          TopLeft="180,161" />
+        <EdgeLayout
+          Id="Package\Load MBIPI.Paths[Flat File Source Output]"
+          TopLeft="266.5,110">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,51"
+              Start="0,0"
+              End="0,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <TaskHost
     design-time-name="Package\Load MBIPW">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151,42"
-          Id="Package\Load MBIPW\Flat File Source"
-          TopLeft="192,68" />
-        <NodeLayout
           Size="171,42"
           Id="Package\Load MBIPW\OLE DB Destination"
           TopLeft="181,163" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load MBIPW\Flat File Source"
+          TopLeft="192,68" />
         <EdgeLayout
           Id="Package\Load MBIPW.Paths[Flat File Source Output]"
           TopLeft="267,110">
@@ -5586,15 +5050,15 @@
     design-time-name="Package\Load MBTIT">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="151,42"
-          Id="Package\Load MBTIT\Flat File Source"
-          TopLeft="192,68" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171,42"
           Id="Package\Load MBTIT\OLE DB Destination"
           TopLeft="184,154" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load MBTIT\Flat File Source"
+          TopLeft="192,68" />
         <EdgeLayout
           Id="Package\Load MBTIT.Paths[Flat File Source Output]"
           TopLeft="268.5,110">
@@ -5614,7 +5078,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5622,6 +5088,32 @@
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Load MBTIT\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load MBHDR\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load MBIPI\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

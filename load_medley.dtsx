@@ -1,0 +1,1202 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/1/2017 2:24:49 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="BEAST"
+  DTS:CreatorName="BEAST\uffe"
+  DTS:DTSID="{F2428DF1-9876-4007-802A-119F4D494712}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.0800.60"
+  DTS:LocaleID="1053"
+  DTS:ObjectName="load_medley"
+  DTS:PackageType="5"
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{F2D3D20A-143C-49DD-9F41-8AA3BC5192F5}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File mdlmdl_subset_rightsholders]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{36AA6E77-EDFD-4AA1-85BB-1F827655E867}"
+      DTS:ObjectName="Flat File mdlmdl_subset_rightsholders">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\MEDLEY\MBL.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="9"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MDMDNR"
+              DTS:DTSID="{EC1D724D-8D51-4CAC-8D94-E4FE0732E0A5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MDNAMN"
+              DTS:DTSID="{E8EC9EC7-918D-4055-AA93-8EAD9C1AFCD4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MDFNMR"
+              DTS:DTSID="{13079E1D-49FB-44B5-923A-5891F116B368}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="8"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FDAT"
+              DTS:DTSID="{9B5E6E5C-9F7D-4875-8DE5-29E47E4E20FD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MDAFDT"
+              DTS:DTSID="{5151E662-9712-4CFD-BCB2-43FB13B8FDFF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MDATDT"
+              DTS:DTSID="{4E454BDD-7C1A-4FA6-BFEC-958B2EC068F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="8"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MDAUDT"
+              DTS:DTSID="{C4008102-D03E-4D54-99CD-5BCCBD5679B3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MDMDST"
+              DTS:DTSID="{BFB7F905-1BEC-4EE6-80FA-74F03DE9BB2F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MDSOKD"
+              DTS:DTSID="{EA760838-A5F9-4099-A4F6-592556E75AC2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SONAMN"
+              DTS:DTSID="{BEBA2BA8-7949-4A8B-BF07-EB5A60D209C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MDSTAV"
+              DTS:DTSID="{1271C6EC-0077-44F9-B723-C18270A2AE05}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MDKNKD"
+              DTS:DTSID="{CB845C92-3199-4547-B28F-794DBE437F97}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MDSPKD"
+              DTS:DTSID="{E97A26D8-DB18-4E00-A2C1-7CA42FE968E6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MDSBYT"
+              DTS:DTSID="{B7563753-C6CE-4256-93F3-27B44A3B4C2F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MDSTOP"
+              DTS:DTSID="{EAB99344-1622-436B-AA85-2C9050E5A95F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AULAND"
+              DTS:DTSID="{9B10FB05-ADE0-4F2D-B825-94505551878E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="27"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ASORT"
+              DTS:DTSID="{8AAC4E78-E45A-4231-8B24-EFFC165331B8}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\create table mdlmdl_subset_rightsholders"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{d018b060-8434-4feb-b825-d746206a0d88}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="create table mdlmdl_subset_rightsholders"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+          SQLTask:BypassPrepare="False"
+          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_mdlmdl_subset_rightsholders','U') IS not NULL drop table [tmp].[tmp_mdlmdl_subset_rightsholders]&#xA;CREATE TABLE [tmp].[tmp_mdlmdl_subset_rightsholders] (&#xA;    [MDMDNR] numeric(9,0),&#xA;    [MDNAMN] varchar(50),&#xA;    [MDFNMR] varchar(50),&#xA;    [FDAT] varchar(8),&#xA;    [MDAFDT] date,&#xA;    [MDATDT] date,&#xA;    [MDAUDT] numeric(8,0),&#xA;    [MDMDST] varchar(1),&#xA;    [MDSOKD] varchar(2),&#xA;    [SONAMN] varchar(50),&#xA;    [MDSTAV] varchar(1),&#xA;    [MDKNKD] varchar(1),&#xA;    [MDSPKD] varchar(2),&#xA;    [MDSBYT] varchar(1),&#xA;    [MDSTOP] varchar(1),&#xA;    [AULAND] varchar(2),&#xA;    [ASORT] varchar(27)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load mdlmdl_subset_rightsholders"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{ead2325e-eadd-4c79-9a4a-f65801ea97e9}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load mdlmdl_subset_rightsholders"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1053"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File mdlmdl_subset_rightsholders]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File mdlmdl_subset_rightsholders]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDMDNR]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDMDNR]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDMDNR]"
+                      name="MDMDNR"
+                      precision="9"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDNAMN]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDNAMN]"
+                      length="50"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDNAMN]"
+                      name="MDNAMN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDFNMR]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDFNMR]"
+                      length="50"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDFNMR]"
+                      name="MDFNMR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[FDAT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FDAT]"
+                      length="8"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[FDAT]"
+                      name="FDAT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDAFDT]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDAFDT]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDAFDT]"
+                      name="MDAFDT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDATDT]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDATDT]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDATDT]"
+                      name="MDATDT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDAUDT]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDAUDT]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDAUDT]"
+                      name="MDAUDT"
+                      precision="8"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDMDST]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDMDST]"
+                      length="1"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDMDST]"
+                      name="MDMDST"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDSOKD]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDSOKD]"
+                      length="2"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDSOKD]"
+                      name="MDSOKD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[SONAMN]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SONAMN]"
+                      length="50"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[SONAMN]"
+                      name="SONAMN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDSTAV]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDSTAV]"
+                      length="1"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDSTAV]"
+                      name="MDSTAV"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDKNKD]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDKNKD]"
+                      length="1"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDKNKD]"
+                      name="MDKNKD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDSPKD]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDSPKD]"
+                      length="2"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDSPKD]"
+                      name="MDSPKD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDSBYT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDSBYT]"
+                      length="1"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDSBYT]"
+                      name="MDSBYT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDSTOP]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDSTOP]"
+                      length="1"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDSTOP]"
+                      name="MDSTOP"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[AULAND]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[AULAND]"
+                      length="2"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[AULAND]"
+                      name="AULAND"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[ASORT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ASORT]"
+                      length="27"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[ASORT]"
+                      name="ASORT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDMDNR]"
+                      dataType="numeric"
+                      name="MDMDNR"
+                      precision="9" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDNAMN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MDNAMN" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDFNMR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MDFNMR" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FDAT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="FDAT" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDAFDT]"
+                      dataType="date"
+                      name="MDAFDT" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDATDT]"
+                      dataType="date"
+                      name="MDATDT" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDAUDT]"
+                      dataType="numeric"
+                      name="MDAUDT"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDMDST]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="MDMDST" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDSOKD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="MDSOKD" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SONAMN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SONAMN" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDSTAV]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="MDSTAV" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDKNKD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="MDKNKD" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDSPKD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="MDSPKD" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDSBYT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="MDSBYT" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MDSTOP]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="MDSTOP" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[AULAND]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="AULAND" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ASORT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="27"
+                      name="ASORT" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[tmp].[tmp_mdlmdl_subset_rightsholders]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[BEAST.datalake]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MDMDNR]"
+                      cachedDataType="numeric"
+                      cachedName="MDMDNR"
+                      cachedPrecision="9"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDMDNR]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDMDNR]" />
+                    <inputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MDNAMN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MDNAMN"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDNAMN]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDNAMN]" />
+                    <inputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MDFNMR]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MDFNMR"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDFNMR]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDFNMR]" />
+                    <inputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FDAT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="8"
+                      cachedName="FDAT"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FDAT]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[FDAT]" />
+                    <inputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MDAFDT]"
+                      cachedDataType="date"
+                      cachedName="MDAFDT"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDAFDT]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDAFDT]" />
+                    <inputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MDATDT]"
+                      cachedDataType="date"
+                      cachedName="MDATDT"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDATDT]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDATDT]" />
+                    <inputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MDAUDT]"
+                      cachedDataType="numeric"
+                      cachedName="MDAUDT"
+                      cachedPrecision="8"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDAUDT]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDAUDT]" />
+                    <inputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MDMDST]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="MDMDST"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDMDST]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDMDST]" />
+                    <inputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MDSOKD]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="MDSOKD"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDSOKD]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDSOKD]" />
+                    <inputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SONAMN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SONAMN"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SONAMN]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[SONAMN]" />
+                    <inputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MDSTAV]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="MDSTAV"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDSTAV]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDSTAV]" />
+                    <inputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MDKNKD]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="MDKNKD"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDKNKD]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDKNKD]" />
+                    <inputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MDSPKD]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="MDSPKD"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDSPKD]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDSPKD]" />
+                    <inputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MDSBYT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="MDSBYT"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDSBYT]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDSBYT]" />
+                    <inputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MDSTOP]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="MDSTOP"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDSTOP]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[MDSTOP]" />
+                    <inputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AULAND]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="AULAND"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AULAND]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[AULAND]" />
+                    <inputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ASORT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="27"
+                      cachedName="ASORT"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ASORT]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[ASORT]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDMDNR]"
+                      dataType="numeric"
+                      name="MDMDNR"
+                      precision="9" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDNAMN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MDNAMN" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDFNMR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MDFNMR" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FDAT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="FDAT" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDAFDT]"
+                      dataType="dbDate"
+                      name="MDAFDT" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDATDT]"
+                      dataType="dbDate"
+                      name="MDATDT" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDAUDT]"
+                      dataType="numeric"
+                      name="MDAUDT"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDMDST]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="MDMDST" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDSOKD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="MDSOKD" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SONAMN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SONAMN" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDSTAV]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="MDSTAV" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDKNKD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="MDKNKD" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDSPKD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="MDSPKD" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDSBYT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="MDSBYT" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MDSTOP]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="MDSTOP" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AULAND]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="AULAND" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ASORT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="27"
+                      name="ASORT" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load mdlmdl_subset_rightsholders.Paths[Flat File Source Output]"
+              endId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{0c442b5f-f028-4258-8ed4-d1c446f2385e}"
+      DTS:From="Package\create table mdlmdl_subset_rightsholders"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Load mdlmdl_subset_rightsholders" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="275,42"
+          Id="Package\create table mdlmdl_subset_rightsholders"
+          TopLeft="60,60" />
+        <NodeLayout
+          Size="242,42"
+          Id="Package\Load mdlmdl_subset_rightsholders"
+          TopLeft="389,60" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="335,81">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="54,0"
+              Start="0,0"
+              End="46.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="46.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Load mdlmdl_subset_rightsholders">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load mdlmdl_subset_rightsholders\Flat File Source"
+          TopLeft="106.5,30.5" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination"
+          TopLeft="99,121" />
+        <EdgeLayout
+          Id="Package\Load mdlmdl_subset_rightsholders.Paths[Flat File Source Output]"
+          TopLeft="183.25,72.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48.5"
+              Start="0,0"
+              End="0,41">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
