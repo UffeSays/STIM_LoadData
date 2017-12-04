@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="Flat File mdlmdl_subset_rightsholders"
   DTS:DTSID="{36AA6E77-EDFD-4AA1-85BB-1F827655E867}"

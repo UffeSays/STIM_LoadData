@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_medley"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{84CD9485-6EF4-4A51-BD1B-B163B934BE28}">
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{5ED4766D-E2F2-4800-986B-0749EA497DB3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -32,14 +32,13 @@
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_mdlmdl_subset_rightsholders','U') IS not NULL drop table [tmp].[tmp_mdlmdl_subset_rightsholders]&#xA;CREATE TABLE [tmp].[tmp_mdlmdl_subset_rightsholders] (&#xA;    [MDMDNR] numeric(9,0),&#xA;    [MDNAMN] varchar(50),&#xA;    [MDFNMR] varchar(50),&#xA;    [FDAT] varchar(8),&#xA;    [MDAFDT] date,&#xA;    [MDATDT] date,&#xA;    [MDAUDT] numeric(8,0),&#xA;    [MDMDST] varchar(1),&#xA;    [MDSOKD] varchar(2),&#xA;    [SONAMN] varchar(50),&#xA;    [MDSTAV] varchar(1),&#xA;    [MDKNKD] varchar(1),&#xA;    [MDSPKD] varchar(2),&#xA;    [MDSBYT] varchar(1),&#xA;    [MDSTOP] varchar(1),&#xA;    [AULAND] varchar(2),&#xA;    [ASORT] varchar(27),&#xA;    [PNKOMU] varchar(30)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="if OBJECT_ID( 'tmp.tmp_mdlmdl_subset_rightsholders','U') IS not NULL drop table [tmp].[tmp_mdlmdl_subset_rightsholders]&#xA;CREATE TABLE  [tmp].[tmp_mdlmdl_subset_rightsholders] (&#xA;    [MDMDNR] numeric(9,0),&#xA;    [MDNAMN] varchar(50),&#xA;    [MDFNMR] varchar(50),&#xA;    [FDAT] varchar(8),&#xA;    [MDAFDT] date,&#xA;    [MDATDT] date,&#xA;    [MDAUDT] numeric(8,0),&#xA;    [MDMDST] varchar(1),&#xA;    [MDSOKD] varchar(2),&#xA;    [SONAMN] varchar(50),&#xA;    [MDSTAV] varchar(1),&#xA;    [MDKNKD] varchar(1),&#xA;    [MDSPKD] varchar(2),&#xA;    [MDSBYT] varchar(1),&#xA;    [MDSTOP] varchar(1),&#xA;    [AULAND] varchar(2),&#xA;    [ASORT] varchar(27),&#xA;    [ASPONR] numeric(5,0),&#xA;    [PNKOMU] varchar(30)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Load mdlmdl_subset_rightsholders"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{ead2325e-eadd-4c79-9a4a-f65801ea97e9}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -541,6 +540,27 @@
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[ASPONR]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ASPONR]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[ASPONR]"
+                      name="ASPONR"
+                      precision="5"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -646,6 +666,11 @@
                       dataType="str"
                       length="30"
                       name="PNKOMU" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ASPONR]"
+                      dataType="numeric"
+                      name="ASPONR"
+                      precision="5" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -887,6 +912,13 @@
                       cachedName="PNKOMU"
                       externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PNKOMU]"
                       lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[PNKOMU]" />
+                    <inputColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ASPONR]"
+                      cachedDataType="numeric"
+                      cachedName="ASPONR"
+                      cachedPrecision="5"
+                      externalMetadataColumnId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ASPONR]"
+                      lineageId="Package\Load mdlmdl_subset_rightsholders\Flat File Source.Outputs[Flat File Source Output].Columns[ASPONR]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -986,6 +1018,11 @@
                       dataType="str"
                       length="27"
                       name="ASORT" />
+                    <externalMetadataColumn
+                      refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ASPONR]"
+                      dataType="numeric"
+                      name="ASPONR"
+                      precision="5" />
                     <externalMetadataColumn
                       refId="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PNKOMU]"
                       codePage="1252"
@@ -1098,35 +1135,9 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="171,42"
-          Id="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination"
-          TopLeft="99,121" />
-        <NodeLayout
           Size="151,42"
           Id="Package\Load mdlmdl_subset_rightsholders\Flat File Source"
           TopLeft="106.5,30.5" />
-        <EdgeLayout
-          Id="Package\Load mdlmdl_subset_rightsholders.Paths[Flat File Source Output]"
-          TopLeft="183.25,72.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,48.5"
-              Start="0,0"
-              End="0,41">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="172,42"
           Id="Package\Load mdlmdl_subset_rightsholders\Flat File Destination"
@@ -1163,8 +1174,46 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="30.9569466145834,25.1114023591088,127.2527734375,11.609375"
+              BoundingBox="30.9569466145835,25.1114023591088,127.2527734375,11.609375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination"
+          TopLeft="91,122" />
+        <EdgeLayout
+          Id="Package\Load mdlmdl_subset_rightsholders.Paths[Flat File Source Output]"
+          TopLeft="158.166666666667,72.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="18.3333333333333,49.5"
+              Start="0,0"
+              End="18.3333333333333,42">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.1114023591088" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.1114023591088"
+                    Point2="0,20.1114023591088"
+                    Point3="4,20.1114023591088" />
+                  <mssgle:LineSegment
+                    End="14.3333333333333,20.1114023591088" />
+                  <mssgle:CubicBezierSegment
+                    Point1="14.3333333333333,20.1114023591088"
+                    Point2="18.3333333333333,20.1114023591088"
+                    Point3="18.3333333333333,24.1114023591088" />
+                  <mssgle:LineSegment
+                    End="18.3333333333333,42" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
