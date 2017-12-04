@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Flat File Error output"
+  DTS:DTSID="{D721CD26-FCB9-4836-926B-F859E4396ABC}"
+  DTS:CreationName="FLATFILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="1053"
+      DTS:HeaderRowDelimiter="_x000D__x000A_"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x003C_none_x003E_"
+      DTS:CodePage="1252"
+      DTS:ConnectionString="E:\source_files\ERROR\error output.txt">
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="302"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Flat File Source Error Output Column"
+          DTS:DTSID="{1B2DE5F9-2F47-415C-8F01-15073EA2C07F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="3"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ErrorCode"
+          DTS:DTSID="{48D573A5-ACC7-4086-8B81-105AD4C4B07F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000D__x000A_"
+          DTS:DataType="3"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ErrorColumn"
+          DTS:DTSID="{1FB2935F-6E95-497E-8A4B-08B0ACBABFE0}"
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
