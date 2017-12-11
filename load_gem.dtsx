@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_gem"
   DTS:PackageType="5"
-  DTS:VersionBuild="101"
-  DTS:VersionGUID="{AC4413EE-86A6-49C5-8301-BE2A71245B4B}">
+  DTS:VersionBuild="106"
+  DTS:VersionGUID="{42DAD61B-2F70-471C-B498-9C225A1175CA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -21,7 +21,6 @@
       DTS:refId="Package\create table gemado"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{14BDDB0B-1DD8-4AB2-8419-CB3156802A12}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -33,7 +32,7 @@
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID('dbo.tmp_gemado','U') IS not NULL drop table tmp_gemado&#xA;CREATE TABLE [tmp_gemado] (&#xA;    [ADOID] numeric(9,0),&#xA;    [ADOAREA] varchar(2),&#xA;    [ADONAMESV] varchar(60),&#xA;    [ADONAMEENG] varchar(60),&#xA;    [FREQ] varchar(1),&#xA;    [KOST] varchar(1),&#xA;    [NAT] varchar(1),&#xA;    [ANAADO] varchar(1),&#xA;    [DISTBY] varchar(3),&#xA;    [KTO] numeric(4,0),&#xA;    [INVOICINGCURRENCYCODE] varchar(3),&#xA;    [DISTRIBUTIONCURRENCYCODE] varchar(3),&#xA;    [ACTIVE] varchar(1),&#xA;    [LICENSINGSOURCE] varchar(3),&#xA;    [LICENSINGSOURCEDESC] varchar(60),&#xA;    [CREATEDBY] varchar(10),&#xA;    [CREATEDDATE] datetime2(0),&#xA;    [MODIFIEDBY] varchar(10),&#xA;    [MODIFIEDDATE] datetime2(0)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="if OBJECT_ID('dbo.tmp_gemado','U') IS not NULL drop table [dbo].[tmp_gemado]&#xA;CREATE TABLE [dbo].[tmp_gemado] (&#xA;    [ADOID] numeric(9,0),&#xA;    [ADOAREA] varchar(2),&#xA;    [ADONAMESV] varchar(60),&#xA;    [ADONAMEENG] varchar(60),&#xA;    [FREQ] varchar(1),&#xA;    [KOST] varchar(1),&#xA;    [NAT] varchar(1),&#xA;    [ANAADO] varchar(1),&#xA;    [DISTBY] varchar(3),&#xA;    [KTO] numeric(4,0),&#xA;    [INVOICINGCURRENCYCODE] varchar(3),&#xA;    [DISTRIBUTIONCURRENCYCODE] varchar(3),&#xA;    [ACTIVE] varchar(1),&#xA;    [LICENSINGSOURCE] varchar(3),&#xA;    [LICENSINGSOURCEDESC] varchar(60),&#xA;    [CREATEDBY] varchar(10),&#xA;    [CREATEDDATE] datetime2(0),&#xA;    [MODIFIEDBY] varchar(10),&#xA;    [MODIFIEDDATE] datetime2(0)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -97,7 +96,6 @@
       DTS:refId="Package\Load gemado"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{FDC5B724-55E9-4F97-8E72-84FD21A5DC0A}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -130,8 +128,8 @@
               <connections>
                 <connection
                   refId="Package\Load gemado\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{EFD96C5C-6220-4661-AC04-EB75633D5AF3}:invalid"
-                  connectionManagerRefId="{EFD96C5C-6220-4661-AC04-EB75633D5AF3}:invalid"
+                  connectionManagerID="{33395656-E5BF-4E56-9731-2297186B5194}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Flat File GEMADO]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -1925,7 +1923,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp_gemlndpf]</property>
+                  name="OpenRowset">[dbo_gemlndpf]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -2988,7 +2986,7 @@
     design-time-name="Package\Load gemavopf">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171,42"
           Id="Package\Load gemavopf\OLE DB Destination"
@@ -3016,7 +3014,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3039,7 +3039,7 @@
     design-time-name="Package\Load gemlndpf">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171,42"
           Id="Package\Load gemlndpf\OLE DB Destination"
@@ -3067,7 +3067,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3090,7 +3092,7 @@
     design-time-name="Package\Load gemsocpf">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171,42"
           Id="Package\Load gemsocpf\OLE DB Destination"
@@ -3118,7 +3120,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

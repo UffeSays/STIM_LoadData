@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_matchbox"
   DTS:PackageType="5"
-  DTS:VersionBuild="66"
-  DTS:VersionGUID="{923D7B45-7E47-42E3-8C3D-67C911AF01E8}">
+  DTS:VersionBuild="93"
+  DTS:VersionGUID="{B366AD0F-B4FF-4F58-93FA-F72D58FC1CF0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -33,7 +33,7 @@
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_mbart','U') IS not NULL drop table  [tmp].[tmp_mbart]&#xA;CREATE TABLE [tmp].[tmp_mbart] (&#xA;    [ARTISTID] numeric(11,0),&#xA;    [WORKKEY] numeric(11,0),&#xA;    [PUBAGRNBR] numeric(11,0),&#xA;    [NAME] varchar(100),&#xA;    [FIRSTNAME] varchar(45),&#xA;    [TYPOFPARTY] varchar(2),&#xA;    [DATASOURCE] varchar(10),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] datetime2(0),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] datetime2(0)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_mbart','U') IS not NULL drop table  [tmp].[tmp_mbart]&#xA;CREATE TABLE [tmp].[tmp_mbart] (&#xA;    [ARTISTID] numeric(11,0),&#xA;    [WORKKEY] numeric(11,0),&#xA;    [PUBAGRNBR] numeric(11,0),&#xA;    [NAME] varchar(100),&#xA;    [FIRSTNAME] varchar(45),&#xA;    [TYPOFPARTY] varchar(2),&#xA;    [DATASOURCE] varchar(10),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] datetime,&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] datetime&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -52,7 +52,7 @@
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_mbhdr','U') IS not NULL drop table [tmp].[tmp_mbhdr]&#xA;CREATE TABLE [tmp].[tmp_mbhdr] (&#xA;    [WORKKEY] numeric(11,0),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] datetime2(0),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] datetime2(0),&#xA;    [WORKTITLE] varchar(90),&#xA;    [NATWRKTIT] varchar(90),&#xA;    [WORKSTATUS] varchar(1),&#xA;    [WRKLYRLANG] varchar(2),&#xA;    [VERSTYPE] varchar(3),&#xA;    [DUPDSPFLG] varchar(3),&#xA;    [WRKCAT] varchar(3),&#xA;    [PDDATE] date,&#xA;    [PUBLDATE] date,&#xA;    [ACTIVE] varchar(1),&#xA;    [PURPOSE] varchar(3),&#xA;    [GENRE] varchar(3)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_mbhdr','U') IS not NULL drop table [tmp].[tmp_mbhdr]&#xA;CREATE TABLE [tmp].[tmp_mbhdr] (&#xA;    [WORKKEY] numeric(11,0),&#xA;    [WORKTITLE] varchar(90),&#xA;    [NATWRKTIT] varchar(90),&#xA;    [WORKSTATUS] varchar(1),&#xA;    [WRKLYRLANG] varchar(2),&#xA;    [VERSTYPE] varchar(3),&#xA;    [DUPDSPFLG] varchar(3),&#xA;    [WRKCAT] varchar(3),&#xA;    [PDDATE] date,&#xA;    [PUBLDATE] date,&#xA;    [ACTIVE] varchar(1),&#xA;    [PURPOSE] varchar(3),&#xA;    [GENRE] varchar(3),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] datetime,&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] datetime&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -109,7 +109,7 @@
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_mbref','U') IS not NULL drop table [tmp].[tmp_mbref]&#xA;CREATE TABLE [tmp].[tmp_mbref](&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] datetime,&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] datetime,&#xA;    [WORKKEY] numeric(11,0),&#xA;    [REFID] numeric(11,0),&#xA;    [REFSEQNBR] numeric(7,0),&#xA;    [REFTYPE] varchar(15),&#xA;    [REFERENCE] varchar(60),&#xA;    [PUBCODE] varchar(3),&#xA;    [SOCCODE] varchar(3),&#xA;    [REFCRTICE] date,&#xA;    [DATASOURCE] varchar(15)&#xA;)"
+          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_mbref','U') IS not NULL drop table [tmp].[tmp_mbref]&#xA;CREATE TABLE [tmp].[tmp_mbref](&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] datetime,&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] datetime,&#xA;    [WORKKEY] numeric(11,0),&#xA;    [REFID] numeric(11,0),&#xA;    [REFSEQNBR] numeric(7,0),&#xA;    [REFTYPE] varchar(15),&#xA;    [REFERENCE] varchar(60),&#xA;    [PUBCODE] varchar(3),&#xA;    [SOCCODE] varchar(3),&#xA;    [REFCRTICE] varchar(10),&#xA;    [DATASOURCE] varchar(15)&#xA;)"
           SQLTask:CodePage="65001" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -117,7 +117,6 @@
       DTS:refId="Package\create table MBTIT"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{33731179-d198-43d5-9b9f-699ecee0bf8a}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -230,7 +229,7 @@
                 <property
                   dataType="System.Boolean"
                   description="Specifies whether zero-length columns are treated as null."
-                  name="RetainNulls">true</property>
+                  name="RetainNulls">false</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
@@ -423,7 +422,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDTSP]"
@@ -465,13 +464,13 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDTSP]"
                       lineageId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]"
                       name="CHANGEDTSP"
-                      truncationRowDisposition="RedirectRow">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -533,7 +532,7 @@
                       name="CREATEDUSR" />
                     <externalMetadataColumn
                       refId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDTSP]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbTimeStamp"
                       name="CREATEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDUSR]"
@@ -543,7 +542,7 @@
                       name="CHANGEDUSR" />
                     <externalMetadataColumn
                       refId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDTSP]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbTimeStamp"
                       name="CHANGEDTSP" />
                   </externalMetadataColumns>
                 </output>
@@ -711,7 +710,7 @@
                       lineageId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDUSR]" />
                     <inputColumn
                       refId="Package\Load MBART\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CREATEDTSP]"
-                      cachedDataType="dbTimeStamp2"
+                      cachedDataType="dbTimeStamp"
                       cachedName="CREATEDTSP"
                       externalMetadataColumnId="Package\Load MBART\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDTSP]"
                       lineageId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]" />
@@ -725,7 +724,7 @@
                       lineageId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]" />
                     <inputColumn
                       refId="Package\Load MBART\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDTSP]"
-                      cachedDataType="dbTimeStamp2"
+                      cachedDataType="dbTimeStamp"
                       cachedName="CHANGEDTSP"
                       externalMetadataColumnId="Package\Load MBART\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDTSP]"
                       lineageId="Package\Load MBART\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]" />
@@ -779,7 +778,7 @@
                       name="CREATEDUSR" />
                     <externalMetadataColumn
                       refId="Package\Load MBART\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDTSP]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbTimeStamp"
                       name="CREATEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBART\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDUSR]"
@@ -789,7 +788,7 @@
                       name="CHANGEDUSR" />
                     <externalMetadataColumn
                       refId="Package\Load MBART\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDTSP]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbTimeStamp"
                       name="CHANGEDTSP" />
                   </externalMetadataColumns>
                 </input>
@@ -933,7 +932,7 @@
                 <property
                   dataType="System.Boolean"
                   description="Specifies whether zero-length columns are treated as null."
-                  name="RetainNulls">true</property>
+                  name="RetainNulls">false</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
@@ -996,7 +995,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDTSP]"
@@ -1038,7 +1037,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDTSP]"
@@ -1212,10 +1211,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[PDDATE]"
-                      dataType="date"
+                      codePage="65001"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PDDATE]"
+                      length="10"
                       lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[PDDATE]"
                       name="PDDATE"
                       truncationRowDisposition="RedirectRow">
@@ -1232,10 +1233,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[PUBLDATE]"
-                      dataType="date"
+                      codePage="65001"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PUBLDATE]"
+                      length="10"
                       lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[PUBLDATE]"
                       name="PUBLDATE"
                       truncationRowDisposition="RedirectRow">
@@ -1332,7 +1335,7 @@
                       name="CREATEDUSR" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDTSP]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbTimeStamp"
                       name="CREATEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDUSR]"
@@ -1342,7 +1345,7 @@
                       name="CHANGEDUSR" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDTSP]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbTimeStamp"
                       name="CHANGEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WORKTITLE]"
@@ -1388,11 +1391,15 @@
                       name="WRKCAT" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PDDATE]"
-                      dataType="date"
+                      codePage="65001"
+                      dataType="str"
+                      length="10"
                       name="PDDATE" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PUBLDATE]"
-                      dataType="date"
+                      codePage="65001"
+                      dataType="str"
+                      length="10"
                       name="PUBLDATE" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ACTIVE]"
@@ -1532,7 +1539,7 @@
                       lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDUSR]" />
                     <inputColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CREATEDTSP]"
-                      cachedDataType="dbTimeStamp2"
+                      cachedDataType="dbTimeStamp"
                       cachedName="CREATEDTSP"
                       externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDTSP]"
                       lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]" />
@@ -1546,7 +1553,7 @@
                       lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]" />
                     <inputColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDTSP]"
-                      cachedDataType="dbTimeStamp2"
+                      cachedDataType="dbTimeStamp"
                       cachedName="CHANGEDTSP"
                       externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDTSP]"
                       lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]" />
@@ -1575,6 +1582,14 @@
                       externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WORKSTATUS]"
                       lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[WORKSTATUS]" />
                     <inputColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WRKLYRLANG]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="WRKLYRLANG"
+                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WRKLYRLANG]"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[WRKLYRLANG]" />
+                    <inputColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VERSTYPE]"
                       cachedCodepage="65001"
                       cachedDataType="str"
@@ -1600,13 +1615,17 @@
                       lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[WRKCAT]" />
                     <inputColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PDDATE]"
-                      cachedDataType="date"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="10"
                       cachedName="PDDATE"
                       externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PDDATE]"
                       lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[PDDATE]" />
                     <inputColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PUBLDATE]"
-                      cachedDataType="date"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="10"
                       cachedName="PUBLDATE"
                       externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PUBLDATE]"
                       lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[PUBLDATE]" />
@@ -1644,89 +1663,93 @@
                       precision="11" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDUSR]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="CREATEDUSR" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDTSP]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbTimeStamp"
                       name="CREATEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDUSR]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="CHANGEDUSR" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDTSP]"
-                      dataType="dbTimeStamp2"
+                      dataType="dbTimeStamp"
                       name="CHANGEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WORKTITLE]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="90"
                       name="WORKTITLE" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NATWRKTIT]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="90"
                       name="NATWRKTIT" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WORKSTATUS]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="1"
                       name="WORKSTATUS" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WRKLYRLANG]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="2"
                       name="WRKLYRLANG" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VERSTYPE]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="3"
                       name="VERSTYPE" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DUPDSPFLG]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="3"
                       name="DUPDSPFLG" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WRKCAT]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="3"
                       name="WRKCAT" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PDDATE]"
-                      dataType="dbDate"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
                       name="PDDATE" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PUBLDATE]"
-                      dataType="dbDate"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
                       name="PUBLDATE" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ACTIVE]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="1"
                       name="ACTIVE" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PURPOSE]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="3"
                       name="PURPOSE" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GENRE]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="3"
                       name="GENRE" />
@@ -1957,26 +1980,6 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
-                      externalMetadataColumnId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDTSP]"
-                      lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]"
-                      name="CREATEDTSP"
-                      truncationRowDisposition="RedirectRow">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]"
                       codePage="65001"
                       dataType="str"
@@ -1986,26 +1989,6 @@
                       length="50"
                       lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]"
                       name="CHANGEDUSR"
-                      truncationRowDisposition="RedirectRow">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
-                      externalMetadataColumnId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDTSP]"
-                      lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]"
-                      name="CHANGEDTSP"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -2453,12 +2436,6 @@
                       externalMetadataColumnId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDUSR]"
                       lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDUSR]" />
                     <inputColumn
-                      refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CREATEDTSP]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="CREATEDTSP"
-                      externalMetadataColumnId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDTSP]"
-                      lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]" />
-                    <inputColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDUSR]"
                       cachedCodepage="65001"
                       cachedDataType="str"
@@ -2466,12 +2443,6 @@
                       cachedName="CHANGEDUSR"
                       externalMetadataColumnId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDUSR]"
                       lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]" />
-                    <inputColumn
-                      refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDTSP]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="CHANGEDTSP"
-                      externalMetadataColumnId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDTSP]"
-                      lineageId="Package\Load MBIPI\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]" />
                     <inputColumn
                       refId="Package\Load MBIPI\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IPNAMEKEY]"
                       cachedDataType="numeric"
@@ -2822,26 +2793,6 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
-                      externalMetadataColumnId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDTSP]"
-                      lineageId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]"
-                      name="CREATEDTSP"
-                      truncationRowDisposition="RedirectRow">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]"
                       codePage="65001"
                       dataType="str"
@@ -2851,26 +2802,6 @@
                       length="50"
                       lineageId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]"
                       name="CHANGEDUSR"
-                      truncationRowDisposition="RedirectRow">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
-                      externalMetadataColumnId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDTSP]"
-                      lineageId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]"
-                      name="CHANGEDTSP"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -3150,12 +3081,6 @@
                       externalMetadataColumnId="Package\Load MBIPW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDUSR]"
                       lineageId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDUSR]" />
                     <inputColumn
-                      refId="Package\Load MBIPW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CREATEDTSP]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="CREATEDTSP"
-                      externalMetadataColumnId="Package\Load MBIPW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDTSP]"
-                      lineageId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]" />
-                    <inputColumn
                       refId="Package\Load MBIPW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDUSR]"
                       cachedCodepage="65001"
                       cachedDataType="str"
@@ -3163,12 +3088,6 @@
                       cachedName="CHANGEDUSR"
                       externalMetadataColumnId="Package\Load MBIPW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDUSR]"
                       lineageId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]" />
-                    <inputColumn
-                      refId="Package\Load MBIPW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDTSP]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="CHANGEDTSP"
-                      externalMetadataColumnId="Package\Load MBIPW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDTSP]"
-                      lineageId="Package\Load MBIPW\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]" />
                     <inputColumn
                       refId="Package\Load MBIPW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IPNAMEKEY]"
                       cachedDataType="numeric"
@@ -3651,10 +3570,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[REFCRTICE]"
-                      dataType="date"
+                      codePage="65001"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[REFCRTICE]"
+                      length="10"
                       lineageId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[REFCRTICE]"
                       name="REFCRTICE"
                       truncationRowDisposition="RedirectRow">
@@ -3755,7 +3676,9 @@
                       name="SOCCODE" />
                     <externalMetadataColumn
                       refId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[REFCRTICE]"
-                      dataType="date"
+                      codePage="65001"
+                      dataType="str"
+                      length="10"
                       name="REFCRTICE" />
                     <externalMetadataColumn
                       refId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DATASOURCE]"
@@ -3875,12 +3798,6 @@
                       externalMetadataColumnId="Package\Load MBREF\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDUSR]"
                       lineageId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDUSR]" />
                     <inputColumn
-                      refId="Package\Load MBREF\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CREATEDTSP]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="CREATEDTSP"
-                      externalMetadataColumnId="Package\Load MBREF\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDTSP]"
-                      lineageId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]" />
-                    <inputColumn
                       refId="Package\Load MBREF\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDUSR]"
                       cachedCodepage="65001"
                       cachedDataType="str"
@@ -3888,12 +3805,6 @@
                       cachedName="CHANGEDUSR"
                       externalMetadataColumnId="Package\Load MBREF\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDUSR]"
                       lineageId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]" />
-                    <inputColumn
-                      refId="Package\Load MBREF\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDTSP]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="CHANGEDTSP"
-                      externalMetadataColumnId="Package\Load MBREF\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDTSP]"
-                      lineageId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]" />
                     <inputColumn
                       refId="Package\Load MBREF\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WORKKEY]"
                       cachedDataType="numeric"
@@ -3949,7 +3860,9 @@
                       lineageId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[SOCCODE]" />
                     <inputColumn
                       refId="Package\Load MBREF\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[REFCRTICE]"
-                      cachedDataType="date"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="10"
                       cachedName="REFCRTICE"
                       externalMetadataColumnId="Package\Load MBREF\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[REFCRTICE]"
                       lineageId="Package\Load MBREF\Flat File Source.Outputs[Flat File Source Output].Columns[REFCRTICE]" />
@@ -4025,7 +3938,9 @@
                       name="SOCCODE" />
                     <externalMetadataColumn
                       refId="Package\Load MBREF\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[REFCRTICE]"
-                      dataType="dbDate"
+                      codePage="65001"
+                      dataType="str"
+                      length="10"
                       name="REFCRTICE" />
                     <externalMetadataColumn
                       refId="Package\Load MBREF\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DATASOURCE]"
@@ -4081,7 +3996,6 @@
       DTS:refId="Package\Load MBTIT"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{6b13a2ad-7a28-4c24-b2d7-dec96f0778e1}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -4602,12 +4516,6 @@
                       externalMetadataColumnId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDUSR]"
                       lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDUSR]" />
                     <inputColumn
-                      refId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CREATEDTSP]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="CREATEDTSP"
-                      externalMetadataColumnId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDTSP]"
-                      lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]" />
-                    <inputColumn
                       refId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDUSR]"
                       cachedCodepage="65001"
                       cachedDataType="str"
@@ -4615,12 +4523,6 @@
                       cachedName="CHANGEDUSR"
                       externalMetadataColumnId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDUSR]"
                       lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]" />
-                    <inputColumn
-                      refId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDTSP]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="CHANGEDTSP"
-                      externalMetadataColumnId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDTSP]"
-                      lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]" />
                     <inputColumn
                       refId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DATASOURCE]"
                       cachedCodepage="65001"
@@ -4667,6 +4569,13 @@
                       cachedName="NATWRKTIT"
                       externalMetadataColumnId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NATWRKTIT]"
                       lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[NATWRKTIT]" />
+                    <inputColumn
+                      refId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WORKKEY]"
+                      cachedDataType="numeric"
+                      cachedName="WORKKEY"
+                      cachedPrecision="11"
+                      externalMetadataColumnId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WORKKEY]"
+                      lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[WORKKEY]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -5278,7 +5187,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5313,7 +5224,7 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="25.2069466145834,26.9397116644823,127.2527734375,11.609375"
+              BoundingBox="25.2069466145835,26.9397116644823,127.2527734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -5349,21 +5260,33 @@
         <NodeLayout
           Size="171,42"
           Id="Package\Load MBHDR\OLE DB Destination"
-          TopLeft="177,163" />
+          TopLeft="182,165" />
         <EdgeLayout
           Id="Package\Load MBHDR.Paths[Flat File Source Output]"
-          TopLeft="265,110">
+          TopLeft="243.666666666667,110">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,53"
+              EndConnector="23.8333333333333,55"
               Start="0,0"
-              End="0,45.5">
+              End="23.8333333333333,47.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,45.5" />
+                    End="0,18.346002621232" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.346002621232"
+                    Point2="0,22.346002621232"
+                    Point3="4,22.346002621232" />
+                  <mssgle:LineSegment
+                    End="19.8333333333333,22.346002621232" />
+                  <mssgle:CubicBezierSegment
+                    Point1="19.8333333333333,22.346002621232"
+                    Point2="23.8333333333333,22.346002621232"
+                    Point3="23.8333333333333,26.346002621232" />
+                  <mssgle:LineSegment
+                    End="23.8333333333333,47.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5406,7 +5329,7 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="20.2069466145834,27.346002621232,127.2527734375,11.609375"
+              BoundingBox="20.2069466145835,27.346002621232,127.2527734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -5436,13 +5359,13 @@
           Id="Package\Load MBIPI\Flat File Source"
           TopLeft="192,68" />
         <NodeLayout
-          Size="172,42"
-          Id="Package\Load MBIPI\Flat File Destination"
-          TopLeft="380,162" />
-        <NodeLayout
           Size="171,42"
           Id="Package\Load MBIPI\OLE DB Destination"
           TopLeft="180,161" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Load MBIPI\Flat File Destination"
+          TopLeft="380,162" />
         <EdgeLayout
           Id="Package\Load MBIPI.Paths[Flat File Source Output]"
           TopLeft="266.5,110">
@@ -5462,7 +5385,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5553,7 +5478,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5618,9 +5545,47 @@
           Id="Package\Load MBREF\Flat File Source"
           TopLeft="192,68" />
         <NodeLayout
+          Size="171,42"
+          Id="Package\Load MBREF\OLE DB Destination"
+          TopLeft="195,158" />
+        <NodeLayout
           Size="172,42"
           Id="Package\Load MBREF\Flat File Destination"
           TopLeft="393,159" />
+        <EdgeLayout
+          Id="Package\Load MBREF.Paths[Flat File Source Output]"
+          TopLeft="243.666666666667,110">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="36.8333333333333,48"
+              Start="0,0"
+              End="36.8333333333333,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.5019659239843" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.5019659239843"
+                    Point2="0,19.5019659239843"
+                    Point3="4,19.5019659239843" />
+                  <mssgle:LineSegment
+                    End="32.8333333333333,19.5019659239843" />
+                  <mssgle:CubicBezierSegment
+                    Point1="32.8333333333333,19.5019659239843"
+                    Point2="36.8333333333333,19.5019659239843"
+                    Point3="36.8333333333333,23.5019659239843" />
+                  <mssgle:LineSegment
+                    End="36.8333333333333,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load MBREF.Paths[Flat File Source Error Output]"
           TopLeft="291.333333333333,110">
@@ -5655,44 +5620,6 @@
             <mssgm:EdgeLabel
               BoundingBox="30.2069466145835,24.9082568807339,127.2527734375,11.609375"
               RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Load MBREF\OLE DB Destination"
-          TopLeft="195,158" />
-        <EdgeLayout
-          Id="Package\Load MBREF.Paths[Flat File Source Output]"
-          TopLeft="243.666666666667,110">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="36.8333333333333,48"
-              Start="0,0"
-              End="36.8333333333333,40.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,15.5019659239843" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15.5019659239843"
-                    Point2="0,19.5019659239843"
-                    Point3="4,19.5019659239843" />
-                  <mssgle:LineSegment
-                    End="32.8333333333333,19.5019659239843" />
-                  <mssgle:CubicBezierSegment
-                    Point1="32.8333333333333,19.5019659239843"
-                    Point2="36.8333333333333,19.5019659239843"
-                    Point3="36.8333333333333,23.5019659239843" />
-                  <mssgle:LineSegment
-                    End="36.8333333333333,40.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
