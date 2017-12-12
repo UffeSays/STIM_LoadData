@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>load_data_2017</Name>
-    <LastWriteTime>2017-12-11T07:44:14.9507204Z</LastWriteTime>
+    <LastWriteTime>2017-12-12T12:34:00.6596901Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -28,7 +28,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>load_matchbox.dtsx</Name>
-      <LastWriteTime>2017-12-08T14:31:57.4892797Z</LastWriteTime>
+      <LastWriteTime>2017-12-12T15:19:01.2719252Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -37,8 +37,8 @@
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>load_test.dtsx</Name>
-      <LastWriteTime>2017-12-06T13:43:05.0066895Z</LastWriteTime>
+      <Name>transfer data from tmp.dtsx</Name>
+      <LastWriteTime>2017-12-12T13:45:27.5916482Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
