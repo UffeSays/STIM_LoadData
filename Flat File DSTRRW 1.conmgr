@@ -12,7 +12,7 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x0022_"
       DTS:CodePage="1252"
-      DTS:ConnectionString="E:\source_files\TROY\2017\dstrrw_2017.csv">
+      DTS:ConnectionString="E:\source_files\TROY\2017\dstrrw.csv">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -21,7 +21,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="DISTRIBUTIONKEY"
-          DTS:DTSID="{4080D8DC-43ED-43AB-AF25-60ECB23BADA7}"
+          DTS:DTSID="{7A1CBAB6-B5FA-4790-A100-553C775B982A}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +30,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="PROCESSKEY"
-          DTS:DTSID="{C1DC3798-C9B8-4DEE-A0B3-727AE195BD9A}"
+          DTS:DTSID="{9097288C-FD0C-4881-AF49-F3D367906C20}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="REPORTKEY"
-          DTS:DTSID="{AAAD0C4E-F1CB-4936-93D9-60F696CFA1FB}"
+          DTS:DTSID="{18CA9D96-093B-44C7-ADE1-6917A611DDEF}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="REPORTROWKEY"
-          DTS:DTSID="{B0ADEFDB-48DE-4561-BF3E-94E1ABC07D0B}"
+          DTS:DTSID="{E8D7F217-0758-4173-9D48-256D2D499D9C}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="REPORTCODE"
-          DTS:DTSID="{C1CE1832-D1D7-44CD-A1CE-0409341E8ECC}"
+          DTS:DTSID="{3DBC6705-FE65-4CEE-B16B-39D75E9A8024}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="REPORTVALUETYPE"
-          DTS:DTSID="{D2AF313C-9566-4D3E-B0D1-A2D778EA59AF}"
+          DTS:DTSID="{6558F402-FEB1-45C6-A2A8-7FB194D77285}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -76,7 +76,7 @@
           DTS:DataScale="3"
           DTS:TextQualified="True"
           DTS:ObjectName="REPORTVALUE"
-          DTS:DTSID="{4AC4AF77-0C4D-4764-8BDC-666C5C19022D}"
+          DTS:DTSID="{DA965817-C5CA-4588-8F7C-E40754AD9E08}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -84,7 +84,7 @@
           DTS:DataType="7"
           DTS:TextQualified="True"
           DTS:ObjectName="DATEOFUSE"
-          DTS:DTSID="{1A1CA7AB-1FDF-4CDC-A47D-AD54EA7A5A6E}"
+          DTS:DTSID="{2FA06B92-E6A8-4180-9D0A-5B7E8AE3CB2D}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -93,7 +93,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="COUNTRYOFUSE"
-          DTS:DTSID="{1B928B9F-20B2-4405-AB15-37A27352B2A2}"
+          DTS:DTSID="{8A3386D9-5863-4963-947A-C3AEDDB0F05A}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -102,7 +102,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="NUMBEROFUSES"
-          DTS:DTSID="{E8677C0C-95CA-4D14-BAA1-5296801A2FA4}"
+          DTS:DTSID="{9C1971D7-47EE-411A-8A55-BB6743396CE7}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -111,7 +111,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="SELECTTYPE"
-          DTS:DTSID="{AFC495E9-A88E-4068-967C-A24BF2BE7A61}"
+          DTS:DTSID="{061A8B18-FB60-4290-A4D6-0AE1657D383E}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

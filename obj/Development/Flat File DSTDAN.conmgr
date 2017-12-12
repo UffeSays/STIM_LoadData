@@ -12,7 +12,7 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x0022_"
       DTS:CodePage="1252"
-      DTS:ConnectionString="E:\source_files\TROY\2017\dstdan_2017.csv">
+      DTS:ConnectionString="E:\source_files\TROY\2017\dstdan.csv">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -21,7 +21,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="DISTRIBUTIONKEY"
-          DTS:DTSID="{BD9A1391-A4D2-4300-8693-6DCC62027D64}"
+          DTS:DTSID="{1AF31F47-8BA7-4799-A4EB-8DEC7E69F7AA}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +30,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="SELECTIONKEY"
-          DTS:DTSID="{EC606423-E933-4685-82DF-CA0325E5AD7D}"
+          DTS:DTSID="{245A21D1-EADE-4439-B9D2-33D00352436B}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="SELECTEDPROCESSKEY"
-          DTS:DTSID="{9E7CAB66-614D-4655-A84C-8FE98A1FA707}"
+          DTS:DTSID="{DF5AB35B-9E09-4701-9074-2EDC2D0D1B26}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

@@ -12,7 +12,7 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x0022_"
       DTS:CodePage="1252"
-      DTS:ConnectionString="E:\source_files\TROY\2017\dstipi_2017.csv">
+      DTS:ConnectionString="E:\source_files\TROY\2017\dstipi.csv">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -21,7 +21,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="DISTRIBUTIONKEY"
-          DTS:DTSID="{7CDE475C-35A2-4D99-9A6B-87EFA580161A}"
+          DTS:DTSID="{46D71210-D879-4C6B-A6C8-E2BA6E8D3314}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +30,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="ICEIPNAMEKEY"
-          DTS:DTSID="{3FE2DFF7-371D-4B03-AAC9-F11DA0110320}"
+          DTS:DTSID="{F01A9D93-2CC7-4E5A-8FEE-04C27D7C71C2}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="ICEIPBASEKEY"
-          DTS:DTSID="{FC6FA30C-33EA-4005-B349-D8DCF89C8993}"
+          DTS:DTSID="{0823B90D-989C-4F10-ADB2-7DE41AEA28D1}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="IPINAMENUMBER"
-          DTS:DTSID="{A5601BD1-8A0E-4CE9-BC9C-57EBEDE48102}"
+          DTS:DTSID="{077A9F05-7133-4475-A2EC-EBD5A5FC9216}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="IPINAME"
-          DTS:DTSID="{CB8A8ADC-DA86-415F-B392-2280105D1F69}"
+          DTS:DTSID="{10B9C004-8E95-4FE5-A959-FAC6AEE13D50}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="IPIFIRSTNAME"
-          DTS:DTSID="{8054113F-C938-47CA-926B-7C31DD02FA6B}"
+          DTS:DTSID="{A87F8464-3340-4C27-A713-155242DFB2D9}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

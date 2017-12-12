@@ -11,111 +11,16 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_troy_data"
   DTS:PackageType="5"
-  DTS:VersionBuild="153"
-  DTS:VersionGUID="{3419DA3A-CC06-4140-932E-3EA23600BAA1}">
+  DTS:VersionBuild="155"
+  DTS:VersionGUID="{D6D94874-C63D-49FB-8227-0CC2073908E4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File DSTRMW]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{2355DCF9-AAD9-446F-850A-7A8C3EB63442}"
-      DTS:ObjectName="Flat File DSTRMW">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x0022_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="E:\source_files\TROY\2017\dstrmw_2017.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="DISTRIBUTIONKEY"
-              DTS:DTSID="{59A5870B-6AD0-4B2D-8247-E340A84CF04E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="PROCESSKEY"
-              DTS:DTSID="{1CAA3325-E528-4030-B369-623FFFBF402C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="REPORTKEY"
-              DTS:DTSID="{B2F8F173-629A-4478-B4F9-0830893475C7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="REPORTROWKEY"
-              DTS:DTSID="{E1DB7793-533C-4D1E-BCA4-FE9166BAC182}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="20"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="WORKKEY"
-              DTS:DTSID="{9262A7CA-7A48-4B0A-8C33-E64A76750290}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="3"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="WORKKEYTYP"
-              DTS:DTSID="{F2C7457C-9CD0-42DC-9A84-56B965662E28}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="DURATION"
-              DTS:DTSID="{7AF23D58-04EF-485F-B9DA-D2D81C77D2E8}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="131"
-              DTS:DataPrecision="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="WORKPICTUR"
-              DTS:DTSID="{25FA807E-C918-414B-B76F-BC372A9C6E4F}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\create table dstaps"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{4E07D72B-55C8-486C-BACA-5A05F8896A35}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -134,7 +39,6 @@
       DTS:refId="Package\create table dstdam"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{459CDE51-89E2-433E-92F9-523BF81BB5C9}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -153,7 +57,6 @@
       DTS:refId="Package\create table dstipb"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{E58AFDE7-C980-455A-AFC7-7849FC44DB2B}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -172,7 +75,6 @@
       DTS:refId="Package\create table dstipi"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{85A5E77B-D3C4-46B1-AFB6-F6957AF170FE}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -191,7 +93,6 @@
       DTS:refId="Package\create table dstish"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{4ddf3f26-06b3-491a-862e-347540f269ef}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -210,7 +111,6 @@
       DTS:refId="Package\create table dstres"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{C7CBE7C5-80DB-40B3-A14F-EB9DC0AB83AE}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -229,7 +129,6 @@
       DTS:refId="Package\create table dstrmw"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{782a863e-f1f0-452e-9e3c-9ecc43f94aa9}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -248,7 +147,6 @@
       DTS:refId="Package\create table dstrpw"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{771a893f-016a-4cc2-9556-1e85284825fb}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -267,7 +165,6 @@
       DTS:refId="Package\create table dstrrw"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{5408a4ae-5ce0-43af-948a-baae936e42dc}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -286,7 +183,6 @@
       DTS:refId="Package\create table dstwrk"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{9F511967-F445-4D3A-A303-02D03D4E33F0}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -305,7 +201,6 @@
       DTS:refId="Package\Load dstaps"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{92088F6D-3974-48B4-9172-CFE6CE6D23CF}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -1775,7 +1670,6 @@
       DTS:refId="Package\Load dstdam"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{B182AE52-93B8-4D3F-BEA6-EABEBAD698FC}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -2415,7 +2309,6 @@
       DTS:refId="Package\Load dstipb"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{4BF0143E-170B-4F61-AFD9-CB20F94DE2B7}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -2929,7 +2822,6 @@
       DTS:refId="Package\Load dstipi"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{40E29471-57C6-4304-9E5B-250494F3854E}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -3359,7 +3251,6 @@
       DTS:refId="Package\Load dstish"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{4cd65a9b-3d24-4fc1-b93f-55633b0a12eb}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -4437,7 +4328,6 @@
       DTS:refId="Package\Load dstres"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{3A745E6F-8AB4-4652-A90F-8F87029F8EE7}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -5343,7 +5233,6 @@
       DTS:refId="Package\Load dstrmw"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{a4f0fe38-4273-41a2-9c81-fcf08493aa4b}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -5376,8 +5265,8 @@
               <connections>
                 <connection
                   refId="Package\Load dstrmw\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File DSTRMW]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File DSTRMW]"
+                  connectionManagerID="{2355DCF9-AAD9-446F-850A-7A8C3EB63442}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Flat File DSTRMW 1]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -5849,7 +5738,6 @@
       DTS:refId="Package\Load dstrpw"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{f3e336c0-a39d-47c6-9dae-aa29bca4c30b}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -6355,7 +6243,6 @@
       DTS:refId="Package\Load dstrrw"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{f2b0e55c-2c54-4f69-ac4b-39db26b376b1}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -6983,7 +6870,6 @@
       DTS:refId="Package\Load dstwrk"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{B7BEF28F-113F-4457-BAAA-1E5E0DC2B11B}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"

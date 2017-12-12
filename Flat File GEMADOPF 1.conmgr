@@ -12,7 +12,7 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x0022_"
       DTS:CodePage="1252"
-      DTS:ConnectionString="E:\source_files\TROY\2017\gemavopf_2017.csv">
+      DTS:ConnectionString="E:\source_files\TROY\2017\gemavopf.csv">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -21,7 +21,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="AOAOID"
-          DTS:DTSID="{2DD6F9DC-7FB7-44CD-B21C-6D4B681E9D6F}"
+          DTS:DTSID="{BD48E92C-6173-4AD9-B7D1-D82BC551C7E5}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +30,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="AOTEXT"
-          DTS:DTSID="{1CE2EC0F-32D4-4555-A490-167B77299BE6}"
+          DTS:DTSID="{A77829DF-7916-4BAC-8697-8D1AE469F1CB}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="AOTXTE"
-          DTS:DTSID="{9F784C99-6488-4F3E-B46C-D30F4325C789}"
+          DTS:DTSID="{2FDD8B06-05E7-4133-B5F1-853528C23A6B}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -47,7 +47,7 @@
           DTS:DataType="7"
           DTS:TextQualified="True"
           DTS:ObjectName="CRTDTE"
-          DTS:DTSID="{E914FA00-A325-4012-9CC6-4FEEAE7A25C0}"
+          DTS:DTSID="{609D4200-CBCB-4FC5-B1AA-6199E16D608B}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -56,7 +56,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="CRTUSR"
-          DTS:DTSID="{139B8907-7A39-4C0A-A4E6-A700227336DF}"
+          DTS:DTSID="{184BB454-8869-4811-BB63-BA125EF442CD}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -64,7 +64,7 @@
           DTS:DataType="7"
           DTS:TextQualified="True"
           DTS:ObjectName="CHGDTE"
-          DTS:DTSID="{16E58EFD-F79C-4BA2-A538-BB7E3A97634C}"
+          DTS:DTSID="{DB825890-8F22-4AF6-8EC0-BE1180FFC661}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -73,7 +73,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="CHGUSR"
-          DTS:DTSID="{3C29EEFD-9716-4015-872F-697B748D96CA}"
+          DTS:DTSID="{12B6EE0C-447C-480A-B9F0-B6F1FFA6F2CC}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

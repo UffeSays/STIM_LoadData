@@ -12,7 +12,7 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x0022_"
       DTS:CodePage="1252"
-      DTS:ConnectionString="E:\source_files\TROY\2017\dstded_2017.csv">
+      DTS:ConnectionString="E:\source_files\TROY\2017\dstded.csv">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -21,7 +21,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="DISTRIBUTIONKEY"
-          DTS:DTSID="{EC24B56A-04AC-4C4C-9A42-1B6787805B74}"
+          DTS:DTSID="{CED382FB-77EA-4D41-BE45-1238E6435E1E}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +30,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="PROCESSKEY"
-          DTS:DTSID="{87A6E418-A22D-4EF9-A53B-A0B1DC2102E2}"
+          DTS:DTSID="{406F415D-54D7-4E96-BDAB-8C3440F4ADED}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -40,7 +40,7 @@
           DTS:DataScale="3"
           DTS:TextQualified="True"
           DTS:ObjectName="DEDUCTAMOUNT"
-          DTS:DTSID="{A6A307C4-2FDF-4E2F-9914-8B8EBEA2059B}"
+          DTS:DTSID="{DC055A4D-50E9-430F-9737-6BD6A8182B3D}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -49,7 +49,7 @@
           DTS:DataPrecision="3"
           DTS:TextQualified="True"
           DTS:ObjectName="DEDUCTTYPE"
-          DTS:DTSID="{06BA32EA-C157-4833-BBBB-876B9B993EA9}"
+          DTS:DTSID="{137AF784-2997-45BA-A3C0-F14A437E17EA}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -58,7 +58,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="CURRENCY"
-          DTS:DTSID="{EA9C0FD9-E793-46CD-BEF1-49D7011DF42E}"
+          DTS:DTSID="{E7106C7E-F58D-4F95-8C79-2B3FEA62052E}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -67,7 +67,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="TYPEOFRIGHT"
-          DTS:DTSID="{033DB795-75CF-4516-A588-028C502F4F3F}"
+          DTS:DTSID="{B002A02A-0857-48ED-BE87-AA7D1BE376AE}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>load_data_2017</Name>
-    <LastWriteTime>2017-12-06T09:33:36.0299758Z</LastWriteTime>
+    <LastWriteTime>2017-12-11T07:44:14.9507204Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -13,17 +13,17 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>load_gem.dtsx</Name>
-      <LastWriteTime>2017-12-04T16:05:47.6432001Z</LastWriteTime>
+      <LastWriteTime>2017-12-11T07:24:45.9178376Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>load_troy_data.dtsx</Name>
-      <LastWriteTime>2017-11-22T14:07:11.7711523Z</LastWriteTime>
+      <LastWriteTime>2017-12-11T07:44:30.3416596Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>load_troy_meta.dtsx</Name>
-      <LastWriteTime>2017-11-22T14:07:11.583687Z</LastWriteTime>
+      <LastWriteTime>2017-12-11T07:38:03.3647871Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>

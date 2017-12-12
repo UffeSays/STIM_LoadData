@@ -12,7 +12,7 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x0022_"
       DTS:CodePage="1252"
-      DTS:ConnectionString="E:\source_files\TROY\2017\dstish_2017.csv">
+      DTS:ConnectionString="E:\source_files\TROY\2017\dstish.csv">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -21,7 +21,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="DISTRIBUTIONKEY"
-          DTS:DTSID="{794A790A-7188-4584-B756-256095035DF6}"
+          DTS:DTSID="{D9B4054B-9FA9-4A0C-BA12-E94109424D1D}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +30,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="ICEWORKKEY"
-          DTS:DTSID="{D1BDE1F3-69DD-432D-9A7C-4F590F2A1851}"
+          DTS:DTSID="{4F2CF4FC-0034-405F-B008-4DA5C4C6C9C2}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
           DTS:DataPrecision="5"
           DTS:TextQualified="True"
           DTS:ObjectName="USAGEKEY"
-          DTS:DTSID="{FCF7CC0C-8EE7-4F35-A11A-30CF4C2E00B5}"
+          DTS:DTSID="{782850E1-8334-4851-AC9C-9D31FD9B288C}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="ICEIPNAMEKEY"
-          DTS:DTSID="{6EA0B9AA-F00D-4EE9-AE04-E2C949D3AFD5}"
+          DTS:DTSID="{7DDEBD64-1C4D-4BB5-8E99-FA779CDC615C}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="CAECODE"
-          DTS:DTSID="{3961A710-170A-4ACE-AB3E-95C6FB284A39}"
+          DTS:DTSID="{8D8154A6-47F2-4113-97FE-2ED8C201A913}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="CAR"
-          DTS:DTSID="{BC421605-4620-417A-AB23-2DDA9F701204}"
+          DTS:DTSID="{2E95143D-0E93-4690-A521-7B319918684E}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="ORIGINALAGREEMENTKEY"
-          DTS:DTSID="{7115F0C3-12D6-41B9-BA61-E5A449AA75B4}"
+          DTS:DTSID="{E57D7244-16BB-4DDB-92AA-FC9C9F614D6C}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -84,7 +84,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="PUBAGREEMENTKEY"
-          DTS:DTSID="{CE68A1D1-73C3-4715-9AE2-2930E51C9AA5}"
+          DTS:DTSID="{261FB14F-31B9-4F6E-8501-63656962DE17}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -94,7 +94,7 @@
           DTS:DataScale="2"
           DTS:TextQualified="True"
           DTS:ObjectName="MECHANICALSHARE"
-          DTS:DTSID="{E4FAAD6D-A7F4-4E50-82CB-5B8D90433BB8}"
+          DTS:DTSID="{F4B0E084-E6CE-470D-BC2C-4B95B4A292C1}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -103,7 +103,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="MECHCODEUSAGEDATE"
-          DTS:DTSID="{AE0D1517-D859-47AD-9626-97125E24D798}"
+          DTS:DTSID="{A84517FB-FCFA-4E12-99DF-E1D5F57D4E7E}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -112,7 +112,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="MECHCODEDISTRDATE"
-          DTS:DTSID="{44931454-8E95-4FAD-88D8-A2F0CFA9640C}"
+          DTS:DTSID="{D2985576-BDCD-4FBA-8488-BC6E09086255}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -122,7 +122,7 @@
           DTS:DataScale="2"
           DTS:TextQualified="True"
           DTS:ObjectName="PERFORMANCESHARE"
-          DTS:DTSID="{703244AE-5E65-42E4-9043-7F199848DAB5}"
+          DTS:DTSID="{B1F50B5D-EC77-44B5-AD17-1FB9E115ECC2}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -131,7 +131,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="PERFCODEUSAGEDATE"
-          DTS:DTSID="{4DDFEBCC-B14E-4832-B6BC-60F8D6804396}"
+          DTS:DTSID="{523AEFE3-E23A-4700-986B-5113C8DD0760}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -140,7 +140,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="PERFCODEDISTRDATE"
-          DTS:DTSID="{B8FE1467-5465-42DB-855F-69B84AE8A188}"
+          DTS:DTSID="{1FE9B93A-4D38-4FF3-94BC-12F62D0CAAD2}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -150,7 +150,7 @@
           DTS:DataScale="2"
           DTS:TextQualified="True"
           DTS:ObjectName="MECHANICALSHAREPAID"
-          DTS:DTSID="{2F834319-6211-42BF-934E-1DD845623D78}"
+          DTS:DTSID="{5D67374B-2886-44BA-8804-CE87DB5CBB45}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -160,7 +160,7 @@
           DTS:DataScale="2"
           DTS:TextQualified="True"
           DTS:ObjectName="PERFORMANCESHAREPAID"
-          DTS:DTSID="{A6FCD3AE-F023-42A4-846D-88C26CFD3D82}"
+          DTS:DTSID="{56E3F9F9-70E7-434F-A10C-3D5D8B56421A}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -169,7 +169,7 @@
           DTS:DataPrecision="2"
           DTS:TextQualified="True"
           DTS:ObjectName="CLAIMANTFLAG"
-          DTS:DTSID="{ED5C89DD-8D3D-4561-AFBF-CFEF40AAE939}"
+          DTS:DTSID="{863B84A3-9235-436C-9256-2998630B6A10}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -178,7 +178,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="COUNTERCLAIMSTATUS"
-          DTS:DTSID="{751F3807-A555-4BA6-977A-252A10426BC7}"
+          DTS:DTSID="{F0BFD023-D89D-4F1D-AD95-40FD5532FADB}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -187,7 +187,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="DISPUTEFLAG"
-          DTS:DTSID="{100F2BA7-9A7F-4149-B1B9-EFBDEC911EEC}"
+          DTS:DTSID="{7B39E19D-5B84-4401-A161-0C58D783CBF4}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -196,7 +196,7 @@
           DTS:DataPrecision="5"
           DTS:TextQualified="True"
           DTS:ObjectName="MANDATEID"
-          DTS:DTSID="{E1A80718-D59C-4743-85D4-604223450577}"
+          DTS:DTSID="{72D37846-7AF1-4B8F-894E-9FF3AA7F2C85}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -205,7 +205,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="RESERVEINDICATOR"
-          DTS:DTSID="{6377F4A5-5F12-4B37-B271-07CE360C1C6C}"
+          DTS:DTSID="{743514E1-326E-470A-B850-8B0DC806DF1D}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -214,7 +214,7 @@
           DTS:DataPrecision="5"
           DTS:TextQualified="True"
           DTS:ObjectName="SEQKEY"
-          DTS:DTSID="{FB84A64D-6C7A-493D-89AE-4CAC7F1A65D1}"
+          DTS:DTSID="{3A01D0A0-5788-4E55-BFEF-DC430FA36D88}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

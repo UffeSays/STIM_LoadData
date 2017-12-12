@@ -1,0 +1,58 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/6/2017 9:30:32 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="BEAST"
+  DTS:CreatorName="BEAST\uffe"
+  DTS:DTSID="{5B37AE73-9E1C-44F4-BD15-71588AD281BF}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.0800.60"
+  DTS:LocaleID="1053"
+  DTS:ObjectName="transfer data from tmp"
+  DTS:PackageType="5"
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{566DF9A1-FF87-4E88-91C4-183365DC2FC9}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Load data from tmp_ to dbo"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{583328AF-26DD-4807-884C-72F8046654B0}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load data from tmp_ to dbo"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+          SQLTask:SqlStatementSource="&#xA;&#xA;&#xA;insert into dinatnpf    select * from tmp_dinatnpf    &#xA;insert into dinminpf    select * from tmp_dinminpf    &#xA;insert into dstaps_2017 select * from tmp_dstaps &#xA;insert into dstasc_2017 select * from tmp_dstasc &#xA;insert into dstdam_2017 select * from tmp_dstdam &#xA;&#xA;insert into dstdan_2017 select * from tmp_dstdan &#xA;insert into dstdcg_2017 select * from tmp_dstdcg &#xA;insert into dstded_2017 select * from tmp_dstded &#xA;insert into dstidn_2017 select * from tmp_dstidn &#xA;insert into dstipb_2017 select * from tmp_dstipb &#xA;insert into dstipi_2017 select * from tmp_dstipi &#xA;&#xA;insert into dstish_2017 select * from tmp_dstish &#xA;insert into dstmam_2017 select * from tmp_dstmam &#xA;insert into dstmda_2017 select * from tmp_dstmda &#xA;insert into dstpdc_2017 select * from tmp_dstpdc &#xA;insert into dstpdt_2017 select * from tmp_dstpdt &#xA;&#xA;insert into dstres_2017 select * from tmp_dstres &#xA;insert into dstrmw_2017 select * from tmp_dstrmw &#xA;insert into dstrpw_2017 select * from tmp_dstrpw &#xA;insert into dstrrw_2017 select * from tmp_dstrrw &#xA;insert into dstwot_2017 select * from tmp_dstwot &#xA;&#xA;&#xA;&#xA;insert into dstwrk_2017 select * from tmp_dstwrk &#xA;insert into gemado      select * from tmp_gemado      &#xA;insert into gemavopf    select * from tmp_gemavopf    &#xA;insert into gemlndpf    select * from tmp_gemlndpf    &#xA;insert into gemsocpf    select * from tmp_gemsocpf    &#xA;insert into mdlmdlpf    select * from tmp_mdlmdlpf    &#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="212,42"
+          Id="Package\Load data from tmp_ to dbo"
+          TopLeft="180,128" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

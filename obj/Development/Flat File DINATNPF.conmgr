@@ -12,7 +12,7 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x0022_"
       DTS:CodePage="1252"
-      DTS:ConnectionString="E:\source_files\TROY\2017\dinatnpf_2017.csv">
+      DTS:ConnectionString="E:\source_files\TROY\2017\dinatnpf.csv">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -21,7 +21,7 @@
           DTS:DataPrecision="7"
           DTS:TextQualified="True"
           DTS:ObjectName="ANATNR"
-          DTS:DTSID="{04E15276-AE33-4983-8CC9-40351D748727}"
+          DTS:DTSID="{62E2D243-4284-461F-88F1-766A11F2954C}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +30,7 @@
           DTS:DataPrecision="7"
           DTS:TextQualified="True"
           DTS:ObjectName="ANDIST"
-          DTS:DTSID="{CCD56156-86EA-4FA7-988D-D07615005023}"
+          DTS:DTSID="{425733F6-EA4D-40F6-BFB7-55B70C8F0163}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -38,7 +38,7 @@
           DTS:DataType="7"
           DTS:TextQualified="True"
           DTS:ObjectName="ANFDAT"
-          DTS:DTSID="{F07911DE-F0B5-49F9-96AA-527930D76F58}"
+          DTS:DTSID="{9C5F1E98-C357-42A6-A7CD-2FEE02E1694D}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -46,7 +46,7 @@
           DTS:DataType="7"
           DTS:TextQualified="True"
           DTS:ObjectName="ANTDAT"
-          DTS:DTSID="{DE7723E0-90E9-40DA-B872-D810920C601D}"
+          DTS:DTSID="{8058DFC9-9439-4B62-8A4D-3C05C8BD08BC}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -56,7 +56,7 @@
           DTS:DataScale="2"
           DTS:TextQualified="True"
           DTS:ObjectName="ANDBEL"
-          DTS:DTSID="{90EA94EF-C612-4DBE-8963-DEFF689EB95D}"
+          DTS:DTSID="{AC1CAD8D-A72A-4626-B19A-CE49B08B9381}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
           DTS:DataScale="2"
           DTS:TextQualified="True"
           DTS:ObjectName="ANKBEL"
-          DTS:DTSID="{AB677CB5-6665-4C7E-A5DA-CF0A65D96BC5}"
+          DTS:DTSID="{7494913A-C74D-419F-834A-EA3C1C1BF23A}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="ANATXT"
-          DTS:DTSID="{A01F39A4-293D-4134-B80D-3ACDA80D24DC}"
+          DTS:DTSID="{6915957C-FDC1-4BC3-AC52-BC43BB7E7ACE}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -84,7 +84,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="ANJBST"
-          DTS:DTSID="{76DAAC14-F035-40AA-87D1-80D58E02606D}"
+          DTS:DTSID="{6F8BD972-B8C8-4F40-B996-BF84F8FA6014}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -93,7 +93,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="ANJBSS"
-          DTS:DTSID="{68F560BE-BBEB-405E-BB37-5263A3896702}"
+          DTS:DTSID="{1479E58E-DC0B-413F-A885-0827E3C30A93}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -101,7 +101,7 @@
           DTS:DataType="7"
           DTS:TextQualified="True"
           DTS:ObjectName="CRTDTE"
-          DTS:DTSID="{0A5C0434-9988-432B-8D05-C8BB33296081}"
+          DTS:DTSID="{9604BAE4-79DD-479F-8982-D20BD15F1564}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -110,7 +110,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="CRTUSR"
-          DTS:DTSID="{D5284298-480D-44A8-9421-BCF95DDB8356}"
+          DTS:DTSID="{0EFF384C-5476-44CD-B0CD-A00C73BD180A}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -118,7 +118,7 @@
           DTS:DataType="7"
           DTS:TextQualified="True"
           DTS:ObjectName="CHGDTE"
-          DTS:DTSID="{9A39CB04-9E0D-43D6-8935-C22BF462B769}"
+          DTS:DTSID="{67D02240-46E7-4F6D-ABF7-1FD04F197C53}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -127,7 +127,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="CHGUSR"
-          DTS:DTSID="{4E505AC6-F137-49E0-B576-B47E67EE9E33}"
+          DTS:DTSID="{21EFAB0E-2EDA-429D-AAB3-6507C22FDC02}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

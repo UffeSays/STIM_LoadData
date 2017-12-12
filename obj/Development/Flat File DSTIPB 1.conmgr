@@ -12,7 +12,7 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x0022_"
       DTS:CodePage="1252"
-      DTS:ConnectionString="E:\source_files\TROY\2017\dstipb_2017.csv">
+      DTS:ConnectionString="E:\source_files\TROY\2017\dstipb.csv">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -21,7 +21,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="DISTRIBUTIONKEY"
-          DTS:DTSID="{D75F6F50-64EB-44F3-A022-0EE924424AE7}"
+          DTS:DTSID="{70897A1B-A919-4727-89CC-64BB8DE9A9DA}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +30,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="ICEIPBASEKEY"
-          DTS:DTSID="{082BFDBF-6DD7-49BC-B8B6-2755839E0420}"
+          DTS:DTSID="{FA5BABA5-1975-48E8-AC6D-EBD7BB695E72}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="LOCALSOCIETYAFFNBR"
-          DTS:DTSID="{104CDA70-F7F3-4D21-AE61-75A82EC60E48}"
+          DTS:DTSID="{FE0F3D68-FFAF-4BBF-AD38-190FC829D357}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -47,7 +47,7 @@
           DTS:DataType="7"
           DTS:TextQualified="True"
           DTS:ObjectName="DATEOFDEATH"
-          DTS:DTSID="{73C8172E-D7C2-432D-B123-43C20336E156}"
+          DTS:DTSID="{79EE980C-EFE6-473D-91FD-4F5FFEE3E50B}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -56,7 +56,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="CURRENTSTATUS"
-          DTS:DTSID="{BC7F7B23-F4C1-4054-9D68-849A18531D8E}"
+          DTS:DTSID="{85B94213-86CC-4F33-9FCA-3B9BF34EBC13}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -65,7 +65,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="IPBNAME"
-          DTS:DTSID="{68C376FD-D8C4-41E2-955B-9DC7A49DC35A}"
+          DTS:DTSID="{AED4FB84-0908-4B75-8821-76509600F440}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -74,7 +74,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="IPBFIRSTNAME"
-          DTS:DTSID="{46E60DA4-0D24-4709-B6F9-CF60B5E676AD}"
+          DTS:DTSID="{488CF0EC-DE91-4660-B6B0-11B65062EFE6}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -83,7 +83,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="LOVALMEMBERRESERVE"
-          DTS:DTSID="{F4F75A6D-3381-448D-851D-54390941E88A}"
+          DTS:DTSID="{3BD824E4-011D-40B1-BAFB-5AE131BDE81F}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

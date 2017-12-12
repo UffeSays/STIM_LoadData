@@ -12,7 +12,7 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x0022_"
       DTS:CodePage="1252"
-      DTS:ConnectionString="E:\source_files\TROY\2017\dstidn_2017.csv">
+      DTS:ConnectionString="E:\source_files\TROY\2017\dstidn.csv">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -21,7 +21,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="DISTRIBUTIONKEY"
-          DTS:DTSID="{96A8159D-3353-4F3E-8415-E3DEDC822FA5}"
+          DTS:DTSID="{AAE7E978-6C70-405F-A665-B71710782576}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +30,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="DESCRIPTION"
-          DTS:DTSID="{91DBFD25-0C26-4B75-A76F-B98B1F8BDD19}"
+          DTS:DTSID="{25CE238E-46FA-40F5-905A-DFE9390828CA}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -38,7 +38,7 @@
           DTS:DataType="7"
           DTS:TextQualified="True"
           DTS:ObjectName="DISTRIBUTIONDATE"
-          DTS:DTSID="{4B83F46C-918C-4E1D-A8EA-F756AEE79347}"
+          DTS:DTSID="{BD75AC52-D413-4352-A5B5-3F49637FF457}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -47,7 +47,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="DISTSOCIETYCODE"
-          DTS:DTSID="{2EE4FFCD-4234-40B8-BF7E-C7A9D85F9FFA}"
+          DTS:DTSID="{37E98B13-2F62-421E-974E-3961C17C892A}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -56,7 +56,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="DISTRIBUTORID"
-          DTS:DTSID="{841E6053-C3FE-449F-93E8-814080DEA4C8}"
+          DTS:DTSID="{1CB44CE0-A75C-43CC-ABC8-CB684ADF8E7D}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -65,7 +65,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="DISTRIBUTIONORDERKEY"
-          DTS:DTSID="{1AC1DC5D-AE28-4CFF-AC5B-7D6CCB0F35AF}"
+          DTS:DTSID="{DC6B75EC-828C-4DED-A5A4-57C48F551301}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -74,7 +74,7 @@
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="COMPDISTRIBUTIONKEY"
-          DTS:DTSID="{80C7330B-C715-4239-AB5A-A766968FC559}"
+          DTS:DTSID="{E2217AFB-C6F9-4685-B505-4359B2655DEC}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>
