@@ -11,10 +11,775 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_matchbox"
   DTS:PackageType="5"
-  DTS:VersionBuild="101"
-  DTS:VersionGUID="{881F5F52-8CC9-49A1-9A1A-671EB945AE78}">
+  DTS:VersionBuild="132"
+  DTS:VersionGUID="{5B8724A2-2638-45B4-87FE-628806530168}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ErrorOutput_mbart]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{B442DDBE-FACE-4BE9-A42D-9BE2FBEB0FA3}"
+      DTS:ObjectName="ErrorOutput_mbart">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\ERROR\ErrorOutput_mbart.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Flat File Source Error Output Column"
+              DTS:DTSID="{B9159DC3-0FC7-4BA5-AECA-F04CCAE7DD9E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{CB79BE3B-26CB-4AC6-876C-B0712087F02B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{B02E96E8-174A-4C9B-833E-6D27AF3CA63F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ErrorOutput_mbhdr]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{72F0C30D-4DA1-40AF-A168-334A560A0220}"
+      DTS:ObjectName="ErrorOutput_mbhdr">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\ERROR\ErrorOutput_mbhdr.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Flat File Source Error Output Column"
+              DTS:DTSID="{59B00D5D-11F2-442A-8331-17E385D8C6A2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{2A7DA0B3-AE81-487C-8E7C-A196B29F922F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{431E561F-2D61-4C6A-BEE8-68969ACFB59F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ErrorOutput_mbipi]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{964C0DF2-4AA2-4296-A85F-DDDCF5A762D7}"
+      DTS:ObjectName="ErrorOutput_mbipi">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\ERROR\ErrorOutput_mbipi.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Flat File Source Error Output Column"
+              DTS:DTSID="{FA15F77E-A238-4D90-A3A8-979AE9FA07C2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{D1BEA9B1-C57C-47B4-B9D2-23F9B8CB1168}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{31E6FF52-9809-48A1-B139-80B9F26D33E8}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ErrorOutput_mbipw]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E2370E07-C558-48D3-92C7-EE7FE7C2C940}"
+      DTS:ObjectName="ErrorOutput_mbipw">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\ERROR\ErrorOutput_mbipw.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Flat File Source Error Output Column"
+              DTS:DTSID="{9721467A-E3A0-4525-9E7D-0D03FCF2F5D6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{899B12C2-7B9F-4E9E-828C-FE4F4BD05CEA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{8B4A4BE5-EBEA-47CD-B628-102372A411D7}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ErrorOutput_mbref]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{FF60F7C3-C02C-4376-B6B9-68FD65AFE45C}"
+      DTS:ObjectName="ErrorOutput_mbref">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\ERROR\ErrorOutput_mbref.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Flat File Source Error Output Column"
+              DTS:DTSID="{E098CF2F-B5B7-4369-8CA4-25AC99471D82}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{90521157-7005-41CD-BF31-7C3D8C35D5E2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{B75DB86D-C969-4A39-9334-5A670B0C5E35}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ErrorOutput_mbtit]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E3F42672-D78E-4EAE-B4D7-1BAFDEC1D4A0}"
+      DTS:ObjectName="ErrorOutput_mbtit">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\ERROR\ErrorOutput_mbtit.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Flat File Source Error Output Column"
+              DTS:DTSID="{66F2646E-4DF1-4DAD-B50A-51B55E6725A7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{D95C70E9-0D4E-4D4B-B08F-D75F97C0B20B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{4C930BFD-8104-41C9-A918-1048442527E2}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{741FCC34-8B72-4A6E-830A-157FFDEC4C98}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="E:\source_files\ERROR\error output_1.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WORKKEY"
+              DTS:DTSID="{8DC06C8D-3740-478E-8DC4-411B2FB4C8D6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="90"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WORKTITLE"
+              DTS:DTSID="{3B5C8D46-527B-4A31-A05F-74F3AD9928CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="90"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NATWRKTIT"
+              DTS:DTSID="{C0A184ED-BD50-4E07-B2F9-3B6E166365AD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WORKSTATUS"
+              DTS:DTSID="{B70260AE-D0DA-4C88-B913-91BFBD46E2F2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WRKLYRLANG"
+              DTS:DTSID="{E1208CFA-A949-4E6B-8EFB-ADB29CB7C0A7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VERSTYPE"
+              DTS:DTSID="{080B88F1-AB5A-479E-B885-7B7E2283DF81}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DUPDSPFLG"
+              DTS:DTSID="{EC259936-2F77-4071-B54F-5B49B36D9E59}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WRKCAT"
+              DTS:DTSID="{7C20A4B2-68F7-4487-8F54-34C4E4A49E92}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PDDATE"
+              DTS:DTSID="{6A0838B4-B67A-4D9C-84C4-C583CB285F00}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PUBLDATE"
+              DTS:DTSID="{722C6EC4-E773-4285-8A7B-91D840AC3A04}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ACTIVE"
+              DTS:DTSID="{B34C23C2-E2A2-4092-BA46-1012CA96A71B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PURPOSE"
+              DTS:DTSID="{A60DBCD0-E972-44DC-8882-5BC5115C3A98}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GENRE"
+              DTS:DTSID="{95B77FFF-4024-4C83-9819-F27DE7650636}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CREATEDUSR"
+              DTS:DTSID="{76DFB2CE-09F3-4426-92FD-52F3116B6F88}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="19"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CREATEDTSP"
+              DTS:DTSID="{0D52D7D4-7445-446A-99B7-EE1297EF03EE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CHANGEDUSR"
+              DTS:DTSID="{56925B9C-14E5-40E0-B0AD-3F87EB201937}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CHANGEDTSP"
+              DTS:DTSID="{A02A3844-BFBB-4C57-B203-9AA248992463}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{7F974CC0-E077-4F44-AD4A-41602E8E1073}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{B11F6C6A-2889-4B14-87E8-3DD39CA6D83D}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[test]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{9220CED0-0282-42ED-B42D-CE5B3EA7EAE0}"
+      DTS:ObjectName="test">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D_"
+          DTS:RowDelimiter=""
+          DTS:DataRowsToSkip="7"
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="E:\source_files\MATCHBOX\mbhdr.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{FB2248B3-D840-4267-B0D1-0C409D286E02}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 1"
+              DTS:DTSID="{8FD32DB8-DBB4-4FAE-B6B7-F227DC5A53E4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 2"
+              DTS:DTSID="{9210426F-6161-48AE-8898-D7C4892A5FD7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 3"
+              DTS:DTSID="{28ED775B-74DC-4378-8887-820D23FBD750}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 4"
+              DTS:DTSID="{3A2B3698-6BFE-41CD-850C-838E85BCC99E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 5"
+              DTS:DTSID="{36CD1697-03D2-42E0-B920-48FE07EB223C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 6"
+              DTS:DTSID="{6901A6C6-4305-4656-A05A-C5764E0024F7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 7"
+              DTS:DTSID="{46177C9F-5183-4FC9-9E2D-CD6F9651DA3F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 8"
+              DTS:DTSID="{0C84E372-A3C8-4D78-8650-C5B57F9AEEAA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 9"
+              DTS:DTSID="{726C32E7-966F-49C2-898C-7119C918A0A6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 10"
+              DTS:DTSID="{71F6632E-94B7-4285-A4B2-E4D401203028}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 11"
+              DTS:DTSID="{78A53ED8-C80E-46DB-8F29-D23CD3C279EC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 12"
+              DTS:DTSID="{46B301AB-2428-4C3E-91D9-7B97F1CB31FE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 13"
+              DTS:DTSID="{4C31A2B6-4798-4BFF-9ED5-92BAFE279350}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 14"
+              DTS:DTSID="{EF2326DB-90B9-42BE-AFFE-D774C2E49E46}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 15"
+              DTS:DTSID="{0393E82B-0144-40F5-BE12-FFCD4669CF6D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 16"
+              DTS:DTSID="{361CDEFB-5A5A-4A63-8A21-8FF9E708C3E2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 17"
+              DTS:DTSID="{462DE2BC-F031-469B-9A75-BF5165F54C0E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 18"
+              DTS:DTSID="{FB70F263-931A-421E-ADD5-9975E06D93A6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 19"
+              DTS:DTSID="{9EEBD4F8-76CC-4F9F-ACDC-087CAA45CA0E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 20"
+              DTS:DTSID="{F3DB2F01-C862-47BD-853C-B575C1CE3425}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 21"
+              DTS:DTSID="{7D1E2DFF-2742-494F-9A4C-13F78AD65772}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 22"
+              DTS:DTSID="{EDB807DA-C39C-45B6-8B54-4C4A491E2A39}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 23"
+              DTS:DTSID="{F8FB862C-5063-4ADE-8942-ADEE4387705A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 24"
+              DTS:DTSID="{96220FBC-9868-4E5F-8DBF-5DF901C03E64}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 25"
+              DTS:DTSID="{A5C49DB3-E411-4347-996F-B1CC14651D7A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 26"
+              DTS:DTSID="{87CD2A50-9B03-4987-A0C0-B82C3E31D314}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 27"
+              DTS:DTSID="{B3649614-89C9-4560-97CC-20904FABCA56}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 28"
+              DTS:DTSID="{17EAC750-E0C6-4AFC-9E8C-519DC9F21164}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 29"
+              DTS:DTSID="{6AF229F7-1FA3-4261-BD42-AB3773D03B96}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 30"
+              DTS:DTSID="{5F79C31B-77EA-4ADC-9A9D-CA90A64D2A36}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C__x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 31"
+              DTS:DTSID="{48B0D576-EB8E-470D-BAA2-73DABF6CA4DF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 32"
+              DTS:DTSID="{EFBF4CEA-8CC2-4BF9-8713-070B6B6B7EBE}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -157,7 +922,7 @@
                 <property
                   dataType="System.Boolean"
                   description="Specifies whether the data will overwrite or append to the destination file."
-                  name="Overwrite">false</property>
+                  name="Overwrite">true</property>
                 <property
                   dataType="System.Null"
                   description="Specifies the text to write to the destination file before any data is written."
@@ -167,8 +932,8 @@
               <connections>
                 <connection
                   refId="Package\Load MBART\Flat File Destination.Connections[FlatFileConnection]"
-                  connectionManagerID="{D721CD26-FCB9-4836-926B-F859E4396ABC}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File Error output]"
+                  connectionManagerID="Package.ConnectionManagers[ErrorOutput_mbart]"
+                  connectionManagerRefId="Package.ConnectionManagers[ErrorOutput_mbart]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
@@ -876,7 +1641,7 @@
                 <property
                   dataType="System.Boolean"
                   description="Specifies whether the data will overwrite or append to the destination file."
-                  name="Overwrite">false</property>
+                  name="Overwrite">true</property>
                 <property
                   dataType="System.Null"
                   description="Specifies the text to write to the destination file before any data is written."
@@ -886,8 +1651,8 @@
               <connections>
                 <connection
                   refId="Package\Load MBHDR\Flat File Destination.Connections[FlatFileConnection]"
-                  connectionManagerID="{D721CD26-FCB9-4836-926B-F859E4396ABC}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File Error output]"
+                  connectionManagerID="Package.ConnectionManagers[ErrorOutput_mbhdr]"
+                  connectionManagerRefId="Package.ConnectionManagers[ErrorOutput_mbhdr]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
@@ -975,94 +1740,6 @@
                       lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[WORKKEY]"
                       name="WORKKEY"
                       precision="11"
-                      truncationRowDisposition="RedirectRow">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDUSR]"
-                      codePage="65001"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
-                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDUSR]"
-                      length="50"
-                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDUSR]"
-                      name="CREATEDUSR"
-                      truncationRowDisposition="RedirectRow">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]"
-                      codePage="65001"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
-                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDTSP]"
-                      length="19"
-                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]"
-                      name="CREATEDTSP"
-                      truncationRowDisposition="RedirectRow">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]"
-                      codePage="65001"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
-                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDUSR]"
-                      length="50"
-                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]"
-                      name="CHANGEDUSR"
-                      truncationRowDisposition="RedirectRow">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]"
-                      codePage="65001"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
-                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDTSP]"
-                      length="19"
-                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]"
-                      name="CHANGEDTSP"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -1339,6 +2016,94 @@
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDUSR]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDUSR]"
+                      length="50"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDUSR]"
+                      name="CREATEDUSR"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CREATEDTSP]"
+                      length="19"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDTSP]"
+                      name="CREATEDTSP"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDUSR]"
+                      length="50"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]"
+                      name="CHANGEDUSR"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDTSP]"
+                      length="20"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]"
+                      name="CHANGEDTSP"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1369,7 +2134,7 @@
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDTSP]"
                       codePage="65001"
                       dataType="str"
-                      length="19"
+                      length="20"
                       name="CHANGEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WORKTITLE]"
@@ -1578,14 +2343,6 @@
                       externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDUSR]"
                       lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDUSR]" />
                     <inputColumn
-                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDTSP]"
-                      cachedCodepage="65001"
-                      cachedDataType="str"
-                      cachedLength="19"
-                      cachedName="CHANGEDTSP"
-                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDTSP]"
-                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]" />
-                    <inputColumn
                       refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WORKTITLE]"
                       cachedCodepage="65001"
                       cachedDataType="str"
@@ -1681,6 +2438,14 @@
                       cachedName="GENRE"
                       externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GENRE]"
                       lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[GENRE]" />
+                    <inputColumn
+                      refId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDTSP]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="CHANGEDTSP"
+                      externalMetadataColumnId="Package\Load MBHDR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDTSP]"
+                      lineageId="Package\Load MBHDR\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1865,8 +2630,8 @@
               <connections>
                 <connection
                   refId="Package\Load MBIPI\Flat File Destination.Connections[FlatFileConnection]"
-                  connectionManagerID="{D721CD26-FCB9-4836-926B-F859E4396ABC}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File Error output]"
+                  connectionManagerID="Package.ConnectionManagers[ErrorOutput_mbipi]"
+                  connectionManagerRefId="Package.ConnectionManagers[ErrorOutput_mbipi]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
@@ -2790,8 +3555,8 @@
               <connections>
                 <connection
                   refId="Package\Load MBIPW\Flat File Destination.Connections[FlatFileConnection]"
-                  connectionManagerID="{D721CD26-FCB9-4836-926B-F859E4396ABC}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File Error output]"
+                  connectionManagerID="Package.ConnectionManagers[ErrorOutput_mbipw]"
+                  connectionManagerRefId="Package.ConnectionManagers[ErrorOutput_mbipw]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
@@ -3421,8 +4186,8 @@
               <connections>
                 <connection
                   refId="Package\Load MBREF\Flat File Destination.Connections[FlatFileConnection]"
-                  connectionManagerID="{D721CD26-FCB9-4836-926B-F859E4396ABC}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File Error output]"
+                  connectionManagerID="Package.ConnectionManagers[ErrorOutput_mbref]"
+                  connectionManagerRefId="Package.ConnectionManagers[ErrorOutput_mbref]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
@@ -4197,7 +4962,7 @@
                 <property
                   dataType="System.Boolean"
                   description="Specifies whether the data will overwrite or append to the destination file."
-                  name="Overwrite">false</property>
+                  name="Overwrite">true</property>
                 <property
                   dataType="System.Null"
                   description="Specifies the text to write to the destination file before any data is written."
@@ -4207,8 +4972,8 @@
               <connections>
                 <connection
                   refId="Package\Load MBTIT\Flat File Destination.Connections[FlatFileConnection]"
-                  connectionManagerID="{D721CD26-FCB9-4836-926B-F859E4396ABC}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File Error output]"
+                  connectionManagerID="Package.ConnectionManagers[ErrorOutput_mbtit]"
+                  connectionManagerRefId="Package.ConnectionManagers[ErrorOutput_mbtit]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
@@ -4331,6 +5096,114 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
+                      refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITLEID]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TITLEID]"
+                      lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITLEID]"
+                      name="TITLEID"
+                      precision="11"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITSEQNBR]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TITSEQNBR]"
+                      lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITSEQNBR]"
+                      name="TITSEQNBR"
+                      precision="11"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITLETYPE]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TITLETYPE]"
+                      length="2"
+                      lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITLETYPE]"
+                      name="TITLETYPE"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITLE]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TITLE]"
+                      length="100"
+                      lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITLE]"
+                      name="TITLE"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[NATWRKTIT]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NATWRKTIT]"
+                      length="90"
+                      lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[NATWRKTIT]"
+                      name="NATWRKTIT"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
                       refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDUSR]"
                       codePage="65001"
                       dataType="str"
@@ -4403,118 +5276,10 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDTSP]"
-                      length="19"
+                      length="20"
                       lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]"
                       name="CHANGEDTSP"
                       truncationRowDisposition="RedirectRow">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITLEID]"
-                      dataType="numeric"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TITLEID]"
-                      lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITLEID]"
-                      name="TITLEID"
-                      precision="11"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITSEQNBR]"
-                      dataType="numeric"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TITSEQNBR]"
-                      lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITSEQNBR]"
-                      name="TITSEQNBR"
-                      precision="11"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITLETYPE]"
-                      codePage="65001"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TITLETYPE]"
-                      length="2"
-                      lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITLETYPE]"
-                      name="TITLETYPE"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITLE]"
-                      codePage="65001"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TITLE]"
-                      length="100"
-                      lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[TITLE]"
-                      name="TITLE"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[NATWRKTIT]"
-                      codePage="65001"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NATWRKTIT]"
-                      length="90"
-                      lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[NATWRKTIT]"
-                      name="NATWRKTIT"
-                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -4551,7 +5316,7 @@
                       refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHANGEDTSP]"
                       codePage="65001"
                       dataType="str"
-                      length="19"
+                      length="20"
                       name="CHANGEDTSP" />
                     <externalMetadataColumn
                       refId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WORKKEY]"
@@ -4776,7 +5541,7 @@
                       refId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANGEDTSP]"
                       cachedCodepage="65001"
                       cachedDataType="str"
-                      cachedLength="19"
+                      cachedLength="20"
                       cachedName="CHANGEDTSP"
                       externalMetadataColumnId="Package\Load MBTIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHANGEDTSP]"
                       lineageId="Package\Load MBTIT\Flat File Source.Outputs[Flat File Source Output].Columns[CHANGEDTSP]" />
@@ -5394,9 +6159,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5564,13 +6327,47 @@
           Id="Package\Load MBIPI\Flat File Source"
           TopLeft="192,68" />
         <NodeLayout
-          Size="171,42"
-          Id="Package\Load MBIPI\OLE DB Destination"
-          TopLeft="180,161" />
-        <NodeLayout
           Size="172,42"
           Id="Package\Load MBIPI\Flat File Destination"
           TopLeft="380,162" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load MBIPI\OLE DB Destination"
+          TopLeft="180,161" />
+        <EdgeLayout
+          Id="Package\Load MBIPI.Paths[Flat File Source Output]"
+          TopLeft="243.666666666667,110">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="21.8333333333333,51"
+              Start="0,0"
+              End="21.8333333333333,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.7208387942333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.7208387942333"
+                    Point2="0,20.7208387942333"
+                    Point3="4,20.7208387942333" />
+                  <mssgle:LineSegment
+                    End="17.8333333333333,20.7208387942333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="17.8333333333333,20.7208387942333"
+                    Point2="21.8333333333333,20.7208387942333"
+                    Point3="21.8333333333333,24.7208387942333" />
+                  <mssgle:LineSegment
+                    End="21.8333333333333,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load MBIPI.Paths[Flat File Source Error Output]"
           TopLeft="291.333333333333,110">
@@ -5605,40 +6402,6 @@
             <mssgm:EdgeLabel
               BoundingBox="23.7069466145835,26.127129750983,127.2527734375,11.609375"
               RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load MBIPI.Paths[Flat File Source Output]"
-          TopLeft="243.666666666667,110">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="21.8333333333333,51"
-              Start="0,0"
-              End="21.8333333333333,43.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.7208387942333" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.7208387942333"
-                    Point2="0,20.7208387942333"
-                    Point3="4,20.7208387942333" />
-                  <mssgle:LineSegment
-                    End="17.8333333333333,20.7208387942333" />
-                  <mssgle:CubicBezierSegment
-                    Point1="17.8333333333333,20.7208387942333"
-                    Point2="21.8333333333333,20.7208387942333"
-                    Point3="21.8333333333333,24.7208387942333" />
-                  <mssgle:LineSegment
-                    End="21.8333333333333,43.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

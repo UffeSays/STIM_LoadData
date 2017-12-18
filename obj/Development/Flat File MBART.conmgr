@@ -10,99 +10,100 @@
       DTS:HeaderRowDelimiter="_x000A_"
       DTS:ColumnNamesInFirstDataRow="True"
       DTS:RowDelimiter=""
-      DTS:TextQualifier="_x0022_"
+      DTS:DataRowsToSkip="47990"
+      DTS:TextQualifier="_x003C_none_x003E_"
       DTS:CodePage="65001"
       DTS:ConnectionString="E:\source_files\MATCHBOX\MBART.csv">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
-          DTS:ColumnDelimiter="_x002C_"
+          DTS:ColumnDelimiter="_x007C__x007C_"
           DTS:DataType="131"
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="ARTISTID"
-          DTS:DTSID="{695EAA91-0F72-402C-89B8-D4DD39AF980C}"
+          DTS:DTSID="{57B87B21-4817-4A63-ACC3-AF05E90AA6E4}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
-          DTS:ColumnDelimiter="_x002C_"
+          DTS:ColumnDelimiter="_x007C__x007C_"
           DTS:DataType="131"
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="WORKKEY"
-          DTS:DTSID="{767AD4FD-D64A-4416-BBA5-8699D1F6C2A2}"
+          DTS:DTSID="{EEB9EF49-FB92-435E-B7D5-A99B0AEF297B}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
-          DTS:ColumnDelimiter="_x002C_"
+          DTS:ColumnDelimiter="_x007C__x007C_"
           DTS:DataType="131"
           DTS:DataPrecision="11"
           DTS:TextQualified="True"
           DTS:ObjectName="PUBAGRNBR"
-          DTS:DTSID="{D6BBBBA1-35B2-4EEE-B55F-6AA133724271}"
+          DTS:DTSID="{0622BA6D-A356-4953-B973-D99124B070CA}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
-          DTS:ColumnDelimiter="_x002C_"
+          DTS:ColumnDelimiter="_x007C__x007C_"
           DTS:MaximumWidth="100"
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="NAME"
-          DTS:DTSID="{38495B8A-083F-48C1-80A7-14752B9814F5}"
+          DTS:DTSID="{994509CF-429E-4CC1-9AE6-F179E7796D3C}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
-          DTS:ColumnDelimiter="_x002C_"
+          DTS:ColumnDelimiter="_x007C__x007C_"
           DTS:MaximumWidth="45"
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="FIRSTNAME"
-          DTS:DTSID="{BDE7BF5C-3F08-4ADD-AF09-3DEEF95D78E3}"
+          DTS:DTSID="{94F3FB9E-7A44-4B56-9344-FF72D626F748}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
-          DTS:ColumnDelimiter="_x002C_"
+          DTS:ColumnDelimiter="_x007C__x007C_"
           DTS:MaximumWidth="2"
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="TYPOFPARTY"
-          DTS:DTSID="{101BDA3B-CD67-420A-AFDA-17925F4CF3BD}"
+          DTS:DTSID="{725A2F8F-7168-42EA-BE92-842054ABD2C3}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
-          DTS:ColumnDelimiter="_x002C_"
+          DTS:ColumnDelimiter="_x007C__x007C_"
           DTS:MaximumWidth="10"
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="DATASOURCE"
-          DTS:DTSID="{B2BF617F-2FC8-423B-BEBD-4B84166B6FEC}"
+          DTS:DTSID="{524C682A-B9BC-41E8-AB85-ADD74765FDC8}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
-          DTS:ColumnDelimiter="_x002C_"
+          DTS:ColumnDelimiter="_x007C__x007C_"
           DTS:MaximumWidth="50"
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="CREATEDUSR"
-          DTS:DTSID="{47410E4B-9F4D-4EAB-92F8-973B90E8CF59}"
+          DTS:DTSID="{A645E411-0DF5-4D1C-BFAE-77A6E7F9FB1B}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
-          DTS:ColumnDelimiter="_x002C_"
+          DTS:ColumnDelimiter="_x007C__x007C_"
           DTS:MaximumWidth="19"
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="CREATEDTSP"
-          DTS:DTSID="{45B266D1-7460-45E5-8188-96C4EC60C1A7}"
+          DTS:DTSID="{D49D3C38-B46A-4E52-9CFF-438D689A6036}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
-          DTS:ColumnDelimiter="_x002C_"
+          DTS:ColumnDelimiter="_x007C__x007C_"
           DTS:MaximumWidth="50"
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="CHANGEDUSR"
-          DTS:DTSID="{9C268FB8-34D6-4A43-A564-FF248634F05D}"
+          DTS:DTSID="{752D14FE-9FBE-4470-8A69-A62291876887}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -111,7 +112,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="CHANGEDTSP"
-          DTS:DTSID="{59B54E00-A8AC-405F-9554-EEFFFB8A9E7E}"
+          DTS:DTSID="{F2A5A792-D55A-46DB-8590-F5B4EB1FDA57}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>
