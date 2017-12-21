@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_matchbox"
   DTS:PackageType="5"
-  DTS:VersionBuild="133"
-  DTS:VersionGUID="{E8D3866E-CEB6-4F85-AB87-FE2FE7174263}">
+  DTS:VersionBuild="136"
+  DTS:VersionGUID="{5503E0E2-5849-4D14-A9A3-F088541D6894}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>

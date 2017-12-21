@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>load_data_2017</Name>
-    <LastWriteTime>2017-12-18T09:08:24.279687Z</LastWriteTime>
+    <LastWriteTime>2017-12-21T15:06:18.3961957Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -13,7 +13,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>load_gem.dtsx</Name>
-      <LastWriteTime>2017-12-11T07:24:45.9178376Z</LastWriteTime>
+      <LastWriteTime>2017-12-21T12:49:35.0423659Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -28,12 +28,12 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>load_matchbox.dtsx</Name>
-      <LastWriteTime>2017-12-18T12:49:23.5848953Z</LastWriteTime>
+      <LastWriteTime>2017-12-20T14:16:52.7823003Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>load_medley.dtsx</Name>
-      <LastWriteTime>2017-12-04T14:31:59.9696678Z</LastWriteTime>
+      <LastWriteTime>2017-12-21T15:06:18.2701624Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
