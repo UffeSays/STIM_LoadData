@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_matchbox"
   DTS:PackageType="5"
-  DTS:VersionBuild="136"
-  DTS:VersionGUID="{5503E0E2-5849-4D14-A9A3-F088541D6894}">
+  DTS:VersionBuild="138"
+  DTS:VersionGUID="{7166E146-DFC2-445E-BBAF-331DD38B6D25}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -791,13 +791,13 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table MBART"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="5">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_mbart','U') IS not NULL drop table  [tmp].[tmp_mbart]&#xA;CREATE TABLE [tmp].[tmp_mbart] (&#xA;    [ARTISTID] numeric(11,0),&#xA;    [WORKKEY] numeric(11,0),&#xA;    [PUBAGRNBR] numeric(11,0),&#xA;    [NAME] varchar(100),&#xA;    [FIRSTNAME] varchar(45),&#xA;    [TYPOFPARTY] varchar(2),&#xA;    [DATASOURCE] varchar(10),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] varchar(19),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] varchar(19)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.mbart','U') IS not NULL drop table  [tmp].[mbart]&#xA;CREATE TABLE [tmp].[mbart] (&#xA;    [ARTISTID] numeric(11,0),&#xA;    [WORKKEY] numeric(11,0),&#xA;    [PUBAGRNBR] numeric(11,0),&#xA;    [NAME] varchar(100),&#xA;    [FIRSTNAME] varchar(45),&#xA;    [TYPOFPARTY] varchar(2),&#xA;    [DATASOURCE] varchar(10),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] varchar(19),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] varchar(19)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -815,7 +815,7 @@
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_mbhdr','U') IS not NULL drop table [tmp].[tmp_mbhdr]&#xA;CREATE TABLE [tmp].[tmp_mbhdr] (&#xA;    [WORKKEY] numeric(11,0),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] varchar(19),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] varchar(19),&#xA;    [WORKTITLE] varchar(90),&#xA;    [NATWRKTIT] varchar(90),&#xA;    [WORKSTATUS] varchar(1),&#xA;    [WRKLYRLANG] varchar(2),&#xA;    [VERSTYPE] varchar(3),&#xA;    [DUPDSPFLG] varchar(3),&#xA;    [WRKCAT] varchar(3),&#xA;    [PDDATE] varchar(10),&#xA;    [PUBLDATE] varchar(10),&#xA;    [ACTIVE] varchar(1),&#xA;    [PURPOSE] varchar(3),&#xA;    [GENRE] varchar(3)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.mbhdr','U') IS not NULL drop table [tmp].[mbhdr]&#xA;CREATE TABLE [tmp].[mbhdr] (&#xA;    [WORKKEY] numeric(11,0),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] varchar(19),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] varchar(19),&#xA;    [WORKTITLE] varchar(90),&#xA;    [NATWRKTIT] varchar(90),&#xA;    [WORKSTATUS] varchar(1),&#xA;    [WRKLYRLANG] varchar(2),&#xA;    [VERSTYPE] varchar(3),&#xA;    [DUPDSPFLG] varchar(3),&#xA;    [WRKCAT] varchar(3),&#xA;    [PDDATE] varchar(10),&#xA;    [PUBLDATE] varchar(10),&#xA;    [ACTIVE] varchar(1),&#xA;    [PURPOSE] varchar(3),&#xA;    [GENRE] varchar(3)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -827,13 +827,13 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table MBIPI"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_mbipi','U') IS not NULL drop table [tmp].[tmp_mbipi]&#xA;CREATE TABLE [tmp].[tmp_mbipi] (&#xA;    [NAME] varchar(90),&#xA;    [FIRSTNAME] varchar(45),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [IPNAMEKEY] numeric(11,0),&#xA;    [IPBASEKEY] numeric(11,0),&#xA;    [IPINAMENBR] numeric(11,0),&#xA;    [IPIBASENBR] varchar(13),&#xA;    [LOCAFFNBR] numeric(11,0),&#xA;    [SOCMEMPR] varchar(3),&#xA;    [SOCMEMMR] varchar(3),&#xA;    [NATCHNAM] varchar(90),&#xA;    [NTCHFIRNAME] varchar(45),&#xA;    [TYPEOFNAME] varchar(2),&#xA;    [CREATEDTSP] varchar(19),&#xA;    [CHANGEDTSP] varchar(19)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.mbipi','U') IS not NULL drop table [tmp].[mbipi]&#xA;CREATE TABLE [tmp].[mbipi] (&#xA;    [NAME] varchar(90),&#xA;    [FIRSTNAME] varchar(45),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [IPNAMEKEY] numeric(11,0),&#xA;    [IPBASEKEY] numeric(11,0),&#xA;    [IPINAMENBR] numeric(11,0),&#xA;    [IPIBASENBR] varchar(13),&#xA;    [LOCAFFNBR] numeric(11,0),&#xA;    [SOCMEMPR] varchar(3),&#xA;    [SOCMEMMR] varchar(3),&#xA;    [NATCHNAM] varchar(90),&#xA;    [NTCHFIRNAME] varchar(45),&#xA;    [TYPEOFNAME] varchar(2),&#xA;    [CREATEDTSP] varchar(19),&#xA;    [CHANGEDTSP] varchar(19)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -845,13 +845,13 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table MBIPW"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_mbipw','U') IS not NULL drop table [tmp].[tmp_mbipw]&#xA;CREATE TABLE [tmp].[tmp_mbipw] (&#xA;    [IPNAMEKEY] numeric(11,0),&#xA;    [IPWID] numeric(11,0),&#xA;    [WORKKEY] numeric(11,0),&#xA;    [WRKCRTRELN] numeric(7,0),&#xA;    [ROLECODE] varchar(2),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] varchar(19),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] varchar(19)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.mbipw','U') IS not NULL drop table [tmp].[mbipw]&#xA;CREATE TABLE [tmp].[mbipw] (&#xA;    [IPNAMEKEY] numeric(11,0),&#xA;    [IPWID] numeric(11,0),&#xA;    [WORKKEY] numeric(11,0),&#xA;    [WRKCRTRELN] numeric(7,0),&#xA;    [ROLECODE] varchar(2),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] varchar(19),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] varchar(19)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -863,13 +863,13 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table MBREF"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_mbref','U') IS not NULL drop table [tmp].[tmp_mbref]&#xA;CREATE TABLE [tmp].[tmp_mbref] (&#xA;    [WORKKEY] numeric(11,0),&#xA;    [REFID] numeric(11,0),&#xA;    [REFSEQNBR] numeric(7,0),&#xA;    [REFTYPE] varchar(15),&#xA;    [REFERENCE] varchar(60),&#xA;    [PUBCODE] varchar(3),&#xA;    [SOCCODE] varchar(3),&#xA;    [REFCRTICE] varchar(10),&#xA;    [DATASOURCE] varchar(15),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] varchar(19),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] varchar(19)&#xA;)"
+          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.mbref','U') IS not NULL drop table [tmp].[mbref]&#xA;CREATE TABLE [tmp].[mbref] (&#xA;    [WORKKEY] numeric(11,0),&#xA;    [REFID] numeric(11,0),&#xA;    [REFSEQNBR] numeric(7,0),&#xA;    [REFTYPE] varchar(15),&#xA;    [REFERENCE] varchar(60),&#xA;    [PUBCODE] varchar(3),&#xA;    [SOCCODE] varchar(3),&#xA;    [REFCRTICE] varchar(10),&#xA;    [DATASOURCE] varchar(15),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] varchar(19),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] varchar(19)&#xA;)"
           SQLTask:CodePage="65001" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -882,13 +882,13 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table MBTIT"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_mbtit','U') IS not NULL drop table [tmp].[tmp_mbtit]&#xA;CREATE TABLE [tmp].[tmp_mbtit] (&#xA;    [WORKKEY] numeric(11,0),&#xA;    [DATASOURCE] varchar(10),&#xA;    [TITLEID] numeric(11,0),&#xA;    [TITSEQNBR] numeric(11,0),&#xA;    [TITLETYPE] varchar(2),&#xA;    [TITLE] varchar(100),&#xA;    [NATWRKTIT] varchar(90),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] varchar(19),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] varchar(19)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.mbtit','U') IS not NULL drop table [tmp].[mbtit]&#xA;CREATE TABLE [tmp].[mbtit] (&#xA;    [WORKKEY] numeric(11,0),&#xA;    [DATASOURCE] varchar(10),&#xA;    [TITLEID] numeric(11,0),&#xA;    [TITSEQNBR] numeric(11,0),&#xA;    [TITLETYPE] varchar(2),&#xA;    [TITLE] varchar(100),&#xA;    [NATWRKTIT] varchar(90),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] varchar(19),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] varchar(19)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -1358,7 +1358,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp].[tmp_mbart]</property>
+                  name="OpenRowset">[tmp].[mbart]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -2248,7 +2248,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp].[tmp_mbhdr]</property>
+                  name="OpenRowset">[tmp].[mbhdr]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -3192,7 +3192,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp].[tmp_mbipi]</property>
+                  name="OpenRowset">[tmp].[mbipi]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -3920,7 +3920,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp].[tmp_mbipw]</property>
+                  name="OpenRowset">[tmp].[mbipw]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -4664,7 +4664,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp].[tmp_mbref]</property>
+                  name="OpenRowset">[tmp].[mbref]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -5394,7 +5394,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp].[tmp_mbtit]</property>
+                  name="OpenRowset">[tmp].[mbtit]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -5645,24 +5645,51 @@
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\load tmp to dbo destination tables"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{A884713F-4A39-4CB9-B261-8B9EB27B0C12}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="load tmp to dbo destination tables"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="6">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+          SQLTask:SqlStatementSource="insert into dbo.mbart select * from tmp.mbart&#xA;insert into dbo.mbhdr select * from tmp.mbhdr&#xA;insert into dbo.mbipi select * from tmp.mbipi&#xA;insert into dbo.mbipw select * from tmp.mbipw&#xA;insert into dbo.mbref select * from tmp.mbref&#xA;insert into dbo.mbtit select * from tmp.mbtit" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\truncate destination tables"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{5F8C07A2-6954-4477-9EF0-10AF9E275DE7}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="truncate destination tables"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="6">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+          SQLTask:SqlStatementSource="&#xA;truncate table dbo.mbart&#xA;truncate table dbo.mbhdr&#xA;truncate table dbo.mbipi&#xA;truncate table dbo.mbipw&#xA;truncate table dbo.mbref&#xA;truncate table dbo.mbtit&#xA;&#xA;"
+          SQLTask:TypeConversionMode="None" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{C4661FAF-1B5D-4E24-8311-5F949A9C6DD9}"
-      DTS:From="Package\Load MBART"
+      DTS:DTSID="{C2BCF0CC-F396-4AF3-A64B-7BD13272E7F0}"
+      DTS:From="Package\truncate destination tables"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
-      DTS:To="Package\create table MBHDR" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
-      DTS:CreationName=""
-      DTS:DTSID="{6293D6E2-31C9-4A5A-8AEF-3192052586AB}"
-      DTS:From="Package\Load MBHDR"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 1"
-      DTS:To="Package\create table MBIPI" />
+      DTS:To="Package\load tmp to dbo destination tables" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 11 1]"
       DTS:CreationName=""
@@ -5711,30 +5738,6 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 11 1 1 1 1 1 1"
       DTS:To="Package\Load MBTIT" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
-      DTS:CreationName=""
-      DTS:DTSID="{AE36CF92-B109-4A82-B6B3-51B05E914E43}"
-      DTS:From="Package\Load MBIPI"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 2"
-      DTS:To="Package\create table MBIPW" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
-      DTS:CreationName=""
-      DTS:DTSID="{206812D2-EE37-4171-AD3C-9043866FAEA7}"
-      DTS:From="Package\Load MBIPW"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 3"
-      DTS:To="Package\create table MBREF" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
-      DTS:CreationName=""
-      DTS:DTSID="{BB38CAC8-CC8D-4B77-9696-8D0776188C03}"
-      DTS:From="Package\Load MBREF"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 4"
-      DTS:To="Package\create table MBTIT" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -5751,122 +5754,54 @@
         <NodeLayout
           Size="172,42"
           Id="Package\create table MBART"
-          TopLeft="60,60" />
+          TopLeft="49,60" />
         <NodeLayout
           Size="174,42"
           Id="Package\create table MBHDR"
-          TopLeft="60,164" />
+          TopLeft="49,137" />
         <NodeLayout
           Size="166,42"
           Id="Package\create table MBIPI"
-          TopLeft="60,268" />
+          TopLeft="49,214" />
         <NodeLayout
           Size="172,42"
           Id="Package\create table MBIPW"
-          TopLeft="60,372" />
+          TopLeft="49,291" />
         <NodeLayout
           Size="171,42"
           Id="Package\create table MBREF"
-          TopLeft="60,476" />
+          TopLeft="49,368" />
         <NodeLayout
           Size="169,42"
           Id="Package\create table MBTIT"
-          TopLeft="57,573" />
+          TopLeft="49,445" />
         <NodeLayout
           Size="139,42"
           Id="Package\Load MBART"
-          TopLeft="312,62" />
+          TopLeft="301,62" />
         <NodeLayout
           Size="140,42"
           Id="Package\Load MBHDR"
-          TopLeft="312,166" />
+          TopLeft="301,139" />
         <NodeLayout
           Size="133,42"
           Id="Package\Load MBIPI"
-          TopLeft="312,270" />
+          TopLeft="301,216" />
         <NodeLayout
           Size="139,42"
           Id="Package\Load MBIPW"
-          TopLeft="312,374" />
+          TopLeft="301,293" />
         <NodeLayout
           Size="138,42"
           Id="Package\Load MBREF"
-          TopLeft="312,478" />
+          TopLeft="301,370" />
         <NodeLayout
           Size="136,42"
           Id="Package\Load MBTIT"
-          TopLeft="309,575" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="381.5,104">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-234.5,60"
-              Start="0,0"
-              End="-234.5,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26"
-                    Point2="0,30"
-                    Point3="-4,30" />
-                  <mssgle:LineSegment
-                    End="-230.5,30" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-230.5,30"
-                    Point2="-234.5,30"
-                    Point3="-234.5,34" />
-                  <mssgle:LineSegment
-                    End="-234.5,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="382,208">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-239,60"
-              Start="0,0"
-              End="-239,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26"
-                    Point2="0,30"
-                    Point3="-4,30" />
-                  <mssgle:LineSegment
-                    End="-235,30" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-235,30"
-                    Point2="-239,30"
-                    Point3="-239,34" />
-                  <mssgle:LineSegment
-                    End="-239,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="302,446" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1]"
-          TopLeft="232,82">
+          TopLeft="221,82">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5888,7 +5823,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1 1]"
-          TopLeft="234,186">
+          TopLeft="223,159">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5910,7 +5845,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1 1 1]"
-          TopLeft="226,290">
+          TopLeft="215,236">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5932,7 +5867,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1 1 1 1]"
-          TopLeft="232,394">
+          TopLeft="221,313">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5954,7 +5889,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1 1 1 1 1]"
-          TopLeft="231,498">
+          TopLeft="220,390">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5976,18 +5911,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1 1 1 1 1 1]"
-          TopLeft="226,595">
+          TopLeft="218,466.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="83,0"
+              EndConnector="84,0"
               Start="0,0"
-              End="75.5,0">
+              End="76.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="75.5,0" />
+                    End="76.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5996,100 +5931,28 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="204,42"
+          Id="Package\truncate destination tables"
+          TopLeft="585,276" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\load tmp to dbo destination tables"
+          TopLeft="834,277" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="378.5,312">
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="789,297.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-232.5,60"
+              EndConnector="45,0"
               Start="0,0"
-              End="-232.5,52.5">
+              End="37.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26"
-                    Point2="0,30"
-                    Point3="-4,30" />
-                  <mssgle:LineSegment
-                    End="-228.5,30" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-228.5,30"
-                    Point2="-232.5,30"
-                    Point3="-232.5,34" />
-                  <mssgle:LineSegment
-                    End="-232.5,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="381.5,416">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-236,60"
-              Start="0,0"
-              End="-236,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26"
-                    Point2="0,30"
-                    Point3="-4,30" />
-                  <mssgle:LineSegment
-                    End="-232,30" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-232,30"
-                    Point2="-236,30"
-                    Point3="-236,34" />
-                  <mssgle:LineSegment
-                    End="-236,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="381,520">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-239.5,53"
-              Start="0,0"
-              End="-239.5,45.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.5"
-                    Point2="0,26.5"
-                    Point3="-4,26.5" />
-                  <mssgle:LineSegment
-                    End="-235.5,26.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-235.5,26.5"
-                    Point2="-239.5,26.5"
-                    Point3="-239.5,30.5" />
-                  <mssgle:LineSegment
-                    End="-239.5,45.5" />
+                    End="37.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6113,37 +5976,25 @@
         <NodeLayout
           Size="171,42"
           Id="Package\Load MBART\OLE DB Destination"
-          TopLeft="182,163" />
+          TopLeft="408,66" />
         <NodeLayout
           Size="172,42"
           Id="Package\Load MBART\Flat File Destination"
-          TopLeft="383,164" />
+          TopLeft="174,169" />
         <EdgeLayout
           Id="Package\Load MBART.Paths[Flat File Source Output]"
-          TopLeft="243.666666666667,110">
+          TopLeft="343,88">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="23.8333333333333,53"
+              EndConnector="65,0"
               Start="0,0"
-              End="23.8333333333333,45.5">
+              End="57.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.5334207077326" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.5334207077326"
-                    Point2="0,21.5334207077326"
-                    Point3="4,21.5334207077326" />
-                  <mssgle:LineSegment
-                    End="19.8333333333333,21.5334207077326" />
-                  <mssgle:CubicBezierSegment
-                    Point1="19.8333333333333,21.5334207077326"
-                    Point2="23.8333333333333,21.5334207077326"
-                    Point3="23.8333333333333,25.5334207077326" />
-                  <mssgle:LineSegment
-                    End="23.8333333333333,45.5" />
+                    End="57.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6154,37 +6005,25 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load MBART.Paths[Flat File Source Error Output]"
-          TopLeft="291.333333333333,110">
+          TopLeft="263.75,110">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="177.666666666667,54"
+              EndConnector="0,59"
               Start="0,0"
-              End="177.666666666667,46.5">
+              End="0,51.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.9397116644823" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.9397116644823"
-                    Point2="0,21.9397116644823"
-                    Point3="4,21.9397116644823" />
-                  <mssgle:LineSegment
-                    End="173.666666666667,21.9397116644823" />
-                  <mssgle:CubicBezierSegment
-                    Point1="173.666666666667,21.9397116644823"
-                    Point2="177.666666666667,21.9397116644823"
-                    Point3="177.666666666667,25.9397116644823" />
-                  <mssgle:LineSegment
-                    End="177.666666666667,46.5" />
+                    End="0,51.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="25.2069466145835,26.9397116644823,127.2527734375,11.609375"
+              BoundingBox="-63.62638671875,19.9453125,127.2527734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -6216,37 +6055,25 @@
         <NodeLayout
           Size="172,42"
           Id="Package\Load MBHDR\Flat File Destination"
-          TopLeft="373,165" />
+          TopLeft="186,182" />
         <NodeLayout
           Size="171,42"
           Id="Package\Load MBHDR\OLE DB Destination"
-          TopLeft="182,165" />
+          TopLeft="445,68" />
         <EdgeLayout
           Id="Package\Load MBHDR.Paths[Flat File Source Output]"
-          TopLeft="243.666666666667,110">
+          TopLeft="343,89">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="23.8333333333333,55"
+              EndConnector="102,0"
               Start="0,0"
-              End="23.8333333333333,47.5">
+              End="94.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.346002621232" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18.346002621232"
-                    Point2="0,22.346002621232"
-                    Point3="4,22.346002621232" />
-                  <mssgle:LineSegment
-                    End="19.8333333333333,22.346002621232" />
-                  <mssgle:CubicBezierSegment
-                    Point1="19.8333333333333,22.346002621232"
-                    Point2="23.8333333333333,22.346002621232"
-                    Point3="23.8333333333333,26.346002621232" />
-                  <mssgle:LineSegment
-                    End="23.8333333333333,47.5" />
+                    End="94.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6257,37 +6084,25 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load MBHDR.Paths[Flat File Source Error Output]"
-          TopLeft="291.333333333333,110">
+          TopLeft="269.75,110">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="167.666666666667,55"
+              EndConnector="0,72"
               Start="0,0"
-              End="167.666666666667,47.5">
+              End="0,64.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.346002621232" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18.346002621232"
-                    Point2="0,22.346002621232"
-                    Point3="4,22.346002621232" />
-                  <mssgle:LineSegment
-                    End="163.666666666667,22.346002621232" />
-                  <mssgle:CubicBezierSegment
-                    Point1="163.666666666667,22.346002621232"
-                    Point2="167.666666666667,22.346002621232"
-                    Point3="167.666666666667,26.346002621232" />
-                  <mssgle:LineSegment
-                    End="167.666666666667,47.5" />
+                    End="0,64.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="20.2069466145835,27.346002621232,127.2527734375,11.609375"
+              BoundingBox="-63.62638671875,26.4453125,127.2527734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -6319,37 +6134,25 @@
         <NodeLayout
           Size="172,42"
           Id="Package\Load MBIPI\Flat File Destination"
-          TopLeft="380,162" />
+          TopLeft="177,182" />
         <NodeLayout
           Size="171,42"
           Id="Package\Load MBIPI\OLE DB Destination"
-          TopLeft="180,161" />
+          TopLeft="409,70" />
         <EdgeLayout
           Id="Package\Load MBIPI.Paths[Flat File Source Output]"
-          TopLeft="243.666666666667,110">
+          TopLeft="343,90">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="21.8333333333333,51"
+              EndConnector="66,0"
               Start="0,0"
-              End="21.8333333333333,43.5">
+              End="58.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.7208387942333" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.7208387942333"
-                    Point2="0,20.7208387942333"
-                    Point3="4,20.7208387942333" />
-                  <mssgle:LineSegment
-                    End="17.8333333333333,20.7208387942333" />
-                  <mssgle:CubicBezierSegment
-                    Point1="17.8333333333333,20.7208387942333"
-                    Point2="21.8333333333333,20.7208387942333"
-                    Point3="21.8333333333333,24.7208387942333" />
-                  <mssgle:LineSegment
-                    End="21.8333333333333,43.5" />
+                    End="58.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6360,37 +6163,25 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load MBIPI.Paths[Flat File Source Error Output]"
-          TopLeft="291.333333333333,110">
+          TopLeft="265.25,110">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="174.666666666667,52"
+              EndConnector="0,72"
               Start="0,0"
-              End="174.666666666667,44.5">
+              End="0,64.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.127129750983" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.127129750983"
-                    Point2="0,21.127129750983"
-                    Point3="4,21.127129750983" />
-                  <mssgle:LineSegment
-                    End="170.666666666667,21.127129750983" />
-                  <mssgle:CubicBezierSegment
-                    Point1="170.666666666667,21.127129750983"
-                    Point2="174.666666666667,21.127129750983"
-                    Point3="174.666666666667,25.127129750983" />
-                  <mssgle:LineSegment
-                    End="174.666666666667,44.5" />
+                    End="0,64.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="23.7069466145835,26.127129750983,127.2527734375,11.609375"
+              BoundingBox="-63.62638671875,26.4453125,127.2527734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -6422,25 +6213,25 @@
         <NodeLayout
           Size="171,42"
           Id="Package\Load MBIPW\OLE DB Destination"
-          TopLeft="181,163" />
+          TopLeft="440,69" />
         <NodeLayout
           Size="172,42"
           Id="Package\Load MBIPW\Flat File Destination"
-          TopLeft="395,165" />
+          TopLeft="178,183" />
         <EdgeLayout
           Id="Package\Load MBIPW.Paths[Flat File Source Output]"
-          TopLeft="267,110">
+          TopLeft="343,89.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,53"
+              EndConnector="97,0"
               Start="0,0"
-              End="0,45.5">
+              End="89.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,45.5" />
+                    End="89.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6451,37 +6242,25 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load MBIPW.Paths[Flat File Source Error Output]"
-          TopLeft="291.333333333333,110">
+          TopLeft="265.75,110">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="189.666666666667,55"
+              EndConnector="0,73"
               Start="0,0"
-              End="189.666666666667,47.5">
+              End="0,65.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.346002621232" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18.346002621232"
-                    Point2="0,22.346002621232"
-                    Point3="4,22.346002621232" />
-                  <mssgle:LineSegment
-                    End="185.666666666667,22.346002621232" />
-                  <mssgle:CubicBezierSegment
-                    Point1="185.666666666667,22.346002621232"
-                    Point2="189.666666666667,22.346002621232"
-                    Point3="189.666666666667,26.346002621232" />
-                  <mssgle:LineSegment
-                    End="189.666666666667,47.5" />
+                    End="0,65.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="31.2069466145835,27.346002621232,127.2527734375,11.609375"
+              BoundingBox="-63.62638671875,26.9453125,127.2527734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -6513,37 +6292,25 @@
         <NodeLayout
           Size="171,42"
           Id="Package\Load MBREF\OLE DB Destination"
-          TopLeft="195,158" />
+          TopLeft="423,68" />
         <NodeLayout
           Size="172,42"
           Id="Package\Load MBREF\Flat File Destination"
-          TopLeft="393,159" />
+          TopLeft="182,187" />
         <EdgeLayout
           Id="Package\Load MBREF.Paths[Flat File Source Output]"
-          TopLeft="243.666666666667,110">
+          TopLeft="343,89">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="36.8333333333333,48"
+              EndConnector="80,0"
               Start="0,0"
-              End="36.8333333333333,40.5">
+              End="72.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.5019659239843" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15.5019659239843"
-                    Point2="0,19.5019659239843"
-                    Point3="4,19.5019659239843" />
-                  <mssgle:LineSegment
-                    End="32.8333333333333,19.5019659239843" />
-                  <mssgle:CubicBezierSegment
-                    Point1="32.8333333333333,19.5019659239843"
-                    Point2="36.8333333333333,19.5019659239843"
-                    Point3="36.8333333333333,23.5019659239843" />
-                  <mssgle:LineSegment
-                    End="36.8333333333333,40.5" />
+                    End="72.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6554,37 +6321,25 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load MBREF.Paths[Flat File Source Error Output]"
-          TopLeft="291.333333333333,110">
+          TopLeft="267.75,110">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="187.666666666667,49"
+              EndConnector="0,77"
               Start="0,0"
-              End="187.666666666667,41.5">
+              End="0,69.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.9082568807339" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15.9082568807339"
-                    Point2="0,19.9082568807339"
-                    Point3="4,19.9082568807339" />
-                  <mssgle:LineSegment
-                    End="183.666666666667,19.9082568807339" />
-                  <mssgle:CubicBezierSegment
-                    Point1="183.666666666667,19.9082568807339"
-                    Point2="187.666666666667,19.9082568807339"
-                    Point3="187.666666666667,23.9082568807339" />
-                  <mssgle:LineSegment
-                    End="187.666666666667,41.5" />
+                    End="0,69.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="30.2069466145835,24.9082568807339,127.2527734375,11.609375"
+              BoundingBox="-63.62638671875,28.9453125,127.2527734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -6616,25 +6371,25 @@
         <NodeLayout
           Size="171,42"
           Id="Package\Load MBTIT\OLE DB Destination"
-          TopLeft="184,154" />
+          TopLeft="444,69" />
         <NodeLayout
           Size="172,42"
           Id="Package\Load MBTIT\Flat File Destination"
-          TopLeft="388,156" />
+          TopLeft="182,186" />
         <EdgeLayout
           Id="Package\Load MBTIT.Paths[Flat File Source Output]"
-          TopLeft="268.5,110">
+          TopLeft="343,89.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,44"
+              EndConnector="101,0"
               Start="0,0"
-              End="0,36.5">
+              End="93.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,36.5" />
+                    End="93.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6645,37 +6400,25 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load MBTIT.Paths[Flat File Source Error Output]"
-          TopLeft="291.333333333333,110">
+          TopLeft="267.75,110">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="182.666666666667,46"
+              EndConnector="0,76"
               Start="0,0"
-              End="182.666666666667,38.5">
+              End="0,68.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,14.6893840104849" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,14.6893840104849"
-                    Point2="0,18.6893840104849"
-                    Point3="4,18.6893840104849" />
-                  <mssgle:LineSegment
-                    End="178.666666666667,18.6893840104849" />
-                  <mssgle:CubicBezierSegment
-                    Point1="178.666666666667,18.6893840104849"
-                    Point2="182.666666666667,18.6893840104849"
-                    Point3="182.666666666667,22.6893840104849" />
-                  <mssgle:LineSegment
-                    End="182.666666666667,38.5" />
+                    End="0,68.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="27.7069466145835,23.6893840104849,127.2527734375,11.609375"
+              BoundingBox="-63.62638671875,28.4453125,127.2527734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

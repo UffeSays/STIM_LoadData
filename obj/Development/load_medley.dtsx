@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_medley"
   DTS:PackageType="5"
-  DTS:VersionBuild="24"
-  DTS:VersionGUID="{7363064C-3212-4E7F-BC4A-D1EE6854C0E7}">
+  DTS:VersionBuild="29"
+  DTS:VersionGUID="{7668980F-2FBC-4DEE-84CD-2F2BEF732F2B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1180,13 +1180,13 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table mdladrpf"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID( 'tmp.tmp_mdladrpf','U') IS not NULL drop table [tmp].[tmp_mdladrpf]&#xA;CREATE TABLE [tmp].[tmp_mdladrpf] (&#xA;    [ADMDNR] numeric(9,0),&#xA;    [ADADNR] numeric(5,0),&#xA;    [ADADTP] varchar(2),&#xA;    [ADUTAD] varchar(1),&#xA;    [ADFRDT] date,&#xA;    [ADTODT] date,&#xA;    [ADKSDT] date,&#xA;    [ADADST] varchar(1),&#xA;    [CRTDTE] date,&#xA;    [CRTUSR] varchar(10),&#xA;    [CHGDTE] date,&#xA;    [CHGUSR] varchar(10)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="if OBJECT_ID( 'tmp.mdladrpf','U') IS not NULL drop table [tmp].[mdladrpf]&#xA;CREATE TABLE [tmp].[mdladrpf] (&#xA;    [ADMDNR] numeric(9,0),&#xA;    [ADADNR] numeric(5,0),&#xA;    [ADADTP] varchar(2),&#xA;    [ADUTAD] varchar(1),&#xA;    [ADFRDT] date,&#xA;    [ADTODT] date,&#xA;    [ADKSDT] date,&#xA;    [ADADST] varchar(1),&#xA;    [CRTDTE] date,&#xA;    [CRTUSR] varchar(10),&#xA;    [CHGDTE] date,&#xA;    [CHGUSR] varchar(10)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -1198,13 +1198,13 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table mdladspf"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID( 'tmp.tmp_mdladspf','U') IS not NULL drop table [tmp].[tmp_mdladspf]&#xA;CREATE TABLE [tmp].[tmp_mdladspf] (&#xA;    [ASMDNR] numeric(9,0),&#xA;    [ASADNR] numeric(5,0),&#xA;    [ASATRG] varchar(1),&#xA;    [ASATNM] varchar(50),&#xA;    [ASCONM] varchar(50),&#xA;    [ASADBK] varchar(35),&#xA;    [ASADGT] varchar(35),&#xA;    [ASPONR] numeric(5,0),&#xA;    [ASORT] varchar(27),&#xA;    [CRTDTE] date,&#xA;    [CRTUSR] varchar(10),&#xA;    [CHGDTE] date,&#xA;    [CHGUSR] varchar(10)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="if OBJECT_ID( 'tmp.mdladspf','U') IS not NULL drop table [tmp].[mdladspf]&#xA;CREATE TABLE [tmp].[mdladspf] (&#xA;    [ASMDNR] numeric(9,0),&#xA;    [ASADNR] numeric(5,0),&#xA;    [ASATRG] varchar(1),&#xA;    [ASATNM] varchar(50),&#xA;    [ASCONM] varchar(50),&#xA;    [ASADBK] varchar(35),&#xA;    [ASADGT] varchar(35),&#xA;    [ASPONR] numeric(5,0),&#xA;    [ASORT] varchar(27),&#xA;    [CRTDTE] date,&#xA;    [CRTUSR] varchar(10),&#xA;    [CHGDTE] date,&#xA;    [CHGUSR] varchar(10)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -1216,13 +1216,13 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table mdladupf"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID( 'tmp.tmp_mdladupf','U') IS not NULL drop table [tmp].[tmp_mdladupf]&#xA;CREATE TABLE [tmp].[tmp_mdladupf] (&#xA;    [AUMDNR] numeric(9,0),&#xA;    [AUADNR] numeric(5,0),&#xA;    [AUADR1] varchar(35),&#xA;    [AUADR2] varchar(35),&#xA;    [AUADR3] varchar(35),&#xA;    [AUADR4] varchar(35),&#xA;    [AUADR5] varchar(35),&#xA;    [AULAND] varchar(2),&#xA;    [CRTDTE] date,&#xA;    [CRTUSR] varchar(10),&#xA;    [CHGDTE] date,&#xA;    [CHGUSR] varchar(10)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="if OBJECT_ID( 'tmp.mdladupf','U') IS not NULL drop table [tmp].[mdladupf]&#xA;CREATE TABLE [tmp].[mdladupf] (&#xA;    [AUMDNR] numeric(9,0),&#xA;    [AUADNR] numeric(5,0),&#xA;    [AUADR1] varchar(35),&#xA;    [AUADR2] varchar(35),&#xA;    [AUADR3] varchar(35),&#xA;    [AUADR4] varchar(35),&#xA;    [AUADR5] varchar(35),&#xA;    [AULAND] varchar(2),&#xA;    [CRTDTE] date,&#xA;    [CRTUSR] varchar(10),&#xA;    [CHGDTE] date,&#xA;    [CHGUSR] varchar(10)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -1234,13 +1234,13 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table mdlmdlpf"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="5">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID( 'tmp.tmp_mdlmdlpf','U') IS not NULL drop table [tmp].[tmp_mdlmdlpf]&#xA;CREATE TABLE [tmp].[tmp_mdlmdlpf] (&#xA;    [MDMDNR] numeric(9,0),&#xA;    [MDMDTY] varchar(2),&#xA;    [MDNAMN] varchar(50),&#xA;    [MDFNMN] varchar(50),&#xA;    [MDFNMR] varchar(50),&#xA;    [MDTIKD] varchar(2),&#xA;    [MDMEDB] varchar(2),&#xA;    [MDOPNR] numeric(12,0),&#xA;    [MDEJOP] varchar(1),&#xA;    [MDCAE] varchar(2),&#xA;    [MDAFDT] date,&#xA;    [MDATDT] date,&#xA;    [MDAUDT] numeric(8,0),&#xA;    [MDMDST] varchar(1),&#xA;    [MDSOKD] varchar(2),&#xA;    [MDSTDT] date,&#xA;    [MDSODT] date,&#xA;    [MDSTAV] varchar(1),&#xA;    [MDKNKD] varchar(1),&#xA;    [MDSPKD] varchar(2),&#xA;    [MDSEKR] varchar(1),&#xA;    [MDKLKD] varchar(10),&#xA;    [MDSBYT] varchar(1),&#xA;    [MDHTYP] varchar(2),&#xA;    [MDHDST] varchar(2),&#xA;    [MDUBST] varchar(2),&#xA;    [MDUBCL] numeric(4,0),&#xA;    [MDUBKN] numeric(12,0),&#xA;    [MDUBMD] varchar(30),&#xA;    [MDUBPR] varchar(2),&#xA;    [MDSTOP] varchar(1),&#xA;    [MDFMKD] varchar(2),&#xA;    [MDMREG] varchar(16),&#xA;    [MDMOMS] varchar(1),&#xA;    [MDFSKT] varchar(1),&#xA;    [MDURL] varchar(60),&#xA;    [MDSLSK] varchar(3),&#xA;    [MDAKNY] varchar(20),&#xA;    [MDOMAV] varchar(1),&#xA;    [MDDUDT] date,&#xA;    [MDKONR] varchar(4),&#xA;    [MDSWAD] varchar(12),&#xA;    [MDKNIB] varchar(35),&#xA;    [MDBKNM] varchar(30),&#xA;    [MDLDKD] varchar(2),&#xA;    [MDVAKD] varchar(3),&#xA;    [MDBHKD] varchar(2),&#xA;    [CRTDTE] date,&#xA;    [CRTUSR] varchar(10),&#xA;    [CHGDTE] date,&#xA;    [CHGUSR] varchar(10)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="if OBJECT_ID( 'tmp.mdlmdlpf','U') IS not NULL drop table [tmp].[mdlmdlpf]&#xA;CREATE TABLE [tmp].[mdlmdlpf] (&#xA;    [MDMDNR] numeric(9,0),&#xA;    [MDMDTY] varchar(2),&#xA;    [MDNAMN] varchar(50),&#xA;    [MDFNMN] varchar(50),&#xA;    [MDFNMR] varchar(50),&#xA;    [MDTIKD] varchar(2),&#xA;    [MDMEDB] varchar(2),&#xA;    [MDOPNR] numeric(12,0),&#xA;    [MDEJOP] varchar(1),&#xA;    [MDCAE] varchar(2),&#xA;    [MDAFDT] date,&#xA;    [MDATDT] date,&#xA;    [MDAUDT] numeric(8,0),&#xA;    [MDMDST] varchar(1),&#xA;    [MDSOKD] varchar(2),&#xA;    [MDSTDT] date,&#xA;    [MDSODT] date,&#xA;    [MDSTAV] varchar(1),&#xA;    [MDKNKD] varchar(1),&#xA;    [MDSPKD] varchar(2),&#xA;    [MDSEKR] varchar(1),&#xA;    [MDKLKD] varchar(10),&#xA;    [MDSBYT] varchar(1),&#xA;    [MDHTYP] varchar(2),&#xA;    [MDHDST] varchar(2),&#xA;    [MDUBST] varchar(2),&#xA;    [MDUBCL] numeric(4,0),&#xA;    [MDUBKN] numeric(12,0),&#xA;    [MDUBMD] varchar(30),&#xA;    [MDUBPR] varchar(2),&#xA;    [MDSTOP] varchar(1),&#xA;    [MDFMKD] varchar(2),&#xA;    [MDMREG] varchar(16),&#xA;    [MDMOMS] varchar(1),&#xA;    [MDFSKT] varchar(1),&#xA;    [MDURL] varchar(60),&#xA;    [MDSLSK] varchar(3),&#xA;    [MDAKNY] varchar(20),&#xA;    [MDOMAV] varchar(1),&#xA;    [MDDUDT] date,&#xA;    [MDKONR] varchar(4),&#xA;    [MDSWAD] varchar(12),&#xA;    [MDKNIB] varchar(35),&#xA;    [MDBKNM] varchar(30),&#xA;    [MDLDKD] varchar(2),&#xA;    [MDVAKD] varchar(3),&#xA;    [MDBHKD] varchar(2),&#xA;    [CRTDTE] date,&#xA;    [CRTUSR] varchar(10),&#xA;    [CHGDTE] date,&#xA;    [CHGUSR] varchar(10)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -1253,13 +1253,13 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table mdlmdl_subset_rightsholders"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID( 'tmp.tmp_mdlmdl_subset_rightsholders','U') IS not NULL drop table [tmp].[tmp_mdlmdl_subset_rightsholders]&#xA;CREATE TABLE  [tmp].[tmp_mdlmdl_subset_rightsholders] (&#xA;    [MDMDNR] numeric(9,0),&#xA;    [MDNAMN] varchar(50),&#xA;    [MDFNMR] varchar(50),&#xA;    [FDAT] varchar(8),&#xA;    [MDAFDT] date,&#xA;    [MDATDT] date,&#xA;    [MDAUDT] numeric(8,0),&#xA;    [MDMDST] varchar(1),&#xA;    [MDSOKD] varchar(2),&#xA;    [SONAMN] varchar(50),&#xA;    [MDSTAV] varchar(1),&#xA;    [MDKNKD] varchar(1),&#xA;    [MDSPKD] varchar(2),&#xA;    [MDSBYT] varchar(1),&#xA;    [MDSTOP] varchar(1),&#xA;    [AULAND] varchar(2),&#xA;    [ASORT] varchar(27),&#xA;    [ASPONR] numeric(5,0),&#xA;    [PNKOMU] varchar(30)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="if OBJECT_ID( 'tmp.mdlmdl_subset_rightsholders','U') IS not NULL drop table [tmp].[mdlmdl_subset_rightsholders]&#xA;CREATE TABLE  [tmp].[mdlmdl_subset_rightsholders] (&#xA;    [MDMDNR] numeric(9,0),&#xA;    [MDNAMN] varchar(50),&#xA;    [MDFNMR] varchar(50),&#xA;    [FDAT] varchar(8),&#xA;    [MDAFDT] date,&#xA;    [MDATDT] date,&#xA;    [MDAUDT] numeric(8,0),&#xA;    [MDMDST] varchar(1),&#xA;    [MDSOKD] varchar(2),&#xA;    [SONAMN] varchar(50),&#xA;    [MDSTAV] varchar(1),&#xA;    [MDKNKD] varchar(1),&#xA;    [MDSPKD] varchar(2),&#xA;    [MDSBYT] varchar(1),&#xA;    [MDSTOP] varchar(1),&#xA;    [AULAND] varchar(2),&#xA;    [ASORT] varchar(27),&#xA;    [ASPONR] numeric(5,0),&#xA;    [PNKOMU] varchar(30)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -1271,13 +1271,13 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table mdlstopf"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="5">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID( 'tmp.tmp_mdlstopf','U') IS not NULL drop table [tmp].[tmp_mdlstopf]&#xA;CREATE TABLE [tmp].[tmp_mdlstopf] (&#xA;    [SONAMN] varchar(50),&#xA;    [SOMDST] varchar(1),&#xA;    [SOSOKD] varchar(2),&#xA;    [CRTDTE] date,&#xA;    [CRTUSR] varchar(10),&#xA;    [CHGDTE] date,&#xA;    [CHGUSR] varchar(10)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="if OBJECT_ID( 'tmp.mdlstopf','U') IS not NULL drop table [tmp].[mdlstopf]&#xA;CREATE TABLE [tmp].[mdlstopf] (&#xA;    [SONAMN] varchar(50),&#xA;    [SOMDST] varchar(1),&#xA;    [SOSOKD] varchar(2),&#xA;    [CRTDTE] date,&#xA;    [CRTUSR] varchar(10),&#xA;    [CHGDTE] date,&#xA;    [CHGUSR] varchar(10)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -1757,7 +1757,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp].[tmp_mdladrpf]</property>
+                  name="OpenRowset">[tmp].[mdladrpf]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -2519,7 +2519,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp].[tmp_mdladspf]</property>
+                  name="OpenRowset">[tmp].[mdladspf]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -3279,7 +3279,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp].[tmp_mdladupf]</property>
+                  name="OpenRowset">[tmp].[mdladupf]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -5093,7 +5093,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp].[tmp_mdlmdlpf]</property>
+                  name="OpenRowset">[tmp].[mdlmdlpf]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -6556,7 +6556,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp].[tmp_mdlmdl_subset_rightsholders]</property>
+                  name="OpenRowset">[tmp].[mdlmdl_subset_rightsholders]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -7264,7 +7264,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp].[tmp_mdlstopf]</property>
+                  name="OpenRowset">[tmp].[mdlstopf]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -7457,8 +7457,52 @@
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\load tmp to dbo destinations tables"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{2924dd02-12e4-4847-97ac-a1fce8ecf732}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="load tmp to dbo destinations tables"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="6">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+          SQLTask:SqlStatementSource="select * into dbo.mdladrpf from tmp.mdladrpf&#xA;select * into dbo.mdladspf from tmp.mdladspf&#xA;select * into dbo.mdladupf from tmp.mdladupf&#xA;select * into dbo.mdlmdlpf from tmp.mdlmdlpf&#xA;select * into dbo.mdlstopf from tmp.mdlstopf" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate destination tables"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{4BB609A6-459C-44C3-A9B0-3E1EA077FEC1}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate destination tables"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="6">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+          SQLTask:SqlStatementSource="truncate table dbo.mdladrpf &#xA;truncate table dbo.mdladspf &#xA;truncate table dbo.mdladupf &#xA;truncate table dbo.mdlmdlpf &#xA;truncate table dbo.mdlstopf " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{B0DFBDD5-601A-4103-9E2F-B8C92EC71B7E}"
+      DTS:From="Package\Truncate destination tables"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\load tmp to dbo destinations tables" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
       DTS:CreationName=""
@@ -7521,147 +7565,75 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="275,42"
-          Id="Package\create table mdlmdl_subset_rightsholders"
-          TopLeft="53,694" />
-        <NodeLayout
-          Size="242,42"
-          Id="Package\Load mdlmdl_subset_rightsholders"
-          TopLeft="382,694" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="328,715">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="54,0"
-              Start="0,0"
-              End="46.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="46.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
           Size="180,42"
           Id="Package\create table mdladrpf"
-          TopLeft="60,79" />
-        <NodeLayout
-          Size="147,42"
-          Id="Package\Load mdladrpf"
-          TopLeft="389,79" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 4 1]"
-          TopLeft="240,100">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="149,0"
-              Start="0,0"
-              End="141.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="141.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="215,79" />
         <NodeLayout
           Size="181,42"
           Id="Package\create table mdladspf"
-          TopLeft="60,181" />
-        <NodeLayout
-          Size="148,42"
-          Id="Package\Load mdladspf"
-          TopLeft="389,181" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 4 1 1]"
-          TopLeft="241,202">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="148,0"
-              Start="0,0"
-              End="140.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="140.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="215,181" />
         <NodeLayout
           Size="182,42"
           Id="Package\create table mdladupf"
-          TopLeft="60,283" />
+          TopLeft="215,283" />
         <NodeLayout
-          Size="149,42"
-          Id="Package\Load mdladupf"
-          TopLeft="389,283" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 4 1 1 1]"
-          TopLeft="242,304">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="147,0"
-              Start="0,0"
-              End="139.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="139.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="275,42"
+          Id="Package\create table mdlmdl_subset_rightsholders"
+          TopLeft="215,694" />
         <NodeLayout
           Size="182,42"
           Id="Package\create table mdlmdlpf"
-          TopLeft="60,385" />
+          TopLeft="215,385" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\create table mdlstopf"
+          TopLeft="215,487" />
+        <NodeLayout
+          Size="147,42"
+          Id="Package\Load mdladrpf"
+          TopLeft="540,79" />
+        <NodeLayout
+          Size="148,42"
+          Id="Package\Load mdladspf"
+          TopLeft="540,181" />
+        <NodeLayout
+          Size="149,42"
+          Id="Package\Load mdladupf"
+          TopLeft="540,283" />
+        <NodeLayout
+          Size="242,42"
+          Id="Package\Load mdlmdl_subset_rightsholders"
+          TopLeft="540,694" />
         <NodeLayout
           Size="149,42"
           Id="Package\Load mdlmdlpf"
-          TopLeft="389,385" />
+          TopLeft="540,385" />
+        <NodeLayout
+          Size="146,42"
+          Id="Package\Load mdlstopf"
+          TopLeft="540,487" />
+        <NodeLayout
+          Size="263,42"
+          Id="Package\load tmp to dbo destinations tables"
+          TopLeft="491,592" />
+        <NodeLayout
+          Size="207,42"
+          Id="Package\Truncate destination tables"
+          TopLeft="214,593" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 4 1 1 1 1]"
-          TopLeft="242,406">
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="421,613.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="147,0"
+              EndConnector="70,0"
               Start="0,0"
-              End="139.5,0">
+              End="62.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="139.5,0" />
+                    End="62.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7670,28 +7642,130 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="179,42"
-          Id="Package\create table mdlstopf"
-          TopLeft="60,487" />
-        <NodeLayout
-          Size="146,42"
-          Id="Package\Load mdlstopf"
-          TopLeft="389,487" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 4 1 1 1 1 1]"
-          TopLeft="239,508">
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="490,715">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="150,0"
+              EndConnector="50,0"
               Start="0,0"
-              End="142.5,0">
+              End="42.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="142.5,0" />
+                    End="42.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4 1]"
+          TopLeft="395,100">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="145,0"
+              Start="0,0"
+              End="137.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="137.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4 1 1]"
+          TopLeft="396,202">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="144,0"
+              Start="0,0"
+              End="136.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="136.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4 1 1 1]"
+          TopLeft="397,304">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="143,0"
+              Start="0,0"
+              End="135.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="135.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4 1 1 1 1]"
+          TopLeft="397,406">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="143,0"
+              Start="0,0"
+              End="135.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="135.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4 1 1 1 1 1]"
+          TopLeft="394,508">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="146,0"
+              Start="0,0"
+              End="138.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="138.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7704,115 +7778,14 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Load mdlmdl_subset_rightsholders">
+    design-time-name="Package\Load mdladrpf">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151,42"
-          Id="Package\Load mdlmdl_subset_rightsholders\Flat File Source"
-          TopLeft="106.5,30.5" />
-        <NodeLayout
-          Size="172,42"
-          Id="Package\Load mdlmdl_subset_rightsholders\Flat File Destination"
-          TopLeft="309,122" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination"
-          TopLeft="91,122" />
-        <EdgeLayout
-          Id="Package\Load mdlmdl_subset_rightsholders.Paths[Flat File Source Error Output]"
-          TopLeft="205.833333333333,72.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="189.166666666667,49.5"
-              Start="0,0"
-              End="189.166666666667,42">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.1114023591088" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.1114023591088"
-                    Point2="0,20.1114023591088"
-                    Point3="4,20.1114023591088" />
-                  <mssgle:LineSegment
-                    End="185.166666666667,20.1114023591088" />
-                  <mssgle:CubicBezierSegment
-                    Point1="185.166666666667,20.1114023591088"
-                    Point2="189.166666666667,20.1114023591088"
-                    Point3="189.166666666667,24.1114023591088" />
-                  <mssgle:LineSegment
-                    End="189.166666666667,42" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="30.9569466145835,25.1114023591088,127.2527734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load mdlmdl_subset_rightsholders.Paths[Flat File Source Output]"
-          TopLeft="158.166666666667,72.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="18.3333333333333,49.5"
-              Start="0,0"
-              End="18.3333333333333,42">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.1114023591088" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.1114023591088"
-                    Point2="0,20.1114023591088"
-                    Point3="4,20.1114023591088" />
-                  <mssgle:LineSegment
-                    End="14.3333333333333,20.1114023591088" />
-                  <mssgle:CubicBezierSegment
-                    Point1="14.3333333333333,20.1114023591088"
-                    Point2="18.3333333333333,20.1114023591088"
-                    Point3="18.3333333333333,24.1114023591088" />
-                  <mssgle:LineSegment
-                    End="18.3333333333333,42" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Load mdladrpf">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+          Id="Package\Load mdladrpf\Flat File Source"
+          TopLeft="110,26" />
         <NodeLayout
           Size="172,42"
           Id="Package\Load mdladrpf\Flat File Destination"
@@ -7821,32 +7794,6 @@
           Size="171,42"
           Id="Package\Load mdladrpf\OLE DB Destination"
           TopLeft="346,28" />
-        <NodeLayout
-          Size="151,42"
-          Id="Package\Load mdladrpf\Flat File Source"
-          TopLeft="110,26" />
-        <EdgeLayout
-          Id="Package\Load mdladrpf.Paths[Flat File Source Output]"
-          TopLeft="261,48">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="85,0"
-              Start="0,0"
-              End="77.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="77.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load mdladrpf.Paths[Flat File Source Error Output]"
           TopLeft="184.75,68">
@@ -7871,18 +7818,49 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load mdladrpf.Paths[Flat File Source Output]"
+          TopLeft="261,48">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="85,0"
+              Start="0,0"
+              End="77.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="77.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load mdladrpf\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load mdladspf">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="172,42"
-          Id="Package\Load mdladspf\Flat File Destination"
-          TopLeft="87,117" />
         <NodeLayout
           Size="151,42"
           Id="Package\Load mdladspf\Flat File Source"
@@ -7891,6 +7869,10 @@
           Size="171,42"
           Id="Package\Load mdladspf\OLE DB Destination"
           TopLeft="379,42" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Load mdladspf\Flat File Destination"
+          TopLeft="87,117" />
         <EdgeLayout
           Id="Package\Load mdladspf.Paths[Flat File Source Output]"
           TopLeft="252,60.1666666666667">
@@ -7940,6 +7922,19 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load mdladspf\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load mdladupf">
     <LayoutInfo>
@@ -7950,35 +7945,13 @@
           Id="Package\Load mdladupf\Flat File Source"
           TopLeft="83,62" />
         <NodeLayout
-          Size="171,42"
-          Id="Package\Load mdladupf\OLE DB Destination"
-          TopLeft="350,63" />
-        <EdgeLayout
-          Id="Package\Load mdladupf.Paths[Flat File Source Output]"
-          TopLeft="234,83.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="116,0"
-              Start="0,0"
-              End="108.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="108.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
           Size="172,42"
           Id="Package\Load mdladupf\Flat File Destination"
           TopLeft="72,151" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load mdladupf\OLE DB Destination"
+          TopLeft="350,63" />
         <EdgeLayout
           Id="Package\Load mdladupf.Paths[Flat File Source Error Output]"
           TopLeft="158.25,104">
@@ -8003,9 +7976,123 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load mdladupf.Paths[Flat File Source Output]"
+          TopLeft="234,83.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="116,0"
+              Start="0,0"
+              End="108.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="108.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load mdladupf\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load mdlmdl_subset_rightsholders">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load mdlmdl_subset_rightsholders\Flat File Source"
+          TopLeft="106.5,30.5" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Load mdlmdl_subset_rightsholders\Flat File Destination"
+          TopLeft="91,136" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination"
+          TopLeft="351,30" />
+        <EdgeLayout
+          Id="Package\Load mdlmdl_subset_rightsholders.Paths[Flat File Source Error Output]"
+          TopLeft="179.5,72.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63.5"
+              Start="0,0"
+              End="0,56">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-63.62638671875,22.1953125,127.2527734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load mdlmdl_subset_rightsholders.Paths[Flat File Source Output]"
+          TopLeft="257.5,51.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="93.5,0"
+              Start="0,0"
+              End="86,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="86,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load mdlmdl_subset_rightsholders\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load mdlmdlpf">
     <LayoutInfo>
@@ -8019,6 +8106,10 @@
           Size="171,42"
           Id="Package\Load mdlmdlpf\OLE DB Destination"
           TopLeft="367,76" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Load mdlmdlpf\Flat File Destination"
+          TopLeft="116,167" />
         <EdgeLayout
           Id="Package\Load mdlmdlpf.Paths[Flat File Source Output]"
           TopLeft="275,96">
@@ -8041,10 +8132,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="172,42"
-          Id="Package\Load mdlmdlpf\Flat File Destination"
-          TopLeft="116,167" />
         <EdgeLayout
           Id="Package\Load mdlmdlpf.Paths[Flat File Source Error Output]"
           TopLeft="200.75,116">
@@ -8072,6 +8159,19 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load mdlmdlpf\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load mdlstopf">
     <LayoutInfo>
@@ -8085,30 +8185,6 @@
           Size="172,42"
           Id="Package\Load mdlstopf\Flat File Destination"
           TopLeft="95,148" />
-        <EdgeLayout
-          Id="Package\Load mdlstopf.Paths[Flat File Source Error Output]"
-          TopLeft="181.5,72.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,75.5"
-              Start="0,0"
-              End="0,68">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,68" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-63.62638671875,28.1953125,127.2527734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="171,42"
           Id="Package\Load mdlstopf\OLE DB Destination"
@@ -8135,61 +8211,33 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load mdlstopf.Paths[Flat File Source Error Output]"
+          TopLeft="181.5,72.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,75.5"
+              Start="0,0"
+              End="0,68">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,68" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-63.62638671875,28.1953125,127.2527734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load mdladrpf\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load mdladspf\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load mdladupf\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load mdlmdlpf\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Load mdlstopf\OLE DB Destination">
     <Properties>

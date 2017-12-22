@@ -11,16 +11,16 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_norddis"
   DTS:PackageType="5"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{545CEB53-98A1-4CFA-89C9-57E646A0F599}">
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{50290CAC-F096-4149-A8B0-56C9D75252D4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Error output DINUHSPF]"
+      DTS:refId="Package.ConnectionManagers[ErrorOutput_dinuhspf]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{4885D9E5-0B0F-4E7A-96B3-926D719AA89F}"
-      DTS:ObjectName="Error output DINUHSPF">
+      DTS:ObjectName="ErrorOutput_dinuhspf">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -29,7 +29,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\source_files\ERROR\error output.txt">
+          DTS:ConnectionString="E:\source_files\ERROR\ErrorOutput_dinuhspf.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -37,7 +37,7 @@
               DTS:DataType="302"
               DTS:TextQualified="True"
               DTS:ObjectName="Flat File Source Error Output Column"
-              DTS:DTSID="{B0648D59-E6E2-4138-9E58-3F5A4BEB47FB}"
+              DTS:DTSID="{ED2229BB-C8C1-429E-90FC-2533A0D29DEF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -45,7 +45,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{8E57E832-6B7D-4F69-9A44-5ECFD820BD97}"
+              DTS:DTSID="{6FDD003F-2E50-4E24-B021-870B32840237}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -53,7 +53,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{B5107C25-8945-4FD4-B63E-80C671F1F665}"
+              DTS:DTSID="{098316C6-0B11-4A4C-ADF7-450B5067091D}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -77,7 +77,7 @@
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.tmp_dinuhspf','U') IS not NULL drop table [tmp].[tmp_dinuhspf]&#xA;CREATE TABLE [tmp].[tmp_dinuhspf](&#xA;    [USHDNR] numeric(9,0),&#xA;    [USATNR] numeric(7,0),&#xA;    [USPLNR] numeric(9,0),&#xA;    [USDAHD] varchar(1),&#xA;    [USTPAH] varchar(2),&#xA;    [USHTYP] varchar(2),&#xA;    [USMNRA] varchar(50),&#xA;    [USMNMA] varchar(50),&#xA;    [USMNRE] varchar(50),&#xA;    [USMNME] varchar(50),&#xA;    [USMDTY] varchar(50),&#xA;    [USMNRB] varchar(50),&#xA;    [USMNMB] varchar(50),&#xA;    [USSLSK] varchar(50),&#xA;    [USMGNM] varchar(50),&#xA;    [USUTLA] varchar(50),&#xA;    [USLAND] varchar(50),&#xA;    [USSAKR] varchar(50),&#xA;    [USAOID] varchar(50),&#xA;    [USKOID] varchar(50),&#xA;    [USSGID] varchar(50),&#xA;    [USFLNR] varchar(50),&#xA;    [USFTIT] varchar(50),&#xA;    [USFTIE] varchar(50),&#xA;    [USFLND] varchar(50),&#xA;    [USFTID] varchar(50),&#xA;    [USVANR] varchar(50),&#xA;    [USVANM] varchar(50),&#xA;    [USVATP] varchar(50),&#xA;    [USVGNM] varchar(50),&#xA;    [USVGNR] varchar(50),&#xA;    [USVKNR] varchar(50),&#xA;    [USVTIT] varchar(50),&#xA;    [USVTIO] varchar(50),&#xA;    [USVGRD] varchar(50),&#xA;    [USVAND] varchar(50),&#xA;    [USVANV] varchar(50),&#xA;    [USWSTS] varchar(50),&#xA;    [USEBEL] varchar(50),&#xA;    [USRPNR] varchar(50),&#xA;    [USUSLK] varchar(50),&#xA;    [USDETA] varchar(50),&#xA;    [USOTNR] varchar(50),&#xA;    [USHDST] varchar(50),&#xA;    [USLPNR] varchar(50),&#xA;    [USRAPO] varchar(50),&#xA;    [USE4DC] varchar(50),&#xA;    [USFDAT] varchar(50),&#xA;    [USTDAT] varchar(50),&#xA;    [USCAEK] varchar(50),&#xA;    [USIKEY] varchar(50),&#xA;    [USNTYP] varchar(50),&#xA;    [USSPKD] varchar(50),&#xA;    [CRTDTE] varchar(50),&#xA;    [CRTUSR] varchar(50),&#xA;    [CHGDTE] varchar(50),&#xA;    [CHGUSR] varchar(50)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.dinuhspf','U') IS not NULL drop table [tmp].[dinuhspf]&#xA;CREATE TABLE [tmp].[dinuhspf] (&#xA;    [USHDNR] numeric(9,0),&#xA;    [USATNR] numeric(7,0),&#xA;    [USPLNR] numeric(9,0),&#xA;    [USDAHD] varchar(1),&#xA;    [USTPAH] varchar(2),&#xA;    [USHTYP] varchar(2),&#xA;    [USMNRA] numeric(9,0),&#xA;    [USMNMA] varchar(50),&#xA;    [USMNRE] numeric(9,0),&#xA;    [USMNME] varchar(50),&#xA;    [USMDTY] varchar(2),&#xA;    [USMNRB] numeric(9,0),&#xA;    [USMNMB] varchar(50),&#xA;    [USSLSK] varchar(3),&#xA;    [USMGNM] varchar(30),&#xA;    [USUTLA] varchar(1),&#xA;    [USLAND] varchar(50),&#xA;    [USSAKR] varchar(20),&#xA;    [USAOID] varchar(2),&#xA;    [USKOID] varchar(4),&#xA;    [USSGID] varchar(10),&#xA;    [USFLNR] numeric(7,0),&#xA;    [USFTIT] varchar(30),&#xA;    [USFTIE] varchar(30),&#xA;    [USFLND] varchar(50),&#xA;    [USFTID] numeric(7,0),&#xA;    [USVANR] numeric(9,0),&#xA;    [USVANM] varchar(30),&#xA;    [USVATP] varchar(1),&#xA;    [USVGNM] varchar(30),&#xA;    [USVGNR] numeric(9,0),&#xA;    [USVKNR] numeric(9,0),&#xA;    [USVTIT] varchar(50),&#xA;    [USVTIO] varchar(50),&#xA;    [USVGRD] varchar(1),&#xA;    [USVAND] numeric(5,2),&#xA;    [USVANV] numeric(5,0),&#xA;    [USWSTS] varchar(1),&#xA;    [USEBEL] numeric(13,2),&#xA;    [USRPNR] numeric(7,0),&#xA;    [USUSLK] varchar(3),&#xA;    [USDETA] varchar(1),&#xA;    [USOTNR] numeric(7,0),&#xA;    [USHDST] varchar(2),&#xA;    [USLPNR] numeric(9,0),&#xA;    [USRAPO] numeric(4,0),&#xA;    [USE4DC] numeric(2,0),&#xA;    [USFDAT] date,&#xA;    [USTDAT] date,&#xA;    [USCAEK] varchar(2),&#xA;    [USIKEY] numeric(9,0),&#xA;    [USNTYP] varchar(2),&#xA;    [USSPKD] varchar(2),&#xA;    [CRTDTE] date,&#xA;    [CRTUSR] varchar(10),&#xA;    [CHGDTE] date,&#xA;    [CHGUSR] varchar(10)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -115,8 +115,8 @@
               <connections>
                 <connection
                   refId="Package\Load dinuhspf\Flat File Destination.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Error output DINUHSPF]"
-                  connectionManagerRefId="Package.ConnectionManagers[Error output DINUHSPF]"
+                  connectionManagerID="Package.ConnectionManagers[ErrorOutput_dinuhspf]"
+                  connectionManagerRefId="Package.ConnectionManagers[ErrorOutput_dinuhspf]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
@@ -326,14 +326,13 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNRA]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMNRA]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNRA]"
                       name="USMNRA"
+                      precision="9"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -370,14 +369,13 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNRE]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMNRE]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNRE]"
                       name="USMNRE"
+                      precision="9"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -419,7 +417,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMDTY]"
-                      length="50"
+                      length="2"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMDTY]"
                       name="USMDTY"
                       truncationRowDisposition="RedirectRow">
@@ -436,14 +434,13 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNRB]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMNRB]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNRB]"
                       name="USMNRB"
+                      precision="9"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -485,7 +482,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USSLSK]"
-                      length="50"
+                      length="3"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USSLSK]"
                       name="USSLSK"
                       truncationRowDisposition="RedirectRow">
@@ -507,7 +504,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USMGNM]"
-                      length="50"
+                      length="30"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMGNM]"
                       name="USMGNM"
                       truncationRowDisposition="RedirectRow">
@@ -529,7 +526,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USUTLA]"
-                      length="50"
+                      length="1"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USUTLA]"
                       name="USUTLA"
                       truncationRowDisposition="RedirectRow">
@@ -573,7 +570,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USSAKR]"
-                      length="50"
+                      length="20"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USSAKR]"
                       name="USSAKR"
                       truncationRowDisposition="RedirectRow">
@@ -595,7 +592,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USAOID]"
-                      length="50"
+                      length="2"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USAOID]"
                       name="USAOID"
                       truncationRowDisposition="RedirectRow">
@@ -617,7 +614,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USKOID]"
-                      length="50"
+                      length="4"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USKOID]"
                       name="USKOID"
                       truncationRowDisposition="RedirectRow">
@@ -639,7 +636,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USSGID]"
-                      length="50"
+                      length="10"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USSGID]"
                       name="USSGID"
                       truncationRowDisposition="RedirectRow">
@@ -656,14 +653,13 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFLNR]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USFLNR]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFLNR]"
                       name="USFLNR"
+                      precision="7"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -683,7 +679,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USFTIT]"
-                      length="50"
+                      length="30"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFTIT]"
                       name="USFTIT"
                       truncationRowDisposition="RedirectRow">
@@ -705,7 +701,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USFTIE]"
-                      length="50"
+                      length="30"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFTIE]"
                       name="USFTIE"
                       truncationRowDisposition="RedirectRow">
@@ -744,14 +740,13 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFTID]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USFTID]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFTID]"
                       name="USFTID"
+                      precision="7"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -766,14 +761,13 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVANR]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVANR]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVANR]"
                       name="USVANR"
+                      precision="9"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -793,7 +787,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVANM]"
-                      length="50"
+                      length="30"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVANM]"
                       name="USVANM"
                       truncationRowDisposition="RedirectRow">
@@ -815,7 +809,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVATP]"
-                      length="50"
+                      length="1"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVATP]"
                       name="USVATP"
                       truncationRowDisposition="RedirectRow">
@@ -837,7 +831,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVGNM]"
-                      length="50"
+                      length="30"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVGNM]"
                       name="USVGNM"
                       truncationRowDisposition="RedirectRow">
@@ -854,14 +848,13 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVGNR]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVGNR]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVGNR]"
                       name="USVGNR"
+                      precision="9"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -876,14 +869,13 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVKNR]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVKNR]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVKNR]"
                       name="USVKNR"
+                      precision="9"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -947,7 +939,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVGRD]"
-                      length="50"
+                      length="1"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVGRD]"
                       name="USVGRD"
                       truncationRowDisposition="RedirectRow">
@@ -964,14 +956,14 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVAND]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVAND]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVAND]"
                       name="USVAND"
+                      precision="5"
+                      scale="2"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -986,14 +978,13 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVANV]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USVANV]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVANV]"
                       name="USVANV"
+                      precision="5"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -1013,7 +1004,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USWSTS]"
-                      length="50"
+                      length="1"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USWSTS]"
                       name="USWSTS"
                       truncationRowDisposition="RedirectRow">
@@ -1030,14 +1021,14 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USEBEL]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USEBEL]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USEBEL]"
                       name="USEBEL"
+                      precision="13"
+                      scale="2"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -1052,14 +1043,13 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USRPNR]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USRPNR]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USRPNR]"
                       name="USRPNR"
+                      precision="7"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -1079,7 +1069,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USUSLK]"
-                      length="50"
+                      length="3"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USUSLK]"
                       name="USUSLK"
                       truncationRowDisposition="RedirectRow">
@@ -1101,7 +1091,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USDETA]"
-                      length="50"
+                      length="1"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USDETA]"
                       name="USDETA"
                       truncationRowDisposition="RedirectRow">
@@ -1118,14 +1108,13 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USOTNR]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USOTNR]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USOTNR]"
                       name="USOTNR"
+                      precision="7"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -1145,7 +1134,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USHDST]"
-                      length="50"
+                      length="2"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USHDST]"
                       name="USHDST"
                       truncationRowDisposition="RedirectRow">
@@ -1162,14 +1151,13 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USLPNR]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USLPNR]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USLPNR]"
                       name="USLPNR"
+                      precision="9"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -1184,14 +1172,13 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USRAPO]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USRAPO]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USRAPO]"
                       name="USRAPO"
+                      precision="4"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -1206,14 +1193,13 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USE4DC]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USE4DC]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USE4DC]"
                       name="USE4DC"
+                      precision="2"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -1228,12 +1214,10 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFDAT]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="date"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USFDAT]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFDAT]"
                       name="USFDAT"
                       truncationRowDisposition="RedirectRow">
@@ -1250,12 +1234,10 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USTDAT]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="date"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USTDAT]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USTDAT]"
                       name="USTDAT"
                       truncationRowDisposition="RedirectRow">
@@ -1277,7 +1259,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USCAEK]"
-                      length="50"
+                      length="2"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USCAEK]"
                       name="USCAEK"
                       truncationRowDisposition="RedirectRow">
@@ -1294,14 +1276,13 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USIKEY]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USIKEY]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USIKEY]"
                       name="USIKEY"
+                      precision="9"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -1321,7 +1302,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USNTYP]"
-                      length="50"
+                      length="2"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USNTYP]"
                       name="USNTYP"
                       truncationRowDisposition="RedirectRow">
@@ -1343,7 +1324,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USSPKD]"
-                      length="50"
+                      length="2"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USSPKD]"
                       name="USSPKD"
                       truncationRowDisposition="RedirectRow">
@@ -1360,12 +1341,10 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CRTDTE]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="date"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CRTDTE]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CRTDTE]"
                       name="CRTDTE"
                       truncationRowDisposition="RedirectRow">
@@ -1387,7 +1366,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CRTUSR]"
-                      length="50"
+                      length="10"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CRTUSR]"
                       name="CRTUSR"
                       truncationRowDisposition="RedirectRow">
@@ -1404,12 +1383,10 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CHGDTE]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="date"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHGDTE]"
-                      length="50"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CHGDTE]"
                       name="CHGDTE"
                       truncationRowDisposition="RedirectRow">
@@ -1431,7 +1408,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CHGUSR]"
-                      length="50"
+                      length="10"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CHGUSR]"
                       name="CHGUSR"
                       truncationRowDisposition="RedirectRow">
@@ -1812,7 +1789,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp].[tmp_dinuhspf]</property>
+                  name="OpenRowset">[tmp].[dinuhspf]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -1915,10 +1892,9 @@
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USHTYP]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USMNRA]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="numeric"
                       cachedName="USMNRA"
+                      cachedPrecision="9"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USMNRA]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNRA]" />
                     <inputColumn
@@ -1931,10 +1907,9 @@
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNMA]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USMNRE]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="numeric"
                       cachedName="USMNRE"
+                      cachedPrecision="9"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USMNRE]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNRE]" />
                     <inputColumn
@@ -1949,16 +1924,15 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USMDTY]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="2"
                       cachedName="USMDTY"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USMDTY]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMDTY]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USMNRB]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="numeric"
                       cachedName="USMNRB"
+                      cachedPrecision="9"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USMNRB]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMNRB]" />
                     <inputColumn
@@ -1973,7 +1947,7 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USSLSK]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="3"
                       cachedName="USSLSK"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USSLSK]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USSLSK]" />
@@ -1981,7 +1955,7 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USMGNM]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="30"
                       cachedName="USMGNM"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USMGNM]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USMGNM]" />
@@ -1989,7 +1963,7 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USUTLA]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="1"
                       cachedName="USUTLA"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USUTLA]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USUTLA]" />
@@ -2005,7 +1979,7 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USSAKR]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="20"
                       cachedName="USSAKR"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USSAKR]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USSAKR]" />
@@ -2013,7 +1987,7 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USAOID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="2"
                       cachedName="USAOID"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USAOID]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USAOID]" />
@@ -2021,7 +1995,7 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USKOID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="4"
                       cachedName="USKOID"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USKOID]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USKOID]" />
@@ -2029,23 +2003,22 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USSGID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="10"
                       cachedName="USSGID"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USSGID]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USSGID]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USFLNR]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="numeric"
                       cachedName="USFLNR"
+                      cachedPrecision="7"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USFLNR]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFLNR]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USFTIT]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="30"
                       cachedName="USFTIT"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USFTIT]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFTIT]" />
@@ -2053,7 +2026,7 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USFTIE]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="30"
                       cachedName="USFTIE"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USFTIE]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFTIE]" />
@@ -2067,25 +2040,23 @@
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFLND]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USFTID]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="numeric"
                       cachedName="USFTID"
+                      cachedPrecision="7"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USFTID]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFTID]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USVANR]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="numeric"
                       cachedName="USVANR"
+                      cachedPrecision="9"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USVANR]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVANR]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USVANM]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="30"
                       cachedName="USVANM"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USVANM]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVANM]" />
@@ -2093,7 +2064,7 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USVATP]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="1"
                       cachedName="USVATP"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USVATP]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVATP]" />
@@ -2101,24 +2072,22 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USVGNM]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="30"
                       cachedName="USVGNM"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USVGNM]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVGNM]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USVGNR]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="numeric"
                       cachedName="USVGNR"
+                      cachedPrecision="9"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USVGNR]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVGNR]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USVKNR]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="numeric"
                       cachedName="USVKNR"
+                      cachedPrecision="9"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USVKNR]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVKNR]" />
                     <inputColumn
@@ -2141,55 +2110,53 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USVGRD]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="1"
                       cachedName="USVGRD"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USVGRD]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVGRD]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USVAND]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="numeric"
                       cachedName="USVAND"
+                      cachedPrecision="5"
+                      cachedScale="2"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USVAND]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVAND]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USVANV]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="numeric"
                       cachedName="USVANV"
+                      cachedPrecision="5"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USVANV]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USVANV]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USWSTS]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="1"
                       cachedName="USWSTS"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USWSTS]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USWSTS]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USEBEL]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="numeric"
                       cachedName="USEBEL"
+                      cachedPrecision="13"
+                      cachedScale="2"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USEBEL]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USEBEL]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USRPNR]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="numeric"
                       cachedName="USRPNR"
+                      cachedPrecision="7"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USRPNR]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USRPNR]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USUSLK]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="3"
                       cachedName="USUSLK"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USUSLK]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USUSLK]" />
@@ -2197,63 +2164,55 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USDETA]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="1"
                       cachedName="USDETA"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USDETA]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USDETA]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USOTNR]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="numeric"
                       cachedName="USOTNR"
+                      cachedPrecision="7"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USOTNR]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USOTNR]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USHDST]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="2"
                       cachedName="USHDST"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USHDST]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USHDST]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USLPNR]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="numeric"
                       cachedName="USLPNR"
+                      cachedPrecision="9"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USLPNR]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USLPNR]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USRAPO]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="numeric"
                       cachedName="USRAPO"
+                      cachedPrecision="4"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USRAPO]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USRAPO]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USE4DC]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="numeric"
                       cachedName="USE4DC"
+                      cachedPrecision="2"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USE4DC]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USE4DC]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USFDAT]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="date"
                       cachedName="USFDAT"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USFDAT]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USFDAT]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USTDAT]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="date"
                       cachedName="USTDAT"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USTDAT]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USTDAT]" />
@@ -2261,23 +2220,22 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USCAEK]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="2"
                       cachedName="USCAEK"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USCAEK]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USCAEK]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USIKEY]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="numeric"
                       cachedName="USIKEY"
+                      cachedPrecision="9"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USIKEY]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USIKEY]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USNTYP]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="2"
                       cachedName="USNTYP"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USNTYP]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USNTYP]" />
@@ -2285,15 +2243,13 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USSPKD]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="2"
                       cachedName="USSPKD"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USSPKD]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[USSPKD]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CRTDTE]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="date"
                       cachedName="CRTDTE"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CRTDTE]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CRTDTE]" />
@@ -2301,15 +2257,13 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CRTUSR]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="10"
                       cachedName="CRTUSR"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CRTUSR]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CRTUSR]" />
                     <inputColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHGDTE]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="date"
                       cachedName="CHGDTE"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHGDTE]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CHGDTE]" />
@@ -2317,7 +2271,7 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHGUSR]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="10"
                       cachedName="CHGUSR"
                       externalMetadataColumnId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHGUSR]"
                       lineageId="Package\Load dinuhspf\Flat File Source.Outputs[Flat File Source Output].Columns[CHGUSR]" />
@@ -2359,10 +2313,9 @@
                       name="USHTYP" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USMNRA]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="USMNRA" />
+                      dataType="numeric"
+                      name="USMNRA"
+                      precision="9" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USMNMA]"
                       codePage="1252"
@@ -2371,10 +2324,9 @@
                       name="USMNMA" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USMNRE]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="USMNRE" />
+                      dataType="numeric"
+                      name="USMNRE"
+                      precision="9" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USMNME]"
                       codePage="1252"
@@ -2385,14 +2337,13 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USMDTY]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="2"
                       name="USMDTY" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USMNRB]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="USMNRB" />
+                      dataType="numeric"
+                      name="USMNRB"
+                      precision="9" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USMNMB]"
                       codePage="1252"
@@ -2403,19 +2354,19 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USSLSK]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="3"
                       name="USSLSK" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USMGNM]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="30"
                       name="USMGNM" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USUTLA]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="1"
                       name="USUTLA" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USLAND]"
@@ -2427,43 +2378,42 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USSAKR]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="20"
                       name="USSAKR" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USAOID]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="2"
                       name="USAOID" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USKOID]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="4"
                       name="USKOID" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USSGID]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="10"
                       name="USSGID" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USFLNR]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="USFLNR" />
+                      dataType="numeric"
+                      name="USFLNR"
+                      precision="7" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USFTIT]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="30"
                       name="USFTIT" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USFTIE]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="30"
                       name="USFTIE" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USFLND]"
@@ -2473,46 +2423,42 @@
                       name="USFLND" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USFTID]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="USFTID" />
+                      dataType="numeric"
+                      name="USFTID"
+                      precision="7" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USVANR]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="USVANR" />
+                      dataType="numeric"
+                      name="USVANR"
+                      precision="9" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USVANM]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="30"
                       name="USVANM" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USVATP]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="1"
                       name="USVATP" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USVGNM]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="30"
                       name="USVGNM" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USVGNR]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="USVGNR" />
+                      dataType="numeric"
+                      name="USVGNR"
+                      precision="9" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USVKNR]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="USVKNR" />
+                      dataType="numeric"
+                      name="USVKNR"
+                      precision="9" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USVTIT]"
                       codePage="1252"
@@ -2529,139 +2475,124 @@
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USVGRD]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="1"
                       name="USVGRD" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USVAND]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="USVAND" />
+                      dataType="numeric"
+                      name="USVAND"
+                      precision="5"
+                      scale="2" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USVANV]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="USVANV" />
+                      dataType="numeric"
+                      name="USVANV"
+                      precision="5" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USWSTS]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="1"
                       name="USWSTS" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USEBEL]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="USEBEL" />
+                      dataType="numeric"
+                      name="USEBEL"
+                      precision="13"
+                      scale="2" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USRPNR]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="USRPNR" />
+                      dataType="numeric"
+                      name="USRPNR"
+                      precision="7" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USUSLK]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="3"
                       name="USUSLK" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USDETA]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="1"
                       name="USDETA" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USOTNR]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="USOTNR" />
+                      dataType="numeric"
+                      name="USOTNR"
+                      precision="7" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USHDST]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="2"
                       name="USHDST" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USLPNR]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="USLPNR" />
+                      dataType="numeric"
+                      name="USLPNR"
+                      precision="9" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USRAPO]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="USRAPO" />
+                      dataType="numeric"
+                      name="USRAPO"
+                      precision="4" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USE4DC]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="USE4DC" />
+                      dataType="numeric"
+                      name="USE4DC"
+                      precision="2" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USFDAT]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="dbDate"
                       name="USFDAT" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USTDAT]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="dbDate"
                       name="USTDAT" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USCAEK]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="2"
                       name="USCAEK" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USIKEY]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="USIKEY" />
+                      dataType="numeric"
+                      name="USIKEY"
+                      precision="9" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USNTYP]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="2"
                       name="USNTYP" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USSPKD]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="2"
                       name="USSPKD" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CRTDTE]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="dbDate"
                       name="CRTDTE" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CRTUSR]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="10"
                       name="CRTUSR" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHGDTE]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="dbDate"
                       name="CHGDTE" />
                     <externalMetadataColumn
                       refId="Package\Load dinuhspf\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHGUSR]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="10"
                       name="CHGUSR" />
                   </externalMetadataColumns>
                 </input>
@@ -2769,27 +2700,31 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="172,42"
+          Id="Package\Load dinuhspf\Flat File Destination"
+          TopLeft="174,177" />
+        <NodeLayout
           Size="151,42"
           Id="Package\Load dinuhspf\Flat File Source"
-          TopLeft="192,68" />
+          TopLeft="189.5,66.5" />
         <NodeLayout
           Size="171,42"
           Id="Package\Load dinuhspf\OLE DB Destination"
-          TopLeft="187,157" />
+          TopLeft="459.5,68.5" />
         <EdgeLayout
           Id="Package\Load dinuhspf.Paths[Flat File Source Output]"
-          TopLeft="270,110">
+          TopLeft="340.5,88.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,47"
+              EndConnector="119,0"
               Start="0,0"
-              End="0,39.5">
+              End="111.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,39.5" />
+                    End="111.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2798,43 +2733,27 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="172,42"
-          Id="Package\Load dinuhspf\Flat File Destination"
-          TopLeft="411,157" />
         <EdgeLayout
           Id="Package\Load dinuhspf.Paths[Flat File Source Error Output]"
-          TopLeft="291.333333333333,110">
+          TopLeft="262.5,108.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="205.666666666667,47"
+              EndConnector="0,68.5"
               Start="0,0"
-              End="205.666666666667,39.5">
+              End="0,61">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.0956749672346" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15.0956749672346"
-                    Point2="0,19.0956749672346"
-                    Point3="4,19.0956749672346" />
-                  <mssgle:LineSegment
-                    End="201.666666666667,19.0956749672346" />
-                  <mssgle:CubicBezierSegment
-                    Point1="201.666666666667,19.0956749672346"
-                    Point2="205.666666666667,19.0956749672346"
-                    Point3="205.666666666667,23.0956749672346" />
-                  <mssgle:LineSegment
-                    End="205.666666666667,39.5" />
+                    End="0,61" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="39.2069466145834,24.0956749672346,127.2527734375,11.609375"
+              BoundingBox="-63.62638671875,24.6953125,127.2527734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

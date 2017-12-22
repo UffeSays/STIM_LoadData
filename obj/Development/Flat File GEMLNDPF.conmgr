@@ -12,7 +12,7 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x0022_"
       DTS:CodePage="1252"
-      DTS:ConnectionString="E:\source_files\TROY\2017\gemlndpf.csv">
+      DTS:ConnectionString="E:\source_files\GEM\gemlndpf.csv">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -21,7 +21,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="LNLAND"
-          DTS:DTSID="{BD6E2A48-DEAC-4586-AB26-8C0B0729E091}"
+          DTS:DTSID="{7A1E7B8B-8F5B-4D87-A399-719F332147D7}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +30,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="LNNAMN"
-          DTS:DTSID="{19EEC1C3-C4DD-4317-B9B3-26340CECC8C3}"
+          DTS:DTSID="{131C9A21-CA3F-4B95-9C4A-02C4CD269F65}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="LNNAME"
-          DTS:DTSID="{4B83A690-34CC-42AA-AFC1-31E356AA85AA}"
+          DTS:DTSID="{0A2B356B-3E05-4F50-9337-14AFB4B0CC86}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
           DTS:DataPrecision="3"
           DTS:TextQualified="True"
           DTS:ObjectName="LNTELE"
-          DTS:DTSID="{8DD720D7-F442-42BA-9314-73F786195374}"
+          DTS:DTSID="{AF7AFE0D-E9D4-425A-A15D-77151DE596AC}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="LNVALU"
-          DTS:DTSID="{0A5614EA-C713-4E3A-9163-103E451C45FF}"
+          DTS:DTSID="{DACFF4F5-CDF0-43C5-B04F-C82BB387906A}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
           DTS:DataPrecision="4"
           DTS:TextQualified="True"
           DTS:ObjectName="LNTISK"
-          DTS:DTSID="{5769EBCF-4734-49C4-9074-877BF47B50E5}"
+          DTS:DTSID="{FF367D15-5390-43C5-99B0-B139553D6506}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="LNUAKU"
-          DTS:DTSID="{1E3FCA3B-1F28-410F-B174-AB879D23F8BE}"
+          DTS:DTSID="{C4CA76FE-3C7A-444E-8181-E45B60599122}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -83,7 +83,7 @@
           DTS:DataType="7"
           DTS:TextQualified="True"
           DTS:ObjectName="CRTDTE"
-          DTS:DTSID="{035267A8-F733-42B1-84CC-E2E9AD0EC60B}"
+          DTS:DTSID="{945BBF4E-5FE8-4602-9BDE-77AE6B6AC42A}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -92,7 +92,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="CRTUSR"
-          DTS:DTSID="{EFC756FE-6502-4FC0-93E7-4AB590B08D81}"
+          DTS:DTSID="{28336343-406F-4C6F-96F4-80FC855E180A}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -100,7 +100,7 @@
           DTS:DataType="7"
           DTS:TextQualified="True"
           DTS:ObjectName="CHGDTE"
-          DTS:DTSID="{C4782BC3-6A07-4DF5-BFD0-615A5B9E1F46}"
+          DTS:DTSID="{5E4F4432-E3E0-4634-B972-07751EA453B0}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -109,7 +109,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="CHGUSR"
-          DTS:DTSID="{084491B4-EDAA-4C0E-AA80-2A6574C4B801}"
+          DTS:DTSID="{DA6AC6F4-94D9-4600-BA21-FEF1877241A0}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>
