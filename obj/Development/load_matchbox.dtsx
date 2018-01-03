@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_matchbox"
   DTS:PackageType="5"
-  DTS:VersionBuild="138"
-  DTS:VersionGUID="{7166E146-DFC2-445E-BBAF-331DD38B6D25}">
+  DTS:VersionBuild="142"
+  DTS:VersionGUID="{78A84737-0644-428A-BE01-2B3D448331AA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -809,7 +809,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table MBHDR"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="11">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -827,7 +827,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table MBIPI"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="12">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -845,7 +845,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table MBIPW"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -863,7 +863,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table MBREF"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -882,13 +882,115 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table MBTIT"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
           SQLTask:SqlStatementSource="if OBJECT_ID('tmp.mbtit','U') IS not NULL drop table [tmp].[mbtit]&#xA;CREATE TABLE [tmp].[mbtit] (&#xA;    [WORKKEY] numeric(11,0),&#xA;    [DATASOURCE] varchar(10),&#xA;    [TITLEID] numeric(11,0),&#xA;    [TITSEQNBR] numeric(11,0),&#xA;    [TITLETYPE] varchar(2),&#xA;    [TITLE] varchar(100),&#xA;    [NATWRKTIT] varchar(90),&#xA;    [CREATEDUSR] varchar(50),&#xA;    [CREATEDTSP] varchar(19),&#xA;    [CHANGEDUSR] varchar(50),&#xA;    [CHANGEDTSP] varchar(19)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="fix invalid dates"
+      DTS:DTSID="{39C4613C-66B0-4C26-82A8-CAB7485250F5}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="4">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+          SQLTask:SqlStatementSource="&#xA;-- MBIPI&#xA;update tmp.mbipi set tmp.mbipi.CHANGEDTSP=null &#xA;from tmp.mbipi &#xA;where tmp.mbipi.CHANGEDTSP = '0000-00-00 00:00:00'&#xA;&#xA;update tmp.mbipi set tmp.mbipi.CREATEDTSP=null &#xA;from tmp.mbipi&#xA;where tmp.mbipi.CREATEDTSP = '0000-00-00 00:00:00'&#xA;&#xA;alter table tmp.mbipi&#xA;alter column changedtsp datetime&#xA;&#xA;alter table tmp.mbipi&#xA;alter column createdtsp datetime&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task 1"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="fix invalid dates"
+      DTS:DTSID="{d5aba5a1-3596-4333-8347-764588fbea71}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task 1"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="6">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+          SQLTask:SqlStatementSource="-- MBART&#xA;&#xA;update tmp.mbart set tmp.mbart.CHANGEDTSP=null &#xA;from tmp.mbart &#xA;where tmp.mbart.CHANGEDTSP = '0000-00-00 00:00:00'&#xA;&#xA;update tmp.mbart set tmp.mbart.CREATEDTSP=null &#xA;from tmp.mbart &#xA;where tmp.mbart.CREATEDTSP = '0000-00-00 00:00:00'&#xA;&#xA;alter table tmp.mbart&#xA;alter column changedtsp datetime&#xA;&#xA;alter table tmp.mbart&#xA;alter column createdtsp datetime" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task 2"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="fix invalid dates"
+      DTS:DTSID="{9dd78a5d-7496-4c20-8889-6d6d0a14b8d8}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task 2"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="7">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+          SQLTask:SqlStatementSource="&#xA;-- MBHDR&#xA;update tmp.mbhdr set tmp.mbhdr.CHANGEDTSP=null &#xA;from tmp.mbhdr &#xA;where tmp.mbhdr.CHANGEDTSP = '0000-00-00 00:00:00'&#xA;&#xA;update tmp.mbhdr set tmp.mbhdr.CREATEDTSP=null &#xA;from tmp.mbhdr&#xA;where tmp.mbhdr.CREATEDTSP = '0000-00-00 00:00:00'&#xA;&#xA;update tmp.mbhdr set tmp.mbhdr.PDDATE=null &#xA;from tmp.mbhdr&#xA;where tmp.mbhdr.PDDATE = '0000-00-00'&#xA;&#xA;update tmp.mbhdr set tmp.mbhdr.PUBLDATE=null &#xA;from tmp.mbhdr&#xA;where tmp.mbhdr.PUBLDATE = '0000-00-00'&#xA;&#xA;alter table tmp.mbhdr&#xA;alter column changedtsp datetime&#xA;&#xA;alter table tmp.mbhdr&#xA;alter column createdtsp datetime&#xA;&#xA;alter table tmp.mbhdr&#xA;alter column pddate date&#xA;&#xA;alter table tmp.mbhdr&#xA;alter column publdate date" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task 3"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="fix invalid dates"
+      DTS:DTSID="{074527f7-d18c-47a8-ae76-65372d37142f}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task 3"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="8">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+          SQLTask:SqlStatementSource="&#xA;-- MBREF&#xA;update tmp.mbref set tmp.mbref.CHANGEDTSP=null &#xA;from tmp.mbref &#xA;where tmp.mbref.CHANGEDTSP = '0000-00-00 00:00:00'&#xA;&#xA;update tmp.mbref set tmp.mbref.CREATEDTSP=null &#xA;from tmp.mbref&#xA;where tmp.mbref.CREATEDTSP = '0000-00-00 00:00:00'&#xA;&#xA;alter table tmp.mbref&#xA;alter column changedtsp datetime&#xA;&#xA;alter table tmp.mbref&#xA;alter column createdtsp datetime" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task 4"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="fix invalid dates"
+      DTS:DTSID="{5a6e9d99-4158-4d4f-9ed5-8047c5bd90be}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task 4"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="9">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+          SQLTask:SqlStatementSource="&#xA;-- MBIPW&#xA;update tmp.mbipw set tmp.mbipw.CHANGEDTSP=null &#xA;from tmp.mbipw &#xA;where tmp.mbipw.CHANGEDTSP = '0000-00-00 00:00:00'&#xA;&#xA;update tmp.mbipw set tmp.mbipw.CREATEDTSP=null &#xA;from tmp.mbipw&#xA;where tmp.mbipw.CREATEDTSP = '0000-00-00 00:00:00'&#xA;&#xA;alter table tmp.mbipw&#xA;alter column changedtsp datetime&#xA;&#xA;alter table tmp.mbipw&#xA;alter column createdtsp datetime" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task 5"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="fix invalid dates"
+      DTS:DTSID="{fc80f78f-2fdc-4e51-9f2c-7739298f325c}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task 5"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="10">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+          SQLTask:SqlStatementSource="&#xA;-- MBTIT&#xA;update tmp.mbtit set tmp.mbtit.CHANGEDTSP=null &#xA;from tmp.mbtit &#xA;where tmp.mbtit.CHANGEDTSP = '0000-00-00 00:00:00'&#xA;&#xA;update tmp.mbtit set tmp.mbtit.CREATEDTSP=null &#xA;from tmp.mbtit &#xA;where tmp.mbtit.CREATEDTSP = '0000-00-00 00:00:00'&#xA;&#xA;alter table tmp.mbtit&#xA;alter column changedtsp datetime&#xA;&#xA;alter table tmp.mbtit&#xA;alter column createdtsp datetime" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -5654,7 +5756,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="load tmp to dbo destination tables"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="6">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5671,7 +5773,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="truncate destination tables"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="6">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5750,58 +5852,88 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib">
         <NodeLayout
           Size="172,42"
           Id="Package\create table MBART"
-          TopLeft="49,60" />
+          TopLeft="49,89" />
         <NodeLayout
           Size="174,42"
           Id="Package\create table MBHDR"
-          TopLeft="49,137" />
+          TopLeft="49,166" />
         <NodeLayout
           Size="166,42"
           Id="Package\create table MBIPI"
-          TopLeft="49,214" />
+          TopLeft="49,243" />
         <NodeLayout
           Size="172,42"
           Id="Package\create table MBIPW"
-          TopLeft="49,291" />
+          TopLeft="49,320" />
         <NodeLayout
           Size="171,42"
           Id="Package\create table MBREF"
-          TopLeft="49,368" />
+          TopLeft="49,397" />
         <NodeLayout
           Size="169,42"
           Id="Package\create table MBTIT"
-          TopLeft="49,445" />
+          TopLeft="49,474" />
         <NodeLayout
           Size="139,42"
           Id="Package\Load MBART"
-          TopLeft="301,62" />
+          TopLeft="301,91" />
         <NodeLayout
           Size="140,42"
           Id="Package\Load MBHDR"
-          TopLeft="301,139" />
+          TopLeft="301,168" />
         <NodeLayout
           Size="133,42"
           Id="Package\Load MBIPI"
-          TopLeft="301,216" />
+          TopLeft="301,245" />
         <NodeLayout
           Size="139,42"
           Id="Package\Load MBIPW"
-          TopLeft="301,293" />
+          TopLeft="301,322" />
         <NodeLayout
           Size="138,42"
           Id="Package\Load MBREF"
-          TopLeft="301,370" />
+          TopLeft="301,399" />
         <NodeLayout
           Size="136,42"
           Id="Package\Load MBTIT"
-          TopLeft="302,446" />
+          TopLeft="302,475" />
+        <NodeLayout
+          Size="262,42"
+          Id="Package\load tmp to dbo destination tables"
+          TopLeft="797,475" />
+        <NodeLayout
+          Size="204,42"
+          Id="Package\truncate destination tables"
+          TopLeft="548,474" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="752,495.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="45,0"
+              Start="0,0"
+              End="37.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="37.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1]"
-          TopLeft="221,82">
+          TopLeft="221,111">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5823,7 +5955,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1 1]"
-          TopLeft="223,159">
+          TopLeft="223,188">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5845,7 +5977,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1 1 1]"
-          TopLeft="215,236">
+          TopLeft="215,265">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5867,7 +5999,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1 1 1 1]"
-          TopLeft="221,313">
+          TopLeft="221,342">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5889,7 +6021,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1 1 1 1 1]"
-          TopLeft="220,390">
+          TopLeft="220,419">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5911,7 +6043,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1 1 1 1 1 1]"
-          TopLeft="218,466.5">
+          TopLeft="218,495.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5932,35 +6064,47 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="204,42"
-          Id="Package\truncate destination tables"
-          TopLeft="585,276" />
+          Size="163,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="59.5,73.5" />
         <NodeLayout
           Size="163,42"
-          Id="Package\load tmp to dbo destination tables"
-          TopLeft="834,277" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="789,297.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="45,0"
-              Start="0,0"
-              End="37.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="37.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Id="Package\Execute SQL Task 1"
+          TopLeft="7.5,17.5" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Execute SQL Task 2"
+          TopLeft="33.5,44.5" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Execute SQL Task 3"
+          TopLeft="112.5,129.5" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Execute SQL Task 4"
+          TopLeft="86.5,101.5" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Execute SQL Task 5"
+          TopLeft="139.5,158.5" />
+        <GroupLayout
+          Text="convert string dates to datatimes"
+          ParentId="Package"
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="306,225"
+          Size="306,268"
+          Id="bd5c0efd-1a56-47cb-bae5-994ef9f6a03a"
+          TopLeft="549.5,136.5">
+          <GroupLayout.ChildrenIds>
+            <s:String>Package\Execute SQL Task</s:String>
+            <s:String>Package\Execute SQL Task 1</s:String>
+            <s:String>Package\Execute SQL Task 2</s:String>
+            <s:String>Package\Execute SQL Task 3</s:String>
+            <s:String>Package\Execute SQL Task 4</s:String>
+            <s:String>Package\Execute SQL Task 5</s:String>
+          </GroupLayout.ChildrenIds>
+        </GroupLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>

@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>load_data_2017</Name>
-    <LastWriteTime>2017-12-22T13:01:48.1648927Z</LastWriteTime>
+    <LastWriteTime>2018-01-03T15:11:46.0349395Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>load_norddis.dtsx</Name>
-      <LastWriteTime>2017-12-22T13:01:48.022856Z</LastWriteTime>
+      <LastWriteTime>2017-12-29T10:56:46.6275036Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -18,7 +18,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>load_troy_data.dtsx</Name>
-      <LastWriteTime>2017-12-11T07:44:30.3416596Z</LastWriteTime>
+      <LastWriteTime>2018-01-03T16:12:19.3673155Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -28,17 +28,22 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>load_matchbox.dtsx</Name>
-      <LastWriteTime>2017-12-22T12:53:29.1601294Z</LastWriteTime>
+      <LastWriteTime>2017-12-29T09:48:15.8557375Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>load_medley.dtsx</Name>
-      <LastWriteTime>2017-12-22T10:23:31.2001974Z</LastWriteTime>
+      <LastWriteTime>2017-12-28T13:32:35.3583667Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>transfer data from tmp.dtsx</Name>
       <LastWriteTime>2017-12-13T16:29:14.3077735Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Package1.dtsx</Name>
+      <LastWriteTime>2017-12-29T13:13:12.9293416Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
