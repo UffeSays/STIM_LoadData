@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="BEAST"
   DTS:CreatorName="BEAST\uffe"
-  DTS:DTSID="{F48BE445-B72F-4220-897A-282892862A62}"
+  DTS:DTSID="{010194AD-7D49-4BEC-9A29-4B47D7CCFED1}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="14.0.0800.60"
   DTS:LocaleID="1053"
-  DTS:ObjectName="Package1"
+  DTS:ObjectName="load_mattchbox_test"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{F8684605-8B59-42E1-9C98-3D35DE78C392}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{230367B9-A495-41AA-BEDB-23FD92551925}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
