@@ -11,10 +11,1026 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="load_troy_meta"
   DTS:PackageType="5"
-  DTS:VersionBuild="178"
-  DTS:VersionGUID="{EFAE2CA6-C1CD-4888-AB49-B5F652B1E7A2}">
+  DTS:VersionBuild="180"
+  DTS:VersionGUID="{C53F89E4-5606-4859-BBE0-1998B150BC26}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File DSTASC 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{56916C39-D7CC-4FC5-858C-DE1BA35F4CEF}"
+      DTS:ObjectName="Flat File DSTASC 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\TROY\2017\dstasc.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ASCID"
+              DTS:DTSID="{D351A5F0-BACA-4160-A0FF-12721B66008C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DESCRIPTION"
+              DTS:DTSID="{FBDD4BE0-6A0D-45B5-ABC0-C37A3B82BEB0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SEVERITY"
+              DTS:DTSID="{44BADE1D-0D28-4285-BFD4-0FDEAAAB2E21}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CONTROLLERPROGRAM"
+              DTS:DTSID="{873DA07E-C34A-45B6-93C6-4A1F2162F2F1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FROMDATE"
+              DTS:DTSID="{4A79E56B-1829-4C2E-ACBA-FDEC95BA4E27}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TODATE"
+              DTS:DTSID="{D7F01271-4F60-4698-854D-80F8EAC92B70}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PRIORITY"
+              DTS:DTSID="{8807AE2C-21F8-4E13-938F-B904C559FA17}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ACTIVE"
+              DTS:DTSID="{9FBA65C8-B6EE-448D-9AF1-E51154D17F7E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CREATED"
+              DTS:DTSID="{C3DF1034-7BF4-4ECD-80FE-0F79D2B097E0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CREATEDBY"
+              DTS:DTSID="{65E0E4B7-99DF-4B25-859F-F7A15B7FA32C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CHANGED"
+              DTS:DTSID="{D0A4C088-B5A9-45D2-8309-3BA282E06A7A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CHANGEDBY"
+              DTS:DTSID="{CE828808-11F3-407E-8B01-F7977DD57DD5}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File DSTDAN]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{DC831A1F-0BDA-45E9-B024-0C8E51260B38}"
+      DTS:ObjectName="Flat File DSTDAN">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\TROY\2017\dstdan.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONKEY"
+              DTS:DTSID="{1AF31F47-8BA7-4799-A4EB-8DEC7E69F7AA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SELECTIONKEY"
+              DTS:DTSID="{245A21D1-EADE-4439-B9D2-33D00352436B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SELECTEDPROCESSKEY"
+              DTS:DTSID="{DF5AB35B-9E09-4701-9074-2EDC2D0D1B26}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File DSTDCG 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{8E32DB4F-A786-4B0D-B3EF-60E130C7F9C1}"
+      DTS:ObjectName="Flat File DSTDCG 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\TROY\2017\dstdcg.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONKEY"
+              DTS:DTSID="{A469BF59-61A7-4F28-B004-EEAF1B4CD172}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONAREACODE"
+              DTS:DTSID="{C6274CE2-8BCC-4EFD-A613-95FAC85820D1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="9"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONCODEGROUP"
+              DTS:DTSID="{A875E5AD-EF13-4F6D-9533-C6D308DB475C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONCODEGROUPDESCRIPTIONSWE"
+              DTS:DTSID="{F3827247-093E-47A1-86E9-082A4A88B6C5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONCODEGROUPDESCRIPTIONENG"
+              DTS:DTSID="{B4CB7184-FAE1-4E5C-BA97-3F431D023D5B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PROCESSKEY"
+              DTS:DTSID="{26032381-3335-43B7-B369-DEB11AC33EE3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SELECTIONKEY"
+              DTS:DTSID="{F76AE071-B4B7-4101-A662-B8F482F5361F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONCODEGROUPFROMDATE"
+              DTS:DTSID="{4E6C28A0-4DCE-49E8-A4CD-107AAB23AB82}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONCODEGROUPTODATE"
+              DTS:DTSID="{87759C6C-7BF4-49E9-B62E-9AE5EBD48091}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONPHASE"
+              DTS:DTSID="{62D0B11B-471A-4BFD-873D-142E418B5B2B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONSTATUS"
+              DTS:DTSID="{BEAF9A2B-8CBE-4010-BF69-022E4A4A8FF5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SELECTIONKEYTYPE"
+              DTS:DTSID="{E8F841FA-A4DA-4918-B384-D4BFE28E759C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONORDERROWKEY"
+              DTS:DTSID="{549BD6CD-4F09-46E2-B312-3B8E08FDA5F0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTCOMMENT"
+              DTS:DTSID="{50D59645-53CE-49A3-8ADF-7EB02D85FD85}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="15"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHASE"
+              DTS:DTSID="{05DF3921-B614-4072-93A8-D5D8B7D6675E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="15"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USEMANUALAMOUNT"
+              DTS:DTSID="{C015E81F-C291-4121-B9CC-C0DD756299BA}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File DSTDED 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{C52AC7D6-BDCC-4D30-B55F-A1EA1B9DF102}"
+      DTS:ObjectName="Flat File DSTDED 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\TROY\2017\dstded.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONKEY"
+              DTS:DTSID="{CED382FB-77EA-4D41-BE45-1238E6435E1E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PROCESSKEY"
+              DTS:DTSID="{406F415D-54D7-4E96-BDAB-8C3440F4ADED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="14"
+              DTS:DataScale="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DEDUCTAMOUNT"
+              DTS:DTSID="{DC055A4D-50E9-430F-9737-6BD6A8182B3D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DEDUCTTYPE"
+              DTS:DTSID="{137AF784-2997-45BA-A3C0-F14A437E17EA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CURRENCY"
+              DTS:DTSID="{E7106C7E-F58D-4F95-8C79-2B3FEA62052E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TYPEOFRIGHT"
+              DTS:DTSID="{B002A02A-0857-48ED-BE87-AA7D1BE376AE}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File DSTIDN 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E1C83187-F031-4B2F-AAEE-81D16D864FAA}"
+      DTS:ObjectName="Flat File DSTIDN 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\TROY\2017\dstidn.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONKEY"
+              DTS:DTSID="{AAE7E978-6C70-405F-A665-B71710782576}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DESCRIPTION"
+              DTS:DTSID="{25CE238E-46FA-40F5-905A-DFE9390828CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONDATE"
+              DTS:DTSID="{BD75AC52-D413-4352-A5B5-3F49637FF457}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTSOCIETYCODE"
+              DTS:DTSID="{37E98B13-2F62-421E-974E-3961C17C892A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTORID"
+              DTS:DTSID="{1CB44CE0-A75C-43CC-ABC8-CB684ADF8E7D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONORDERKEY"
+              DTS:DTSID="{DC6B75EC-828C-4DED-A5A4-57C48F551301}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="COMPDISTRIBUTIONKEY"
+              DTS:DTSID="{E2217AFB-C6F9-4685-B505-4359B2655DEC}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File DSTMAM 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{D6C0AEE1-8C30-45BC-8B7E-A2E1696AF210}"
+      DTS:ObjectName="Flat File DSTMAM 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\TROY\2017\dstmam.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONKEY"
+              DTS:DTSID="{20531126-A44C-4810-BF19-A14032FAB949}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PROCESSKEY"
+              DTS:DTSID="{FE9469CA-12B8-48AD-82DD-79606653A5DC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="14"
+              DTS:DataScale="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AMOUNT"
+              DTS:DTSID="{BC125BD9-8F78-4BD0-9476-61B5B59082D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CURRENCYFROM"
+              DTS:DTSID="{330A9023-4A05-4616-9847-60444ECF2702}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CURRENCYTO"
+              DTS:DTSID="{C0C24129-F27B-42A7-88B0-1E7A3930EBB0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="15"
+              DTS:DataScale="9"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EXCHANGERATE"
+              DTS:DTSID="{70E08DA6-99E9-43A1-B109-8BE78B89D89F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ISREADYFORDISTRIBUTION"
+              DTS:DTSID="{E027D7D8-B8AA-4F32-9BA1-AA2628F07D04}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TYPEOFRIGHT"
+              DTS:DTSID="{1005499E-64A2-43BD-B3EA-4E5B61138262}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="145"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CREATEDDAT"
+              DTS:DTSID="{25AF0DF3-E5F9-4B36-95F8-A7DBF052A9F8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CREATEDBY"
+              DTS:DTSID="{1711C853-1210-45C4-9793-500D3FCC4FDE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="145"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MODIFIEDDT"
+              DTS:DTSID="{4206C468-E11B-4D34-9997-D19118D383CD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MODIFIEDBY"
+              DTS:DTSID="{D59A9F21-899A-493E-AFFD-FEDA24546CC1}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File DSTMDA 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{CC1CCE24-4E69-4B43-B615-FBABA3BBAF53}"
+      DTS:ObjectName="Flat File DSTMDA 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\TROY\2017\dstmda.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONKEY"
+              DTS:DTSID="{13572ADA-F266-40CF-B790-30465313A0E7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="14"
+              DTS:DataScale="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONAMOUNT"
+              DTS:DTSID="{DBC610D0-6888-4DAF-8943-ED90BB1BE956}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="14"
+              DTS:DataScale="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DEDUCTIONAMOUNT"
+              DTS:DTSID="{DDE0448A-2685-4DFC-84A1-4B2978A4F787}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="7"
+              DTS:DataScale="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PERCENT"
+              DTS:DTSID="{21B87C81-A6E8-4778-B5B5-7DAF319271CB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DEDUCTIONTYPE"
+              DTS:DTSID="{55E9D12F-D35D-4CC9-9EA7-816B5BA38DF0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="131"
+              DTS:DataPrecision="14"
+              DTS:DataScale="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DEDUCTIONAMOUNTMAN"
+              DTS:DTSID="{73318C18-FF4F-4253-A856-EC297028AD24}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File DSTPDC 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{5FC37B7F-460F-4621-A26F-10EB7E31E7AA}"
+      DTS:ObjectName="Flat File DSTPDC 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\TROY\2017\dstpdc.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="9"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONCODEGROUPCODE"
+              DTS:DTSID="{135F1BAC-1F3F-4E07-8DD9-E2448564CCFC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="4"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="REPORTCODE"
+              DTS:DTSID="{F1F10FCF-9061-4F2A-8DC1-AED3B20D6816}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="7"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONCODE"
+              DTS:DTSID="{D89506C6-891B-43C4-8940-6AA735B6649B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PDCDESCRIPTIONSWE"
+              DTS:DTSID="{8CC623C0-5E9E-4D7E-8498-D7FBF9E50BBB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PDCDESCRIPTIONENG"
+              DTS:DTSID="{9A884620-68C4-4FCA-8448-6D7A5DD54554}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TYPEOFUSE"
+              DTS:DTSID="{766B2198-523E-4638-9CE1-18B13F744837}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IPIRIGHT"
+              DTS:DTSID="{518B1D68-22C0-4CE8-87DB-C196FB3D3970}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ISANALOGY"
+              DTS:DTSID="{C125B91F-EC49-4554-BEE8-1A1BCFB7DF96}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CALCULATIONTYPECODE"
+              DTS:DTSID="{8A152930-6F7E-49BE-B3C2-2B367C268F62}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CALCULATIONRULECODE"
+              DTS:DTSID="{5AA76B4B-C221-43A6-8E06-665D400B2B56}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTCATCDE"
+              DTS:DTSID="{E122D43C-EB84-4BF6-B9C1-5513B6B1937B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TYPEOFRIGHT"
+              DTS:DTSID="{C9EEA297-4603-4E7C-A749-334D1469B56E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ACTIVE"
+              DTS:DTSID="{3C994304-CE8A-47E5-AA0B-4563EFED603F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="145"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CREATEDDAT"
+              DTS:DTSID="{8B463909-E515-455F-A5E2-7940C0A5EC27}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CREATEDBY"
+              DTS:DTSID="{FAEAD0AD-842D-47D8-9749-B5487BB2F996}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="145"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MODIFIEDDT"
+              DTS:DTSID="{75642D36-8963-4388-A987-EFA598E902D5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MODIFIEDBY"
+              DTS:DTSID="{87E9E6FA-53D5-45D7-8F03-39FF89E5EA50}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File DSTPDT 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{AFD589FE-E0D1-46D0-A974-774BF25B776D}"
+      DTS:ObjectName="Flat File DSTPDT 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\TROY\2017\dstpdt.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="9"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DEDUCTIONTYPE"
+              DTS:DTSID="{A08C2FAE-08BA-4868-A6C8-AD33E3181153}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DESCRIPTION"
+              DTS:DTSID="{42BD9E90-B8E8-4CCB-AE6F-F8999600710D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DEDUCTIONRULE"
+              DTS:DTSID="{AA8E4434-07B4-4A16-9144-99F1DE29C9BE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DEDUCTIONTYPECODE"
+              DTS:DTSID="{D25029E2-DA44-48E6-9CB9-4E3E60A8E8E1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="5"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DEDUCTIONPERCENTAGE"
+              DTS:DTSID="{7A562641-880F-4C9E-A1C3-58498CDC6E7D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CREATEDBY"
+              DTS:DTSID="{1BFCA189-0F9A-4785-A39D-43C7112FEC3A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="145"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CREATEDDAT"
+              DTS:DTSID="{0887E476-7DE1-44A3-A9BF-9F1FDAA4A77F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MODIFIEDBY"
+              DTS:DTSID="{63E5F62C-2ED7-49E5-AAAF-035B24CBA2FB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="145"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MODIFIEDDT"
+              DTS:DTSID="{854C22BE-A3F5-48C0-A429-3FD15B5F0EAF}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File DSTWOT]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{53B2B723-D269-4139-9A57-5532B2F6D53D}"
+      DTS:ObjectName="Flat File DSTWOT">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\TROY\2017\dstwot.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONKEY"
+              DTS:DTSID="{952D53CF-10C9-484D-B7E2-10ED89BE201F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ICEWORKKEY"
+              DTS:DTSID="{DED01790-EDE3-4063-8F68-E51CD4A645B4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="90"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WORKTITLEORIGINAL"
+              DTS:DTSID="{4BAA1008-CB7F-445A-BE44-29740010D4B1}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -26,7 +1042,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstasc"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -44,7 +1060,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstdan"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -62,7 +1078,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstdcg"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="5">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -98,7 +1114,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstidn"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -116,7 +1132,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstmam"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -134,7 +1150,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstmda"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="6">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -152,7 +1168,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstpdc"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="7">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -170,7 +1186,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstpdt"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="8">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -188,7 +1204,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstwot"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="9">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -201,12 +1217,13 @@
       DTS:refId="Package\create table mdlmdlpf"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{a3c970fc-b352-4601-b88a-813246fc8380}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="create table mdlmdlpf"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="10">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -251,8 +1268,8 @@
               <connections>
                 <connection
                   refId="Package\Load dstasc\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{56916C39-D7CC-4FC5-858C-DE1BA35F4CEF}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File DSTASC 1]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File DSTASC 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File DSTASC 1]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -908,8 +1925,8 @@
               <connections>
                 <connection
                   refId="Package\Load dstdan\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{DC831A1F-0BDA-45E9-B024-0C8E51260B38}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File DSTDAN]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File DSTDAN]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File DSTDAN]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -1215,8 +2232,8 @@
               <connections>
                 <connection
                   refId="Package\Load dstdcg\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{8E32DB4F-A786-4B0D-B3EF-60E130C7F9C1}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File DSTDCG 1]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File DSTDCG 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File DSTDCG 1]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -2040,8 +3057,8 @@
               <connections>
                 <connection
                   refId="Package\Load dstded\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{C52AC7D6-BDCC-4D30-B55F-A1EA1B9DF102}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File DSTDED 1]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File DSTDED 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File DSTDED 1]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -2473,8 +3490,8 @@
               <connections>
                 <connection
                   refId="Package\Load dstidn\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{E1C83187-F031-4B2F-AAEE-81D16D864FAA}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File DSTIDN 1]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File DSTIDN 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File DSTIDN 1]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -2940,8 +3957,8 @@
               <connections>
                 <connection
                   refId="Package\Load dstmam\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{D6C0AEE1-8C30-45BC-8B7E-A2E1696AF210}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File DSTMAM 1]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File DSTMAM 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File DSTMAM 1]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -3613,8 +4630,8 @@
               <connections>
                 <connection
                   refId="Package\Load dstmda\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{CC1CCE24-4E69-4B43-B615-FBABA3BBAF53}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File DSTMDA 1]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File DSTMDA 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File DSTMDA 1]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -4050,8 +5067,8 @@
               <connections>
                 <connection
                   refId="Package\Load dstpdc\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{5FC37B7F-460F-4621-A26F-10EB7E31E7AA}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File DSTPDC 1]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File DSTPDC 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File DSTPDC 1]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -4933,8 +5950,8 @@
               <connections>
                 <connection
                   refId="Package\Load dstpdt\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{AFD589FE-E0D1-46D0-A974-774BF25B776D}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File DSTPDT 1]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File DSTPDT 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File DSTPDT 1]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -5480,8 +6497,8 @@
               <connections>
                 <connection
                   refId="Package\Load dstwot\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{53B2B723-D269-4139-9A57-5532B2F6D53D}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File DSTWOT]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File DSTWOT]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File DSTWOT]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -5759,6 +6776,7 @@
       DTS:refId="Package\Load mdlmdlpf"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{9e9659a1-fd4c-4874-9ab6-2ba944f75d73}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -8017,22 +9035,6 @@
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint]"
-      DTS:CreationName=""
-      DTS:DTSID="{50FACA74-311D-48EA-93CE-C804194DECD5}"
-      DTS:From="Package\Load dstmda"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint"
-      DTS:To="Package\create table dstpdc" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
-      DTS:CreationName=""
-      DTS:DTSID="{094E8449-37BF-4F01-AC0F-F7F30D3AEF63}"
-      DTS:From="Package\Load dstpdt"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 1"
-      DTS:To="Package\create table dstmda" />
-    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1 1]"
       DTS:CreationName=""
       DTS:DTSID="{ce442ebd-f3fd-4227-9ff8-e603b4517ca0}"
@@ -8057,14 +9059,6 @@
       DTS:ObjectName="Constraint 10 1"
       DTS:To="Package\Load dstdan" />
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 11]"
-      DTS:CreationName=""
-      DTS:DTSID="{50526A08-A67B-48C9-BD08-569676F54945}"
-      DTS:From="Package\Load dstmam"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 11"
-      DTS:To="Package\create table dstdan" />
-    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 11 1]"
       DTS:CreationName=""
       DTS:DTSID="{F8832CE4-829D-46F7-BA00-8C72E75DC1B7}"
@@ -8080,14 +9074,6 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 11 1 1"
       DTS:To="Package\Load dstmda" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 12]"
-      DTS:CreationName=""
-      DTS:DTSID="{6A14305B-4412-402D-8A1E-E1537B1CCE98}"
-      DTS:From="Package\Load dstdan"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 12"
-      DTS:To="Package\create table dstwot" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 13]"
       DTS:CreationName=""
@@ -8105,14 +9091,6 @@
       DTS:ObjectName="Constraint 13 1"
       DTS:To="Package\Load mdlmdlpf" />
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 14]"
-      DTS:CreationName=""
-      DTS:DTSID="{4965DFE1-90A3-4CA3-9A21-F7EF492F1734}"
-      DTS:From="Package\Load dstwot"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 14"
-      DTS:To="Package\create table mdlmdlpf" />
-    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
       DTS:DTSID="{FC8E63FB-2DD3-4282-9EA9-07AD4F3CAE5F}"
@@ -8120,14 +9098,6 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
       DTS:To="Package\Load dstpdc" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
-      DTS:CreationName=""
-      DTS:DTSID="{80625893-A7F7-426D-9792-5E5308C18643}"
-      DTS:From="Package\Load dstpdc"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 3"
-      DTS:To="Package\create table dstasc" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
       DTS:CreationName=""
@@ -8137,14 +9107,6 @@
       DTS:ObjectName="Constraint 4"
       DTS:To="Package\Load dstasc" />
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
-      DTS:CreationName=""
-      DTS:DTSID="{6F335DF5-8CB0-4C97-9010-D712F188BB5D}"
-      DTS:From="Package\Load dstasc"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 5"
-      DTS:To="Package\create table dstdcg" />
-    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 5 1]"
       DTS:CreationName=""
       DTS:DTSID="{cc9f8d3f-b63f-4337-9a8e-6fb5cc89bc1c}"
@@ -8153,14 +9115,6 @@
       DTS:ObjectName="Constraint 5 1"
       DTS:To="Package\Load dstded" />
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
-      DTS:CreationName=""
-      DTS:DTSID="{76BB676E-15E0-438F-A6A7-1F33FEAC3DDD}"
-      DTS:From="Package\Load dstdcg"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 6"
-      DTS:To="Package\create table dstidn" />
-    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
       DTS:CreationName=""
       DTS:DTSID="{56F1AB70-5EE7-43B4-B23C-F84CD6D4AB66}"
@@ -8168,22 +9122,6 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 7"
       DTS:To="Package\Load dstidn" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 8]"
-      DTS:CreationName=""
-      DTS:DTSID="{DBBBFB98-BC79-49D4-AF5C-5E422D49FAF8}"
-      DTS:From="Package\Load dstidn"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 8"
-      DTS:To="Package\create table dstded" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 9]"
-      DTS:CreationName=""
-      DTS:DTSID="{CBA9B968-B11C-4F08-8D3F-3ECCC5F0026B}"
-      DTS:From="Package\Load dstded"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 9"
-      DTS:To="Package\create table dstmam" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -8286,74 +9224,6 @@
           Id="Package\Load mdlmdlpf"
           TopLeft="270,964" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="363.5,167">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-259,44"
-              Start="0,0"
-              End="-259,36.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18"
-                    Point2="0,22"
-                    Point3="-4,22" />
-                  <mssgle:LineSegment
-                    End="-255,22" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-255,22"
-                    Point2="-259,22"
-                    Point3="-259,26" />
-                  <mssgle:LineSegment
-                    End="-259,36.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="363.5,72">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-257,47"
-              Start="0,0"
-              End="-257,39.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.5"
-                    Point2="0,23.5"
-                    Point3="-4,23.5" />
-                  <mssgle:LineSegment
-                    End="-253,23.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-253,23.5"
-                    Point2="-257,23.5"
-                    Point3="-257,27.5" />
-                  <mssgle:LineSegment
-                    End="-257,39.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1 1]"
           TopLeft="203,424.5">
           <EdgeLayout.Curve>
@@ -8420,40 +9290,6 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 11]"
-          TopLeft="363.5,744">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-252,44.5"
-              Start="0,0"
-              End="-252,37">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18.25"
-                    Point2="0,22.25"
-                    Point3="-4,22.25" />
-                  <mssgle:LineSegment
-                    End="-248,22.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-248,22.25"
-                    Point2="-252,22.25"
-                    Point3="-252,26.25" />
-                  <mssgle:LineSegment
-                    End="-252,37" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1]"
           TopLeft="188,50">
           <EdgeLayout.Curve>
@@ -8489,40 +9325,6 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="71.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 12]"
-          TopLeft="363.5,831.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-252,47"
-              Start="0,0"
-              End="-252,39.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.5"
-                    Point2="0,23.5"
-                    Point3="-4,23.5" />
-                  <mssgle:LineSegment
-                    End="-248,23.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-248,23.5"
-                    Point2="-252,23.5"
-                    Point3="-252,27.5" />
-                  <mssgle:LineSegment
-                    End="-252,39.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8576,40 +9378,6 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 14]"
-          TopLeft="363.5,921.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-254.5,41.5"
-              Start="0,0"
-              End="-254.5,34">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.75" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.75"
-                    Point2="0,20.75"
-                    Point3="-4,20.75" />
-                  <mssgle:LineSegment
-                    End="-250.5,20.75" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-250.5,20.75"
-                    Point2="-254.5,20.75"
-                    Point3="-254.5,24.75" />
-                  <mssgle:LineSegment
-                    End="-254.5,34" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="189,234">
           <EdgeLayout.Curve>
@@ -8623,40 +9391,6 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="75.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="363.5,257">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-252,54"
-              Start="0,0"
-              End="-252,46.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23"
-                    Point2="0,27"
-                    Point3="-4,27" />
-                  <mssgle:LineSegment
-                    End="-248,27" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-248,27"
-                    Point2="-252,27"
-                    Point3="-252,31" />
-                  <mssgle:LineSegment
-                    End="-252,46.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8688,40 +9422,6 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="363.5,355">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-252,46"
-              Start="0,0"
-              End="-252,38.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19"
-                    Point2="0,23"
-                    Point3="-4,23" />
-                  <mssgle:LineSegment
-                    End="-248,23" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-248,23"
-                    Point2="-252,23"
-                    Point3="-252,27" />
-                  <mssgle:LineSegment
-                    End="-252,38.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5 1]"
           TopLeft="203,620.5">
           <EdgeLayout.Curve>
@@ -8744,40 +9444,6 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="363.5,448">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-252,51"
-              Start="0,0"
-              End="-252,43.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.5"
-                    Point2="0,25.5"
-                    Point3="-4,25.5" />
-                  <mssgle:LineSegment
-                    End="-248,25.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-248,25.5"
-                    Point2="-252,25.5"
-                    Point3="-252,29.5" />
-                  <mssgle:LineSegment
-                    End="-252,43.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 7]"
           TopLeft="203,521">
           <EdgeLayout.Curve>
@@ -8791,74 +9457,6 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="61.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 8]"
-          TopLeft="363.5,543">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-252,54"
-              Start="0,0"
-              End="-252,46.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23"
-                    Point2="0,27"
-                    Point3="-4,27" />
-                  <mssgle:LineSegment
-                    End="-248,27" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-248,27"
-                    Point2="-252,27"
-                    Point3="-252,31" />
-                  <mssgle:LineSegment
-                    End="-252,46.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 9]"
-          TopLeft="363.5,644">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-252,55"
-              Start="0,0"
-              End="-252,47.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.5"
-                    Point2="0,27.5"
-                    Point3="-4,27.5" />
-                  <mssgle:LineSegment
-                    End="-248,27.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-248,27.5"
-                    Point2="-252,27.5"
-                    Point3="-252,31.5" />
-                  <mssgle:LineSegment
-                    End="-252,47.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9386,13 +9984,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151,42"
-          Id="Package\Load mdlmdlpf\Flat File Source"
-          TopLeft="227,80" />
-        <NodeLayout
           Size="171,42"
           Id="Package\Load mdlmdlpf\OLE DB Destination"
           TopLeft="219,174" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load mdlmdlpf\Flat File Source"
+          TopLeft="227,80" />
         <EdgeLayout
           Id="Package\Load mdlmdlpf.Paths[Flat File Source Output]"
           TopLeft="303.5,122">

@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_gem"
   DTS:PackageType="5"
-  DTS:VersionBuild="123"
-  DTS:VersionGUID="{0B74BCA2-16C1-4996-AE80-10D1530923FD}">
+  DTS:VersionBuild="124"
+  DTS:VersionGUID="{49570105-F062-4137-84B3-D18675590FA6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -232,6 +232,393 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File GEMADO]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{33395656-E5BF-4E56-9731-2297186B5194}"
+      DTS:ObjectName="Flat File GEMADO">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\GEM\gemado.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="9"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ADOID"
+              DTS:DTSID="{52CB2D53-8719-44B7-A7ED-8BD5294A8C70}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ADOAREA"
+              DTS:DTSID="{16013992-0AC0-4927-BB96-6703A32DA099}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ADONAMESV"
+              DTS:DTSID="{F6E8FD9B-6F5E-47C0-A190-7857CFD2722B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ADONAMEENG"
+              DTS:DTSID="{2156110A-EEE3-48CA-8C00-BD64372DBB6C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FREQ"
+              DTS:DTSID="{B739A856-77E7-4837-92FA-F54AD994E6EF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="KOST"
+              DTS:DTSID="{1C892930-68D3-47C0-B197-7FAA318FDD09}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NAT"
+              DTS:DTSID="{D0CF1112-FC57-40DC-9042-91A8675A92D4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ANAADO"
+              DTS:DTSID="{0442B0C5-0500-4A42-BE62-0FFD6DC6F0B6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTBY"
+              DTS:DTSID="{A64FD5CD-4311-4E72-BDD1-EF987BFB4042}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="KTO"
+              DTS:DTSID="{DD5F567D-D763-455B-9990-0C5E78FB8C7D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="INVOICINGCURRENCYCODE"
+              DTS:DTSID="{78E6BF96-DE20-4605-81E1-E9A93C915F17}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRIBUTIONCURRENCYCODE"
+              DTS:DTSID="{5D05724D-04F9-48A8-80CE-739F8644CCB2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ACTIVE"
+              DTS:DTSID="{742359C4-3EF0-4418-9D49-FCCE1F09AE61}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LICENSINGSOURCE"
+              DTS:DTSID="{FB2F9419-556E-425A-85AD-2BA2F572DF3A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LICENSINGSOURCEDESC"
+              DTS:DTSID="{B92DC599-E05C-4854-805E-809C8BEED230}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CREATEDBY"
+              DTS:DTSID="{666C8F44-E5F6-4946-A5B0-11CFED4FA81F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="304"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CREATEDDATE"
+              DTS:DTSID="{5BC05FBA-7F5E-4935-8469-002EC435C72C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MODIFIEDBY"
+              DTS:DTSID="{7A31E853-8151-4BF8-A333-1D99BA1C3CB2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="304"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MODIFIEDDATE"
+              DTS:DTSID="{9257C06E-E89C-4D17-967C-4FCD06C3793E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File GEMAVOPF]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{A63FEDE8-79AC-4163-82D1-FA1ED458888B}"
+      DTS:ObjectName="Flat File GEMAVOPF">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\GEM\gemavopf.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AOAOID"
+              DTS:DTSID="{C36F7460-A028-4FC3-8CCB-C7020DF6F6A9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AOTEXT"
+              DTS:DTSID="{C1C39487-2D75-4AB4-9AE3-FC3D9A1014A1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AOTXTE"
+              DTS:DTSID="{62434206-E386-44B9-8AD0-DD3AF649878F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CRTDTE"
+              DTS:DTSID="{E1D61DF2-DE25-407E-A27C-8830E18E63DE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CRTUSR"
+              DTS:DTSID="{8DAE9129-7607-4A07-82DE-B408ACD1DD87}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CHGDTE"
+              DTS:DTSID="{567DC70E-428F-4C61-B7B9-6F2D67AF241C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CHGUSR"
+              DTS:DTSID="{3FDC5DE6-EB45-4CEC-A3A8-B5F4507246FA}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File GEMLNDPF]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{EAF71A2E-6FA1-475A-82B5-ED89785C77E3}"
+      DTS:ObjectName="Flat File GEMLNDPF">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\GEM\gemlndpf.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LNLAND"
+              DTS:DTSID="{7A1E7B8B-8F5B-4D87-A399-719F332147D7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LNNAMN"
+              DTS:DTSID="{131C9A21-CA3F-4B95-9C4A-02C4CD269F65}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LNNAME"
+              DTS:DTSID="{0A2B356B-3E05-4F50-9337-14AFB4B0CC86}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LNTELE"
+              DTS:DTSID="{AF7AFE0D-E9D4-425A-A15D-77151DE596AC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LNVALU"
+              DTS:DTSID="{DACFF4F5-CDF0-43C5-B04F-C82BB387906A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LNTISK"
+              DTS:DTSID="{FF367D15-5390-43C5-99B0-B139553D6506}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LNUAKU"
+              DTS:DTSID="{C4CA76FE-3C7A-444E-8181-E45B60599122}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CRTDTE"
+              DTS:DTSID="{945BBF4E-5FE8-4602-9BDE-77AE6B6AC42A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CRTUSR"
+              DTS:DTSID="{28336343-406F-4C6F-96F4-80FC855E180A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CHGDTE"
+              DTS:DTSID="{5E4F4432-E3E0-4634-B972-07751EA453B0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CHGUSR"
+              DTS:DTSID="{DA6AC6F4-94D9-4600-BA21-FEF1877241A0}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File GEMPNRPF]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{2614E8B1-4C04-4A8B-80EF-46BB268B6B19}"
@@ -357,6 +744,87 @@
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File GEMSOCPF]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{5955018B-E494-47DF-B269-E6A015199BCB}"
+      DTS:ObjectName="Flat File GEMSOCPF">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\GEM\gemsocpf.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SCSLSK"
+              DTS:DTSID="{44FD9E83-C550-4BA2-A0F5-5BBB47F51C6C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SCAKNY"
+              DTS:DTSID="{DDC297C3-A5A0-43E7-AC28-97D8275AAF7E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SCLAND"
+              DTS:DTSID="{4C1BA48F-19BA-4B26-B7F5-061B6FAEAFB4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CRTDTE"
+              DTS:DTSID="{04389DE9-E4C4-479F-B88F-F07DFC520C18}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CRTUSR"
+              DTS:DTSID="{23F40A1C-4B14-4F32-9D1E-94441D904C71}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CHGDTE"
+              DTS:DTSID="{3AD03021-A4D0-4B1E-8F19-1EBFBFCC0DAA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CHGUSR"
+              DTS:DTSID="{221ACE6B-0422-4D90-BADE-91648959576C}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
@@ -369,7 +837,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table gemado"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -387,7 +855,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table gemavopf"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -405,7 +873,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table gemlndpf"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -423,7 +891,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table gempnrpf"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -441,7 +909,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table gemsocpf"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -556,8 +1024,8 @@
               <connections>
                 <connection
                   refId="Package\Load gemado\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{33395656-E5BF-4E56-9731-2297186B5194}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File GEMADO]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File GEMADO]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File GEMADO]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -1598,8 +2066,8 @@
               <connections>
                 <connection
                   refId="Package\Load gemavopf\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{A63FEDE8-79AC-4163-82D1-FA1ED458888B}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File GEMAVOPF]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File GEMAVOPF]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File GEMAVOPF]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -2144,8 +2612,8 @@
               <connections>
                 <connection
                   refId="Package\Load gemlndpf\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{EAF71A2E-6FA1-475A-82B5-ED89785C77E3}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File GEMLNDPF]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File GEMLNDPF]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File GEMLNDPF]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -3594,8 +4062,8 @@
               <connections>
                 <connection
                   refId="Package\Load gemsocpf\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{5955018B-E494-47DF-B269-E6A015199BCB}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Flat File GEMSOCPF]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File GEMSOCPF]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File GEMSOCPF]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -4213,6 +4681,70 @@
           Size="150,42"
           Id="Package\Load gemsocpf"
           TopLeft="346.5,324.875" />
+        <NodeLayout
+          Size="240,42"
+          Id="Package\load tmp to dbo destination tables"
+          TopLeft="925,228" />
+        <NodeLayout
+          Size="204,42"
+          Id="Package\truncate destination tables"
+          TopLeft="690,227" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="894,248.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="31,0"
+              Start="0,0"
+              End="23.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="23.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="421.5,418">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="370.5,-149"
+              Start="0,0"
+              End="370.5,-141.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-70.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-70.5"
+                    Point2="0,-74.5"
+                    Point3="4,-74.5" />
+                  <mssgle:LineSegment
+                    End="366.5,-74.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="366.5,-74.5"
+                    Point2="370.5,-74.5"
+                    Point3="370.5,-78.5" />
+                  <mssgle:LineSegment
+                    End="370.5,-141.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 10 1 1]"
           TopLeft="248,345.375">
@@ -4302,58 +4834,6 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 9]"
-          TopLeft="249,66">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="97.5,0"
-              Start="0,0"
-              End="90,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="90,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="204,42"
-          Id="Package\truncate destination tables"
-          TopLeft="690,227" />
-        <NodeLayout
-          Size="240,42"
-          Id="Package\load tmp to dbo destination tables"
-          TopLeft="925,228" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="894,248.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="31,0"
-              Start="0,0"
-              End="23.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="23.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="421.5,324.875">
           <EdgeLayout.Curve>
@@ -4379,40 +4859,6 @@
                     Point3="337.833333333333,-37.2641050583658" />
                   <mssgle:LineSegment
                     End="337.833333333333,-48.375" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="421.5,418">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="370.5,-149"
-              Start="0,0"
-              End="370.5,-141.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-70.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-70.5"
-                    Point2="0,-74.5"
-                    Point3="4,-74.5" />
-                  <mssgle:LineSegment
-                    End="366.5,-74.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="366.5,-74.5"
-                    Point2="370.5,-74.5"
-                    Point3="370.5,-78.5" />
-                  <mssgle:LineSegment
-                    End="370.5,-141.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4503,6 +4949,28 @@
                     Point3="341.333333333333,87.0486381322957" />
                   <mssgle:LineSegment
                     End="341.333333333333,132" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 9]"
+          TopLeft="249,66">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="97.5,0"
+              Start="0,0"
+              End="90,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="90,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4817,6 +5285,19 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load gempnrpf\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load gemsocpf">
     <LayoutInfo>
@@ -4885,19 +5366,6 @@
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Load gemsocpf\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load gempnrpf\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
