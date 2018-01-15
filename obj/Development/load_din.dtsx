@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_din"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{BEF3E1C1-FD7C-4206-BCA1-0E42ED5CA00F}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{F91C201D-39D7-45E2-863D-D4CA09363F21}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -389,12 +389,13 @@
       DTS:refId="Package\create table dinatnpf"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{9997e66c-b64a-41de-a5ad-23253d2d1b1d}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dinatnpf"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -407,12 +408,13 @@
       DTS:refId="Package\create table dinminpf"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{9f34d86e-fc79-4e9f-a015-c2481bf9ea5b}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dinminpf"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -425,6 +427,7 @@
       DTS:refId="Package\Load dinatnpf"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{bd2fc731-d32f-46f3-9ac1-051b148a2240}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -1199,6 +1202,7 @@
       DTS:refId="Package\Load dinminpf"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{05ddaf24-7e61-42cd-9567-550fd231b59c}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -2110,6 +2114,10 @@
           Size="171,42"
           Id="Package\Load dinatnpf\OLE DB Destination"
           TopLeft="437,80" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Load dinatnpf\Flat File Destination"
+          TopLeft="221,167" />
         <EdgeLayout
           Id="Package\Load dinatnpf.Paths[Flat File Source Output]"
           TopLeft="378,101">
@@ -2129,13 +2137,11 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="172,42"
-          Id="Package\Load dinatnpf\Flat File Destination"
-          TopLeft="221,167" />
         <EdgeLayout
           Id="Package\Load dinatnpf.Paths[Flat File Source Error Output]"
           TopLeft="304.75,122">
@@ -2186,6 +2192,10 @@
           Id="Package\Load dinminpf\Flat File Source"
           TopLeft="227,80" />
         <NodeLayout
+          Size="172,42"
+          Id="Package\Load dinminpf\Flat File Destination"
+          TopLeft="222,173" />
+        <NodeLayout
           Size="171,42"
           Id="Package\Load dinminpf\OLE DB Destination"
           TopLeft="423,82" />
@@ -2211,10 +2221,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="172,42"
-          Id="Package\Load dinminpf\Flat File Destination"
-          TopLeft="222,173" />
         <EdgeLayout
           Id="Package\Load dinminpf.Paths[Flat File Source Error Output]"
           TopLeft="305.25,122">

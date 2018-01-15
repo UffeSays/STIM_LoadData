@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_gem"
   DTS:PackageType="5"
-  DTS:VersionBuild="124"
-  DTS:VersionGUID="{49570105-F062-4137-84B3-D18675590FA6}">
+  DTS:VersionBuild="125"
+  DTS:VersionGUID="{FE953FAD-FFAF-4544-A288-378426981931}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -837,7 +837,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table gemado"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -855,7 +855,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table gemavopf"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -873,7 +873,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table gemlndpf"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -891,7 +891,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table gempnrpf"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -909,7 +909,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table gemsocpf"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -4656,11 +4656,11 @@
         <NodeLayout
           Size="183,42"
           Id="Package\create table gempnrpf"
-          TopLeft="65,417" />
+          TopLeft="63,326" />
         <NodeLayout
           Size="183,42"
           Id="Package\create table gemsocpf"
-          TopLeft="65,323.875" />
+          TopLeft="60,405.875" />
         <NodeLayout
           Size="143,42"
           Id="Package\Load gemado"
@@ -4676,11 +4676,11 @@
         <NodeLayout
           Size="150,42"
           Id="Package\Load gempnrpf"
-          TopLeft="346.5,418" />
+          TopLeft="344.5,327" />
         <NodeLayout
           Size="150,42"
           Id="Package\Load gemsocpf"
-          TopLeft="346.5,324.875" />
+          TopLeft="341.5,406.875" />
         <NodeLayout
           Size="240,42"
           Id="Package\load tmp to dbo destination tables"
@@ -4713,30 +4713,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="421.5,418">
+          TopLeft="419.5,327">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="370.5,-149"
+              EndConnector="405.166666666667,-58"
               Start="0,0"
-              End="370.5,-141.5">
+              End="405.166666666667,-50.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-70.5" />
+                    End="0,-30.5291828793774" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-70.5"
-                    Point2="0,-74.5"
-                    Point3="4,-74.5" />
+                    Point1="0,-30.5291828793774"
+                    Point2="0,-34.5291828793774"
+                    Point3="4,-34.5291828793774" />
                   <mssgle:LineSegment
-                    End="366.5,-74.5" />
+                    End="401.166666666667,-34.5291828793774" />
                   <mssgle:CubicBezierSegment
-                    Point1="366.5,-74.5"
-                    Point2="370.5,-74.5"
-                    Point3="370.5,-78.5" />
+                    Point1="401.166666666667,-34.5291828793774"
+                    Point2="405.166666666667,-34.5291828793774"
+                    Point3="405.166666666667,-38.5291828793774" />
                   <mssgle:LineSegment
-                    End="370.5,-141.5" />
+                    End="405.166666666667,-50.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4747,7 +4747,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 10 1 1]"
-          TopLeft="248,345.375">
+          TopLeft="243,427.375">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4813,7 +4813,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 13 1 1]"
-          TopLeft="248,438.5">
+          TopLeft="246,347.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4835,30 +4835,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="421.5,324.875">
+          TopLeft="416.5,406.875">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="337.833333333333,-55.875"
+              EndConnector="342.833333333333,-137.875"
               Start="0,0"
-              End="337.833333333333,-48.375">
+              End="342.833333333333,-130.375">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-29.2641050583658" />
+                    End="0,-78.0812256809338" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-29.2641050583658"
-                    Point2="0,-33.2641050583658"
-                    Point3="4,-33.2641050583658" />
+                    Point1="0,-78.0812256809338"
+                    Point2="0,-82.0812256809338"
+                    Point3="4,-82.0812256809338" />
                   <mssgle:LineSegment
-                    End="333.833333333333,-33.2641050583658" />
+                    End="338.833333333333,-82.0812256809338" />
                   <mssgle:CubicBezierSegment
-                    Point1="333.833333333333,-33.2641050583658"
-                    Point2="337.833333333333,-33.2641050583658"
-                    Point3="337.833333333333,-37.2641050583658" />
+                    Point1="338.833333333333,-82.0812256809338"
+                    Point2="342.833333333333,-82.0812256809338"
+                    Point3="342.833333333333,-86.0812256809338" />
                   <mssgle:LineSegment
-                    End="337.833333333333,-48.375" />
+                    End="342.833333333333,-130.375" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

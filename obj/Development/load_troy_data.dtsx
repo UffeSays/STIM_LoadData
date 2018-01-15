@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_troy_data"
   DTS:PackageType="5"
-  DTS:VersionBuild="174"
-  DTS:VersionGUID="{58D44099-3884-434A-A125-15F0025B6AD7}">
+  DTS:VersionBuild="175"
+  DTS:VersionGUID="{C348BE41-8170-4D4B-8373-7622C089CC54}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1575,7 +1575,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstdam"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1594,7 +1594,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstipb"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1613,7 +1613,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstipi"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="5">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1632,7 +1632,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstish"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="5">
+      DTS:ThreadHint="6">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1651,7 +1651,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstres"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="6">
+      DTS:ThreadHint="7">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1670,7 +1670,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstrmw"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="7">
+      DTS:ThreadHint="8">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1689,7 +1689,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstrpw"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="8">
+      DTS:ThreadHint="9">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1708,7 +1708,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstrrw"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="9">
+      DTS:ThreadHint="10">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1746,7 +1746,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstwrk"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="10">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -9536,98 +9536,98 @@
         <NodeLayout
           Size="224,42"
           Id="Package\Convert and load data to dbo"
-          TopLeft="434.5,759.5" />
+          TopLeft="442.5,698.5" />
         <NodeLayout
           Size="173,42"
           Id="Package\create table dstaps"
-          TopLeft="24.5000000000001,38.5" />
+          TopLeft="33.5000000000001,38.5" />
         <NodeLayout
           Size="173,42"
           Id="Package\create table dstdam"
-          TopLeft="24.5000000000001,107.875" />
+          TopLeft="33.5000000000001,107.875" />
         <NodeLayout
           Size="173,42"
           Id="Package\create table dstipb"
-          TopLeft="24.5000000000001,177.25" />
+          TopLeft="33.5000000000001,177.25" />
         <NodeLayout
           Size="173,42"
           Id="Package\create table dstipi"
-          TopLeft="24.5000000000001,317.625" />
+          TopLeft="37.5000000000001,250.625" />
         <NodeLayout
           Size="173,42"
           Id="Package\create table dstish"
-          TopLeft="24.5000000000001,249" />
+          TopLeft="36.5000000000001,325" />
         <NodeLayout
           Size="173,42"
           Id="Package\create table dstres"
-          TopLeft="24.5000000000001,399" />
+          TopLeft="33.5000000000001,399" />
         <NodeLayout
           Size="173,42"
           Id="Package\create table dstrmw"
-          TopLeft="24.5000000000001,472.375" />
+          TopLeft="33.5000000000001,472.375" />
         <NodeLayout
           Size="173,42"
           Id="Package\create table dstrpw"
-          TopLeft="24.5000000000001,545.75" />
+          TopLeft="33.5000000000001,545.75" />
         <NodeLayout
           Size="168,42"
           Id="Package\create table dstrrw"
-          TopLeft="24.5000000000001,621.125" />
+          TopLeft="33.5000000000001,621.125" />
         <NodeLayout
           Size="168,42"
           Id="Package\create table dstwla"
-          TopLeft="23,759.5" />
+          TopLeft="31,698.5" />
         <NodeLayout
           Size="173,42"
           Id="Package\create table dstwrk"
-          TopLeft="24.5000000000001,689.5" />
+          TopLeft="32.5000000000001,768.5" />
         <NodeLayout
           Size="135,42"
           Id="Package\Load dstaps"
-          TopLeft="253.5,39.5" />
+          TopLeft="262.5,39.5" />
         <NodeLayout
           Size="173,42"
           Id="Package\Load dstdam"
-          TopLeft="253.5,109.125" />
+          TopLeft="262.5,109.125" />
         <NodeLayout
           Size="133,42"
           Id="Package\Load dstipb"
-          TopLeft="253.5,178.75" />
+          TopLeft="262.5,178.75" />
         <NodeLayout
           Size="173,42"
           Id="Package\Load dstipi"
-          TopLeft="253.5,319.375" />
+          TopLeft="266.5,252.375" />
         <NodeLayout
           Size="173,42"
           Id="Package\Load dstish"
-          TopLeft="253.5,250.75" />
+          TopLeft="265.5,326.75" />
         <NodeLayout
           Size="173,42"
           Id="Package\Load dstres"
-          TopLeft="253.5,401" />
+          TopLeft="262.5,401" />
         <NodeLayout
           Size="173,42"
           Id="Package\Load dstrmw"
-          TopLeft="253.5,474.625" />
+          TopLeft="262.5,474.625" />
         <NodeLayout
           Size="173,42"
           Id="Package\Load dstrpw"
-          TopLeft="253.5,548.25" />
+          TopLeft="262.5,548.25" />
         <NodeLayout
           Size="173,42"
           Id="Package\Load dstrrw"
-          TopLeft="253.5,623.875" />
+          TopLeft="262.5,623.875" />
         <NodeLayout
           Size="135,42"
           Id="Package\Load dstwla"
-          TopLeft="252,759.5" />
+          TopLeft="260,698.5" />
         <NodeLayout
           Size="136,42"
           Id="Package\Load dstwrk"
-          TopLeft="253.5,692.5" />
+          TopLeft="261.5,771.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="197.5,129.5">
+          TopLeft="206.5,129.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9649,7 +9649,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="387,780.5">
+          TopLeft="395,719.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9671,7 +9671,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1]"
-          TopLeft="192.5,643.5">
+          TopLeft="201.5,643.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9693,7 +9693,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1 1 1]"
-          TopLeft="197.5,568">
+          TopLeft="206.5,568">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9715,7 +9715,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1 1 1 1]"
-          TopLeft="197.5,494.5">
+          TopLeft="206.5,494.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9737,7 +9737,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="197.5,712">
+          TopLeft="205.5,791">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9759,7 +9759,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3 1]"
-          TopLeft="191,780.5">
+          TopLeft="199,719.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9781,7 +9781,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="197.5,60">
+          TopLeft="206.5,60">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9803,7 +9803,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6 1]"
-          TopLeft="197.5,199">
+          TopLeft="206.5,199">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9825,7 +9825,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 7]"
-          TopLeft="197.5,339.5">
+          TopLeft="210.5,272.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9847,7 +9847,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 7 1]"
-          TopLeft="197.5,270.875">
+          TopLeft="209.5,346.875">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9869,7 +9869,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 8 1]"
-          TopLeft="197.5,421">
+          TopLeft="206.5,421">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"

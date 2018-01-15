@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_norddis"
   DTS:PackageType="5"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{837DC3FA-E4A2-4C19-A58B-2733E5512C77}">
+  DTS:VersionBuild="29"
+  DTS:VersionGUID="{C5E4CAD7-0262-4D21-ADE3-A05AA34B4323}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -73,7 +73,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\source_files\NORDDIS\dinmippf_100.csv">
+          DTS:ConnectionString="E:\source_files\NORDDIS\dinmippf.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -82,7 +82,7 @@
               DTS:DataPrecision="7"
               DTS:TextQualified="True"
               DTS:ObjectName="MIATNR"
-              DTS:DTSID="{92FDE34B-FE67-4160-91F1-57603D547180}"
+              DTS:DTSID="{44F97B1A-40F9-4186-BC62-69E1FE733E98}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -91,7 +91,7 @@
               DTS:DataPrecision="9"
               DTS:TextQualified="True"
               DTS:ObjectName="MIPLNR"
-              DTS:DTSID="{3B09E12B-804B-4C35-91FA-7644AF675B01}"
+              DTS:DTSID="{8019BEE2-72E0-498A-8909-4AC55BC7D666}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -100,7 +100,7 @@
               DTS:DataPrecision="4"
               DTS:TextQualified="True"
               DTS:ObjectName="MIRAPO"
-              DTS:DTSID="{16C99A36-6D19-4D1A-8609-8B95944A8F61}"
+              DTS:DTSID="{179CF2D7-699E-456A-97E6-040E35C99D84}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -109,7 +109,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MIAOID"
-              DTS:DTSID="{EABD7D9A-E769-4996-AC08-FD3052D4782D}"
+              DTS:DTSID="{245F2950-C316-4F50-B61D-44DF690DEF04}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -117,7 +117,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="MIFDAT"
-              DTS:DTSID="{01D486DB-16C9-4048-B5A8-092520BB0FAC}"
+              DTS:DTSID="{8B85DB40-98DF-4520-BA9F-F173BD8CCBDF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -125,7 +125,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="MITDAT"
-              DTS:DTSID="{C506A8E5-61BB-4B29-B1C8-6E7A110BF8F6}"
+              DTS:DTSID="{819BFE73-48FC-43B4-8B3E-65E730D4E7DB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -134,7 +134,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MIKOID"
-              DTS:DTSID="{701882F7-073E-4E15-B052-EC17AC58B027}"
+              DTS:DTSID="{B4A5E916-036E-45D7-80F6-267F0D4431E2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -143,7 +143,7 @@
               DTS:DataPrecision="9"
               DTS:TextQualified="True"
               DTS:ObjectName="MILPNR"
-              DTS:DTSID="{36DEAFFB-BC23-4608-AEAA-0AC39F754974}"
+              DTS:DTSID="{2190C9B7-B6F3-4AD0-B3A8-60ABC3D0EDB9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -152,7 +152,7 @@
               DTS:DataPrecision="7"
               DTS:TextQualified="True"
               DTS:ObjectName="MIRPNR"
-              DTS:DTSID="{81969A45-F614-4C9B-A8F8-E79F8D3043C8}"
+              DTS:DTSID="{AC4EC1DC-02E4-456F-B683-41DB5E27B780}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -161,7 +161,7 @@
               DTS:DataPrecision="7"
               DTS:TextQualified="True"
               DTS:ObjectName="MIRDNR"
-              DTS:DTSID="{9BBF9B51-0386-4466-BE54-1566F34B033D}"
+              DTS:DTSID="{CA2A1117-0235-4C39-8634-A75744DC4898}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -170,7 +170,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MIBTYP"
-              DTS:DTSID="{64D090E7-43B4-47B9-A057-66E9F9A3EF31}"
+              DTS:DTSID="{F9557F40-8956-40AC-A130-EDA3777EA72D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -180,7 +180,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="MIRBEL"
-              DTS:DTSID="{883D1C91-0F1E-4458-92EF-608C368F6C44}"
+              DTS:DTSID="{B718E4A9-45D4-4FBF-B7C9-F2E7366C64C2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -189,7 +189,7 @@
               DTS:DataPrecision="9"
               DTS:TextQualified="True"
               DTS:ObjectName="MIVKNR"
-              DTS:DTSID="{50E273EB-AB80-41D7-8C7C-463503959FC3}"
+              DTS:DTSID="{A5E9765A-2E2C-41CA-88F6-BFBDCE0D91E6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -198,7 +198,7 @@
               DTS:DataPrecision="5"
               DTS:TextQualified="True"
               DTS:ObjectName="MIVANV"
-              DTS:DTSID="{F04D4BD4-89BF-4073-9B0A-523B530CF3EA}"
+              DTS:DTSID="{BFD2DC8B-F6D4-4A3A-B521-46F2B097641B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -207,7 +207,7 @@
               DTS:DataPrecision="9"
               DTS:TextQualified="True"
               DTS:ObjectName="MIIKEY"
-              DTS:DTSID="{142BADCB-2051-4D36-890C-9A6E40623DE1}"
+              DTS:DTSID="{A3ED9FCA-2C80-4BF5-9FD7-983F046BD9F6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -216,7 +216,7 @@
               DTS:DataPrecision="9"
               DTS:TextQualified="True"
               DTS:ObjectName="MIIMKE"
-              DTS:DTSID="{ABC98F08-F688-4FEC-AA74-2052D710A33B}"
+              DTS:DTSID="{AD3BC43A-010A-4217-AFCB-03BF54025AB9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -225,7 +225,7 @@
               DTS:DataPrecision="9"
               DTS:TextQualified="True"
               DTS:ObjectName="MIRHNR"
-              DTS:DTSID="{41AE7175-09CB-4B7A-A789-7DA3A9CF5A86}"
+              DTS:DTSID="{4D15E2A7-2261-4A7D-964D-224869DDA40D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -234,7 +234,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MISACF"
-              DTS:DTSID="{B5780F48-0FF6-437B-B306-CAEB413C7CE0}"
+              DTS:DTSID="{783BCA11-9B63-40D3-ADD4-31785FD4E47D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -243,7 +243,7 @@
               DTS:DataPrecision="9"
               DTS:TextQualified="True"
               DTS:ObjectName="MIKANR"
-              DTS:DTSID="{54D5E94F-FC0D-4033-999C-7D5DC422A34B}"
+              DTS:DTSID="{613E5B69-7B05-486A-8BE1-A80C757415CB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -252,7 +252,7 @@
               DTS:DataPrecision="9"
               DTS:TextQualified="True"
               DTS:ObjectName="MIAKEY"
-              DTS:DTSID="{45D67E49-B909-4BF9-827B-411677D81C64}"
+              DTS:DTSID="{502A99CF-DDA1-486C-91AB-68841B5954CD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -261,7 +261,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MICAEK"
-              DTS:DTSID="{C017FB11-2C50-4700-A622-2A7417B1A31A}"
+              DTS:DTSID="{D18AAA40-1534-4380-9794-DC6240D38C25}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -270,7 +270,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MISLSK"
-              DTS:DTSID="{78804342-A78A-4648-839B-E91B0568EE89}"
+              DTS:DTSID="{25811A63-F9FA-4729-B3A8-52362B444DDE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -279,7 +279,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MIUSLK"
-              DTS:DTSID="{29CE0DAA-4185-4888-BEB9-DBD266C16DFA}"
+              DTS:DTSID="{1B8FBB7B-0C29-480D-9618-DD1E7D7B53A1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -289,7 +289,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="MIANDL"
-              DTS:DTSID="{6162AA05-B667-440C-B2D7-80E0E9B6AC2D}"
+              DTS:DTSID="{11DDDE82-D8F0-420D-93F0-36BCA08A6C24}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -298,7 +298,7 @@
               DTS:DataPrecision="7"
               DTS:TextQualified="True"
               DTS:ObjectName="MIFLNR"
-              DTS:DTSID="{F309D5CE-A067-445A-B1CC-C7F8A1AE417B}"
+              DTS:DTSID="{1DE18C42-792D-4BD1-BA89-42E577BA0CC8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -307,7 +307,7 @@
               DTS:DataPrecision="7"
               DTS:TextQualified="True"
               DTS:ObjectName="MISTID"
-              DTS:DTSID="{D1684D15-59CB-4550-BDC6-7BFA5E1CB632}"
+              DTS:DTSID="{7A8EB2ED-5A27-4D27-93F3-7CA57DA51DE0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -316,7 +316,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MIRSTS"
-              DTS:DTSID="{9045E88C-C6A9-4E4F-BC38-31C6740B2229}"
+              DTS:DTSID="{25BF266F-2376-4D59-80CB-4987C37B9DC0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -325,7 +325,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MIWSTS"
-              DTS:DTSID="{61085031-279E-49AE-BCB1-89583899D46B}"
+              DTS:DTSID="{BBA80ED3-2DA5-4D66-A0F0-15BF8A40FDCE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -334,7 +334,7 @@
               DTS:DataPrecision="11"
               DTS:TextQualified="True"
               DTS:ObjectName="MIAUTF"
-              DTS:DTSID="{DFB9F56F-C0B5-4F80-BA92-49A286DB4EF2}"
+              DTS:DTSID="{31E1F017-E9FB-4651-9BAD-EE0A0055CC68}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -343,7 +343,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MIDTYP"
-              DTS:DTSID="{99F374B1-5B2B-41D1-A094-4AB181BD6E45}"
+              DTS:DTSID="{DF091BBC-3DEF-4A5C-8D25-A605CAA6887C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -351,7 +351,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="CRTDTE"
-              DTS:DTSID="{F2FFED76-C70E-454C-8AEB-FB63B67A5B65}"
+              DTS:DTSID="{19E8D352-608A-44CE-BC36-B988674BFD20}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -360,7 +360,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CRTUSR"
-              DTS:DTSID="{5740F98F-1C5A-4F90-88B1-92B9C3248E7C}"
+              DTS:DTSID="{81F3BD19-E486-4332-838E-4F3B2EAAC057}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -368,7 +368,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="CHGDTE"
-              DTS:DTSID="{FFE8EA2B-9185-46D0-ACE1-B6B56EE2B7E4}"
+              DTS:DTSID="{DFCFC16B-9CC7-4ACD-A205-44F466F57473}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -377,7 +377,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CHGUSR"
-              DTS:DTSID="{5F01040E-4943-43E5-BC59-27659DD35E6C}"
+              DTS:DTSID="{8683DA59-0B02-4529-A8BC-74259652DDC5}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -926,7 +926,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dinmippf"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -8788,7 +8788,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="truncate destination table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -8806,7 +8806,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="truncate destination table 1"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -8862,6 +8862,10 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="179,42"
+          Id="Package\create table dinmippf"
+          TopLeft="61,132.5" />
+        <NodeLayout
           Size="178,42"
           Id="Package\create table dinuhspf"
           TopLeft="60,60" />
@@ -8870,6 +8874,14 @@
           Id="Package\Data Flow Task"
           TopLeft="746,60" />
         <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task 1"
+          TopLeft="746,132.5" />
+        <NodeLayout
+          Size="146,42"
+          Id="Package\Load dinmippf"
+          TopLeft="313,132.5" />
+        <NodeLayout
           Size="145,42"
           Id="Package\Load dinuhspf"
           TopLeft="312,60" />
@@ -8877,6 +8889,10 @@
           Size="199,42"
           Id="Package\truncate destination table"
           TopLeft="494,60" />
+        <NodeLayout
+          Size="199,42"
+          Id="Package\truncate destination table 1"
+          TopLeft="494,132.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="693,81">
@@ -8891,6 +8907,28 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="45.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="240,153.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="73,0"
+              Start="0,0"
+              End="65.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="65.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8921,44 +8959,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="179,42"
-          Id="Package\create table dinmippf"
-          TopLeft="61,132.5" />
-        <NodeLayout
-          Size="146,42"
-          Id="Package\Load dinmippf"
-          TopLeft="313,132.5" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="240,153.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="73,0"
-              Start="0,0"
-              End="65.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="65.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="151,42"
-          Id="Package\Data Flow Task 1"
-          TopLeft="746,132.5" />
-        <NodeLayout
-          Size="199,42"
-          Id="Package\truncate destination table 1"
-          TopLeft="494,132.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="693,153.5">
@@ -9051,36 +9051,32 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Load dinuhspf">
+    design-time-name="Package\Data Flow Task 1">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151,42"
-          Id="Package\Load dinuhspf\Flat File Source"
-          TopLeft="189.5,66.5" />
+          Size="150,42"
+          Id="Package\Data Flow Task 1\OLE DB Source"
+          TopLeft="200,149" />
         <NodeLayout
           Size="171,42"
-          Id="Package\Load dinuhspf\OLE DB Destination"
-          TopLeft="459.5,68.5" />
-        <NodeLayout
-          Size="172,42"
-          Id="Package\Load dinuhspf\Flat File Destination"
-          TopLeft="174,177" />
+          Id="Package\Data Flow Task 1\OLE DB Destination"
+          TopLeft="425,147" />
         <EdgeLayout
-          Id="Package\Load dinuhspf.Paths[Flat File Source Output]"
-          TopLeft="340.5,88.5">
+          Id="Package\Data Flow Task 1.Paths[OLE DB Source Output]"
+          TopLeft="350,169">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="119,0"
+              EndConnector="75,0"
               Start="0,0"
-              End="111.5,0">
+              End="67.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="111.5,0" />
+                    End="67.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9089,35 +9085,24 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load dinuhspf.Paths[Flat File Source Error Output]"
-          TopLeft="262.5,108.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,68.5"
-              Start="0,0"
-              End="0,61">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,61" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-63.62638671875,24.6953125,127.2527734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load dinuhspf\OLE DB Destination">
+    design-time-name="Package\Data Flow Task 1\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task 1\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -9209,32 +9194,36 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Data Flow Task 1">
+    design-time-name="Package\Load dinuhspf">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="150,42"
-          Id="Package\Data Flow Task 1\OLE DB Source"
-          TopLeft="200,149" />
+          Size="151,42"
+          Id="Package\Load dinuhspf\Flat File Source"
+          TopLeft="189.5,66.5" />
         <NodeLayout
           Size="171,42"
-          Id="Package\Data Flow Task 1\OLE DB Destination"
-          TopLeft="425,147" />
+          Id="Package\Load dinuhspf\OLE DB Destination"
+          TopLeft="459.5,68.5" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Load dinuhspf\Flat File Destination"
+          TopLeft="174,177" />
         <EdgeLayout
-          Id="Package\Data Flow Task 1.Paths[OLE DB Source Output]"
-          TopLeft="350,169">
+          Id="Package\Load dinuhspf.Paths[Flat File Source Output]"
+          TopLeft="340.5,88.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="75,0"
+              EndConnector="119,0"
               Start="0,0"
-              End="67.5,0">
+              End="111.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="67.5,0" />
+                    End="111.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9243,24 +9232,35 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load dinuhspf.Paths[Flat File Source Error Output]"
+          TopLeft="262.5,108.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,68.5"
+              Start="0,0"
+              End="0,61">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,61" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-63.62638671875,24.6953125,127.2527734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task 1\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task 1\OLE DB Destination">
+    design-time-name="Package\Load dinuhspf\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
