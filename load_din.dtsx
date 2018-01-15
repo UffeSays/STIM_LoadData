@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_din"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{BEF3E1C1-FD7C-4206-BCA1-0E42ED5CA00F}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{CABA4CC9-B1B3-45B2-A643-C50979C81F6E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -389,6 +389,7 @@
       DTS:refId="Package\create table dinatnpf"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{9997e66c-b64a-41de-a5ad-23253d2d1b1d}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -425,6 +426,7 @@
       DTS:refId="Package\Load dinatnpf"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{bd2fc731-d32f-46f3-9ac1-051b148a2240}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
