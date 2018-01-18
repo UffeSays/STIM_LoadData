@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="load_troy_meta"
   DTS:PackageType="5"
-  DTS:VersionBuild="181"
-  DTS:VersionGUID="{00E7F400-F92C-489D-87A7-1B6D1E89858F}">
+  DTS:VersionBuild="185"
+  DTS:VersionGUID="{16A28111-CCCA-471A-A9BF-8623CF4146CF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1042,7 +1042,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstasc"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1060,7 +1060,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstdan"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1078,7 +1078,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstdcg"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="5">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1096,7 +1096,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstded"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="6">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1114,7 +1114,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstidn"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="7">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1132,7 +1132,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstmam"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="8">
+      DTS:ThreadHint="5">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1150,7 +1150,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstmda"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="9">
+      DTS:ThreadHint="6">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1168,7 +1168,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstpdc"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="7">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1186,7 +1186,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstpdt"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="8">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1204,13 +1204,30 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstwot"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="9">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
           SQLTask:SqlStatementSource="if OBJECT_ID('dbo.tmp_dstwot','U') IS not NULL drop table tmp_dstwot&#xA;CREATE TABLE [tmp_dstwot] (&#xA;    [DISTRIBUTIONKEY] numeric(11,0),&#xA;    [ICEWORKKEY] numeric(11,0),&#xA;    [WORKTITLEORIGINAL] varchar(90)&#xA;&#xA;&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\load data from tmo to dbo"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{294955AC-555B-4838-9074-AEAB2775777F}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="load data from tmo to dbo"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="10">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+          SQLTask:SqlStatementSource="truncate table dbo.dstasc_2017&#xA;insert into dbo.dstasc_2017 select * from tmp.dstasc&#xA;insert into dbo.dstdan_2017 select * from tmp.dstdan&#xA;insert into dbo.dstdcg_2017 select * from tmp.dstdcg&#xA;insert into dbo.dstded_2017 select * from tmp.dstded&#xA;insert into dbo.dstidn_2017 select * from tmp.dstidn&#xA;insert into dbo.dstmam_2017 select * from tmp.dstmam&#xA;insert into dbo.dstmda_2017 select * from tmp.dstmda&#xA;truncate table dbo.dstpdc_2017&#xA;insert into dbo.dstpdc_2017 select * from tmp.dstpdc&#xA;insert into dbo.dstpdt_2017 select * from tmp.dstpdt&#xA;insert into dbo.dstwot_2017 select * from tmp.dstwot&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -1624,7 +1641,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[tmp_dstasc]</property>
+                  name="OpenRowset">[tmp].[dstasc]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -2043,7 +2060,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[tmp_dstdan]</property>
+                  name="OpenRowset">[tmp].[dstdan]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -2700,7 +2717,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[tmp_dstdcg]</property>
+                  name="OpenRowset">[tmp].[dstdcg]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -3259,7 +3276,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[tmp_dstded]</property>
+                  name="OpenRowset">[dbo].[dstded_2017]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -3716,7 +3733,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[tmp_dstidn]</property>
+                  name="OpenRowset">[tmp].[dstidn]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -4321,7 +4338,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[tmp_dstmam]</property>
+                  name="OpenRowset">[tmp].[dstmam]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -4392,46 +4409,6 @@
                       externalMetadataColumnId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PROCESSKEY]"
                       lineageId="Package\Load dstmam\Flat File Source.Outputs[Flat File Source Output].Columns[PROCESSKEY]" />
                     <inputColumn
-                      refId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AMOUNT]"
-                      cachedDataType="numeric"
-                      cachedName="AMOUNT"
-                      cachedPrecision="14"
-                      cachedScale="3"
-                      externalMetadataColumnId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AMOUNT]"
-                      lineageId="Package\Load dstmam\Flat File Source.Outputs[Flat File Source Output].Columns[AMOUNT]" />
-                    <inputColumn
-                      refId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CURRENCYFROM]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="3"
-                      cachedName="CURRENCYFROM"
-                      externalMetadataColumnId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CURRENCYFROM]"
-                      lineageId="Package\Load dstmam\Flat File Source.Outputs[Flat File Source Output].Columns[CURRENCYFROM]" />
-                    <inputColumn
-                      refId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CURRENCYTO]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="3"
-                      cachedName="CURRENCYTO"
-                      externalMetadataColumnId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CURRENCYTO]"
-                      lineageId="Package\Load dstmam\Flat File Source.Outputs[Flat File Source Output].Columns[CURRENCYTO]" />
-                    <inputColumn
-                      refId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EXCHANGERATE]"
-                      cachedDataType="numeric"
-                      cachedName="EXCHANGERATE"
-                      cachedPrecision="15"
-                      cachedScale="9"
-                      externalMetadataColumnId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EXCHANGERATE]"
-                      lineageId="Package\Load dstmam\Flat File Source.Outputs[Flat File Source Output].Columns[EXCHANGERATE]" />
-                    <inputColumn
-                      refId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ISREADYFORDISTRIBUTION]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="ISREADYFORDISTRIBUTION"
-                      externalMetadataColumnId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ISREADYFORDISTRIBUTION]"
-                      lineageId="Package\Load dstmam\Flat File Source.Outputs[Flat File Source Output].Columns[ISREADYFORDISTRIBUTION]" />
-                    <inputColumn
                       refId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TYPEOFRIGHT]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -4439,34 +4416,6 @@
                       cachedName="TYPEOFRIGHT"
                       externalMetadataColumnId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TYPEOFRIGHT]"
                       lineageId="Package\Load dstmam\Flat File Source.Outputs[Flat File Source Output].Columns[TYPEOFRIGHT]" />
-                    <inputColumn
-                      refId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CREATEDDAT]"
-                      cachedDataType="dbTime2"
-                      cachedName="CREATEDDAT"
-                      externalMetadataColumnId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDDAT]"
-                      lineageId="Package\Load dstmam\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDDAT]" />
-                    <inputColumn
-                      refId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CREATEDBY]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="CREATEDBY"
-                      externalMetadataColumnId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDBY]"
-                      lineageId="Package\Load dstmam\Flat File Source.Outputs[Flat File Source Output].Columns[CREATEDBY]" />
-                    <inputColumn
-                      refId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MODIFIEDDT]"
-                      cachedDataType="dbTime2"
-                      cachedName="MODIFIEDDT"
-                      externalMetadataColumnId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MODIFIEDDT]"
-                      lineageId="Package\Load dstmam\Flat File Source.Outputs[Flat File Source Output].Columns[MODIFIEDDT]" />
-                    <inputColumn
-                      refId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MODIFIEDBY]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="MODIFIEDBY"
-                      externalMetadataColumnId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MODIFIEDBY]"
-                      lineageId="Package\Load dstmam\Flat File Source.Outputs[Flat File Source Output].Columns[MODIFIEDBY]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4480,6 +4429,12 @@
                       dataType="numeric"
                       name="PROCESSKEY"
                       precision="11" />
+                    <externalMetadataColumn
+                      refId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TYPEOFRIGHT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="TYPEOFRIGHT" />
                     <externalMetadataColumn
                       refId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AMOUNT]"
                       dataType="numeric"
@@ -4510,12 +4465,6 @@
                       dataType="str"
                       length="1"
                       name="ISREADYFORDISTRIBUTION" />
-                    <externalMetadataColumn
-                      refId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TYPEOFRIGHT]"
-                      codePage="1252"
-                      dataType="str"
-                      length="2"
-                      name="TYPEOFRIGHT" />
                     <externalMetadataColumn
                       refId="Package\Load dstmam\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATEDDAT]"
                       dataType="dbTime2"
@@ -4834,7 +4783,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[tmp_dstmda]</property>
+                  name="OpenRowset">[tmp].[dstmda]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -5571,7 +5520,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[tmp_dstpdc]</property>
+                  name="OpenRowset">[tmp].[dstpdc]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -6230,7 +6179,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[tmp_dstpdt]</property>
+                  name="OpenRowset">[tmp].[dstpdt]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -6617,7 +6566,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[tmp_dstwot]</property>
+                  name="OpenRowset">[tmp].[dstwot]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -6851,97 +6800,97 @@
         <NodeLayout
           Size="183,42"
           Id="Package\create table dstasc"
-          TopLeft="54,50" />
+          TopLeft="43,33" />
         <NodeLayout
           Size="183,42"
           Id="Package\create table dstdan"
-          TopLeft="54,142.5" />
+          TopLeft="43,98.5" />
         <NodeLayout
           Size="183,42"
           Id="Package\create table dstdcg"
-          TopLeft="54,236" />
+          TopLeft="43,166" />
         <NodeLayout
           Size="183,42"
           Id="Package\create table dstded"
-          TopLeft="54,325" />
+          TopLeft="43,236" />
         <NodeLayout
           Size="183,42"
           Id="Package\create table dstidn"
-          TopLeft="54,409" />
+          TopLeft="43,304" />
         <NodeLayout
           Size="183,42"
           Id="Package\create table dstmam"
-          TopLeft="54,494" />
+          TopLeft="43,372" />
         <NodeLayout
           Size="173,42"
           Id="Package\create table dstmda"
-          TopLeft="54,577" />
+          TopLeft="43,439" />
         <NodeLayout
           Size="169,42"
           Id="Package\create table dstpdc"
-          TopLeft="54,651" />
+          TopLeft="43,507" />
         <NodeLayout
           Size="168,42"
           Id="Package\create table dstpdt"
-          TopLeft="54,728" />
+          TopLeft="43,572" />
         <NodeLayout
           Size="183,42"
           Id="Package\create table dstwot"
-          TopLeft="54,808.5" />
+          TopLeft="42,641.5" />
         <NodeLayout
           Size="183,42"
           Id="Package\Load dstasc"
-          TopLeft="306,52" />
+          TopLeft="294,35" />
         <NodeLayout
           Size="183,42"
           Id="Package\Load dstdan"
-          TopLeft="306,143.5" />
+          TopLeft="294,99.5" />
         <NodeLayout
           Size="183,42"
           Id="Package\Load dstdcg"
-          TopLeft="306,241" />
+          TopLeft="294,171" />
         <NodeLayout
           Size="183,42"
           Id="Package\Load dstded"
-          TopLeft="306,330" />
+          TopLeft="294,241" />
         <NodeLayout
           Size="183,42"
           Id="Package\Load dstidn"
-          TopLeft="306,411" />
+          TopLeft="294,306" />
         <NodeLayout
           Size="183,42"
           Id="Package\Load dstmam"
-          TopLeft="306,497" />
+          TopLeft="294,375" />
         <NodeLayout
           Size="183,42"
           Id="Package\Load dstmda"
-          TopLeft="306,583" />
+          TopLeft="294,439" />
         <NodeLayout
           Size="183,42"
           Id="Package\Load dstpdc"
-          TopLeft="306,655" />
+          TopLeft="294,507" />
         <NodeLayout
           Size="183,42"
           Id="Package\Load dstpdt"
-          TopLeft="306,730" />
+          TopLeft="294,574" />
         <NodeLayout
           Size="183,42"
           Id="Package\Load dstwot"
-          TopLeft="306,809.5" />
+          TopLeft="294,642.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1 1]"
-          TopLeft="237,259.5">
+          TopLeft="226,189.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="69,0"
+              EndConnector="68,0"
               Start="0,0"
-              End="61.5,0">
+              End="60.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="61.5,0" />
+                    End="60.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6952,18 +6901,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 10]"
-          TopLeft="237,516.5">
+          TopLeft="226,394.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="69,0"
+              EndConnector="68,0"
               Start="0,0"
-              End="61.5,0">
+              End="60.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="61.5,0" />
+                    End="60.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6974,18 +6923,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 10 1]"
-          TopLeft="237,164">
+          TopLeft="226,120">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="69,0"
+              EndConnector="68,0"
               Start="0,0"
-              End="61.5,0">
+              End="60.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="61.5,0" />
+                    End="60.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6996,18 +6945,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1]"
-          TopLeft="222,750">
+          TopLeft="211,594">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="84,0"
+              EndConnector="83,0"
               Start="0,0"
-              End="76.5,0">
+              End="75.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="76.5,0" />
+                    End="75.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7018,18 +6967,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1 1]"
-          TopLeft="227,601">
+          TopLeft="216,460">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="79,0"
+              EndConnector="78,0"
               Start="0,0"
-              End="71.5,0">
+              End="70.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="71.5,0" />
+                    End="70.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7040,7 +6989,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 13]"
-          TopLeft="237,830">
+          TopLeft="225,663">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7062,18 +7011,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="223,674">
+          TopLeft="212,528">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="83,0"
+              EndConnector="82,0"
               Start="0,0"
-              End="75.5,0">
+              End="74.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="75.5,0" />
+                    End="74.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7084,18 +7033,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="237,72">
+          TopLeft="226,55">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="69,0"
+              EndConnector="68,0"
               Start="0,0"
-              End="61.5,0">
+              End="60.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="61.5,0" />
+                    End="60.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7106,18 +7055,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5 1]"
-          TopLeft="237,348.5">
+          TopLeft="226,259.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="69,0"
+              EndConnector="68,0"
               Start="0,0"
-              End="61.5,0">
+              End="60.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="61.5,0" />
+                    End="60.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7128,18 +7077,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 7]"
-          TopLeft="237,431">
+          TopLeft="226,326">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="69,0"
+              EndConnector="68,0"
               Start="0,0"
-              End="61.5,0">
+              End="60.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="61.5,0" />
+                    End="60.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7148,6 +7097,10 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="203,42"
+          Id="Package\load data from tmo to dbo"
+          TopLeft="41,736" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
