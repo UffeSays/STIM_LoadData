@@ -11,8 +11,8 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_troy_data"
   DTS:PackageType="5"
-  DTS:VersionBuild="175"
-  DTS:VersionGUID="{C348BE41-8170-4D4B-8373-7622C089CC54}">
+  DTS:VersionBuild="181"
+  DTS:VersionGUID="{8877CA1F-9CA2-4C5E-84AC-3CB117694703}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1575,7 +1575,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstdam"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1594,7 +1594,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstipb"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1613,7 +1613,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstipi"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="5">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1632,7 +1632,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstish"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="6">
+      DTS:ThreadHint="5">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1746,13 +1746,31 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstwrk"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="11">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
           SQLTask:SqlStatementSource="if OBJECT_ID('dbo.tmp_dstwrk','U') IS not NULL drop table tmp_dstwrk&#xA;CREATE TABLE [tmp_dstwrk] (&#xA;    [DISTRIBUTIONKEY] numeric(11,0),&#xA;    [ICEWORKKEY] numeric(11,0),&#xA;    [ISWCKEY] varchar(15),&#xA;    [WORKTITLE] varchar(90),&#xA;    [WORKDURATION] varchar(8),&#xA;    [VERSIONTYPE] varchar(3),&#xA;    [ICEWORKKEYORIG] numeric(11,0),&#xA;    [SOCOWNDOC] varchar(3),&#xA;    [SRCDOCWRK] varchar(5)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{CFA4D570-0449-4E2D-885C-0B8FA01F4466}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="6">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+          SQLTask:SqlStatementSource="insert into dbo.dstaps_2017 select * from tmp.dstaps&#xA;insert into dbo.dstdam_2017 select * from tmp.dstdam&#xA;insert into dbo.dstipb_2017 select * from tmp.dstipb&#xA;insert into dbo.dstipi_2017 select * from tmp.dstipi&#xA;insert into dbo.dstish_2017 select * from tmp.dstish&#xA;insert into dbo.dstres_2017 select * from tmp.dstres&#xA;insert into dbo.dstrmw_2017 select * from tmp.dstrmw&#xA;insert into dbo.dstrpw_2017 select * from tmp.dstrpw&#xA;insert into dbo.dstrrw_2017 select * from tmp.dstrrw&#xA;insert into dbo.dstwla_2017 select * from tmp.dstwla&#xA;insert into dbo.dstwrk_2017 select * from tmp.dstwrk" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -2713,7 +2731,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[tmp_dstaps]</property>
+                  name="OpenRowset">[tmp].[dstaps]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -3621,7 +3639,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[tmp_dstdam]</property>
+                  name="OpenRowset">[tmp].[dstdam]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -4177,7 +4195,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[tmp_dstipb]</property>
+                  name="OpenRowset">[tmp].[dstipb]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -4635,7 +4653,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp_dstipi]</property>
+                  name="OpenRowset">[dbo].[dstipi_2017]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -5501,7 +5519,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp_dstish]</property>
+                  name="OpenRowset">[tmp].[dstish]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -5571,158 +5589,6 @@
                       cachedPrecision="11"
                       externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ICEIPNAMEKEY]"
                       lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[ICEIPNAMEKEY]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USAGEKEY]"
-                      cachedDataType="numeric"
-                      cachedName="USAGEKEY"
-                      cachedPrecision="5"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USAGEKEY]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[USAGEKEY]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ICEWORKKEY]"
-                      cachedDataType="numeric"
-                      cachedName="ICEWORKKEY"
-                      cachedPrecision="11"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ICEWORKKEY]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[ICEWORKKEY]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CAECODE]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="2"
-                      cachedName="CAECODE"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CAECODE]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[CAECODE]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CAR]"
-                      cachedDataType="numeric"
-                      cachedName="CAR"
-                      cachedPrecision="11"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CAR]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[CAR]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PUBAGREEMENTKEY]"
-                      cachedDataType="numeric"
-                      cachedName="PUBAGREEMENTKEY"
-                      cachedPrecision="11"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PUBAGREEMENTKEY]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[PUBAGREEMENTKEY]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ORIGINALAGREEMENTKEY]"
-                      cachedDataType="numeric"
-                      cachedName="ORIGINALAGREEMENTKEY"
-                      cachedPrecision="11"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ORIGINALAGREEMENTKEY]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[ORIGINALAGREEMENTKEY]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MECHANICALSHARE]"
-                      cachedDataType="numeric"
-                      cachedName="MECHANICALSHARE"
-                      cachedPrecision="5"
-                      cachedScale="2"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MECHANICALSHARE]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[MECHANICALSHARE]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MECHCODEUSAGEDATE]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="3"
-                      cachedName="MECHCODEUSAGEDATE"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MECHCODEUSAGEDATE]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[MECHCODEUSAGEDATE]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MECHCODEDISTRDATE]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="3"
-                      cachedName="MECHCODEDISTRDATE"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MECHCODEDISTRDATE]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[MECHCODEDISTRDATE]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PERFORMANCESHARE]"
-                      cachedDataType="numeric"
-                      cachedName="PERFORMANCESHARE"
-                      cachedPrecision="5"
-                      cachedScale="2"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PERFORMANCESHARE]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[PERFORMANCESHARE]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PERFCODEUSAGEDATE]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="3"
-                      cachedName="PERFCODEUSAGEDATE"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PERFCODEUSAGEDATE]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[PERFCODEUSAGEDATE]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PERFCODEDISTRDATE]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="3"
-                      cachedName="PERFCODEDISTRDATE"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PERFCODEDISTRDATE]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[PERFCODEDISTRDATE]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MECHANICALSHAREPAID]"
-                      cachedDataType="numeric"
-                      cachedName="MECHANICALSHAREPAID"
-                      cachedPrecision="5"
-                      cachedScale="2"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MECHANICALSHAREPAID]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[MECHANICALSHAREPAID]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PERFORMANCESHAREPAID]"
-                      cachedDataType="numeric"
-                      cachedName="PERFORMANCESHAREPAID"
-                      cachedPrecision="5"
-                      cachedScale="2"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PERFORMANCESHAREPAID]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[PERFORMANCESHAREPAID]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CLAIMANTFLAG]"
-                      cachedDataType="numeric"
-                      cachedName="CLAIMANTFLAG"
-                      cachedPrecision="2"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CLAIMANTFLAG]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[CLAIMANTFLAG]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[COUNTERCLAIMSTATUS]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="2"
-                      cachedName="COUNTERCLAIMSTATUS"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COUNTERCLAIMSTATUS]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[COUNTERCLAIMSTATUS]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DISPUTEFLAG]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="3"
-                      cachedName="DISPUTEFLAG"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISPUTEFLAG]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[DISPUTEFLAG]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MANDATEID]"
-                      cachedDataType="numeric"
-                      cachedName="MANDATEID"
-                      cachedPrecision="5"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MANDATEID]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[MANDATEID]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RESERVEINDICATOR]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="RESERVEINDICATOR"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RESERVEINDICATOR]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[RESERVEINDICATOR]" />
-                    <inputColumn
-                      refId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SEQKEY]"
-                      cachedDataType="numeric"
-                      cachedName="SEQKEY"
-                      cachedPrecision="5"
-                      externalMetadataColumnId="Package\Load dstish\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SEQKEY]"
-                      lineageId="Package\Load dstish\Flat File Source.Outputs[Flat File Source Output].Columns[SEQKEY]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -6465,7 +6331,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp_dstres]</property>
+                  name="OpenRowset">[tmp].[dstres]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -7101,7 +6967,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp_dstrmw]</property>
+                  name="OpenRowset">[tmp].[dstrmw]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -7607,7 +7473,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp_dstrpw]</property>
+                  name="OpenRowset">[tmp].[dstrpw]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -8195,7 +8061,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[tmp_dstrrw]</property>
+                  name="OpenRowset">[tmp].[dstrrw]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -9204,7 +9070,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[tmp_dstwrk]</property>
+                  name="OpenRowset">[tmp].[dstwrk]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -9540,39 +9406,39 @@
         <NodeLayout
           Size="173,42"
           Id="Package\create table dstaps"
-          TopLeft="33.5000000000001,38.5" />
+          TopLeft="31,38.5" />
         <NodeLayout
           Size="173,42"
           Id="Package\create table dstdam"
-          TopLeft="33.5000000000001,107.875" />
+          TopLeft="31,107.875" />
         <NodeLayout
           Size="173,42"
           Id="Package\create table dstipb"
-          TopLeft="33.5000000000001,177.25" />
+          TopLeft="31,177.25" />
         <NodeLayout
           Size="173,42"
           Id="Package\create table dstipi"
-          TopLeft="37.5000000000001,250.625" />
+          TopLeft="31,250.625" />
         <NodeLayout
           Size="173,42"
           Id="Package\create table dstish"
-          TopLeft="36.5000000000001,325" />
+          TopLeft="31,325" />
         <NodeLayout
           Size="173,42"
           Id="Package\create table dstres"
-          TopLeft="33.5000000000001,399" />
+          TopLeft="31,399" />
         <NodeLayout
           Size="173,42"
           Id="Package\create table dstrmw"
-          TopLeft="33.5000000000001,472.375" />
+          TopLeft="31,472.375" />
         <NodeLayout
           Size="173,42"
           Id="Package\create table dstrpw"
-          TopLeft="33.5000000000001,545.75" />
+          TopLeft="31,545.75" />
         <NodeLayout
           Size="168,42"
           Id="Package\create table dstrrw"
-          TopLeft="33.5000000000001,621.125" />
+          TopLeft="31,621.125" />
         <NodeLayout
           Size="168,42"
           Id="Package\create table dstwla"
@@ -9580,43 +9446,43 @@
         <NodeLayout
           Size="173,42"
           Id="Package\create table dstwrk"
-          TopLeft="32.5000000000001,768.5" />
+          TopLeft="31,768.5" />
         <NodeLayout
           Size="135,42"
           Id="Package\Load dstaps"
-          TopLeft="262.5,39.5" />
+          TopLeft="260,39.5" />
         <NodeLayout
           Size="173,42"
           Id="Package\Load dstdam"
-          TopLeft="262.5,109.125" />
+          TopLeft="260,109.125" />
         <NodeLayout
           Size="133,42"
           Id="Package\Load dstipb"
-          TopLeft="262.5,178.75" />
+          TopLeft="260,178.75" />
         <NodeLayout
           Size="173,42"
           Id="Package\Load dstipi"
-          TopLeft="266.5,252.375" />
+          TopLeft="260,252.375" />
         <NodeLayout
           Size="173,42"
           Id="Package\Load dstish"
-          TopLeft="265.5,326.75" />
+          TopLeft="260,326.75" />
         <NodeLayout
           Size="173,42"
           Id="Package\Load dstres"
-          TopLeft="262.5,401" />
+          TopLeft="260,401" />
         <NodeLayout
           Size="173,42"
           Id="Package\Load dstrmw"
-          TopLeft="262.5,474.625" />
+          TopLeft="260,474.625" />
         <NodeLayout
           Size="173,42"
           Id="Package\Load dstrpw"
-          TopLeft="262.5,548.25" />
+          TopLeft="260,548.25" />
         <NodeLayout
           Size="173,42"
           Id="Package\Load dstrrw"
-          TopLeft="262.5,623.875" />
+          TopLeft="260,623.875" />
         <NodeLayout
           Size="135,42"
           Id="Package\Load dstwla"
@@ -9624,21 +9490,21 @@
         <NodeLayout
           Size="136,42"
           Id="Package\Load dstwrk"
-          TopLeft="261.5,771.5" />
+          TopLeft="260,768.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="206.5,129.5">
+          TopLeft="204,129.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="55.9999999999999,0"
+              EndConnector="56,0"
               Start="0,0"
-              End="48.4999999999999,0">
+              End="48.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="48.4999999999999,0" />
+                    End="48.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9671,18 +9537,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1]"
-          TopLeft="201.5,643.5">
+          TopLeft="199,643.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="60.9999999999999,0"
+              EndConnector="61,0"
               Start="0,0"
-              End="53.4999999999999,0">
+              End="53.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="53.4999999999999,0" />
+                    End="53.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9693,18 +9559,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1 1 1]"
-          TopLeft="206.5,568">
+          TopLeft="204,568">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="55.9999999999999,0"
+              EndConnector="56,0"
               Start="0,0"
-              End="48.4999999999999,0">
+              End="48.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="48.4999999999999,0" />
+                    End="48.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9715,18 +9581,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11 1 1 1 1]"
-          TopLeft="206.5,494.5">
+          TopLeft="204,494.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="55.9999999999999,0"
+              EndConnector="56,0"
               Start="0,0"
-              End="48.4999999999999,0">
+              End="48.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="48.4999999999999,0" />
+                    End="48.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9737,18 +9603,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="205.5,791">
+          TopLeft="204,789.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="55.9999999999999,0"
+              EndConnector="56,0"
               Start="0,0"
-              End="48.4999999999999,0">
+              End="48.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="48.4999999999999,0" />
+                    End="48.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9781,18 +9647,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="206.5,60">
+          TopLeft="204,60">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="55.9999999999999,0"
+              EndConnector="56,0"
               Start="0,0"
-              End="48.4999999999999,0">
+              End="48.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="48.4999999999999,0" />
+                    End="48.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9803,18 +9669,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6 1]"
-          TopLeft="206.5,199">
+          TopLeft="204,199">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="55.9999999999999,0"
+              EndConnector="56,0"
               Start="0,0"
-              End="48.4999999999999,0">
+              End="48.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="48.4999999999999,0" />
+                    End="48.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9825,18 +9691,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 7]"
-          TopLeft="210.5,272.5">
+          TopLeft="204,272.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="55.9999999999999,0"
+              EndConnector="56,0"
               Start="0,0"
-              End="48.4999999999999,0">
+              End="48.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="48.4999999999999,0" />
+                    End="48.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9847,18 +9713,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 7 1]"
-          TopLeft="209.5,346.875">
+          TopLeft="204,346.875">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="55.9999999999999,0"
+              EndConnector="56,0"
               Start="0,0"
-              End="48.4999999999999,0">
+              End="48.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="48.4999999999999,0" />
+                    End="48.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9869,18 +9735,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 8 1]"
-          TopLeft="206.5,421">
+          TopLeft="204,421">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="55.9999999999999,0"
+              EndConnector="56,0"
               Start="0,0"
-              End="48.4999999999999,0">
+              End="48.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="48.4999999999999,0" />
+                    End="48.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9889,6 +9755,10 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="31,882" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -9947,7 +9817,7 @@
     design-time-name="Package\Load dstdam">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="171,42"
           Id="Package\Load dstdam\OLE DB Destination"
@@ -9975,9 +9845,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10000,7 +9868,7 @@
     design-time-name="Package\Load dstipb">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151,42"
           Id="Package\Load dstipb\Flat File Source"
@@ -10028,9 +9896,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10053,7 +9919,7 @@
     design-time-name="Package\Load dstipi">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151,42"
           Id="Package\Load dstipi\Flat File Source"
@@ -10081,9 +9947,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10106,7 +9970,7 @@
     design-time-name="Package\Load dstish">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151,42"
           Id="Package\Load dstish\Flat File Source"
@@ -10134,9 +9998,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10159,7 +10021,7 @@
     design-time-name="Package\Load dstres">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="171,42"
           Id="Package\Load dstres\OLE DB Destination"
@@ -10187,9 +10049,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10263,7 +10123,7 @@
     design-time-name="Package\Load dstrpw">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151,42"
           Id="Package\Load dstrpw\Flat File Source"
@@ -10291,9 +10151,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10316,7 +10174,7 @@
     design-time-name="Package\Load dstrrw">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="171,42"
           Id="Package\Load dstrrw\OLE DB Destination"
@@ -10344,9 +10202,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10401,9 +10257,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10450,7 +10304,7 @@
     design-time-name="Package\Load dstwrk">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="171,42"
           Id="Package\Load dstwrk\OLE DB Destination"
@@ -10478,9 +10332,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
