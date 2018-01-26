@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="load_troy_meta"
   DTS:PackageType="5"
-  DTS:VersionBuild="185"
-  DTS:VersionGUID="{16A28111-CCCA-471A-A9BF-8623CF4146CF}">
+  DTS:VersionBuild="186"
+  DTS:VersionGUID="{EACB87B4-9B3B-4B20-94F1-267273A1794E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1042,7 +1042,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstasc"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1060,7 +1060,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstdan"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1078,7 +1078,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstdcg"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1096,7 +1096,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstded"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1168,7 +1168,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstpdc"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="9">
+      DTS:ThreadHint="7">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1186,7 +1186,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstpdt"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="7">
+      DTS:ThreadHint="8">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1204,7 +1204,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="create table dstwot"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="8">
+      DTS:ThreadHint="9">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1227,7 +1227,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
-          SQLTask:SqlStatementSource="truncate table dbo.dstasc_2017&#xA;insert into dbo.dstasc_2017 select * from tmp.dstasc&#xA;insert into dbo.dstdan_2017 select * from tmp.dstdan&#xA;insert into dbo.dstdcg_2017 select * from tmp.dstdcg&#xA;insert into dbo.dstded_2017 select * from tmp.dstded&#xA;insert into dbo.dstidn_2017 select * from tmp.dstidn&#xA;insert into dbo.dstmam_2017 select * from tmp.dstmam&#xA;insert into dbo.dstmda_2017 select * from tmp.dstmda&#xA;truncate table dbo.dstpdc_2017&#xA;insert into dbo.dstpdc_2017 select * from tmp.dstpdc&#xA;insert into dbo.dstpdt_2017 select * from tmp.dstpdt&#xA;insert into dbo.dstwot_2017 select * from tmp.dstwot&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="truncate table dbo.dstasc_2017&#xA;insert into dbo.dstasc_2017 select * from tmp.dstasc&#xA;insert into dbo.dstdan_2017 select * from tmp.dstdan&#xA;insert into dbo.dstdcg_2017 select * from tmp.dstdcg&#xA;insert into dbo.dstded_2017 select * from tmp.dstded&#xA;insert into dbo.dstidn_2017 select * from tmp.dstidn&#xA;insert into dbo.dstmam_2017 select * from tmp.dstmam&#xA;insert into dbo.dstmda_2017 select * from tmp.dstmda&#xA;truncate table dbo.dstpdc&#xA;insert into dbo.dstpdc select * from tmp.dstpdc&#xA;insert into dbo.dstpdt select * from tmp.dstpdt&#xA;insert into dbo.dstwot_2017 select * from tmp.dstwot&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -6838,6 +6838,10 @@
           Id="Package\create table dstwot"
           TopLeft="42,641.5" />
         <NodeLayout
+          Size="203,42"
+          Id="Package\load data from tmo to dbo"
+          TopLeft="41,736" />
+        <NodeLayout
           Size="183,42"
           Id="Package\Load dstasc"
           TopLeft="294,35" />
@@ -7097,10 +7101,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="203,42"
-          Id="Package\load data from tmo to dbo"
-          TopLeft="41,736" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
