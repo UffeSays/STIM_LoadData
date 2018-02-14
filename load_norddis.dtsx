@@ -11,11 +11,54 @@
   DTS:LocaleID="1053"
   DTS:ObjectName="load_norddis"
   DTS:PackageType="5"
-  DTS:VersionBuild="36"
-  DTS:VersionGUID="{EE03BED0-29ED-45D6-B34E-012FE2058370}">
+  DTS:VersionBuild="44"
+  DTS:VersionGUID="{5BF03EB6-FF6B-489A-A44A-144A6715052B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ErrorOutout_fdisvb]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{BD8E1CCA-F9E2-4175-8D6C-E6832F1F6B17}"
+      DTS:ObjectName="ErrorOutout_fdisvb">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\ERROR\ErrorOutput_fdisvb.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Flat File Source Error Output Column"
+              DTS:DTSID="{024950A4-ABF8-49DA-8065-78DC067508B0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{8985672B-D32F-49CD-B8B3-F9802B4A0419}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{EB224052-AE34-43EE-97B8-CED0C2C0ED62}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[ErrorOutput_dinmippf]"
       DTS:CreationName="FLATFILE"
@@ -393,6 +436,49 @@
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
               DTS:DTSID="{098316C6-0B11-4A4C-ADF7-450B5067091D}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ErrorOutput_fdisvg]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{C5262177-46E9-441D-8117-B049DFBC8649}"
+      DTS:ObjectName="ErrorOutput_fdisvg">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\ERROR\ErrorOutput_fdisvg.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Flat File Source Error Output Column"
+              DTS:DTSID="{0CB5F9DB-F68A-4464-874F-13F210741586}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{2363394D-5A86-454B-8453-3D09846A9D11}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{C69D108E-4E87-4398-BA4F-1EAA6D60AB0D}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1253,6 +1339,227 @@
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File fdisvb]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E7073059-EF29-4566-8DDE-16FF0A250D6D}"
+      DTS:ObjectName="Flat File fdisvb">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1053"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\NORDDIS\fdisvb.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VBTKEY"
+              DTS:DTSID="{341AC7B6-3341-4592-8124-90C38E491DA5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="9"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VBADAT"
+              DTS:DTSID="{B4901F5F-2447-4F13-BE12-5C262C7DDBE6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="45"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VBTTXT"
+              DTS:DTSID="{09C71496-1596-4EA7-9D78-F0055FFB6D34}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="8"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VBUDAT"
+              DTS:DTSID="{B93D5E27-D439-4B34-BA81-49DA15E353FB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VBUSGN"
+              DTS:DTSID="{BBB5C2FE-C505-4DF5-9C50-6141673ACD7E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File fdisvg]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{7F6AFC4E-6812-45F1-8930-180AF4741C14}"
+      DTS:ObjectName="Flat File fdisvg">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\source_files\NORDDIS\fdisvg.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VGTKEY"
+              DTS:DTSID="{F3D9F6B0-6023-49E0-AF71-E20074124A48}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VGRAPO"
+              DTS:DTSID="{D4166551-CCB7-4DB0-9ED4-CB9F6A5468B3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VGAVRP"
+              DTS:DTSID="{2EFC5B0D-1069-478D-98D3-D20CAF8085AB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="8"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VGFDAT"
+              DTS:DTSID="{58E61660-36B5-4E1F-B81A-53D0AB1316CF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="8"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VGTDAT"
+              DTS:DTSID="{96391624-F7BB-442C-BDA6-E07974E247CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VGSBKY"
+              DTS:DTSID="{D9CF0705-082B-4136-B217-A27E6B315EC3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="4"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VGAVDR"
+              DTS:DTSID="{A6989F53-E4BF-4130-939C-6CEB68AA91E8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VGSTXT"
+              DTS:DTSID="{AF9A4E98-A596-41B9-B718-68B534C396E6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VGETXT"
+              DTS:DTSID="{691E03B6-3515-4D69-B43F-B1B11F6AFD9C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="9"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VGLPNR"
+              DTS:DTSID="{F3D7AE8E-14E3-4C69-B678-DB807D8DD141}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VGFAKO"
+              DTS:DTSID="{71BF4958-534E-4F04-8BBF-C88D2ACC3D3A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VGBSTS"
+              DTS:DTSID="{8DB4D602-87D9-4238-AC18-C67694F45543}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VGROBE"
+              DTS:DTSID="{E6AA23FC-B3A5-481E-905D-9432CBEFF333}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="8"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VGUDAT"
+              DTS:DTSID="{2F1E2D24-EBA8-4612-B8E1-FEB00A24F04B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VGUSGN"
+              DTS:DTSID="{3A354A53-E3C7-4D19-94BA-23D4CD87CA05}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
@@ -1292,6 +1599,42 @@
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
           SQLTask:BypassPrepare="False"
           SQLTask:SqlStatementSource="if OBJECT_ID('tmp.dinuhspf','U') IS not NULL drop table [tmp].[dinuhspf]&#xA;CREATE TABLE [tmp].[dinuhspf] (&#xA;    [USHDNR] numeric(9,0),&#xA;    [USATNR] numeric(7,0),&#xA;    [USPLNR] numeric(9,0),&#xA;    [USDAHD] varchar(1),&#xA;    [USTPAH] varchar(2),&#xA;    [USHTYP] varchar(2),&#xA;    [USMNRA] numeric(9,0),&#xA;    [USMNMA] varchar(50),&#xA;    [USMNRE] numeric(9,0),&#xA;    [USMNME] varchar(50),&#xA;    [USMDTY] varchar(2),&#xA;    [USMNRB] numeric(9,0),&#xA;    [USMNMB] varchar(50),&#xA;    [USSLSK] varchar(3),&#xA;    [USMGNM] varchar(30),&#xA;    [USUTLA] varchar(1),&#xA;    [USLAND] varchar(50),&#xA;    [USSAKR] varchar(20),&#xA;    [USAOID] varchar(2),&#xA;    [USKOID] varchar(4),&#xA;    [USSGID] varchar(10),&#xA;    [USFLNR] numeric(7,0),&#xA;    [USFTIT] varchar(30),&#xA;    [USFTIE] varchar(30),&#xA;    [USFLND] varchar(50),&#xA;    [USFTID] numeric(7,0),&#xA;    [USVANR] numeric(9,0),&#xA;    [USVANM] varchar(30),&#xA;    [USVATP] varchar(1),&#xA;    [USVGNM] varchar(30),&#xA;    [USVGNR] numeric(9,0),&#xA;    [USVKNR] numeric(9,0),&#xA;    [USVTIT] varchar(50),&#xA;    [USVTIO] varchar(50),&#xA;    [USVGRD] varchar(1),&#xA;    [USVAND] numeric(5,2),&#xA;    [USVANV] numeric(5,0),&#xA;    [USWSTS] varchar(1),&#xA;    [USEBEL] numeric(13,2),&#xA;    [USRPNR] numeric(7,0),&#xA;    [USUSLK] varchar(3),&#xA;    [USDETA] varchar(1),&#xA;    [USOTNR] numeric(7,0),&#xA;    [USHDST] varchar(2),&#xA;    [USLPNR] numeric(9,0),&#xA;    [USRAPO] numeric(4,0),&#xA;    [USE4DC] numeric(2,0),&#xA;    [USFDAT] date,&#xA;    [USTDAT] date,&#xA;    [USCAEK] varchar(2),&#xA;    [USIKEY] numeric(9,0),&#xA;    [USNTYP] varchar(2),&#xA;    [USSPKD] varchar(2),&#xA;    [CRTDTE] date,&#xA;    [CRTUSR] varchar(10),&#xA;    [CHGDTE] date,&#xA;    [CHGUSR] varchar(10)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\create table fdisvb"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{bac9ffa7-c631-4511-b50a-e2f20ece3dbb}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="create table fdisvb"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="5">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+          SQLTask:BypassPrepare="False"
+          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.fdisvb','U') IS not NULL drop table [tmp].[fdisvb]&#xA;CREATE TABLE [tmp].[fdisvb] (&#xA;    [VBTKEY] numeric(7,0),&#xA;    [VBADAT] numeric(9,0),&#xA;    [VBTTXT] varchar(45),&#xA;    [VBUDAT] numeric(8,0),&#xA;    [VBUSGN] varchar(10)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\create table fdisvg"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{cd7e58c2-c63f-4587-970b-e01078ab14d5}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="create table fdisvg"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server vNext CTP2.0; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+          SQLTask:BypassPrepare="False"
+          SQLTask:SqlStatementSource="if OBJECT_ID('tmp.fdisvg','U') IS not NULL drop table [tmp].[fdisvg]&#xA;CREATE TABLE [tmp].[fdisvg] (&#xA;    [VGTKEY] numeric(7,0),&#xA;    [VGRAPO] numeric(4,0),&#xA;    [VGAVRP] numeric(5,0),&#xA;    [VGFDAT] numeric(8,0),&#xA;    [VGTDAT] numeric(8,0),&#xA;    [VGSBKY] numeric(11,0),&#xA;    [VGAVDR] numeric(4,2),&#xA;    [VGSTXT] varchar(50),&#xA;    [VGETXT] varchar(50),&#xA;    [VGLPNR] numeric(9,0),&#xA;    [VGFAKO] varchar(2),&#xA;    [VGBSTS] varchar(1),&#xA;    [VGROBE] numeric(11,0),&#xA;    [VGUDAT] numeric(8,0),&#xA;    [VGUSGN] varchar(10)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -3574,6 +3917,7 @@
       DTS:refId="Package\Data Flow Task 1"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{3d9a9499-10e4-40a5-bed7-49091d77a138}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -5329,6 +5673,1139 @@
               endId="Package\Data Flow Task 1\OLE DB Destination.Inputs[OLE DB Destination Input]"
               name="OLE DB Source Output"
               startId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task 2"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{39217aa7-7cb9-45c9-ba5b-e6c73255f218}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task 2"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task 2\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[fdisvb]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 2\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[BEAST.datalake]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 2\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VBUDAT]"
+                      cachedDataType="numeric"
+                      cachedName="VBUDAT"
+                      cachedPrecision="8"
+                      externalMetadataColumnId="Package\Data Flow Task 2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VBUDAT]"
+                      lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].Columns[VBUDAT]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VBUSGN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="VBUSGN"
+                      externalMetadataColumnId="Package\Data Flow Task 2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VBUSGN]"
+                      lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].Columns[VBUSGN]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VBTKEY]"
+                      cachedDataType="numeric"
+                      cachedName="VBTKEY"
+                      cachedPrecision="7"
+                      externalMetadataColumnId="Package\Data Flow Task 2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONKEY]"
+                      lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].Columns[VBTKEY]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VBADAT]"
+                      cachedDataType="numeric"
+                      cachedName="VBADAT"
+                      cachedPrecision="9"
+                      externalMetadataColumnId="Package\Data Flow Task 2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONDATE]"
+                      lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].Columns[VBADAT]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VBTTXT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="45"
+                      cachedName="VBTTXT"
+                      externalMetadataColumnId="Package\Data Flow Task 2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONCODEGROUPDESCRIPTIONSWE]"
+                      lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].Columns[VBTTXT]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VBUDAT]"
+                      dataType="numeric"
+                      name="VBUDAT"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VBUSGN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="VBUSGN" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONKEY]"
+                      dataType="numeric"
+                      name="DISTRIBUTIONKEY"
+                      precision="7" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONDATE]"
+                      dataType="numeric"
+                      name="DISTRIBUTIONDATE"
+                      precision="9" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONCODEGROUPDESCRIPTIONSWE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="45"
+                      name="DISTRIBUTIONCODEGROUPDESCRIPTIONSWE" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 2\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task 2\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 2\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 2\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 2\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[tmp].[fdisvb]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 2\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[BEAST.datalake]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].Columns[VBTKEY]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VBTKEY]"
+                      lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].Columns[VBTKEY]"
+                      name="VBTKEY"
+                      precision="7"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].Columns[VBADAT]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VBADAT]"
+                      lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].Columns[VBADAT]"
+                      name="VBADAT"
+                      precision="9"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].Columns[VBTTXT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VBTTXT]"
+                      length="45"
+                      lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].Columns[VBTTXT]"
+                      name="VBTTXT"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].Columns[VBUDAT]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VBUDAT]"
+                      lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].Columns[VBUDAT]"
+                      name="VBUDAT"
+                      precision="8"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].Columns[VBUSGN]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VBUSGN]"
+                      length="10"
+                      lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].Columns[VBUSGN]"
+                      name="VBUSGN"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VBTKEY]"
+                      dataType="numeric"
+                      name="VBTKEY"
+                      precision="7" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VBADAT]"
+                      dataType="numeric"
+                      name="VBADAT"
+                      precision="9" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VBTTXT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="45"
+                      name="VBTTXT" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VBUDAT]"
+                      dataType="numeric"
+                      name="VBUDAT"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VBUSGN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="VBUSGN" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VBTKEY]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VBTKEY]"
+                      name="VBTKEY"
+                      precision="7" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VBADAT]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VBADAT]"
+                      name="VBADAT"
+                      precision="9" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VBTTXT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="45"
+                      lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VBTTXT]"
+                      name="VBTTXT" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VBUDAT]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VBUDAT]"
+                      name="VBUDAT"
+                      precision="8" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VBUSGN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VBUSGN]"
+                      name="VBUSGN" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task 2.Paths[OLE DB Source Output]"
+              endId="Package\Data Flow Task 2\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task 3"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:DelayValidation="True"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{26445e4a-7337-4132-b157-a3194c410868}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task 3"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task 3\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[fdisvg]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 3\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[BEAST.datalake]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGRAPO]"
+                      cachedDataType="numeric"
+                      cachedName="VGRAPO"
+                      cachedPrecision="4"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGRAPO]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGRAPO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGSBKY]"
+                      cachedDataType="numeric"
+                      cachedName="VGSBKY"
+                      cachedPrecision="11"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGSBKY]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGSBKY]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGAVDR]"
+                      cachedDataType="numeric"
+                      cachedName="VGAVDR"
+                      cachedPrecision="4"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGAVDR]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGAVDR]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGROBE]"
+                      cachedDataType="numeric"
+                      cachedName="VGROBE"
+                      cachedPrecision="11"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGROBE]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGROBE]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGUDAT]"
+                      cachedDataType="numeric"
+                      cachedName="VGUDAT"
+                      cachedPrecision="8"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGUDAT]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGUDAT]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGUSGN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="VGUSGN"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGUSGN]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGUSGN]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGTKEY]"
+                      cachedDataType="numeric"
+                      cachedName="VGTKEY"
+                      cachedPrecision="7"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONKEY]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGTKEY]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGAVRP]"
+                      cachedDataType="numeric"
+                      cachedName="VGAVRP"
+                      cachedPrecision="5"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGAVRP]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGAVRP]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGFDAT]"
+                      cachedDataType="numeric"
+                      cachedName="VGFDAT"
+                      cachedPrecision="8"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONCODEGROUPFROMDATE]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGFDAT]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGTDAT]"
+                      cachedDataType="numeric"
+                      cachedName="VGTDAT"
+                      cachedPrecision="8"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONCODEGROUPTODATE]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGTDAT]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGSTXT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="VGSTXT"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONCODEGROUPDESCRIPTIONSWE]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGSTXT]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGETXT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="VGETXT"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONCODEGROUPDESCRIPTIONENG]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGETXT]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGLPNR]"
+                      cachedDataType="numeric"
+                      cachedName="VGLPNR"
+                      cachedPrecision="9"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PROCESSKEY]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGLPNR]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGFAKO]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="VGFAKO"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONPHASE]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGFAKO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGBSTS]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="VGBSTS"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONSTATUS]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGBSTS]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONKEY]"
+                      dataType="numeric"
+                      name="DISTRIBUTIONKEY"
+                      precision="7" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGRAPO]"
+                      dataType="numeric"
+                      name="VGRAPO"
+                      precision="4" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGAVRP]"
+                      dataType="numeric"
+                      name="VGAVRP"
+                      precision="5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONCODEGROUPFROMDATE]"
+                      dataType="numeric"
+                      name="DISTRIBUTIONCODEGROUPFROMDATE"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONCODEGROUPTODATE]"
+                      dataType="numeric"
+                      name="DISTRIBUTIONCODEGROUPTODATE"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGSBKY]"
+                      dataType="numeric"
+                      name="VGSBKY"
+                      precision="11" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGAVDR]"
+                      dataType="numeric"
+                      name="VGAVDR"
+                      precision="4"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONCODEGROUPDESCRIPTIONSWE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DISTRIBUTIONCODEGROUPDESCRIPTIONSWE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONCODEGROUPDESCRIPTIONENG]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DISTRIBUTIONCODEGROUPDESCRIPTIONENG" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PROCESSKEY]"
+                      dataType="numeric"
+                      name="PROCESSKEY"
+                      precision="9" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONPHASE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="DISTRIBUTIONPHASE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRIBUTIONSTATUS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="DISTRIBUTIONSTATUS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGROBE]"
+                      dataType="numeric"
+                      name="VGROBE"
+                      precision="11" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGUDAT]"
+                      dataType="numeric"
+                      name="VGUDAT"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGUSGN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="VGUSGN" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 3\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 3\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 3\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 3\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[tmp].[fdisvg]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 3\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[BEAST.datalake]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGTKEY]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGTKEY]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGTKEY]"
+                      name="VGTKEY"
+                      precision="7"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGRAPO]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGRAPO]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGRAPO]"
+                      name="VGRAPO"
+                      precision="4"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGAVRP]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGAVRP]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGAVRP]"
+                      name="VGAVRP"
+                      precision="5"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGFDAT]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGFDAT]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGFDAT]"
+                      name="VGFDAT"
+                      precision="8"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGTDAT]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGTDAT]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGTDAT]"
+                      name="VGTDAT"
+                      precision="8"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGSBKY]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGSBKY]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGSBKY]"
+                      name="VGSBKY"
+                      precision="11"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGAVDR]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGAVDR]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGAVDR]"
+                      name="VGAVDR"
+                      precision="4"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGSTXT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGSTXT]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGSTXT]"
+                      name="VGSTXT"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGETXT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGETXT]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGETXT]"
+                      name="VGETXT"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGLPNR]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGLPNR]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGLPNR]"
+                      name="VGLPNR"
+                      precision="9"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGFAKO]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGFAKO]"
+                      length="2"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGFAKO]"
+                      name="VGFAKO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGBSTS]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGBSTS]"
+                      length="1"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGBSTS]"
+                      name="VGBSTS"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGROBE]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGROBE]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGROBE]"
+                      name="VGROBE"
+                      precision="11"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGUDAT]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGUDAT]"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGUDAT]"
+                      name="VGUDAT"
+                      precision="8"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGUSGN]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGUSGN]"
+                      length="10"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[VGUSGN]"
+                      name="VGUSGN"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGTKEY]"
+                      dataType="numeric"
+                      name="VGTKEY"
+                      precision="7" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGRAPO]"
+                      dataType="numeric"
+                      name="VGRAPO"
+                      precision="4" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGAVRP]"
+                      dataType="numeric"
+                      name="VGAVRP"
+                      precision="5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGFDAT]"
+                      dataType="numeric"
+                      name="VGFDAT"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGTDAT]"
+                      dataType="numeric"
+                      name="VGTDAT"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGSBKY]"
+                      dataType="numeric"
+                      name="VGSBKY"
+                      precision="11" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGAVDR]"
+                      dataType="numeric"
+                      name="VGAVDR"
+                      precision="4"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGSTXT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="VGSTXT" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGETXT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="VGETXT" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGLPNR]"
+                      dataType="numeric"
+                      name="VGLPNR"
+                      precision="9" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGFAKO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="VGFAKO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGBSTS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="VGBSTS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGROBE]"
+                      dataType="numeric"
+                      name="VGROBE"
+                      precision="11" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGUDAT]"
+                      dataType="numeric"
+                      name="VGUDAT"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VGUSGN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="VGUSGN" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGTKEY]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGTKEY]"
+                      name="VGTKEY"
+                      precision="7" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGRAPO]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGRAPO]"
+                      name="VGRAPO"
+                      precision="4" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGAVRP]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGAVRP]"
+                      name="VGAVRP"
+                      precision="5" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGFDAT]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGFDAT]"
+                      name="VGFDAT"
+                      precision="8" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGTDAT]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGTDAT]"
+                      name="VGTDAT"
+                      precision="8" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGSBKY]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGSBKY]"
+                      name="VGSBKY"
+                      precision="11" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGAVDR]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGAVDR]"
+                      name="VGAVDR"
+                      precision="4"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGSTXT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGSTXT]"
+                      name="VGSTXT" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGETXT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGETXT]"
+                      name="VGETXT" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGLPNR]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGLPNR]"
+                      name="VGLPNR"
+                      precision="9" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGFAKO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGFAKO]"
+                      name="VGFAKO" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGBSTS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGBSTS]"
+                      name="VGBSTS" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGROBE]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGROBE]"
+                      name="VGROBE"
+                      precision="11" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGUDAT]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGUDAT]"
+                      name="VGUDAT"
+                      precision="8" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGUSGN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VGUSGN]"
+                      name="VGUSGN" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task 3.Paths[OLE DB Source Output]"
+              endId="Package\Data Flow Task 3\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -9494,6 +10971,1334 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Load fdisvb"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{88a61d37-eff5-4e2c-ab2c-7d4515f04d93}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load fdisvb"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load fdisvb\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Flat File Destination"
+              localeId="1053"
+              name="Flat File Destination">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load fdisvb\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ErrorOutout_fdisvb]"
+                  connectionManagerRefId="Package.ConnectionManagers[ErrorOutout_fdisvb]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load fdisvb\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load fdisvb\Flat File Destination.Inputs[Flat File Destination Input].Columns[Flat File Source Error Output Column]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="Flat File Source Error Output Column"
+                      externalMetadataColumnId="Package\Load fdisvb\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Flat File Source Error Output Column]"
+                      lineageId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]" />
+                    <inputColumn
+                      refId="Package\Load fdisvb\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\Load fdisvb\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      lineageId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\Load fdisvb\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\Load fdisvb\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvb\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      name="Flat File Source Error Output Column" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvb\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvb\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Load fdisvb\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1053"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load fdisvb\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File fdisvb]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File fdisvb]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].Columns[VBTKEY]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VBTKEY]"
+                      lineageId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].Columns[VBTKEY]"
+                      name="VBTKEY"
+                      precision="7"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].Columns[VBADAT]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VBADAT]"
+                      lineageId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].Columns[VBADAT]"
+                      name="VBADAT"
+                      precision="9"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].Columns[VBTTXT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VBTTXT]"
+                      length="45"
+                      lineageId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].Columns[VBTTXT]"
+                      name="VBTTXT"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].Columns[VBUDAT]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VBUDAT]"
+                      lineageId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].Columns[VBUDAT]"
+                      name="VBUDAT"
+                      precision="8"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].Columns[VBUSGN]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VBUSGN]"
+                      length="10"
+                      lineageId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].Columns[VBUSGN]"
+                      name="VBUSGN"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VBTKEY]"
+                      dataType="numeric"
+                      name="VBTKEY"
+                      precision="7" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VBADAT]"
+                      dataType="numeric"
+                      name="VBADAT"
+                      precision="9" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VBTTXT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="45"
+                      name="VBTTXT" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VBUDAT]"
+                      dataType="numeric"
+                      name="VBUDAT"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VBUSGN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="VBUSGN" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load fdisvb\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[tmp].[fdisvb]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load fdisvb\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[BEAST.datalake]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load fdisvb\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load fdisvb\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VBTKEY]"
+                      cachedDataType="numeric"
+                      cachedName="VBTKEY"
+                      cachedPrecision="7"
+                      externalMetadataColumnId="Package\Load fdisvb\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VBTKEY]"
+                      lineageId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].Columns[VBTKEY]" />
+                    <inputColumn
+                      refId="Package\Load fdisvb\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VBADAT]"
+                      cachedDataType="numeric"
+                      cachedName="VBADAT"
+                      cachedPrecision="9"
+                      externalMetadataColumnId="Package\Load fdisvb\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VBADAT]"
+                      lineageId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].Columns[VBADAT]" />
+                    <inputColumn
+                      refId="Package\Load fdisvb\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VBTTXT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="45"
+                      cachedName="VBTTXT"
+                      externalMetadataColumnId="Package\Load fdisvb\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VBTTXT]"
+                      lineageId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].Columns[VBTTXT]" />
+                    <inputColumn
+                      refId="Package\Load fdisvb\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VBUDAT]"
+                      cachedDataType="numeric"
+                      cachedName="VBUDAT"
+                      cachedPrecision="8"
+                      externalMetadataColumnId="Package\Load fdisvb\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VBUDAT]"
+                      lineageId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].Columns[VBUDAT]" />
+                    <inputColumn
+                      refId="Package\Load fdisvb\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VBUSGN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="VBUSGN"
+                      externalMetadataColumnId="Package\Load fdisvb\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VBUSGN]"
+                      lineageId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output].Columns[VBUSGN]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvb\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VBTKEY]"
+                      dataType="numeric"
+                      name="VBTKEY"
+                      precision="7" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvb\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VBADAT]"
+                      dataType="numeric"
+                      name="VBADAT"
+                      precision="9" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvb\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VBTTXT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="45"
+                      name="VBTTXT" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvb\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VBUDAT]"
+                      dataType="numeric"
+                      name="VBUDAT"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvb\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VBUSGN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="VBUSGN" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load fdisvb\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Load fdisvb\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load fdisvb\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load fdisvb\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load fdisvb\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load fdisvb\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load fdisvb.Paths[Flat File Source Error Output]"
+              endId="Package\Load fdisvb\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Flat File Source Error Output"
+              startId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Error Output]" />
+            <path
+              refId="Package\Load fdisvb.Paths[Flat File Source Output]"
+              endId="Package\Load fdisvb\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Load fdisvb\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load fdisvg"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{3918ceb7-15bc-4509-826b-cef45c1ef70f}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load fdisvg"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load fdisvg\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Flat File Destination"
+              localeId="1053"
+              name="Flat File Destination">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load fdisvg\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ErrorOutput_fdisvg]"
+                  connectionManagerRefId="Package.ConnectionManagers[ErrorOutput_fdisvg]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load fdisvg\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load fdisvg\Flat File Destination.Inputs[Flat File Destination Input].Columns[Flat File Source Error Output Column]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="Flat File Source Error Output Column"
+                      externalMetadataColumnId="Package\Load fdisvg\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Flat File Source Error Output Column]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]" />
+                    <inputColumn
+                      refId="Package\Load fdisvg\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\Load fdisvg\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\Load fdisvg\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\Load fdisvg\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      name="Flat File Source Error Output Column" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Load fdisvg\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load fdisvg\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File fdisvg]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File fdisvg]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGTKEY]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGTKEY]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGTKEY]"
+                      name="VGTKEY"
+                      precision="7"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGRAPO]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGRAPO]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGRAPO]"
+                      name="VGRAPO"
+                      precision="4"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGAVRP]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGAVRP]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGAVRP]"
+                      name="VGAVRP"
+                      precision="5"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGFDAT]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGFDAT]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGFDAT]"
+                      name="VGFDAT"
+                      precision="8"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGTDAT]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGTDAT]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGTDAT]"
+                      name="VGTDAT"
+                      precision="8"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGSBKY]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGSBKY]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGSBKY]"
+                      name="VGSBKY"
+                      precision="11"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGAVDR]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGAVDR]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGAVDR]"
+                      name="VGAVDR"
+                      precision="4"
+                      scale="2"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGSTXT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGSTXT]"
+                      length="50"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGSTXT]"
+                      name="VGSTXT"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGETXT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGETXT]"
+                      length="50"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGETXT]"
+                      name="VGETXT"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGLPNR]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGLPNR]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGLPNR]"
+                      name="VGLPNR"
+                      precision="9"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGFAKO]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGFAKO]"
+                      length="2"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGFAKO]"
+                      name="VGFAKO"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGBSTS]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGBSTS]"
+                      length="1"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGBSTS]"
+                      name="VGBSTS"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGROBE]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGROBE]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGROBE]"
+                      name="VGROBE"
+                      precision="11"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGUDAT]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGUDAT]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGUDAT]"
+                      name="VGUDAT"
+                      precision="8"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGUSGN]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGUSGN]"
+                      length="10"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGUSGN]"
+                      name="VGUSGN"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGTKEY]"
+                      dataType="numeric"
+                      name="VGTKEY"
+                      precision="7" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGRAPO]"
+                      dataType="numeric"
+                      name="VGRAPO"
+                      precision="4" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGAVRP]"
+                      dataType="numeric"
+                      name="VGAVRP"
+                      precision="5" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGFDAT]"
+                      dataType="numeric"
+                      name="VGFDAT"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGTDAT]"
+                      dataType="numeric"
+                      name="VGTDAT"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGSBKY]"
+                      dataType="numeric"
+                      name="VGSBKY"
+                      precision="11" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGAVDR]"
+                      dataType="numeric"
+                      name="VGAVDR"
+                      precision="4"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGSTXT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="VGSTXT" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGETXT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="VGETXT" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGLPNR]"
+                      dataType="numeric"
+                      name="VGLPNR"
+                      precision="9" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGFAKO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="VGFAKO" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGBSTS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="VGBSTS" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGROBE]"
+                      dataType="numeric"
+                      name="VGROBE"
+                      precision="11" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGUDAT]"
+                      dataType="numeric"
+                      name="VGUDAT"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VGUSGN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="VGUSGN" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load fdisvg\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[tmp].[fdisvg]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load fdisvg\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[BEAST.datalake]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGTKEY]"
+                      cachedDataType="numeric"
+                      cachedName="VGTKEY"
+                      cachedPrecision="7"
+                      externalMetadataColumnId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGTKEY]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGTKEY]" />
+                    <inputColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGRAPO]"
+                      cachedDataType="numeric"
+                      cachedName="VGRAPO"
+                      cachedPrecision="4"
+                      externalMetadataColumnId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGRAPO]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGRAPO]" />
+                    <inputColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGAVRP]"
+                      cachedDataType="numeric"
+                      cachedName="VGAVRP"
+                      cachedPrecision="5"
+                      externalMetadataColumnId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGAVRP]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGAVRP]" />
+                    <inputColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGFDAT]"
+                      cachedDataType="numeric"
+                      cachedName="VGFDAT"
+                      cachedPrecision="8"
+                      externalMetadataColumnId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGFDAT]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGFDAT]" />
+                    <inputColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGTDAT]"
+                      cachedDataType="numeric"
+                      cachedName="VGTDAT"
+                      cachedPrecision="8"
+                      externalMetadataColumnId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGTDAT]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGTDAT]" />
+                    <inputColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGSBKY]"
+                      cachedDataType="numeric"
+                      cachedName="VGSBKY"
+                      cachedPrecision="11"
+                      externalMetadataColumnId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGSBKY]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGSBKY]" />
+                    <inputColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGAVDR]"
+                      cachedDataType="numeric"
+                      cachedName="VGAVDR"
+                      cachedPrecision="4"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGAVDR]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGAVDR]" />
+                    <inputColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGSTXT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="VGSTXT"
+                      externalMetadataColumnId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGSTXT]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGSTXT]" />
+                    <inputColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGETXT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="VGETXT"
+                      externalMetadataColumnId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGETXT]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGETXT]" />
+                    <inputColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGLPNR]"
+                      cachedDataType="numeric"
+                      cachedName="VGLPNR"
+                      cachedPrecision="9"
+                      externalMetadataColumnId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGLPNR]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGLPNR]" />
+                    <inputColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGFAKO]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="VGFAKO"
+                      externalMetadataColumnId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGFAKO]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGFAKO]" />
+                    <inputColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGBSTS]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="VGBSTS"
+                      externalMetadataColumnId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGBSTS]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGBSTS]" />
+                    <inputColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGROBE]"
+                      cachedDataType="numeric"
+                      cachedName="VGROBE"
+                      cachedPrecision="11"
+                      externalMetadataColumnId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGROBE]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGROBE]" />
+                    <inputColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGUDAT]"
+                      cachedDataType="numeric"
+                      cachedName="VGUDAT"
+                      cachedPrecision="8"
+                      externalMetadataColumnId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGUDAT]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGUDAT]" />
+                    <inputColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VGUSGN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="VGUSGN"
+                      externalMetadataColumnId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGUSGN]"
+                      lineageId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output].Columns[VGUSGN]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGTKEY]"
+                      dataType="numeric"
+                      name="VGTKEY"
+                      precision="7" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGRAPO]"
+                      dataType="numeric"
+                      name="VGRAPO"
+                      precision="4" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGAVRP]"
+                      dataType="numeric"
+                      name="VGAVRP"
+                      precision="5" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGFDAT]"
+                      dataType="numeric"
+                      name="VGFDAT"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGTDAT]"
+                      dataType="numeric"
+                      name="VGTDAT"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGSBKY]"
+                      dataType="numeric"
+                      name="VGSBKY"
+                      precision="11" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGAVDR]"
+                      dataType="numeric"
+                      name="VGAVDR"
+                      precision="4"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGSTXT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="VGSTXT" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGETXT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="VGETXT" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGLPNR]"
+                      dataType="numeric"
+                      name="VGLPNR"
+                      precision="9" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGFAKO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="VGFAKO" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGBSTS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="VGBSTS" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGROBE]"
+                      dataType="numeric"
+                      name="VGROBE"
+                      precision="11" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGUDAT]"
+                      dataType="numeric"
+                      name="VGUDAT"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VGUSGN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="VGUSGN" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load fdisvg\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load fdisvg\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load fdisvg\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load fdisvg\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load fdisvg.Paths[Flat File Source Error Output]"
+              endId="Package\Load fdisvg\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Flat File Source Error Output"
+              startId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Error Output]" />
+            <path
+              refId="Package\Load fdisvg.Paths[Flat File Source Output]"
+              endId="Package\Load fdisvg\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Load fdisvg\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\truncate destination table"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
@@ -9515,17 +12320,52 @@
       DTS:refId="Package\truncate destination table 1"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{966ffb12-7ba8-4444-aff4-f18d4f7b9ba8}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="truncate destination table 1"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="4">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+          SQLTask:SqlStatementSource="truncate table dbo.dinmippf" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\truncate destination table 2"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{8c4730a5-f18d-4440-8cc5-b5a593ef4ade}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="truncate destination table 2"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="5">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
+          SQLTask:SqlStatementSource="truncate table dbo.fdisvb&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\truncate destination table 3"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{3781a3b3-0915-4e8d-9d25-ba554e9fa384}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="truncate destination table 3"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C5E862DF-ABC5-4796-8F43-EC8D17102F52}"
-          SQLTask:SqlStatementSource="truncate table dbo.dinmippf" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="truncate table dbo.fdisvg" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -9547,6 +12387,22 @@
       DTS:ObjectName="Constraint 1"
       DTS:To="Package\Load dinmippf" />
     <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{13a55e3a-b45d-4f63-991c-bf00988c0276}"
+      DTS:From="Package\create table fdisvb"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1 1"
+      DTS:To="Package\Load fdisvb" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1 1 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{d7ec39ae-0e1e-4fd6-bfcb-749da695c628}"
+      DTS:From="Package\create table fdisvg"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1 1 1"
+      DTS:To="Package\Load fdisvg" />
+    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 11 1]"
       DTS:CreationName=""
       DTS:DTSID="{6c1f1150-056c-406c-833b-2ffaa231da57}"
@@ -9562,6 +12418,38 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
       DTS:To="Package\Data Flow Task 1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{b3132654-0824-40ef-b52e-9594e0fd55eb}"
+      DTS:From="Package\truncate destination table 2"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2 1"
+      DTS:To="Package\Data Flow Task 2" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2 1 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{a6418f47-8880-4ddb-994a-543061d7ef23}"
+      DTS:From="Package\truncate destination table 3"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2 1 1"
+      DTS:To="Package\Data Flow Task 3" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{B6DFF378-42D2-4F9B-817B-D9ED22E0452B}"
+      DTS:From="Package\Load fdisvb"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\truncate destination table 2" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{067b24f3-f6ca-44ed-9d76-3e454d1d64c1}"
+      DTS:From="Package\Load fdisvg"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3 1"
+      DTS:To="Package\truncate destination table 3" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -9574,7 +12462,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="179,42"
           Id="Package\create table dinmippf"
@@ -9695,6 +12583,170 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="166,42"
+          Id="Package\create table fdisvb"
+          TopLeft="60,234.5" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Load fdisvb"
+          TopLeft="312,234.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1 1]"
+          TopLeft="226,255.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="86,0"
+              Start="0,0"
+              End="78.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="78.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Data Flow Task 2"
+          TopLeft="747,233.5" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\truncate destination table 2"
+          TopLeft="495,233.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2 1]"
+          TopLeft="704,254.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="43,0"
+              Start="0,0"
+              End="35.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="35.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="445,255">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="50,0"
+              Start="0,0"
+              End="42.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="42.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="166,42"
+          Id="Package\create table fdisvg"
+          TopLeft="62,300" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Load fdisvg"
+          TopLeft="314,300" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Data Flow Task 3"
+          TopLeft="749,299" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\truncate destination table 3"
+          TopLeft="497,299" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1 1 1]"
+          TopLeft="228,321">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="86,0"
+              Start="0,0"
+              End="78.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="78.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2 1 1]"
+          TopLeft="706,320">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="43,0"
+              Start="0,0"
+              End="35.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="35.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3 1]"
+          TopLeft="447,320.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="50,0"
+              Start="0,0"
+              End="42.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="42.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -9777,6 +12829,10 @@
           Size="171,42"
           Id="Package\Data Flow Task 1\OLE DB Destination"
           TopLeft="425,147" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Data Flow Task 1\Flat File Destination"
+          TopLeft="192,233" />
         <EdgeLayout
           Id="Package\Data Flow Task 1.Paths[OLE DB Source Output]"
           TopLeft="350,169">
@@ -9799,10 +12855,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="172,42"
-          Id="Package\Data Flow Task 1\Flat File Destination"
-          TopLeft="192,233" />
         <EdgeLayout
           Id="Package\Data Flow Task 1.Paths[OLE DB Source Error Output]"
           TopLeft="276.5,191">
@@ -9831,7 +12883,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task 1\OLE DB Destination">
+    design-time-name="Package\Data Flow Task 1\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -9844,7 +12896,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task 1\OLE DB Source">
+    design-time-name="Package\Data Flow Task 1\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -9892,9 +12944,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10007,6 +13057,292 @@
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Load dinuhspf\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load fdisvb">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load fdisvb\Flat File Source"
+          TopLeft="206,94" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Load fdisvb\Flat File Destination"
+          TopLeft="197,184" />
+        <EdgeLayout
+          Id="Package\Load fdisvb.Paths[Flat File Source Error Output]"
+          TopLeft="282.25,136">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48"
+              Start="0,0"
+              End="0,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-63.62638671875,14.4453125,127.2527734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load fdisvb\OLE DB Destination"
+          TopLeft="437,92" />
+        <EdgeLayout
+          Id="Package\Load fdisvb.Paths[Flat File Source Output]"
+          TopLeft="357,114">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="80,0"
+              Start="0,0"
+              End="72.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="72.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load fdisvb\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Data Flow Task 2">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Data Flow Task 2\OLE DB Source"
+          TopLeft="200,149" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Data Flow Task 2\OLE DB Destination"
+          TopLeft="423,149" />
+        <EdgeLayout
+          Id="Package\Data Flow Task 2.Paths[OLE DB Source Output]"
+          TopLeft="350,170">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="73,0"
+              Start="0,0"
+              End="65.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="65.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task 2\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task 2\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load fdisvg">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load fdisvg\Flat File Source"
+          TopLeft="206,94" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Load fdisvg\Flat File Destination"
+          TopLeft="197,184" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load fdisvg\OLE DB Destination"
+          TopLeft="421,95" />
+        <EdgeLayout
+          Id="Package\Load fdisvg.Paths[Flat File Source Output]"
+          TopLeft="357,115.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="64,0"
+              Start="0,0"
+              End="56.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="56.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load fdisvg.Paths[Flat File Source Error Output]"
+          TopLeft="282.25,136">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48"
+              Start="0,0"
+              End="0,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-63.62638671875,14.4453125,127.2527734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Data Flow Task 3">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Data Flow Task 3\OLE DB Source"
+          TopLeft="200,149" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Data Flow Task 3\OLE DB Destination"
+          TopLeft="437,149" />
+        <EdgeLayout
+          Id="Package\Data Flow Task 3.Paths[OLE DB Source Output]"
+          TopLeft="350,170">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="87,0"
+              Start="0,0"
+              End="79.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="79.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task 3\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load fdisvg\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task 3\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

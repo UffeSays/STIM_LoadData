@@ -2,18 +2,18 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>load_data_2017</Name>
-    <LastWriteTime>2018-01-25T23:22:00.7205976Z</LastWriteTime>
+    <LastWriteTime>2018-02-05T15:58:08.5451912Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>load_norddis.dtsx</Name>
-      <LastWriteTime>2018-01-23T15:03:11.3140339Z</LastWriteTime>
+      <LastWriteTime>2018-02-07T11:49:41.8365915Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>load_gem.dtsx</Name>
-      <LastWriteTime>2018-01-18T14:35:21.7025647Z</LastWriteTime>
+      <LastWriteTime>2018-01-30T13:53:59.8933401Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -23,12 +23,12 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>load_troy_meta.dtsx</Name>
-      <LastWriteTime>2018-01-25T13:25:29.8261415Z</LastWriteTime>
+      <LastWriteTime>2018-01-30T13:08:27.7075355Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>load_matchbox.dtsx</Name>
-      <LastWriteTime>2018-01-26T07:15:08.6352288Z</LastWriteTime>
+      <LastWriteTime>2018-02-13T09:57:55.1677793Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -38,7 +38,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>load_din.dtsx</Name>
-      <LastWriteTime>2018-01-18T14:48:39.4590807Z</LastWriteTime>
+      <LastWriteTime>2018-02-14T13:07:13.1818983Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
