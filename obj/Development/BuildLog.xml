@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>load_data_2017</Name>
-    <LastWriteTime>2018-02-05T15:58:08.5451912Z</LastWriteTime>
+    <LastWriteTime>2018-02-19T16:13:57.2202301Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>load_norddis.dtsx</Name>
-      <LastWriteTime>2018-02-07T11:49:41.8365915Z</LastWriteTime>
+      <LastWriteTime>2018-02-16T10:27:49.3244331Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -23,12 +23,12 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>load_troy_meta.dtsx</Name>
-      <LastWriteTime>2018-01-30T13:08:27.7075355Z</LastWriteTime>
+      <LastWriteTime>2018-02-19T12:43:47.5075498Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>load_matchbox.dtsx</Name>
-      <LastWriteTime>2018-02-13T09:57:55.1677793Z</LastWriteTime>
+      <LastWriteTime>2018-02-20T00:33:30.6351742Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -42,11 +42,6 @@
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>load_mattchbox_test.dtsx</Name>
-      <LastWriteTime>2018-01-11T13:31:52.8174583Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
       <Name>export_topearners.dtsx</Name>
       <LastWriteTime>2018-01-17T11:41:50.815041Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
@@ -54,6 +49,11 @@
     <ProjectBuildItemInfo>
       <Name>xxx transfer data from tmp.dtsx</Name>
       <LastWriteTime>2018-01-25T09:44:59.1299247Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>load_matchbox_utf8.dtsx</Name>
+      <LastWriteTime>2018-02-19T15:26:46.2842598Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
