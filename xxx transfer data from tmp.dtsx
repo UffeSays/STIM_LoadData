@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="BEAST"
   DTS:CreatorName="BEAST\uffe"
-  DTS:DTSID="{5B37AE73-9E1C-44F4-BD15-71588AD281BF}"
+  DTS:DTSID="{F2D471D1-4859-40AE-8801-CFA8B1C07DB0}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="14.0.0800.60"
   DTS:LocaleID="1053"
-  DTS:ObjectName="transfer data from tmp"
+  DTS:ObjectName="xxx transfer data from tmp"
   DTS:PackageType="5"
-  DTS:VersionBuild="19"
-  DTS:VersionGUID="{814F249E-A93D-4A9C-A062-DEBCD31503C9}">
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{1542446A-546F-45CF-8CE1-059266FE25C0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -3601,13 +3601,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="212,42"
-          Id="Package\Load data from tmp_ to dbo"
-          TopLeft="179.5,115.5" />
-        <NodeLayout
           Size="151,42"
           Id="Package\Data Flow Task"
           TopLeft="488,136" />
+        <NodeLayout
+          Size="212,42"
+          Id="Package\Load data from tmp_ to dbo"
+          TopLeft="179.5,115.5" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -4016,7 +4016,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Source">
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4029,7 +4029,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Data Flow Task\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

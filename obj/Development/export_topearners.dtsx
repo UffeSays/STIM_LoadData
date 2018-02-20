@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="BEAST"
   DTS:CreatorName="BEAST\uffe"
-  DTS:DTSID="{18B33ADA-490F-4AB3-90B4-44E6F5D7B05E}"
+  DTS:DTSID="{73095FE2-650A-44D8-B847-1478525CDB1F}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="14.0.0800.60"
   DTS:LocaleID="1053"
-  DTS:ObjectName="Package1"
+  DTS:ObjectName="export_topearners"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{2DA56A89-8F66-4EBB-A441-CFE16D696675}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{8A946D9F-6533-4015-BD04-B56EAB74E322}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
